@@ -8,6 +8,9 @@ error_reporting(E_ALL);
 require __DIR__.'/auth.php';
 require __DIR__.'/tenant_bootstrap.php';
 
+require __DIR__.'/storage.php';
+require __DIR__.'/utils.php';
+
 if (function_exists('require_tenant_user')) { require_tenant_user(); }
 if (function_exists('require_perm')) { require_perm('view:personale'); require_perm('edit:personale'); }
 if (!function_exists('require_mfa')) { function require_mfa(){} }
