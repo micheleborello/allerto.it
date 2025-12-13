@@ -405,9 +405,9 @@ $backParam  = htmlspecialchars($currentUrl, ENT_QUOTES, 'UTF-8');
               $attivo = (int)($v['attivo'] ?? 1) === 1;
               $isCapo = !empty($v['is_capo']);
               $grado  = isset($v['grado']) && $v['grado'] !== '' ? (string)$v['grado'] : '—';
-              $toggleUrl = 'vigili.php?action=toggle&id='.$id.'&back='.urlencode($currentUrl);
+              $toggleUrl = 'vigili.php?action=toggle&id='.$id.'&back='.urlencode($currentUrl.'#row-'.$id);
             ?>
-              <tr class="<?php echo $attivo ? '' : 'table-secondary'; ?>">
+              <tr id="row-<?php echo $id; ?>" class="<?php echo $attivo ? '' : 'table-secondary'; ?>">
                 <td><?php echo (int)$i+1; ?></td>
                 <td>
                   <?php
