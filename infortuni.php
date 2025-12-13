@@ -7,6 +7,7 @@ error_reporting(E_ALL);
 
 require __DIR__.'/auth.php';
 require __DIR__.'/tenant_bootstrap.php'; // per leggere lo slug attivo
+require __DIR__.'/utils.php';
 
 // Protezione tenant (se disponibile)
 if (function_exists('require_tenant_user')) { require_tenant_user(); }
@@ -57,7 +58,10 @@ if (!function_exists('save_json_atomic')) {
   }
 }
 if (!function_exists('load_vigili')) {
-  function load_vigili(){ return sanitize_vigili_list(load_json(VIGILI_JSON)); }
+  function load_vigili(){
+    $rows = load_json(VIGILI_JSON);
+    return function_exists('sanitize_vigili_list') ? sanitize_vigili_list($rows) : $rows;
+  }
 }
 if (!function_exists('save_vigili')) {
   function save_vigili($rows){ save_json_atomic(VIGILI_JSON, $rows); }
