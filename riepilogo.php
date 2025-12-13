@@ -151,6 +151,13 @@ $rifYmDT = DateTime::createFromFormat('Y-m-d', substr($meseStr,0,4).'-'.substr($
 $monthStart = $rifYmDT ? $rifYmDT->format('Y-m-d') : date('Y-m-01');
 $monthEnd   = $rifYmDT ? (clone $rifYmDT)->modify('last day of this month')->format('Y-m-d') : date('Y-m-t');
 
+// Etichetta mese per i pulsanti/report
+$mesiTxt = [1=>'gennaio',2=>'febbraio',3=>'marzo',4=>'aprile',5=>'maggio',6=>'giugno',7=>'luglio',8=>'agosto',9=>'settembre',10=>'ottobre',11=>'novembre',12=>'dicembre'];
+$meseLabel = '';
+if ($rifYmDT) {
+  $meseLabel = strtolower($mesiTxt[(int)$rifYmDT->format('n')] ?? '');
+}
+
 /* ======= Dati JSON (tenant-aware) ======= */
 $vigili = array_values(array_filter(load_json(VIGILI_JSON), fn($v)=> (int)($v['attivo'] ?? 1) === 1));
 $add    = load_json(ADDESTR_JSON);
@@ -405,7 +412,7 @@ $defaultBody    = "Buongiorno\n\ncon la presente sono ad inviare in allegato il 
           formmethod="get"
           formtarget="_blank"
           class="btn btn-sm btn-danger fw-semibold">
-    PDF operatività Distaccamento
+    PDF operatività Distaccamento<?php echo $meseLabel ? ' — mese di '.$meseLabel : ''; ?>
   </button>
 
   <!-- PDF MENSILE con esclusioni -->
