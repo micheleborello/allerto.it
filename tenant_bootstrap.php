@@ -12,8 +12,6 @@ if (!defined('__UI_BOOTSTRAP__')) {
   $candidates = [
     $APP_ROOT.'/_ui_bootstrap.php',                 // <— root del sito (consigliato)
     $APP_ROOT.'/var/www/_ui_bootstrap.php',         // se l’hai messo in una sottocartella var/www del progetto
-    '/home/kt4p82hv/allerto.it/_ui_bootstrap.php',  // path assoluto root sito
-    '/var/www/_ui_bootstrap.php',                   // path assoluto “classico” (ma nel tuo caso non c’è)
   ];
 
   foreach ($candidates as $p) {
