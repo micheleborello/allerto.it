@@ -16,16 +16,11 @@ jobs:
       - name: Deploy via SFTP
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          server: ${{ secrets.FTP_HOST }}   # host o IP
-          username: ${{ secrets.FTP_USER }} # utente SFTP
-          password: ${{ secrets.FTP_PASS }} # password SFTP
-          port: ${{ secrets.FTP_PORT }}     # tipicamente 22
+          server: ${{ secrets.FTP_HOST }}      # host o IP
+          username: ${{ secrets.FTP_USER }}    # utente SFTP
+          password: ${{ secrets.FTP_PASS }}    # password SFTP
+          port: ${{ secrets.FTP_PORT }}        # tipicamente 22
           local_path: "./"
           remote_path: ${{ secrets.REMOTE_DIR }}
-          delete: false
-          exclude: >
-            **/.git*,
-            **/.github/**,
-            **/node_modules/**,
-            **/vendor/**,
-            config.local.php
+          delete_remote_files: false           # non cancellare file remoti
+          sftpArgs: "-o StrictHostKeyChecking=no"
