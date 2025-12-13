@@ -154,12 +154,15 @@ $monthEnd   = $rifYmDT ? (clone $rifYmDT)->modify('last day of this month')->for
 // Etichetta mese per i pulsanti/report
 $mesiTxt = [1=>'gennaio',2=>'febbraio',3=>'marzo',4=>'aprile',5=>'maggio',6=>'giugno',7=>'luglio',8=>'agosto',9=>'settembre',10=>'ottobre',11=>'novembre',12=>'dicembre'];
 $meseLabel = '';
+$meseNextLabel = '';
 if ($rifYmDT) {
   $meseLabel = strtolower($mesiTxt[(int)$rifYmDT->format('n')] ?? '');
+  $next = (clone $rifYmDT)->modify('+1 month');
+  $meseNextLabel = strtolower($mesiTxt[(int)$next->format('n')] ?? '');
 }
 
 /* ======= Dati JSON (tenant-aware) ======= */
-$vigili = array_values(array_filter(load_json(VIGILI_JSON), fn($v)=> (int)($v['attivo'] ?? 1) === 1));
+$vigili = array_values(array_filter(sanitize_vigili_list(load_json(VIGILI_JSON)), fn($v)=> (int)($v['attivo'] ?? 1) === 1));
 $add    = load_json(ADDESTR_JSON);
 
 // Infortuni → mappa [vid] => [[dal, al], ...]
@@ -412,7 +415,7 @@ $defaultBody    = "Buongiorno\n\ncon la presente sono ad inviare in allegato il 
           formmethod="get"
           formtarget="_blank"
           class="btn btn-sm btn-danger fw-semibold">
-    PDF operatività Distaccamento<?php echo $meseLabel ? ' — mese di '.$meseLabel : ''; ?>
+    PDF operatività Distaccamento<?php echo $meseNextLabel ? ' — mese di '.$meseNextLabel : ''; ?>
   </button>
 
   <!-- PDF MENSILE con esclusioni -->
