@@ -18,7 +18,15 @@ if (session_status() === PHP_SESSION_NONE) @session_start();
 /* ===== SLUG ===== */
 $slug = $_GET['slug']
   ?? ($_SESSION['tenant_slug'] ?? (function_exists('tenant_active_slug') ? tenant_active_slug() : ''));
+// fallback: prova storage_current_tenant o cookie "caserma"
+if ($slug === '' && function_exists('storage_current_tenant')) {
+  $slug = storage_current_tenant();
+}
+if ($slug === '' && isset($_COOKIE['caserma'])) {
+  $slug = (string)$_COOKIE['caserma'];
+}
 $slug = preg_replace('/[^a-z0-9_-]/i','', (string)$slug);
+if ($slug === '') { $slug = 'default'; }
 
 /* ===== BASE DIR ===== */
 if (!defined('DATA_DIR')) {
