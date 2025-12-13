@@ -24,8 +24,12 @@ jobs:
           server-dir: ${{ secrets.REMOTE_DIR }}/
           log-level: minimal
           exclude: |
-            **/.git*
+            **/.git/**
+            **/.git*/**
             **/.github/**
             **/node_modules/**
             **/vendor/**
+            **/logs/**
+            **/var/**
+            **/*.zip
             config.local.php
