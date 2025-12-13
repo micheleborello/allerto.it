@@ -1,0 +1,356 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "366-9802958"
+        },
+        "indirizzo": {
+            "via": "VIA CARMAGNOLA 38",
+            "cap": "10040",
+            "comune": "PRALORMO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-14",
+            "visita_medica": "2027-07-14"
+        },
+        "patenti": []
+    },
+    "2": {
+        "contatti": {
+            "telefono": "011-6471950",
+            "telefono1": "335-1046227",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA MONTEGRAPPA  21/BIS",
+            "cap": "10020",
+            "comune": "MONCALIERI"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-03-11",
+            "visita_medica": "2027-09-11"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "329-4695818"
+        },
+        "indirizzo": {
+            "via": "VIA ASTI 35",
+            "cap": "10026",
+            "comune": "SANTENA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-08-08",
+            "visita_medica": "2027-02-08"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "349-5503780"
+        },
+        "indirizzo": {
+            "via": "VIA VITTORIO VENETO 9",
+            "cap": "10028",
+            "comune": "TROFARELLO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-18",
+            "visita_medica": "2027-04-18"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "5": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-1987471"
+        },
+        "indirizzo": {
+            "via": "VIA DELLA MARGHERITA 2",
+            "cap": "10046",
+            "comune": "POIRINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-08-02",
+            "visita_medica": "2027-02-02"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "6": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "342-5966588"
+        },
+        "indirizzo": {
+            "via": "VIA SAN PIETRO 4",
+            "cap": "10028",
+            "comune": "TROFARELLO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-14",
+            "visita_medica": "2027-07-14"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "7": {
+        "contatti": {
+            "telefono": "389-1730297",
+            "telefono1": "-",
+            "telefono2": "333-8672524"
+        },
+        "indirizzo": {
+            "via": "VIA PASCOLI 9",
+            "cap": "10026",
+            "comune": "SANTENA"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-17",
+            "visita_medica": "2027-03-17"
+        },
+        "patenti": []
+    },
+    "8": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "338-4103270"
+        },
+        "indirizzo": {
+            "via": "CORSO SAVONA 137",
+            "cap": "10024",
+            "comune": "MONCALIERI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-29",
+            "visita_medica": "2027-04-29"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "9": {
+        "contatti": {
+            "telefono": "347-4219161",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "STRADA CAMBIANO 208",
+            "cap": "10023",
+            "comune": "CHIERI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-11",
+            "visita_medica": "2027-04-11"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "10": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "338-4182424"
+        },
+        "indirizzo": {
+            "via": "VIA PIAVE,24",
+            "cap": "10028",
+            "comune": "TROFARELLO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-28",
+            "visita_medica": "2027-05-28"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "11": {
+        "contatti": {
+            "telefono": "011-8111236",
+            "telefono1": "333-3233272",
+            "telefono2": "392-8627408"
+        },
+        "indirizzo": {
+            "via": "VIA CHIERI 50",
+            "cap": "10025",
+            "comune": "PINO TORINESE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-07",
+            "visita_medica": "2027-05-07"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "12": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "345-2388766"
+        },
+        "indirizzo": {
+            "via": "VIA PIAVE 52",
+            "cap": "10028",
+            "comune": "TROFARELLO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-02-24",
+            "visita_medica": "2026-08-24"
+        },
+        "patenti": []
+    },
+    "13": {
+        "contatti": {
+            "telefono": "377-922532",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIALE ROMA 6",
+            "cap": "10024",
+            "comune": "CAMBIANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-10",
+            "visita_medica": "2027-06-10"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "14": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-6888023"
+        },
+        "indirizzo": {
+            "via": "VIA MODIGLIANI 33",
+            "cap": "10026",
+            "comune": "SANTENA"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-29",
+            "visita_medica": "2027-04-29"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "15": {
+        "contatti": {
+            "telefono": "011-9493407",
+            "telefono1": "331-6888020",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA BADINI 42",
+            "cap": "10026",
+            "comune": "SANTENA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-17",
+            "visita_medica": "2027-04-17"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "16": {
+        "contatti": {
+            "telefono": "338-6726998",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA VITTORIO VENETO 9",
+            "cap": "10026",
+            "comune": "SANTENA"
+        },
+        "grado": "FTAV.",
+        "scadenze": {
+            "visita_medica_ultima": "2016-10-17",
+            "visita_medica": "2019-04-17"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "17": {
+        "contatti": {
+            "telefono": "011-9490894",
+            "telefono1": "339-4366440",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "BORGATA GHIONI 8",
+            "cap": "12046",
+            "comune": "MONTA'"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2016-10-03",
+            "visita_medica": "2019-04-03"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "18": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "342-6141277"
+        },
+        "indirizzo": {
+            "via": "VIALE ARMANDO DIAZ 9",
+            "cap": "10023",
+            "comune": "CHIERI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-29",
+            "visita_medica": "2027-04-29"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    }
+}

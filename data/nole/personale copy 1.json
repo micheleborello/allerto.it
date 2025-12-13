@@ -1,0 +1,1151 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "3346616444",
+            "email": "borelloeferrari@gmail.com",
+            "telefono1": "-",
+            "telefono2": "334-6616444"
+        },
+        "indirizzo": {
+            "via": "via villa, 52",
+            "cap": "10070",
+            "comune": "Villanova Canavese"
+        },
+        "ingresso": "2000-02-15",
+        "uscita": "",
+        "idoneita": "operativo",
+        "patenti": [
+            "3° grado"
+        ],
+        "abilitazioni": [],
+        "scadenze": {
+            "visita_medica": "2026-02-07",
+            "patente_b": "",
+            "visita_medica_ultima": "2023-08-07"
+        },
+        "note": "",
+        "data_nascita": "1978-01-06",
+        "grado": "FTAV.",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file": "data/nole/uploads/doc_identita/classic-line_20250819_193243.png",
+            "file_fronte": "data/nole/uploads/doc_identita/CARTA_IDENTITA_MICHELE_BORELLO_FRONTE_20251003_162722.jpg",
+            "file_retro": "data/nole/uploads/doc_identita/CARTA_IDENTITA_BORELLO_MICHELE_RETRO_20251003_162722.jpg"
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "file": "data/nole/uploads/patente_civile/Logo2-400x182_20250819_193243.png",
+            "categorie": [
+                "AM",
+                "B",
+                "C",
+                "D"
+            ],
+            "file_fronte": "data/nole/uploads/patente_civile/PATENTE_CIVILE_MICHELE_BORELLO_FRONTE_20251003_162722.jpg",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "data/nole/uploads/patente_ministeriale/pat.min.fronte_Borello_20251003_162722.jpg",
+        "abilitazioni_dettaglio": [],
+        "dpi": [],
+        "patente_ministeriale": {
+            "file_fronte": "data/nole/uploads/patente_ministeriale/pat.min.fronte_Borello_20251003_162722.jpg",
+            "file_retro": "data/nole/uploads/patente_ministeriale/pat.min.retro_Borello_20251003_162722.jpg"
+        }
+    },
+    "2": {
+        "contatti": {
+            "telefono": "-",
+            "email": "cavgio65@virgilio.it",
+            "telefono1": "-",
+            "telefono2": "348-6642214"
+        },
+        "indirizzo": {
+            "via": "VIA CIAMARELLA 13",
+            "cap": "10073",
+            "comune": "CIRIE'"
+        },
+        "scadenze": {
+            "visita_medica": "2027-06-10",
+            "patente_b": "",
+            "visita_medica_ultima": "2024-12-10"
+        },
+        "ingresso": "2007-06-15",
+        "uscita": "",
+        "idoneita": "operativo",
+        "patenti": [
+            "1° grado"
+        ],
+        "abilitazioni": [],
+        "data_nascita": "1965-04-24",
+        "grado": "VIG.",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "data/nole/uploads/patente_ministeriale/Pat_Cavaliere_fronte_20250909_092633.jpeg",
+        "abilitazioni_dettaglio": [
+            {
+                "nome": "pat 1° grado retro",
+                "numero": "50460",
+                "scadenza": "2030-03-12",
+                "file": "data/nole/uploads/abilitazioni/Pat_Cavaliere_Retro_20250909_092633.jpeg"
+            }
+        ],
+        "dpi": [],
+        "note": "",
+        "patente_ministeriale": {
+            "file_fronte": "data/nole/uploads/patente_ministeriale/Pat_Cavaliere_fronte_20250909_092633.jpeg",
+            "file_retro": "data/nole/uploads/patente_ministeriale/Pat_Cavaliere_Retro_20250909_105141.jpeg"
+        }
+    },
+    "3": {
+        "contatti": {
+            "telefono": "011-9240726",
+            "email": "",
+            "telefono1": "347-483146",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "BORGATA REMONDATO 105",
+            "cap": "10070",
+            "comune": "ROCCA CANAVESE"
+        },
+        "scadenze": {
+            "visita_medica": "2027-05-19",
+            "patente_b": "2030-03-12",
+            "visita_medica_ultima": "2024-11-19"
+        },
+        "ingresso": "",
+        "uscita": "",
+        "idoneita": "operativo",
+        "patenti": [
+            "1° grado"
+        ],
+        "abilitazioni": [],
+        "data_nascita": "1975-04-03",
+        "grado": "VIG.",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "data/nole/uploads/patente_ministeriale/Pat_unet_fonte_20250909_091921.jpeg",
+        "abilitazioni_dettaglio": [
+            {
+                "nome": "Patente ministeriale retro",
+                "numero": "50605",
+                "scadenza": "2030-03-12",
+                "file": "data/nole/uploads/abilitazioni/Pat_Unet_Retro_20250909_091921.jpeg"
+            }
+        ],
+        "dpi": [],
+        "note": "",
+        "patente_ministeriale": {
+            "file_fronte": "data/nole/uploads/patente_ministeriale/Pat_unet_fonte_20250909_091921.jpeg",
+            "file_retro": "data/nole/uploads/patente_ministeriale/Pat_Unet_Retro_20250909_105219.jpeg"
+        }
+    },
+    "12": {
+        "contatti": {
+            "telefono": "+393351613350",
+            "email": "fabio.lagana@gmail.com"
+        },
+        "indirizzo": {
+            "via": "Strada Grosso 1A",
+            "cap": "10076",
+            "comune": "Nole"
+        },
+        "scadenze": {
+            "visita_medica": "",
+            "patente_b": ""
+        },
+        "ingresso": "2010-04-30",
+        "uscita": "",
+        "idoneita": "operativo",
+        "patenti": [
+            "1° grado"
+        ],
+        "abilitazioni": [],
+        "data_nascita": "1976-05-03",
+        "grado": "VIG.",
+        "grado_numero": "12685",
+        "documento_identita": {
+            "tipo": "CI",
+            "numero": "CA86485JF",
+            "scadenza": "2032-05-03",
+            "file": "data/nole/uploads/doc_identita/CIE-Fabio_Laganà_20250829_102817.pdf",
+            "file_fronte": "data/nole/uploads/doc_identita/CIE-Fabio_Laganà_20250829_102817.pdf",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "U19M40672N",
+            "scadenza": "2030-05-03",
+            "categorie": [],
+            "file": "data/nole/uploads/patente_civile/PAT_Fabio_Lagana_20250829_102817.pdf",
+            "file_fronte": "data/nole/uploads/patente_civile/PAT_Fabio_Lagana_20250829_102817.pdf",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "",
+        "abilitazioni_dettaglio": [],
+        "dpi": [],
+        "note": "",
+        "patente_ministeriale": {
+            "file_fronte": "",
+            "file_retro": ""
+        }
+    },
+    "13": {
+        "contatti": {
+            "telefono": "011-9297716",
+            "email": "",
+            "telefono1": "340-9297494",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA CIRCONVALLAZIONE 32",
+            "cap": "10076",
+            "comune": "NOLE"
+        },
+        "scadenze": {
+            "visita_medica": "2027-03-03",
+            "patente_b": "2029-09-26",
+            "visita_medica_ultima": "2024-09-03"
+        },
+        "ingresso": "",
+        "uscita": "",
+        "idoneita": "operativo",
+        "patenti": [
+            "1° grado"
+        ],
+        "abilitazioni": [],
+        "data_nascita": "1985-11-08",
+        "grado": "VIG.",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "data/nole/uploads/patente_ministeriale/Pat_palma_Fronte_20250909_092435.jpeg",
+        "abilitazioni_dettaglio": [
+            {
+                "nome": "patente 1° grado retro",
+                "numero": "50559",
+                "scadenza": "2029-09-26",
+                "file": "data/nole/uploads/abilitazioni/Pat_Palma_Retro_20250909_092435.jpeg"
+            }
+        ],
+        "dpi": [],
+        "note": "",
+        "patente_ministeriale": {
+            "file_fronte": "data/nole/uploads/patente_ministeriale/Pat_palma_Fronte_20250909_092435.jpeg",
+            "file_retro": "data/nole/uploads/patente_ministeriale/Pat_Palma_Retro_20250909_105202.jpeg"
+        }
+    },
+    "14": {
+        "contatti": {
+            "telefono": "-",
+            "email": "",
+            "telefono1": "-",
+            "telefono2": "327-7591108"
+        },
+        "indirizzo": {
+            "via": "VIA DEI GELSI 3",
+            "cap": "10076",
+            "comune": "NOLE"
+        },
+        "scadenze": {
+            "visita_medica": "2027-08-18",
+            "patente_b": "",
+            "visita_medica_ultima": "2025-02-18"
+        },
+        "ingresso": "2023-06-15",
+        "uscita": "",
+        "idoneita": "operativo",
+        "patenti": [
+            "1° grado"
+        ],
+        "abilitazioni": [],
+        "note": "",
+        "data_nascita": "1998-05-14",
+        "grado": "VIG.",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "TO6425978P",
+            "scadenza": "",
+            "categorie": [
+                "B"
+            ],
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "",
+        "abilitazioni_dettaglio": [],
+        "dpi": [],
+        "patente_ministeriale": {
+            "file_fronte": "",
+            "file_retro": ""
+        }
+    },
+    "16": {
+        "contatti": {
+            "telefono": "011-9202036",
+            "email": "",
+            "telefono1": "347-1686670",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA GIOVANNI MUSSA 16",
+            "cap": "10072",
+            "comune": "CASELLE TORINESE"
+        },
+        "scadenze": {
+            "visita_medica": "2027-04-15",
+            "patente_b": "2029-12-02",
+            "visita_medica_ultima": "2024-10-15"
+        },
+        "ingresso": "",
+        "uscita": "",
+        "idoneita": "operativo",
+        "patenti": [
+            "1° grado"
+        ],
+        "abilitazioni": [],
+        "data_nascita": "1976-08-06",
+        "grado": "VIG.",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "data/nole/uploads/patente_ministeriale/Pat_Cosma_fronte_20250909_092257.jpeg",
+        "abilitazioni_dettaglio": [
+            {
+                "nome": "Patente 1° grado retro",
+                "numero": "52652",
+                "scadenza": "2029-12-02",
+                "file": "data/nole/uploads/abilitazioni/Pat_Cosma_Retro_20250909_092257.jpeg"
+            }
+        ],
+        "dpi": [],
+        "note": "",
+        "patente_ministeriale": {
+            "file_fronte": "data/nole/uploads/patente_ministeriale/Pat_Cosma_fronte_20250909_092257.jpeg",
+            "file_retro": "data/nole/uploads/patente_ministeriale/Pat_Cosma_Retro_20250909_105237.jpeg"
+        }
+    },
+    "21": {
+        "contatti": {
+            "telefono": "-",
+            "email": "",
+            "telefono1": "-",
+            "telefono2": "371-4261776"
+        },
+        "indirizzo": {
+            "via": "VIA CIRCONVALAZIONE 32",
+            "cap": "10076",
+            "comune": "NOLE"
+        },
+        "scadenze": {
+            "visita_medica": "2027-07-21",
+            "patente_b": "",
+            "visita_medica_ultima": "2025-01-21"
+        },
+        "ingresso": "",
+        "uscita": "",
+        "idoneita": "non_operativo",
+        "patenti": [],
+        "abilitazioni": [],
+        "note": "",
+        "data_nascita": "",
+        "grado": "VIG.",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "",
+        "abilitazioni_dettaglio": [],
+        "dpi": [],
+        "patente_ministeriale": {
+            "file_fronte": "",
+            "file_retro": ""
+        }
+    },
+    "22": {
+        "contatti": {
+            "telefono": "",
+            "email": ""
+        },
+        "indirizzo": {
+            "via": "",
+            "cap": "",
+            "comune": ""
+        },
+        "scadenze": {
+            "visita_medica": "",
+            "patente_b": ""
+        },
+        "ingresso": "",
+        "uscita": "",
+        "idoneita": "non_operativo",
+        "patenti": [],
+        "abilitazioni": [],
+        "note": "",
+        "data_nascita": "",
+        "grado": "VIG.",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "",
+        "abilitazioni_dettaglio": [],
+        "dpi": [],
+        "patente_ministeriale": {
+            "file_fronte": "",
+            "file_retro": ""
+        }
+    },
+    "20": {
+        "contatti": {
+            "telefono": "011-9243267",
+            "telefono1": "-",
+            "telefono2": "349-1022213",
+            "email": ""
+        },
+        "indirizzo": {
+            "via": "BORGATA SAN ROCCO,23/BIS",
+            "cap": "10070",
+            "comune": "ROCCA CANAVESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-21",
+            "visita_medica": "2027-07-21",
+            "patente_b": "2028-11-08"
+        },
+        "patenti": [
+            "3° grado"
+        ],
+        "ingresso": "2010-06-30",
+        "uscita": "",
+        "idoneita": "operativo",
+        "abilitazioni": [
+            "L.I.F.M",
+            "BLSD",
+            "Alto RIschio"
+        ],
+        "data_nascita": "1988-12-18",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file_fronte": "data/nole/uploads/doc_identita/CARTA_IDENTITA_FRONTE_CARESIO_MARCO_20251003_164752.jpg",
+            "file_retro": "data/nole/uploads/doc_identita/CARTA_IDENTITA_RETRO_CARESIO_MARCO_20251003_164752.jpg"
+        },
+        "patente_civile": {
+            "numero": "U1W739621N",
+            "scadenza": "",
+            "categorie": [
+                "B",
+                "BE",
+                "C",
+                "CE",
+                "D",
+                "DE"
+            ],
+            "file_fronte": "data/nole/uploads/patente_civile/PATENTE_CIVILE_FRONTE_CARESIO_MARCO_20251003_164752.jpg",
+            "file_retro": "data/nole/uploads/patente_civile/PATENTE_CIVILE_RETROCARESIO_MARCO_20251003_164752.jpg"
+        },
+        "patente_ministeriale": {
+            "file_fronte": "data/nole/uploads/patente_ministeriale/PATENTE_MINISTERIALE_FRONTE_CARESIO_MARCO_20251003_164752.jpg",
+            "file_retro": "data/nole/uploads/patente_ministeriale/PATENTE_MINISTERIALE_RETRO_CARESIO_MARCO_20251003_164752.jpg"
+        },
+        "patente_ministeriale_file": "data/nole/uploads/patente_ministeriale/PATENTE_MINISTERIALE_FRONTE_CARESIO_MARCO_20251003_164752.jpg",
+        "abilitazioni_dettaglio": [
+            {
+                "nome": "L.I.F.M.",
+                "numero": "CITY 120-APS 190 ZF- ATECO 120 -ABP MAN 4000-ABP MAN 7700- RENAULT 33546",
+                "scadenza": "",
+                "file": ""
+            },
+            {
+                "nome": "BLSD",
+                "numero": "96928",
+                "scadenza": "2021-03-18",
+                "file": "data/nole/uploads/abilitazioni/TESSERINO_BLSDCARESIO_MARCO_20251003_164752.jpg"
+            },
+            {
+                "nome": "Alto Rischio",
+                "numero": "006979/17",
+                "scadenza": "",
+                "file": ""
+            }
+        ],
+        "dpi": [
+            {
+                "item": "Antifiamma",
+                "taglia": "XL",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "Pantanomex",
+                "taglia": "XL",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "Guanti",
+                "taglia": "10",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "Completo Antipioggia",
+                "taglia": "XL",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "Giacca divisa invernale",
+                "taglia": "XL",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "Pantaloni divisa invernale",
+                "taglia": "58",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "Giacca divisa estiva",
+                "taglia": "58",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "Pantaloni divisa Estiva",
+                "taglia": "58",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "Maglione rosso",
+                "taglia": "5",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "maglione verde",
+                "taglia": "5",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "polo rossa",
+                "taglia": "5",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "Anfibi",
+                "taglia": "43",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "stivali bassi",
+                "taglia": "43",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "stivali tutta coscia",
+                "taglia": "43",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "fregi di qualifica",
+                "taglia": "",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "cinturone",
+                "taglia": "",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "elmetto",
+                "taglia": "nero",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "sottocasco",
+                "taglia": "",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "pila",
+                "taglia": "",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            }
+        ],
+        "note": ""
+    },
+    "4": {
+        "contatti": {
+            "telefono": "011-92961556",
+            "telefono1": "347-2992633",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "STRADA GROSSO 10",
+            "cap": "10076",
+            "comune": "NOLE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-03",
+            "visita_medica": "2027-06-03"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "7": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "347-8346364"
+        },
+        "indirizzo": {
+            "via": "STRADA GROSSO 10",
+            "cap": "10076",
+            "comune": "NOLE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-25",
+            "visita_medica": "2027-08-25"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "15": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "347-2299486"
+        },
+        "indirizzo": {
+            "via": "VIA BIELLA 4",
+            "cap": "10077",
+            "comune": "SAN MAURIZIO CANAVESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-19",
+            "visita_medica": "2027-05-19"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "23": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "349-5182755"
+        },
+        "indirizzo": {
+            "via": "LOCALITA' CASE POL 5",
+            "cap": "10073",
+            "comune": "CIRIE'"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-05",
+            "visita_medica": "2027-05-05"
+        },
+        "patenti": []
+    },
+    "24": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "366-5776015",
+            "telefono2": "335-1613350"
+        },
+        "indirizzo": {
+            "via": "STRADA GROSSO,1 A",
+            "cap": "10076",
+            "comune": "NOLE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-11",
+            "visita_medica": "2027-08-11"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "9": {
+        "contatti": {
+            "telefono": "011-9298508",
+            "telefono1": "-",
+            "telefono2": "346-0854449"
+        },
+        "indirizzo": {
+            "via": "VIA CAMPANELLE 3",
+            "cap": "10075",
+            "comune": "MATHI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-22",
+            "visita_medica": "2027-04-22"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "25": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "348-5730864"
+        },
+        "indirizzo": {
+            "via": "VIA GUGLIELMO MARCONI 7",
+            "cap": "10073",
+            "comune": "CIRIE'"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-03",
+            "visita_medica": "2027-03-03"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "19": {
+        "contatti": {
+            "telefono": "011-9268420",
+            "telefono1": "349-3480136",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA SAN MICHELE 7",
+            "cap": "10070",
+            "comune": "GROSSO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-15",
+            "visita_medica": "2027-04-15"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "10": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "348-6273140"
+        },
+        "indirizzo": {
+            "via": "VIA BEPPE FENOGLIO 25",
+            "cap": "10073",
+            "comune": "CIRIE'"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-08",
+            "visita_medica": "2027-04-08"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "18": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "340-3017339"
+        },
+        "indirizzo": {
+            "via": "VIA REPUBBLICA 26",
+            "cap": "10075",
+            "comune": "MATHI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-12",
+            "visita_medica": "2027-05-12"
+        },
+        "patenti": [
+            "2° grado"
+        ]
+    },
+    "6": {
+        "contatti": {
+            "telefono": "347-2543347",
+            "telefono1": "-",
+            "telefono2": "331-1987414",
+            "email": ""
+        },
+        "indirizzo": {
+            "via": "VIA EXILLES 70 PIANO 3? -NUI 8",
+            "cap": "10146",
+            "comune": "TORINO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-29",
+            "visita_medica": "2027-04-29",
+            "patente_b": ""
+        },
+        "patenti": [
+            "3° grado"
+        ],
+        "ingresso": "",
+        "uscita": "",
+        "idoneita": "operativo",
+        "abilitazioni": [
+            "foglio guida 2025"
+        ],
+        "data_nascita": "",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [
+                "A",
+                "B"
+            ],
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale": {
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "",
+        "abilitazioni_dettaglio": [
+            {
+                "nome": "foglio di guida per attesa patente 10/10/25",
+                "numero": "",
+                "scadenza": "",
+                "file": "data/nole/uploads/abilitazioni/SALDI_M._-_FOGLIO_DI_GUIDA_signed_20251010_105926.pdf"
+            }
+        ],
+        "dpi": [],
+        "note": ""
+    },
+    "5": {
+        "contatti": {
+            "telefono": "011-9297180",
+            "telefono1": "347-1229413",
+            "telefono2": "-",
+            "email": ""
+        },
+        "indirizzo": {
+            "via": "VIA MARTIRI DELLA LIBERTA' 1",
+            "cap": "10070",
+            "comune": "VILLANOVA CANAVESE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-15",
+            "visita_medica": "2027-04-15",
+            "patente_b": ""
+        },
+        "patenti": [
+            "3° grado"
+        ],
+        "ingresso": "",
+        "uscita": "",
+        "idoneita": "operativo",
+        "abilitazioni": [
+            "foglio guida 2025"
+        ],
+        "data_nascita": "",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale": {
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "",
+        "abilitazioni_dettaglio": [
+            {
+                "nome": "foglio di guida per attesa patente 10/10/25",
+                "numero": "",
+                "scadenza": "",
+                "file": "data/nole/uploads/abilitazioni/SOFFIETTI_-_FOGLIO_DI_GUIDA_signed_20251010_105952.pdf"
+            }
+        ],
+        "dpi": [],
+        "note": ""
+    },
+    "11": {
+        "contatti": {
+            "telefono": "338-9063958",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "LOCALITA SANT'APOLLONIA 4",
+            "cap": "10070",
+            "comune": "SAN CARLO CANAVESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-12",
+            "visita_medica": "2027-05-12"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "17": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "347-9125029"
+        },
+        "indirizzo": {
+            "via": "VIA EUROPA 24",
+            "cap": "10076",
+            "comune": "NOLE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-25",
+            "visita_medica": "2027-08-25"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "8": {
+        "contatti": {
+            "telefono": "3485730864",
+            "email": "ivan.maggiolino@gmail.com"
+        },
+        "indirizzo": {
+            "via": "via Marconi 7",
+            "cap": "10073",
+            "comune": "ciriè"
+        },
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "U1924B191C",
+            "scadenza": "2029-10-29",
+            "categorie": [
+                "A",
+                "B",
+                "C"
+            ],
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale": {
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "scadenze": {
+            "patente_b": "2029-04-08"
+        },
+        "dpi": [],
+        "abilitazioni_dettaglio": [],
+        "data_nascita": "1978-10-23",
+        "grado_numero": "8773",
+        "patenti": [
+            "3° grado"
+        ],
+        "abilitazioni": [],
+        "note": ""
+    }
+}

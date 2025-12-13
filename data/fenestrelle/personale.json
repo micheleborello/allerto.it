@@ -1,0 +1,116 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "366-188830"
+        },
+        "indirizzo": {
+            "via": "VIA CADUTI DELLA LIBERTA' 4",
+            "cap": "10060",
+            "comune": "PINASCA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-11-07",
+            "visita_medica": "2026-05-07"
+        },
+        "patenti": []
+    },
+    "2": {
+        "contatti": {
+            "telefono": "0121-83088",
+            "telefono1": "-",
+            "telefono2": "346-7328053"
+        },
+        "indirizzo": {
+            "via": "VIA NAZIONALE 16",
+            "cap": "10060",
+            "comune": "FENESTRELLE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-15",
+            "visita_medica": "2027-04-15"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "0121-842980",
+            "telefono1": "-",
+            "telefono2": "342-8279239"
+        },
+        "indirizzo": {
+            "via": "VIA MAESTRA 17 - FRAZ.BALMA",
+            "cap": "10060",
+            "comune": "ROURE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-04-23",
+            "visita_medica": "2026-10-23"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "338-1800081"
+        },
+        "indirizzo": {
+            "via": "VIA DELLE GURE 1",
+            "cap": "10060",
+            "comune": "FENESTRELLE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-04-23",
+            "visita_medica": "2026-10-23"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "5": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "345-522507"
+        },
+        "indirizzo": {
+            "via": "VIA SAVOIA 12",
+            "cap": "10063",
+            "comune": "PEROSA ARGENTINA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-11-07",
+            "visita_medica": "2026-05-07"
+        },
+        "patenti": []
+    },
+    "6": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-2755214"
+        },
+        "indirizzo": {
+            "via": "VIA DEL FORTE 1",
+            "cap": "10060",
+            "comune": "FENESTRELLE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-03-25",
+            "visita_medica": "2027-09-25"
+        },
+        "patenti": []
+    }
+}

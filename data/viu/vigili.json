@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "nome": "ENRICO",
+        "cognome": "PERAUDO",
+        "cf": "PRDNRC77D10C722F",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "peraudo.enrico"
+    },
+    {
+        "id": 2,
+        "nome": "FRANCO DOMENICO",
+        "cognome": "SAPETTI",
+        "cf": "SPTFNC69H06E445Y",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "sapetti.franco.domenico"
+    },
+    {
+        "id": 3,
+        "nome": "WALTER",
+        "cognome": "TORDELLA",
+        "cf": "TRDWTR76E19L219B",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "tordella.walter"
+    },
+    {
+        "id": 4,
+        "nome": "MIRELLA",
+        "cognome": "VEGLIA",
+        "cf": "VGLMLL83A55L219W",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "veglia.mirella"
+    }
+]

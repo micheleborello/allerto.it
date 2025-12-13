@@ -1,0 +1,80 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "0123-697702",
+            "telefono1": "328-2867665",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "FRAZIONE MOLLAR MICHELE 28 BIS",
+            "cap": "10070",
+            "comune": "VIU'"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-29",
+            "visita_medica": "2027-05-29"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "2": {
+        "contatti": {
+            "telefono": "0123-680940",
+            "telefono1": "-",
+            "telefono2": "338-6872272"
+        },
+        "indirizzo": {
+            "via": "VIA TORINO 76/BIS",
+            "cap": "10070",
+            "comune": "LEMIE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-15",
+            "visita_medica": "2027-04-15"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "346-6843694"
+        },
+        "indirizzo": {
+            "via": "FRAZIONE FUCINE N. 5",
+            "cap": "10070",
+            "comune": "VIU'"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-15",
+            "visita_medica": "2027-04-15"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "346-6842643"
+        },
+        "indirizzo": {
+            "via": "VIA ENZO GAI 4",
+            "cap": "10093",
+            "comune": "COLLEGNO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-15",
+            "visita_medica": "2027-04-15"
+        },
+        "patenti": []
+    }
+}

@@ -1,0 +1,236 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "0122-96647",
+            "telefono1": "-",
+            "telefono2": "335-8085839"
+        },
+        "indirizzo": {
+            "via": "FRAZIONE MILLAURES 31",
+            "cap": "10052",
+            "comune": "BARDONECCHIA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-29",
+            "visita_medica": "2027-04-29"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "2": {
+        "contatti": {
+            "telefono": "0122-980314",
+            "telefono1": "348-3659017",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "FRAZIONE MELEZET 28",
+            "cap": "10052",
+            "comune": "BARDONECCHIA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-12",
+            "visita_medica": "2027-05-12"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "0122-852327",
+            "telefono1": "-",
+            "telefono2": "333-6523084"
+        },
+        "indirizzo": {
+            "via": "VIALE BRAMAFAM 37",
+            "cap": "10052",
+            "comune": "BARDONECCHIA"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-10",
+            "visita_medica": "2027-03-10"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "339-3986756"
+        },
+        "indirizzo": {
+            "via": "C.SO FREYUS 6/5 INT. A",
+            "cap": "10056",
+            "comune": "OULX"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-10",
+            "visita_medica": "2027-03-10"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "5": {
+        "contatti": {
+            "telefono": "351-5456483",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA GENOVA 2",
+            "cap": "10052",
+            "comune": "BARDONECCHIA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-10",
+            "visita_medica": "2027-03-10"
+        },
+        "patenti": []
+    },
+    "6": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "339-1392133"
+        },
+        "indirizzo": {
+            "via": "VIA EINAUDI 23",
+            "cap": "10052",
+            "comune": "BARDONECCHIA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-05-07",
+            "visita_medica": "2026-11-07"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "7": {
+        "contatti": {
+            "telefono": "0122-901488",
+            "telefono1": "-",
+            "telefono2": "366-5301961"
+        },
+        "indirizzo": {
+            "via": "FRAZ. MILLAURES 38",
+            "cap": "10052",
+            "comune": "BARDONECCHIA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-10",
+            "visita_medica": "2027-03-10"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "8": {
+        "contatti": {
+            "telefono": "0122-999876",
+            "telefono1": "335-6742012",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA STAZIONE 8/10",
+            "cap": "10052",
+            "comune": "BARDONECCHIA"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-21",
+            "visita_medica": "2027-07-21"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "9": {
+        "contatti": {
+            "telefono": "0122-901100",
+            "telefono1": "335-6377273",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "FRAZ. PLAN 13",
+            "cap": "10050",
+            "comune": "SALBERTRAND"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-10",
+            "visita_medica": "2027-03-10"
+        },
+        "patenti": []
+    },
+    "10": {
+        "contatti": {
+            "telefono": "0122-980075",
+            "telefono1": "-",
+            "telefono2": "335-6693872"
+        },
+        "indirizzo": {
+            "via": "VIA GIOLITTI 20",
+            "cap": "10052",
+            "comune": "BARDONECCHIA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-26",
+            "visita_medica": "2027-05-26"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "11": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "328-0362943"
+        },
+        "indirizzo": {
+            "via": "VIA EINAUDI 15/B",
+            "cap": "10052",
+            "comune": "BARDONECCHIA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-13",
+            "visita_medica": "2027-08-13"
+        },
+        "patenti": []
+    },
+    "12": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "334-9414555"
+        },
+        "indirizzo": {
+            "via": "BORGATA LES ARNAUDS 4",
+            "cap": "10052",
+            "comune": "BARDONECCHIA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-05-07",
+            "visita_medica": "2026-11-07"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    }
+}

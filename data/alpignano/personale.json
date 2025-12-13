@@ -1,0 +1,440 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "339-8628238"
+        },
+        "indirizzo": {
+            "via": "VIA CAVOUR,40/F",
+            "cap": "10091",
+            "comune": "ALPIGNANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-03-14",
+            "visita_medica": "2027-09-14"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "2": {
+        "contatti": {
+            "telefono": "000-0",
+            "telefono1": "347-2345616",
+            "telefono2": "331-6888144"
+        },
+        "indirizzo": {
+            "via": "VIA ILARIA ALPI 2",
+            "cap": "10044",
+            "comune": "PIANEZZA"
+        },
+        "grado": "FTAV.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-07-10",
+            "visita_medica": "2026-01-10"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "0122-622621",
+            "telefono1": "-",
+            "telefono2": "392-5252165"
+        },
+        "indirizzo": {
+            "via": "VIA AGHETTI 4",
+            "cap": "10050",
+            "comune": "MATTIE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-04-16",
+            "visita_medica": "2026-10-16"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "011-9678802",
+            "telefono1": "331-4964612",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA MAZZINI 34/B",
+            "cap": "10091",
+            "comune": "ALPIGNANO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-10",
+            "visita_medica": "2027-03-10"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "5": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "351-8663796"
+        },
+        "indirizzo": {
+            "via": "VIA CHIABERGE 64",
+            "cap": "10040",
+            "comune": "VAL DELLA TORRE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-04-01",
+            "visita_medica": "2027-10-01"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "6": {
+        "contatti": {
+            "telefono": "011-9566687",
+            "telefono1": "348-2410739",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA CAMBIANO 7/4",
+            "cap": "10098",
+            "comune": "RIVOLI"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-26",
+            "visita_medica": "2027-01-26"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "7": {
+        "contatti": {
+            "telefono": "011-488271",
+            "telefono1": "-",
+            "telefono2": "345-3780329"
+        },
+        "indirizzo": {
+            "via": "CORSO REGINA MARGHERITA 187",
+            "cap": "10144",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-24",
+            "visita_medica": "2027-03-24"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "8": {
+        "contatti": {
+            "telefono": "011-9677362",
+            "telefono1": "-",
+            "telefono2": "348-5930515"
+        },
+        "indirizzo": {
+            "via": "VIA TEOFILO ROSSI 5 LETT. E",
+            "cap": "10040",
+            "comune": "VAL DELLA TORRE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-17",
+            "visita_medica": "2027-03-17"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "9": {
+        "contatti": {
+            "telefono": "011-7392286",
+            "telefono1": "-",
+            "telefono2": "320-0682885"
+        },
+        "indirizzo": {
+            "via": "VIA TORELLE 26",
+            "cap": "10091",
+            "comune": "ALPIGNANO"
+        },
+        "grado": "FTAV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-23",
+            "visita_medica": "2027-01-23"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "10": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "347-2650169"
+        },
+        "indirizzo": {
+            "via": "VIA MACEDONIA 20",
+            "cap": "10093",
+            "comune": "COLLEGNO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-21",
+            "visita_medica": "2027-04-21"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "11": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "389-5315105"
+        },
+        "indirizzo": {
+            "via": "VIA GERMANO SOMMEILLER 12",
+            "cap": "10091",
+            "comune": "ALPIGNANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-03",
+            "visita_medica": "2027-03-03"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "12": {
+        "contatti": {
+            "telefono": "011-9943768",
+            "telefono1": "-",
+            "telefono2": "345-1085996"
+        },
+        "indirizzo": {
+            "via": "VIA SILVIO PELLICO 16 SCALA B",
+            "cap": "10100",
+            "comune": "TORINO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-26",
+            "visita_medica": "2027-05-26"
+        },
+        "patenti": []
+    },
+    "13": {
+        "contatti": {
+            "telefono": "339-8010092",
+            "telefono1": "-",
+            "telefono2": "366-5775661"
+        },
+        "indirizzo": {
+            "via": "VIA RIBERI N? 2",
+            "cap": "10091",
+            "comune": "ALPIGNANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-09-04",
+            "visita_medica": "2026-03-04"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "14": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "327-5622947"
+        },
+        "indirizzo": {
+            "via": "VIA AGHETTI 4",
+            "cap": "10050",
+            "comune": "MATTIE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-31",
+            "visita_medica": "2027-04-30"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "15": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "366-5775996"
+        },
+        "indirizzo": {
+            "via": "VIA S. MAURIZIO,25",
+            "cap": "10091",
+            "comune": "ALPIGNANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-22",
+            "visita_medica": "2027-04-22"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "16": {
+        "contatti": {
+            "telefono": "344-452470",
+            "telefono1": "-",
+            "telefono2": "347-4653477"
+        },
+        "indirizzo": {
+            "via": "VIA MONTE ROSA 1",
+            "cap": "10091",
+            "comune": "ALPIGNANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-03",
+            "visita_medica": "2027-06-03"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "17": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "338-7296031"
+        },
+        "indirizzo": {
+            "via": "VIA VERDI 18",
+            "cap": "10091",
+            "comune": "ALPIGNANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-25",
+            "visita_medica": "2027-08-25"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "18": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "393-6050075"
+        },
+        "indirizzo": {
+            "via": "VIA FIANO 24 P.01 N.04",
+            "cap": "10143",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-07-10",
+            "visita_medica": "2026-01-10"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "19": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "392-5879108"
+        },
+        "indirizzo": {
+            "via": "VIA CAROLINA SPANNA 31 - LETT.6 INT. 1",
+            "cap": "10095",
+            "comune": "GRUGLIASCO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-10",
+            "visita_medica": "2027-06-10"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "20": {
+        "contatti": {
+            "telefono": "011-0",
+            "telefono1": "334-6106743",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA GIUSEPPE MAZZINI 45",
+            "cap": "10091",
+            "comune": "ALPIGNANO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-05-14",
+            "visita_medica": "2026-11-14"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "21": {
+        "contatti": {
+            "telefono": "011-9672421",
+            "telefono1": "339-4541386",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIALE DELLE BETULLE 12",
+            "cap": "10051",
+            "comune": "AVIGLIANA"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-29",
+            "visita_medica": "2027-04-29"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "22": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "347-2482204"
+        },
+        "indirizzo": {
+            "via": "VIA BRUERE 94",
+            "cap": "10098",
+            "comune": "RIVOLI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-17",
+            "visita_medica": "2027-03-17"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    }
+}

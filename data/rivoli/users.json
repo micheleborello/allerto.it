@@ -1,0 +1,314 @@
+[
+    {
+        "username": "abeni.paolo",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "agueli.renato",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "arnosio.paolo",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "barbotto.marcellino",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "bassignana.alessandro",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "bassignana.giuseppe",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "bassignana.stefano",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "bellato.donatella",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "bellucci.alessandro",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "bertolo.gianni",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "bettolo.daniele",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "borghetto.giancarlo",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "chiambalero.federica",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "chiodo.giuseppe.alessandro",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "ciullo.cristopher",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "coccorullo.antonio",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "costa.andrea",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "de.filippis.paolo",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "di.dio.francesco",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "dilda.walter.giovanni",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "gerenzani.claudio.elio",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "giacobbe.stefano",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "giordano.stefano",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "girotto.christian",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "lamorte.gianluca",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "maggiulli.donato",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "mangione.stefano",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "marsaglia.cagnola.davide",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "noia.domenico",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "palmisano.davide",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "paradiso.alessandro",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "pegoraro.alessandro",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "rabufo.luca",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "saccotelli.alessandro.domenico",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "sainato.marcello",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "sebastiani.antonio",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "selvaggi.francesco",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "tarantini.alessandro",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    },
+    {
+        "username": "tota.alessio",
+        "password_hash": "$2y$08$Ct0MKB2nvq9XwB1e/PqQbOTiwSlmL93ExbycYt3jVmn//fY3cktHy",
+        "is_capo": 0,
+        "perms": [
+            "view:index"
+        ]
+    }
+]

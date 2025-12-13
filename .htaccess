@@ -1,0 +1,85 @@
+# ============================
+# Sicurezza & compatibilità
+# ============================
+AddDefaultCharset UTF-8
+Options -Indexes
+DirectoryIndex login.php
+
+# ===================================
+# Rewrite base (necessario una volta)
+# ===================================
+
+# Bootstrap UI per tutte le pagine
+php_value auto_prepend_file "/home/kt4p82hv/allerto.it//var/www/_ui_bootstrap.php"
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Lascia passare le challenge di Let's Encrypt
+  RewriteRule ^\.well-known/acme-challenge/ - [L]
+
+  # =========================
+  # Canonical: HTTPS obbligato
+  # =========================
+  # Se NON sei in HTTPS -> redirect a HTTPS
+ # RewriteCond %{HTTPS} !=on
+ # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+  # ==========================
+  # Canonical host: NO "www."
+  # ==========================
+  # Forza la versione senza www (vale per tutti i domini su questa cartella)
+ # RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+ # RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+
+  # =========================================
+  # Blocca accesso diretto a file sensibili
+  # =========================================
+  # /data: niente JSON/lock/tmp
+  RewriteRule ^data/.*\.(json|lock|tmp)$ - [F,L,NC]
+
+  # Blocca robaccia comune nei progetti
+  RewriteRule ^(.*/)?(\.env|composer\.(json|lock)|package(-lock)?\.json|yarn\.lock|pnpm-lock\.yaml)$ - [F,L,NC]
+  RewriteRule ^(.*/)?(\.git|\.svn|\.hg)(/|$) - [F,L,NC]
+  RewriteRule ^(.*/)?(.*\.(sql|bak|old|orig|dist))$ - [F,L,NC]
+</IfModule>
+
+# =========================================
+# Cache base per statici (se disponibile)
+# =========================================
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 7 days"
+  ExpiresByType application/javascript "access plus 7 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/webp "access plus 30 days"
+  ExpiresByType image/svg+xml "access plus 30 days"
+  ExpiresByType font/woff2 "access plus 30 days"
+  ExpiresDefault "access plus 1 day"
+</IfModule>
+
+# ============================
+# Compressione (se disponibile)
+# ============================
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css application/xml application/xhtml+xml application/rss+xml application/javascript application/x-javascript image/svg+xml
+</IfModule>
+
+# ============================
+# Header di sicurezza (base)
+# ============================
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-XSS-Protection "1; mode=block"
+
+  # HSTS: abilitalo SOLO quando l'SSL funziona su TUTTO (compreso www)
+  #Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+</IfModule>
+
+# ============================
+# 404 "pulito" (opzionale)
+# ============================
+# ErrorDocument 404 /404.html

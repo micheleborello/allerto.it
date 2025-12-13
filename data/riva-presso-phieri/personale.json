@@ -1,0 +1,320 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "011-9469843",
+            "telefono1": "-",
+            "telefono2": "333-2502159"
+        },
+        "indirizzo": {
+            "via": "VIA SAN DOMENICO SAVIO 58",
+            "cap": "10020",
+            "comune": "RIVA PRESSO CHIERI"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-03-19",
+            "visita_medica": "2026-09-19"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "2": {
+        "contatti": {
+            "telefono": "011-842978",
+            "telefono1": "-",
+            "telefono2": "333-9491057"
+        },
+        "indirizzo": {
+            "via": "VIA PEROSI N?1",
+            "cap": "10023",
+            "comune": "CHIERI"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-03",
+            "visita_medica": "2027-06-03"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "335-5825040",
+            "telefono2": "349-8311058"
+        },
+        "indirizzo": {
+            "via": "VIA DEI FINELLI, 39/B",
+            "cap": "10020",
+            "comune": "RIVA PRESSO CHIERI"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-27",
+            "visita_medica": "2027-08-27"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "392-7730915"
+        },
+        "indirizzo": {
+            "via": "VIA MONGRANDO 37",
+            "cap": "10100",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-21",
+            "visita_medica": "2027-07-21"
+        },
+        "patenti": []
+    },
+    "5": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "340-1445855"
+        },
+        "indirizzo": {
+            "via": "LUNGO PO ALESSANDRO ANTONELLI 13 SCALA B",
+            "cap": "10153",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-03-18",
+            "visita_medica": "2027-09-18"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "6": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "333-8533179"
+        },
+        "indirizzo": {
+            "via": "VIA TAMAGNONE 23",
+            "cap": "10020",
+            "comune": "RIVA PRESSO CHIERI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-04",
+            "visita_medica": "2027-08-04"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "7": {
+        "contatti": {
+            "telefono": "011-9469735",
+            "telefono1": "-",
+            "telefono2": "348-6613612"
+        },
+        "indirizzo": {
+            "via": "VIA RITA LEVI MONTALCINI 1",
+            "cap": "10020",
+            "comune": "RIVA PRESSO CHIERI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-30",
+            "visita_medica": "2027-01-30"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "8": {
+        "contatti": {
+            "telefono": "011-9411779",
+            "telefono1": "-",
+            "telefono2": "349-1363785"
+        },
+        "indirizzo": {
+            "via": "VIA MARTIRI DELLA LIBERTA' 26",
+            "cap": "10023",
+            "comune": "CHIERI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-28",
+            "visita_medica": "2027-05-28"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "9": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "335-8031227"
+        },
+        "indirizzo": {
+            "via": "VIA GAETANO DONIZETTI N 5",
+            "cap": "10020",
+            "comune": "RIVA PRESSO CHIERI"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-12",
+            "visita_medica": "2027-03-12"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "10": {
+        "contatti": {
+            "telefono": "347-8426976",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA GENOVA 21",
+            "cap": "10026",
+            "comune": "SANTENA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-04",
+            "visita_medica": "2027-08-04"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "11": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "333-6703034"
+        },
+        "indirizzo": {
+            "via": "FRAZIONE MONDONICO VIA TURCO 2",
+            "cap": "14022",
+            "comune": "CASTELNUOVO DON BOSCO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-03-14",
+            "visita_medica": "2027-09-14"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "12": {
+        "contatti": {
+            "telefono": "011-9413240",
+            "telefono1": "-",
+            "telefono2": "335-8076423"
+        },
+        "indirizzo": {
+            "via": "VIA 2 GIUGNO 2",
+            "cap": "10023",
+            "comune": "CHIERI"
+        },
+        "grado": "FTAV.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-04",
+            "visita_medica": "2027-08-04"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "13": {
+        "contatti": {
+            "telefono": "011-9408268",
+            "telefono1": "338-7918503",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA SUPERGA 39/1",
+            "cap": "10020",
+            "comune": "BALDISSERO TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-12",
+            "visita_medica": "2027-03-12"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "14": {
+        "contatti": {
+            "telefono": "333-8205404",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "STR. DELLA GIACOLETTA 18",
+            "cap": "10023",
+            "comune": "CHIERI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-05",
+            "visita_medica": "2027-05-05"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "15": {
+        "contatti": {
+            "telefono": "347-2615813",
+            "telefono1": "340-2964517",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA DELLE TORRI 42",
+            "cap": "10070",
+            "comune": "ROCCA CANAVESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-15",
+            "visita_medica": "2027-05-15"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "16": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "327-810238",
+            "telefono2": "347-3122921"
+        },
+        "indirizzo": {
+            "via": "FRAZIONE BARDELLA 57",
+            "cap": "14022",
+            "comune": "CASTELNUOVO DON BOSCO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-17",
+            "visita_medica": "2027-06-17"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    }
+}

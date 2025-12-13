@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "nome": "EDOARDO",
+        "cognome": "ALOVISI",
+        "cf": "LVSDRD05B13L219Z",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "alovisi.edoardo"
+    },
+    {
+        "id": 2,
+        "nome": "FABIO",
+        "cognome": "ALTAMURA",
+        "cf": "LTMFBA03A28A326S",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "altamura.fabio"
+    },
+    {
+        "id": 3,
+        "nome": "SIMONE",
+        "cognome": "BORLA",
+        "cf": "BRLSMN90S19L219H",
+        "attivo": 1,
+        "grado": "CSV.",
+        "ingresso": "",
+        "username": "borla.simone"
+    },
+    {
+        "id": 4,
+        "nome": "ANDREA",
+        "cognome": "GIACCONE",
+        "cf": "GCCNDR78A16A518E",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "giaccone.andrea"
+    },
+    {
+        "id": 5,
+        "nome": "GIANDONATO",
+        "cognome": "MATARAZZO",
+        "cf": "MTRGDN72H27L219I",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "matarazzo.giandonato"
+    },
+    {
+        "id": 6,
+        "nome": "EDOARDO",
+        "cognome": "MELLONCELLI",
+        "cf": "MLLDRD95B18L219B",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "melloncelli.edoardo"
+    },
+    {
+        "id": 7,
+        "nome": "INGRID",
+        "cognome": "OMEGNA",
+        "cf": "MGNNRD82D54A518N",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "omegna.ingrid"
+    }
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "nome": "GIORGIO",
+        "cognome": "BELLET",
+        "cf": "BLLGRG66C26L219M",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "bellet.giorgio"
+    },
+    {
+        "id": 2,
+        "nome": "MICHELE",
+        "cognome": "BERTESSA",
+        "cf": "BRTMHL72P04L219K",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "bertessa.michele"
+    },
+    {
+        "id": 3,
+        "nome": "GIULIANO",
+        "cognome": "BRUN",
+        "cf": "BRNGLN67B11L219R",
+        "attivo": 1,
+        "grado": "CSV.",
+        "ingresso": "",
+        "username": "brun.giuliano"
+    },
+    {
+        "id": 4,
+        "nome": "ROBERTO",
+        "cognome": "FOLCAT",
+        "cf": "FLCRRT76C16L013H",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "folcat.roberto"
+    },
+    {
+        "id": 5,
+        "nome": "LUCA",
+        "cognome": "FRANCOU",
+        "cf": "FRNLCU75H21L013R",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "francou.luca"
+    },
+    {
+        "id": 6,
+        "nome": "LUCA",
+        "cognome": "GALLO",
+        "cf": "GLLLCU82M15L013J",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "gallo.luca"
+    },
+    {
+        "id": 7,
+        "nome": "CLAUDIO",
+        "cognome": "GUIFFRE",
+        "cf": "GFFCLD65A13L013N",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "guiffre.claudio"
+    },
+    {
+        "id": 8,
+        "nome": "CESARE",
+        "cognome": "GUIGUET",
+        "cf": "GGTCSR75A12A651L",
+        "attivo": 1,
+        "grado": "CSV.",
+        "ingresso": "",
+        "username": "guiguet.cesare"
+    },
+    {
+        "id": 9,
+        "nome": "WALTER",
+        "cognome": "MAIANI",
+        "cf": "MNAWTR73R31L219Y",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "maiani.walter"
+    },
+    {
+        "id": 10,
+        "nome": "ROBERTO",
+        "cognome": "MASSET",
+        "cf": "MSSRRT66H19L219I",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "masset.roberto"
+    },
+    {
+        "id": 11,
+        "nome": "ROBERTO",
+        "cognome": "TRAUZZOLA",
+        "cf": "TRZRRT76R15L013H",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "trauzzola.roberto"
+    },
+    {
+        "id": 12,
+        "nome": "SIMONE",
+        "cognome": "VACHET",
+        "cf": "VCHSMN96C07L013R",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "vachet.simone"
+    }
+]

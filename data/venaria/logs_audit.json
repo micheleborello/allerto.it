@@ -1,0 +1,21 @@
+[
+    {
+        "type": "addestramento.create",
+        "ts": "2025-11-30 17:49:16",
+        "ts_iso": "2025-11-30T17:49:16+01:00",
+        "user": "bergamo.luca",
+        "ip": "93.36.160.251",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "4b92d86b8fb2b45e",
+            "data": "2025-11-30",
+            "inizio_dt": "2025-11-30T17:48:00",
+            "fine_dt": "2025-11-30T18:48:00",
+            "minuti": 60,
+            "attivita": "test",
+            "recupero": false,
+            "presenti": [],
+            "tenant": "venaria"
+        }
+    }
+]

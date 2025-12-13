@@ -1,0 +1,212 @@
+[
+    {
+        "id": 1,
+        "nome": "ALESSANDRO",
+        "cognome": "ALBERTONE",
+        "cf": "LBRLSN70D06C665U",
+        "attivo": 1,
+        "grado": "CSV.",
+        "ingresso": "",
+        "username": "albertone.alessandro"
+    },
+    {
+        "id": 2,
+        "nome": "EMANUELE",
+        "cognome": "ARIEMME",
+        "cf": "RMMMNL86A29C665K",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "ariemme.emanuele"
+    },
+    {
+        "id": 3,
+        "nome": "DAVIDE",
+        "cognome": "AVANZATO",
+        "cf": "VNZDVD78E27C665V",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "avanzato.davide"
+    },
+    {
+        "id": 4,
+        "nome": "FULVIO",
+        "cognome": "BRIGNOGLIO",
+        "cf": "BRGFLV67A15C665F",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "brignoglio.fulvio"
+    },
+    {
+        "id": 5,
+        "nome": "PAOLO",
+        "cognome": "CAFFARO RORE",
+        "cf": "CFFPLA70T14C665P",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "caffaro.rore.paolo"
+    },
+    {
+        "id": 6,
+        "nome": "LORIS",
+        "cognome": "CENA",
+        "cf": "CNELRS95E16C665V",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "cena.loris"
+    },
+    {
+        "id": 7,
+        "nome": "ANTONIO",
+        "cognome": "CIUFFREDA",
+        "cf": "CFFNTN64L13F631N",
+        "attivo": 1,
+        "grado": "CSV.",
+        "ingresso": "",
+        "username": "ciuffreda.antonio"
+    },
+    {
+        "id": 8,
+        "nome": "STEFANO",
+        "cognome": "COPPO",
+        "cf": "CPPSFN65B12A326N",
+        "attivo": 1,
+        "grado": "CSV.",
+        "ingresso": "",
+        "username": "coppo.stefano"
+    },
+    {
+        "id": 9,
+        "nome": "MASSIMO",
+        "cognome": "D&#039;ANGELO",
+        "cf": "DNGMSM80B16L219O",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "d.angelo.massimo"
+    },
+    {
+        "id": 10,
+        "nome": "CLAUDIO COSMO DAMIANO",
+        "cognome": "D&#039;AUGELLI",
+        "cf": "DGLCDC67S26I158H",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "d.augelli.claudio.cosmo.damiano"
+    },
+    {
+        "id": 11,
+        "nome": "MASSIMILIANO",
+        "cognome": "FERRAIOLI",
+        "cf": "FRRMSM75T18L219M",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "ferraioli.massimiliano"
+    },
+    {
+        "id": 12,
+        "nome": "ROBERTO",
+        "cognome": "GUALA",
+        "cf": "GLURRT67S17C665S",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "guala.roberto"
+    },
+    {
+        "id": 13,
+        "nome": "MAURIZIO",
+        "cognome": "INVERSO",
+        "cf": "NVRMRZ77R12C627M",
+        "attivo": 1,
+        "grado": "CSV.",
+        "ingresso": "",
+        "username": "inverso.maurizio"
+    },
+    {
+        "id": 14,
+        "nome": "ANDREA",
+        "cognome": "MAIETTI",
+        "cf": "MTTNDR94A25L219L",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "maietti.andrea"
+    },
+    {
+        "id": 15,
+        "nome": "CLAUDIO",
+        "cognome": "MINGONI",
+        "cf": "MNGCLD68T08L219T",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "mingoni.claudio"
+    },
+    {
+        "id": 16,
+        "nome": "MARCO",
+        "cognome": "MOLINARO",
+        "cf": "MLNMRC65A29C665V",
+        "attivo": 1,
+        "grado": "CSV.",
+        "ingresso": "",
+        "username": "molinaro.marco"
+    },
+    {
+        "id": 17,
+        "nome": "RENZO",
+        "cognome": "OLIVERO",
+        "cf": "LVRRNZ73A23C665F",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "olivero.renzo"
+    },
+    {
+        "id": 18,
+        "nome": "EMANUELE",
+        "cognome": "OTTAVIANI",
+        "cf": "TTVMNL92R05F335C",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "ottaviani.emanuele"
+    },
+    {
+        "id": 19,
+        "nome": "GABRIELE AMEDEO",
+        "cognome": "SANDRONE",
+        "cf": "SNDGRL97R10L219D",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "sandrone.gabriele.amedeo"
+    },
+    {
+        "id": 20,
+        "nome": "DAVIDE",
+        "cognome": "SANTI",
+        "cf": "SNTDVD70E31L219S",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "santi.davide"
+    },
+    {
+        "id": 21,
+        "nome": "LUCA",
+        "cognome": "VICH",
+        "cf": "VCHLCU90M02L219R",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "vich.luca"
+    }
+]

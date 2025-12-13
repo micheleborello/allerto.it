@@ -1,0 +1,140 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-18168940"
+        },
+        "indirizzo": {
+            "via": "VIA PLAGNOL 10",
+            "cap": "10058",
+            "comune": "SESTRIERE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-11",
+            "visita_medica": "2027-08-11"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "2": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "370-3250228"
+        },
+        "indirizzo": {
+            "via": "VIA DEL COLLE 10",
+            "cap": "10058",
+            "comune": "SESTRIERE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-02-20",
+            "visita_medica": "2026-08-20"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "011-2735130",
+            "telefono1": "-",
+            "telefono2": "339-6157435"
+        },
+        "indirizzo": {
+            "via": "VIA CENTALLO 26",
+            "cap": "10015",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-03",
+            "visita_medica": "2027-06-03"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "0122-70146",
+            "telefono1": "347-5267006",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA VISITAZIONE 30",
+            "cap": "10058",
+            "comune": "SESTRIERE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-22",
+            "visita_medica": "2027-04-22"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "5": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "338-9298570"
+        },
+        "indirizzo": {
+            "via": "VIA PRINCIPALE 34",
+            "cap": "10058",
+            "comune": "SESTRIERE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-11",
+            "visita_medica": "2027-08-11"
+        },
+        "patenti": []
+    },
+    "6": {
+        "contatti": {
+            "telefono": "338-8147776",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA PIAVE 3",
+            "cap": "10058",
+            "comune": "SESTRIERE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-03",
+            "visita_medica": "2027-06-03"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "7": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "340-9668483"
+        },
+        "indirizzo": {
+            "via": "VIA ORSIERA 4",
+            "cap": "10058",
+            "comune": "SESTRIERE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-03",
+            "visita_medica": "2027-03-03"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    }
+}

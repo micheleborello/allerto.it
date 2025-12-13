@@ -1,0 +1,428 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "011-9244043",
+            "telefono1": "331-6887856",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA COSTA 33",
+            "cap": "10070",
+            "comune": "SAN FRANCESCO AL CAMPO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-04-05",
+            "visita_medica": "2026-10-05"
+        },
+        "patenti": [
+            "2° grado"
+        ]
+    },
+    "2": {
+        "contatti": {
+            "telefono": "338-1445636",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "STRADA DEL CASCINOTTO 4",
+            "cap": "10156",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-03-26",
+            "visita_medica": "2026-09-26"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "347-9336008"
+        },
+        "indirizzo": {
+            "via": "VIA FABBRICHE 138/C",
+            "cap": "10072",
+            "comune": "CASELLE TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-04-09",
+            "visita_medica": "2026-10-09"
+        },
+        "patenti": []
+    },
+    "4": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "346-5968469"
+        },
+        "indirizzo": {
+            "via": "VIA LESNA 7 SCALA B",
+            "cap": "10100",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-04",
+            "visita_medica": "2027-08-04"
+        },
+        "patenti": []
+    },
+    "5": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "348-9346396"
+        },
+        "indirizzo": {
+            "via": "VIA SAN MARCHESE 9 LETTERA 3",
+            "cap": "10078",
+            "comune": "VENARIA REALE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-03-28",
+            "visita_medica": "2027-09-28"
+        },
+        "patenti": []
+    },
+    "6": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "339-4670179"
+        },
+        "indirizzo": {
+            "via": "STRADA FILATOIO 15",
+            "cap": "10072",
+            "comune": "CASELLE TORINESE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-18",
+            "visita_medica": "2027-08-18"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "7": {
+        "contatti": {
+            "telefono": "011-9961783",
+            "telefono1": "348-9790340",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIALE ALCIDE BONA 16",
+            "cap": "10072",
+            "comune": "CASELLE TORINESE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-14",
+            "visita_medica": "2027-07-14"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "8": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "331-6887867",
+            "telefono2": "333-9741002"
+        },
+        "indirizzo": {
+            "via": "VIA BIANCO DI BARBANIA 39",
+            "cap": "10072",
+            "comune": "CASELLE TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-26",
+            "visita_medica": "2027-05-26"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "9": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-1987669"
+        },
+        "indirizzo": {
+            "via": "VIA AUDELLO 5",
+            "cap": "10072",
+            "comune": "CASELLE TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-03-21",
+            "visita_medica": "2027-09-21"
+        },
+        "patenti": []
+    },
+    "10": {
+        "contatti": {
+            "telefono": "011-9913958",
+            "telefono1": "-",
+            "telefono2": "339-2004657"
+        },
+        "indirizzo": {
+            "via": "VIA SUOR VINCENZA,10/G",
+            "cap": "10072",
+            "comune": "CASELLE TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-28",
+            "visita_medica": "2027-07-28"
+        },
+        "patenti": []
+    },
+    "11": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "338-5390353"
+        },
+        "indirizzo": {
+            "via": "VIA GUEVARA 15",
+            "cap": "10072",
+            "comune": "CASELLE TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-28",
+            "visita_medica": "2027-07-28"
+        },
+        "patenti": []
+    },
+    "12": {
+        "contatti": {
+            "telefono": "338-9841628",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA GONELLA 34",
+            "cap": "10072",
+            "comune": "CASELLE TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-17",
+            "visita_medica": "2027-06-17"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "13": {
+        "contatti": {
+            "telefono": "011-4703283",
+            "telefono1": "-",
+            "telefono2": "331-2693722"
+        },
+        "indirizzo": {
+            "via": "VIA ALDO MORO N?106",
+            "cap": "10071",
+            "comune": "BORGARO TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-03",
+            "visita_medica": "2027-06-03"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "14": {
+        "contatti": {
+            "telefono": "011-4703238",
+            "telefono1": "-",
+            "telefono2": "331-6888042"
+        },
+        "indirizzo": {
+            "via": "VIA FILATOIO N? 21",
+            "cap": "10072",
+            "comune": "CASELLE TORINESE"
+        },
+        "grado": "FTAV.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-07-25",
+            "visita_medica": "2028-01-25"
+        },
+        "patenti": [
+            "2° grado"
+        ]
+    },
+    "15": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "345-4527668"
+        },
+        "indirizzo": {
+            "via": "VIA GIBELLINI 79",
+            "cap": "10072",
+            "comune": "CASELLE TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-08",
+            "visita_medica": "2027-04-08"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "16": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "340-1033344"
+        },
+        "indirizzo": {
+            "via": "VIA MAGNANO 15",
+            "cap": "10149",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-05-23",
+            "visita_medica": "2027-11-23"
+        },
+        "patenti": []
+    },
+    "17": {
+        "contatti": {
+            "telefono": "011-9975297",
+            "telefono1": "-",
+            "telefono2": "338-2317346"
+        },
+        "indirizzo": {
+            "via": "VIA ALDO MORO 17",
+            "cap": "10072",
+            "comune": "CASELLE TORINESE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-17",
+            "visita_medica": "2027-06-17"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "18": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "331-6888288",
+            "telefono2": "339-2680618"
+        },
+        "indirizzo": {
+            "via": "VIA DEGLI ALPINI 4",
+            "cap": "10072",
+            "comune": "CASELLE TORINESE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-17",
+            "visita_medica": "2027-03-17"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "19": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "335-1964296"
+        },
+        "indirizzo": {
+            "via": "VIA AMEDEO DI CASTELLAMONTE,62",
+            "cap": "10072",
+            "comune": "CASELLE TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-05-14",
+            "visita_medica": "2026-11-14"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "20": {
+        "contatti": {
+            "telefono": "011-9963053",
+            "telefono1": "331-6887985",
+            "telefono2": "335-7100048"
+        },
+        "indirizzo": {
+            "via": "VIA AUDELLO 5",
+            "cap": "10072",
+            "comune": "CASELLE TORINESE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-10",
+            "visita_medica": "2027-07-10"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "21": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "388-7833004"
+        },
+        "indirizzo": {
+            "via": "VIA ANGIOIRA 42 SUB.A",
+            "cap": "10070",
+            "comune": "COASSOLO TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-21",
+            "visita_medica": "2027-07-21"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "22": {
+        "contatti": {
+            "telefono": "011-9247961",
+            "telefono1": "331-1987624",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA GIACINTO CARENA 5",
+            "cap": "10072",
+            "comune": "CASELLE TORINESE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-10",
+            "visita_medica": "2027-06-10"
+        },
+        "patenti": [
+            "2° grado"
+        ]
+    }
+}

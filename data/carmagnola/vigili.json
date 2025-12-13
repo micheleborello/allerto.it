@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "nome": "PIERLUIGI",
+        "cognome": "ALBERTINO",
+        "cf": "LBRPLG69P13B791W",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "albertino.pierluigi"
+    },
+    {
+        "id": 2,
+        "nome": "ANTONIO",
+        "cognome": "AUDRITO",
+        "cf": "DRTNTN78E28C627N",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "audrito.antonio"
+    },
+    {
+        "id": 3,
+        "nome": "MANUELE",
+        "cognome": "BARRA",
+        "cf": "BRRMNL86R23B791H",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "barra.manuele"
+    },
+    {
+        "id": 4,
+        "nome": "EMANUELE",
+        "cognome": "BERGESE",
+        "cf": "BRGMNL81H30B791N",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "bergese.emanuele"
+    },
+    {
+        "id": 6,
+        "nome": "ALFREDO",
+        "cognome": "BOTTAN",
+        "cf": "BTTLRD68A17B777J",
+        "attivo": 1,
+        "grado": "CSV.",
+        "ingresso": "",
+        "username": "bottan.alfredo"
+    },
+    {
+        "id": 5,
+        "nome": "LUCA",
+        "cognome": "BOTTAN",
+        "cf": "BTTLCU93D07B791O",
+        "attivo": 1,
+        "grado": "CSV.",
+        "ingresso": "",
+        "username": "bottan.luca"
+    },
+    {
+        "id": 7,
+        "nome": "ALBERTO",
+        "cognome": "CASCIO",
+        "cf": "CSCLRT89R06B791O",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "cascio.alberto"
+    },
+    {
+        "id": 8,
+        "nome": "ANDREA",
+        "cognome": "CRAVERO",
+        "cf": "CRVNDR79H24B791U",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "cravero.andrea"
+    },
+    {
+        "id": 9,
+        "nome": "VITTORIO ALBERTO",
+        "cognome": "FARANNA",
+        "cf": "FRNVTR86D12L219W",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "faranna.vittorio.alberto"
+    },
+    {
+        "id": 10,
+        "nome": "DARIO",
+        "cognome": "FAVARO",
+        "cf": "FVRDRA77M24B791D",
+        "attivo": 1,
+        "grado": "CSV.",
+        "ingresso": "",
+        "username": "favaro.dario"
+    },
+    {
+        "id": 11,
+        "nome": "DANILO",
+        "cognome": "GALLESIO",
+        "cf": "GLLDNL91E25B111I",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "gallesio.danilo"
+    },
+    {
+        "id": 13,
+        "nome": "MARCO",
+        "cognome": "MILANESIO",
+        "cf": "MLNMRC67P24C665N",
+        "attivo": 1,
+        "grado": "FTAV.",
+        "ingresso": "",
+        "username": "milanesio.marco"
+    },
+    {
+        "id": 12,
+        "nome": "MICHELANGELO",
+        "cognome": "MILANESIO",
+        "cf": "MLNMHL00T07B791S",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "milanesio.michelangelo"
+    },
+    {
+        "id": 14,
+        "nome": "ENRICO MARIA",
+        "cognome": "MONTISCI",
+        "cf": "MNTNCM82R21B791D",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "montisci.enrico.maria"
+    },
+    {
+        "id": 15,
+        "nome": "RICCARDO",
+        "cognome": "NADDEO",
+        "cf": "NDDRCR84S30A944M",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "naddeo.riccardo"
+    },
+    {
+        "id": 16,
+        "nome": "LUISA",
+        "cognome": "PANEPINTO",
+        "cf": "PNPLSU93C59B791O",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "panepinto.luisa"
+    },
+    {
+        "id": 17,
+        "nome": "PIETRO",
+        "cognome": "PECORARO",
+        "cf": "PCRPTR73R01B791K",
+        "attivo": 1,
+        "grado": "CSV.",
+        "ingresso": "",
+        "username": "pecoraro.pietro"
+    },
+    {
+        "id": 18,
+        "nome": "MATTIA",
+        "cognome": "RANALDO",
+        "cf": "RNLMTT02D30L219S",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "ranaldo.mattia"
+    }
+]

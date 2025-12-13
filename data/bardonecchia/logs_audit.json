@@ -1,0 +1,41 @@
+[
+    {
+        "type": "addestramento.create",
+        "ts": "2025-09-25 12:44:56",
+        "ts_iso": "2025-09-25T12:44:56+02:00",
+        "user": null,
+        "ip": "151.84.148.154",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "45cba15c91fce9ab",
+            "data": "2025-09-25",
+            "inizio_dt": "2025-09-25T12:44:00",
+            "fine_dt": "2025-09-25T14:44:00",
+            "minuti": 120,
+            "attivita": "prova",
+            "recupero": false,
+            "presenti": [
+                {
+                    "vigile_id": 3,
+                    "nome": "GIULIANO BRUN"
+                },
+                {
+                    "vigile_id": 5,
+                    "nome": "LUCA FRANCOU"
+                },
+                {
+                    "vigile_id": 7,
+                    "nome": "CLAUDIO GUIFFRE"
+                },
+                {
+                    "vigile_id": 9,
+                    "nome": "WALTER MAIANI"
+                },
+                {
+                    "vigile_id": 12,
+                    "nome": "SIMONE VACHET"
+                }
+            ]
+        }
+    }
+]

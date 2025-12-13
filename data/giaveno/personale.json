@@ -1,0 +1,536 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "366-4040807"
+        },
+        "indirizzo": {
+            "via": "VIA BEATO ROSAZ 16",
+            "cap": "10094",
+            "comune": "GIAVENO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-12",
+            "visita_medica": "2027-05-12"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "2": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "333-6898985"
+        },
+        "indirizzo": {
+            "via": "VIA COL BIONE 6",
+            "cap": "10094",
+            "comune": "GIAVENO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-30",
+            "visita_medica": "2027-01-30"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-1987551"
+        },
+        "indirizzo": {
+            "via": "C.SO PIEMONTE 10",
+            "cap": "10094",
+            "comune": "GIAVENO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2017-01-10",
+            "visita_medica": "2019-07-10"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-1987355"
+        },
+        "indirizzo": {
+            "via": "VIA SACRA DI SAN MICHELE 31",
+            "cap": "10094",
+            "comune": "GIAVENO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-08",
+            "visita_medica": "2027-04-08"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "5": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "334-5948651"
+        },
+        "indirizzo": {
+            "via": "VIA TORRENTE LEMINA 13",
+            "cap": "10064",
+            "comune": "PINEROLO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-31",
+            "visita_medica": "2027-04-30"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "6": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "338-8353847"
+        },
+        "indirizzo": {
+            "via": "BORGATA MOLINO 73",
+            "cap": "10090",
+            "comune": "VALGIOIE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-03-20",
+            "visita_medica": "2027-09-20"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "7": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "335-249692"
+        },
+        "indirizzo": {
+            "via": "VIA  PIO ROLLA 29",
+            "cap": "10094",
+            "comune": "GIAVENO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-08-07",
+            "visita_medica": "2026-02-07"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "8": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "392-7207533"
+        },
+        "indirizzo": {
+            "via": "VIA SANGANO 2",
+            "cap": "10094",
+            "comune": "GIAVENO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-22",
+            "visita_medica": "2027-04-22"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "9": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "366-7043280"
+        },
+        "indirizzo": {
+            "via": "VIA GORIZIA 185",
+            "cap": "10100",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-26",
+            "visita_medica": "2027-05-26"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "10": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "334-7862168"
+        },
+        "indirizzo": {
+            "via": "VIA ZANOLLI 10",
+            "cap": "10094",
+            "comune": "GIAVENO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-26",
+            "visita_medica": "2027-05-26"
+        },
+        "patenti": []
+    },
+    "11": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "327-9611068"
+        },
+        "indirizzo": {
+            "via": "BORGATA TONNI 5",
+            "cap": "10094",
+            "comune": "GIAVENO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-03-25",
+            "visita_medica": "2027-09-25"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "12": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "327-9534225"
+        },
+        "indirizzo": {
+            "via": "VIA SELVAGGIO 80",
+            "cap": "10094",
+            "comune": "GIAVENO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-02-27",
+            "visita_medica": "2026-08-27"
+        },
+        "patenti": []
+    },
+    "13": {
+        "contatti": {
+            "telefono": "011-9340503",
+            "telefono1": "335-6093789",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA GIACONE N? 13",
+            "cap": "10050",
+            "comune": "COAZZE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-01",
+            "visita_medica": "2027-04-01"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "14": {
+        "contatti": {
+            "telefono": "011-9364497",
+            "telefono1": "-",
+            "telefono2": "331-1987580"
+        },
+        "indirizzo": {
+            "via": "VIA GRANGIA MARIN 68",
+            "cap": "10094",
+            "comune": "GIAVENO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-17",
+            "visita_medica": "2027-06-17"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "15": {
+        "contatti": {
+            "telefono": "011-9365111",
+            "telefono1": "338-8627395",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA SAN MICHELE 64",
+            "cap": "10094",
+            "comune": "GIAVENO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-08-07",
+            "visita_medica": "2026-02-07"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "16": {
+        "contatti": {
+            "telefono": "347-3018442",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA SANGANO 7",
+            "cap": "10094",
+            "comune": "GIAVENO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-08",
+            "visita_medica": "2027-04-08"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "17": {
+        "contatti": {
+            "telefono": "011-933115",
+            "telefono1": "-",
+            "telefono2": "392-8402979"
+        },
+        "indirizzo": {
+            "via": "STRADA MOLLAR,10",
+            "cap": "10090",
+            "comune": "TRANA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-21",
+            "visita_medica": "2027-04-21"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "18": {
+        "contatti": {
+            "telefono": "388-7937472",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA PAOLO BOSELLI 16",
+            "cap": "10040",
+            "comune": "CUMIANA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2017-03-29",
+            "visita_medica": "2019-09-29"
+        },
+        "patenti": [
+            "2° grado"
+        ]
+    },
+    "19": {
+        "contatti": {
+            "telefono": "011-9377709",
+            "telefono1": "-",
+            "telefono2": "366-5775651"
+        },
+        "indirizzo": {
+            "via": "BORGATA GRANGIA MARIN, 46",
+            "cap": "10094",
+            "comune": "GIAVENO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-08",
+            "visita_medica": "2027-04-08"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "20": {
+        "contatti": {
+            "telefono": "011-9365380",
+            "telefono1": "-",
+            "telefono2": "339-3888295"
+        },
+        "indirizzo": {
+            "via": "S.DA DELLA CHIOMA 23",
+            "cap": "10094",
+            "comune": "GIAVENO"
+        },
+        "grado": "FTAV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-17",
+            "visita_medica": "2027-06-17"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "21": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "329-2728017"
+        },
+        "indirizzo": {
+            "via": "VIA PIEMONTE 3",
+            "cap": "10090",
+            "comune": "TRANA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2015-10-30",
+            "visita_medica": "2018-04-30"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "22": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "338-7677149"
+        },
+        "indirizzo": {
+            "via": "VIA MAFFIODENZA 9 LETT. B",
+            "cap": "10050",
+            "comune": "BRUZOLO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-05",
+            "visita_medica": "2027-05-05"
+        },
+        "patenti": []
+    },
+    "23": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "011-9378816",
+            "telefono2": "366-5775790"
+        },
+        "indirizzo": {
+            "via": "BORGATA CASE VIA 2",
+            "cap": "10094",
+            "comune": "GIAVENO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-08",
+            "visita_medica": "2027-04-08"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "24": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-1987408"
+        },
+        "indirizzo": {
+            "via": "BORGATA GIRELLA VILLA 13",
+            "cap": "10094",
+            "comune": "GIAVENO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-01",
+            "visita_medica": "2027-04-01"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "25": {
+        "contatti": {
+            "telefono": "011-9340018",
+            "telefono1": "331-1987354",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA ORBANA 5",
+            "cap": "10094",
+            "comune": "GIAVENO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-26",
+            "visita_medica": "2027-01-26"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "26": {
+        "contatti": {
+            "telefono": "392-2547853",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA PONTEPIETRA  N?85",
+            "cap": "10094",
+            "comune": "GIAVENO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-15",
+            "visita_medica": "2027-04-15"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "27": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "334-1862254"
+        },
+        "indirizzo": {
+            "via": "VIA RODOLFO DI MONTBEL 32",
+            "cap": "10094",
+            "comune": "GIAVENO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-01",
+            "visita_medica": "2027-04-01"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    }
+}

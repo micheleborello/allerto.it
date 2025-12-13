@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "nome": "ALESSIO",
+        "cognome": "BERNO",
+        "cf": "BRNLSS04P28L013X",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "berno.alessio"
+    },
+    {
+        "id": 2,
+        "nome": "SILVIA",
+        "cognome": "BRUNO",
+        "cf": "BRNSLV71A45L013G",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "bruno.silvia"
+    },
+    {
+        "id": 3,
+        "nome": "MAURIZIO",
+        "cognome": "CHIARMASSO",
+        "cf": "CHRMRZ76L21H355W",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "chiarmasso.maurizio"
+    },
+    {
+        "id": 4,
+        "nome": "RICCARDO",
+        "cognome": "DOLINO",
+        "cf": "DLNRCR05P13L013K",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "dolino.riccardo"
+    },
+    {
+        "id": 5,
+        "nome": "ANDREA",
+        "cognome": "GROSSO",
+        "cf": "GRSNDR88H23L013Y",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "grosso.andrea"
+    },
+    {
+        "id": 6,
+        "nome": "MUHAREM",
+        "cognome": "HOXHA",
+        "cf": "HXHMRM91L25Z100A",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "hoxha.muharem"
+    },
+    {
+        "id": 7,
+        "nome": "MAXIMILIANO",
+        "cognome": "LECIS",
+        "cf": "LCSMML75C17A651U",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "lecis.maximiliano"
+    },
+    {
+        "id": 8,
+        "nome": "FRANCESCO JOHAN",
+        "cognome": "MARZO",
+        "cf": "MRZFNC81D14Z223F",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "marzo.francesco.johan"
+    },
+    {
+        "id": 9,
+        "nome": "JESSICA",
+        "cognome": "MEDOLAGO",
+        "cf": "MDLJSC85T50L013I",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "medolago.jessica"
+    },
+    {
+        "id": 10,
+        "nome": "MARCO",
+        "cognome": "MOSCATELLI",
+        "cf": "MSCMRC76A19L013Z",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "moscatelli.marco"
+    },
+    {
+        "id": 11,
+        "nome": "MARIO",
+        "cognome": "PITTINI",
+        "cf": "PTTMRA85E28L013A",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "pittini.mario"
+    },
+    {
+        "id": 12,
+        "nome": "MIRKO",
+        "cognome": "POGNANT",
+        "cf": "PGNMRK76P21L013D",
+        "attivo": 1,
+        "grado": "CSV.",
+        "ingresso": "",
+        "username": "pognant.mirko"
+    },
+    {
+        "id": 13,
+        "nome": "GIORGIO",
+        "cognome": "ROMEO",
+        "cf": "RMOGRG75C17G765I",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "romeo.giorgio"
+    },
+    {
+        "id": 14,
+        "nome": "DAVIDE",
+        "cognome": "SPOTO",
+        "cf": "SPTDVD84L10L013C",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "spoto.davide"
+    },
+    {
+        "id": 15,
+        "nome": "MARA",
+        "cognome": "VIRETTI",
+        "cf": "VRTMRA76P54L013R",
+        "attivo": 1,
+        "grado": "CSV.",
+        "ingresso": "",
+        "username": "viretti.mara"
+    }
+]

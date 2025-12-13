@@ -1,0 +1,566 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "011-4591970",
+            "telefono1": "-",
+            "telefono2": "391-7536141"
+        },
+        "indirizzo": {
+            "via": "REGIONE MANDRIA 13",
+            "cap": "10040",
+            "comune": "DRUENTO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-05-15",
+            "visita_medica": "2027-11-15"
+        },
+        "patenti": []
+    },
+    "2": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "338-5693237"
+        },
+        "indirizzo": {
+            "via": "VIA DON SAPINO 75",
+            "cap": "10078",
+            "comune": "VENARIA REALE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-03-21",
+            "visita_medica": "2027-09-21"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "011-446915",
+            "telefono1": "331-6888233",
+            "telefono2": "328-1087098"
+        },
+        "indirizzo": {
+            "via": "VIA DON LORENZO MILANI 15",
+            "cap": "10070",
+            "comune": "ROBASSOMERO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-04-16",
+            "visita_medica": "2026-10-16"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "347-8446409",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA BREGLIO 55",
+            "cap": "10100",
+            "comune": "TORINO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-21",
+            "visita_medica": "2027-04-21"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "5": {
+        "contatti": {
+            "telefono": "338-1106746",
+            "telefono1": "331-6887942",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA ROMOLO TESSARIN 11",
+            "cap": "10078",
+            "comune": "VENARIA REALE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-04-17",
+            "visita_medica": "2027-10-17"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "6": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "342-0085062"
+        },
+        "indirizzo": {
+            "via": "VIA ALVARO CHELLI 17/3",
+            "cap": "10078",
+            "comune": "VENARIA REALE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-15",
+            "visita_medica": "2027-04-15"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "7": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "379-2650966"
+        },
+        "indirizzo": {
+            "via": "VIA AOSTA 76",
+            "cap": "10154",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-05-30",
+            "visita_medica": "2027-11-30"
+        },
+        "patenti": []
+    },
+    "8": {
+        "contatti": {
+            "telefono": "331-6887936",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA BERRINO 17",
+            "cap": "10148",
+            "comune": "TORINO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-12",
+            "visita_medica": "2027-05-12"
+        },
+        "patenti": []
+    },
+    "9": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "347-3694488"
+        },
+        "indirizzo": {
+            "via": "CORSO MOLISE 77 SCALA D",
+            "cap": "10100",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-04-01",
+            "visita_medica": "2027-10-01"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "10": {
+        "contatti": {
+            "telefono": "000-0",
+            "telefono1": "-",
+            "telefono2": "347-4273948"
+        },
+        "indirizzo": {
+            "via": "VIA SAORGIO 37",
+            "cap": "10147",
+            "comune": "TORINO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-26",
+            "visita_medica": "2027-01-26"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "11": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "348-5549702"
+        },
+        "indirizzo": {
+            "via": "VIA CESARE BATTISTI 38",
+            "cap": "10099",
+            "comune": "SAN MAURO TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-22",
+            "visita_medica": "2027-04-22"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "12": {
+        "contatti": {
+            "telefono": "331-6888419",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA MARTIRI DELLA LIBERTA' 6",
+            "cap": "10024",
+            "comune": "MONCALIERI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-29",
+            "visita_medica": "2027-04-29"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "13": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "339-1903777"
+        },
+        "indirizzo": {
+            "via": "VIA SAN BERNARDO 9 LETT.TER",
+            "cap": "10090",
+            "comune": "SAN RAFFAELE CIMENA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-24",
+            "visita_medica": "2027-03-24"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "14": {
+        "contatti": {
+            "telefono": "338-5207137",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA B. LUINI ,45 S/F",
+            "cap": "10149",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-20",
+            "visita_medica": "2027-08-20"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "15": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "349-1037980"
+        },
+        "indirizzo": {
+            "via": "VIA NINO OXILIA 17 PIANO:04 NUI:7",
+            "cap": "10155",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-21",
+            "visita_medica": "2027-07-21"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "16": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "347-5929130"
+        },
+        "indirizzo": {
+            "via": "VIA ROCCAVIONE DI CONTE 105 SCALA A",
+            "cap": "10100",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-04",
+            "visita_medica": "2027-08-04"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "17": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "333-2836795"
+        },
+        "indirizzo": {
+            "via": "VIA FAGNANO N. 4",
+            "cap": "10100",
+            "comune": "TORINO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-03-21",
+            "visita_medica": "2027-09-21"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "18": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-6887841"
+        },
+        "indirizzo": {
+            "via": "VIA VEGLIA 10 INT.23 P.01 NUI.1",
+            "cap": "10136",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2017-04-21",
+            "visita_medica": "2019-10-21"
+        },
+        "patenti": []
+    },
+    "19": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "340-8625824"
+        },
+        "indirizzo": {
+            "via": "VIA PAOLO EMILIO BURIDANI 76",
+            "cap": "10078",
+            "comune": "VENARIA REALE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-08-02",
+            "visita_medica": "2027-02-02"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "20": {
+        "contatti": {
+            "telefono": "339-4407149",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA PARELLA 11",
+            "cap": "10155",
+            "comune": "TORINO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-09-04",
+            "visita_medica": "2026-03-04"
+        },
+        "patenti": [
+            "2° grado"
+        ]
+    },
+    "21": {
+        "contatti": {
+            "telefono": "011-484650",
+            "telefono1": "347-4102084",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA SAN GIOVANNI BOSCO N? 60",
+            "cap": "10144",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-05",
+            "visita_medica": "2027-05-05"
+        },
+        "patenti": []
+    },
+    "22": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "349-8829966"
+        },
+        "indirizzo": {
+            "via": "VIA CAVOUR 28 LETT.C",
+            "cap": "10048",
+            "comune": "VINOVO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-15",
+            "visita_medica": "2027-04-15"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "23": {
+        "contatti": {
+            "telefono": "011-3090362",
+            "telefono1": "-",
+            "telefono2": "392-2883162"
+        },
+        "indirizzo": {
+            "via": "CORSO SIRACUSA,74",
+            "cap": "10136",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-05",
+            "visita_medica": "2027-05-05"
+        },
+        "patenti": []
+    },
+    "24": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "338-2408993"
+        },
+        "indirizzo": {
+            "via": "VIA BERGERA N. 10/E",
+            "cap": "10141",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-17",
+            "visita_medica": "2027-06-17"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "25": {
+        "contatti": {
+            "telefono": "338-9854304",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA TORINO N? 56",
+            "cap": "10040",
+            "comune": "DRUENTO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-10",
+            "visita_medica": "2027-04-10"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "26": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "346-5162897"
+        },
+        "indirizzo": {
+            "via": "VIA TORINO 56",
+            "cap": "10040",
+            "comune": "DRUENTO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-11",
+            "visita_medica": "2027-08-11"
+        },
+        "patenti": []
+    },
+    "27": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "011-9295653",
+            "telefono2": "348-2702151"
+        },
+        "indirizzo": {
+            "via": "VIA VILLANOVA 18",
+            "cap": "10076",
+            "comune": "NOLE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-14",
+            "visita_medica": "2027-05-14"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "28": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "349-5084290"
+        },
+        "indirizzo": {
+            "via": "VIA VAL DELLA TORRE 109",
+            "cap": "10100",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-24",
+            "visita_medica": "2027-03-24"
+        },
+        "patenti": []
+    },
+    "29": {
+        "contatti": {
+            "telefono": "011-4526858",
+            "telefono1": "-",
+            "telefono2": "347-2916987"
+        },
+        "indirizzo": {
+            "via": "VIA CALABRESI 7",
+            "cap": "10078",
+            "comune": "VENARIA REALE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-10",
+            "visita_medica": "2027-06-10"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    }
+}

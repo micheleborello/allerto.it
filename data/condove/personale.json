@@ -1,0 +1,220 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "339-7505404",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "BORGATA CAMPAMBIARDO 88",
+            "cap": "10040",
+            "comune": "CAPRIE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-03",
+            "visita_medica": "2027-06-03"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "2": {
+        "contatti": {
+            "telefono": "011-9632861",
+            "telefono1": "339-8485920",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA ANGELO PERODO 13",
+            "cap": "10055",
+            "comune": "CONDOVE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-17",
+            "visita_medica": "2027-03-17"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "0122-641589",
+            "telefono1": "-",
+            "telefono2": "347-2203456"
+        },
+        "indirizzo": {
+            "via": "FRAZ. VERNETTO,74",
+            "cap": "10050",
+            "comune": "CHIANOCCO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-18",
+            "visita_medica": "2027-04-18"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-6888420"
+        },
+        "indirizzo": {
+            "via": "VIA GIACOMO LEOPARDI 38/4",
+            "cap": "10055",
+            "comune": "CONDOVE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-08",
+            "visita_medica": "2027-04-08"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "5": {
+        "contatti": {
+            "telefono": "011-9643348",
+            "telefono1": "339-6466520",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA DON PETTIGIANI 1",
+            "cap": "10055",
+            "comune": "CONDOVE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2016-06-09",
+            "visita_medica": "2018-12-09"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "6": {
+        "contatti": {
+            "telefono": "011-9642073",
+            "telefono1": "-",
+            "telefono2": "338-7269712"
+        },
+        "indirizzo": {
+            "via": "VIA TORINO N? 29",
+            "cap": "10057",
+            "comune": "SANT'AMBROGIO DI TORINO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-05",
+            "visita_medica": "2027-05-05"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "7": {
+        "contatti": {
+            "telefono": "338-6109315",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "CORSO TURATI N? 24",
+            "cap": "10128",
+            "comune": "TORINO"
+        },
+        "grado": "FTAV.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-23",
+            "visita_medica": "2027-07-23"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "8": {
+        "contatti": {
+            "telefono": "011-9631951",
+            "telefono1": "-",
+            "telefono2": "393-9248166"
+        },
+        "indirizzo": {
+            "via": "VIA TORINO 72",
+            "cap": "10050",
+            "comune": "VAIE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-21",
+            "visita_medica": "2027-04-21"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "9": {
+        "contatti": {
+            "telefono": "347-8179476",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "BORGATA POISATTO N. 58",
+            "cap": "10055",
+            "comune": "CONDOVE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-17",
+            "visita_medica": "2027-06-17"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "10": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "349-9466093"
+        },
+        "indirizzo": {
+            "via": "VIA TORINO 4/F",
+            "cap": "10055",
+            "comune": "CONDOVE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-28",
+            "visita_medica": "2027-07-28"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "11": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "327-4997251"
+        },
+        "indirizzo": {
+            "via": "VIA VAIE 54",
+            "cap": "10050",
+            "comune": "SANT'ANTONINO DI SUSA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-28",
+            "visita_medica": "2027-08-31"
+        },
+        "patenti": []
+    }
+}

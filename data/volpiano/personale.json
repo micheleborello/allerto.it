@@ -1,0 +1,580 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "349-1327988"
+        },
+        "indirizzo": {
+            "via": "VIA VICOLO MUSSA 18",
+            "cap": "10040",
+            "comune": "LEINI'"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-05-13",
+            "visita_medica": "2027-11-13"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "2": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "340-6370391"
+        },
+        "indirizzo": {
+            "via": "VIA LAMARMORA,3",
+            "cap": "10090",
+            "comune": "FOGLIZZO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-10",
+            "visita_medica": "2027-03-10"
+        },
+        "patenti": [
+            "2° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "347-4310859"
+        },
+        "indirizzo": {
+            "via": "VIA BERGAMO 21",
+            "cap": "10036",
+            "comune": "SETTIMO TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-05-08",
+            "visita_medica": "2027-11-08"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "011-9953656",
+            "telefono1": "331-6888183",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA GENOVA 39",
+            "cap": "10088",
+            "comune": "VOLPIANO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2019-02-22",
+            "visita_medica": "2021-08-22"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "5": {
+        "contatti": {
+            "telefono": "331-6887858",
+            "telefono1": "347-2307885",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA FAVORITA N 147",
+            "cap": "10034",
+            "comune": "CHIVASSO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2000-01-01",
+            "visita_medica": "2002-07-01"
+        },
+        "patenti": [
+            "2° grado"
+        ]
+    },
+    "6": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-5788944"
+        },
+        "indirizzo": {
+            "via": "VIALE PARADISO 45",
+            "cap": "10040",
+            "comune": "RIVAROSSA"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-03",
+            "visita_medica": "2027-06-03"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "7": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "349-9720089"
+        },
+        "indirizzo": {
+            "via": "VIA GORIZIA 113 - SCALA  A",
+            "cap": "10100",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-08-02",
+            "visita_medica": "2027-02-02"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "8": {
+        "contatti": {
+            "telefono": "342-9288905",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA CAVOUR 15",
+            "cap": "10040",
+            "comune": "LEINI'"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-02",
+            "visita_medica": "2027-01-02"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "9": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-6888182"
+        },
+        "indirizzo": {
+            "via": "VIA LAMARMORA N. 7",
+            "cap": "10088",
+            "comune": "VOLPIANO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-08-07",
+            "visita_medica": "2027-02-07"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "10": {
+        "contatti": {
+            "telefono": "348-6959034",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA ALPI GRAIE 30",
+            "cap": "10036",
+            "comune": "SETTIMO TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-19",
+            "visita_medica": "2027-05-19"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "11": {
+        "contatti": {
+            "telefono": "345-2142801",
+            "telefono1": "331-6888266",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA ANTONIO FONTANESI 11",
+            "cap": "10100",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-06",
+            "visita_medica": "2027-06-06"
+        },
+        "patenti": [
+            "2° grado"
+        ]
+    },
+    "12": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "340-6984812"
+        },
+        "indirizzo": {
+            "via": "VIA  S. DONATO 78 ESP BIS",
+            "cap": "10100",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-13",
+            "visita_medica": "2027-03-13"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "13": {
+        "contatti": {
+            "telefono": "011-9881980",
+            "telefono1": "331-6887857",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "CORSO GIOVANNI ARNAUD 44",
+            "cap": "10088",
+            "comune": "VOLPIANO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-05",
+            "visita_medica": "2027-06-05"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "14": {
+        "contatti": {
+            "telefono": "335-6962386",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA MINCIO N. 5",
+            "cap": "10036",
+            "comune": "SETTIMO TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-31",
+            "visita_medica": "2027-01-31"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "15": {
+        "contatti": {
+            "telefono": "011-8971726",
+            "telefono1": "-",
+            "telefono2": "339-3899285"
+        },
+        "indirizzo": {
+            "via": "VIA LORENZINI 8",
+            "cap": "10090",
+            "comune": "GASSINO TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-05-24",
+            "visita_medica": "2026-11-24"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "16": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "366-5775951"
+        },
+        "indirizzo": {
+            "via": "VIA VALENTINO CARRERA 85",
+            "cap": "10149",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-28",
+            "visita_medica": "2027-07-28"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "17": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "349-6491613"
+        },
+        "indirizzo": {
+            "via": "STRADA CORDOVA 10/4E",
+            "cap": "10090",
+            "comune": "CASTIGLIONE TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-31",
+            "visita_medica": "2027-04-30"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "18": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "348-9159275"
+        },
+        "indirizzo": {
+            "via": "VIA RIVAROLO 82 LETTERA C",
+            "cap": "10079",
+            "comune": "MAPPANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-03-27",
+            "visita_medica": "2027-09-27"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "19": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-1987671"
+        },
+        "indirizzo": {
+            "via": "VIA LEINI' 142",
+            "cap": "10088",
+            "comune": "VOLPIANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-17",
+            "visita_medica": "2027-06-17"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "20": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "339-3101243"
+        },
+        "indirizzo": {
+            "via": "VIA RE ARDUINO 6",
+            "cap": "10088",
+            "comune": "VOLPIANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-08-07",
+            "visita_medica": "2027-02-07"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "21": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "347-5860585"
+        },
+        "indirizzo": {
+            "via": "VIA ROCCAVIONE N? 21",
+            "cap": "10100",
+            "comune": "TORINO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2019-02-21",
+            "visita_medica": "2021-08-21"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "22": {
+        "contatti": {
+            "telefono": "340-5682407",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA CIRCONVALAZIONE 29",
+            "cap": "10088",
+            "comune": "VOLPIANO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-05-24",
+            "visita_medica": "2026-11-24"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "23": {
+        "contatti": {
+            "telefono": "347-3490440",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA ITALIA,82",
+            "cap": "10036",
+            "comune": "SETTIMO TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-31",
+            "visita_medica": "2027-04-30"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "24": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-6888318"
+        },
+        "indirizzo": {
+            "via": "VIA GIARDINI N 5",
+            "cap": "10040",
+            "comune": "LOMBARDORE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2018-12-13",
+            "visita_medica": "2021-06-13"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "25": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "393-2422520"
+        },
+        "indirizzo": {
+            "via": "VIA PERGOLESI 96/C",
+            "cap": "10100",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-13",
+            "visita_medica": "2027-03-13"
+        },
+        "patenti": []
+    },
+    "26": {
+        "contatti": {
+            "telefono": "011-2052774",
+            "telefono1": "331-6887949",
+            "telefono2": "347-6756034"
+        },
+        "indirizzo": {
+            "via": "VIA BAIRO 11",
+            "cap": "10155",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-26",
+            "visita_medica": "2027-05-26"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "27": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-4902341"
+        },
+        "indirizzo": {
+            "via": "VIA VITTORIO BERSEZIO 3",
+            "cap": "10036",
+            "comune": "SETTIMO TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-17",
+            "visita_medica": "2027-06-17"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "28": {
+        "contatti": {
+            "telefono": "349-3695324",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA DANTE ALIGHIERI 1 SUB.A",
+            "cap": "10088",
+            "comune": "VOLPIANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-05-24",
+            "visita_medica": "2026-11-24"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "29": {
+        "contatti": {
+            "telefono": "011-2741185",
+            "telefono1": "346-9691081",
+            "telefono2": "366-5775658"
+        },
+        "indirizzo": {
+            "via": "VIA TIZIANO 9",
+            "cap": "10088",
+            "comune": "VOLPIANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-10",
+            "visita_medica": "2027-06-10"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    }
+}

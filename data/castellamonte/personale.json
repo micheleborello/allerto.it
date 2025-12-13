@@ -1,0 +1,356 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "335-1917359"
+        },
+        "indirizzo": {
+            "via": "VIA DORA BALTEA 12",
+            "cap": "10015",
+            "comune": "IVREA"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-14",
+            "visita_medica": "2027-07-14"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "2": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "347-4562657"
+        },
+        "indirizzo": {
+            "via": "FRAZ.S.ANTONIO-VIA RIVAROLO 10",
+            "cap": "10081",
+            "comune": "CASTELLAMONTE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-05",
+            "visita_medica": "2027-05-05"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "328-9868877",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA PRAMARZO N. 3",
+            "cap": "10080",
+            "comune": "BALDISSERO CANAVESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-17",
+            "visita_medica": "2027-03-17"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "0124-699676",
+            "telefono1": "-",
+            "telefono2": "342-5986481"
+        },
+        "indirizzo": {
+            "via": "VIA VASTELLAMONTE - FRAZ. VILLA C.VO 8",
+            "cap": "10080",
+            "comune": "CASTELNUOVO NIGRA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-17",
+            "visita_medica": "2027-03-17"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "5": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "388-659211"
+        },
+        "indirizzo": {
+            "via": "CASCINA GERBOLA 15",
+            "cap": "10011",
+            "comune": "AGLIE'"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-03-05",
+            "visita_medica": "2026-09-05"
+        },
+        "patenti": []
+    },
+    "6": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "335-5243536"
+        },
+        "indirizzo": {
+            "via": "STRADA FILATOIO 55",
+            "cap": "10072",
+            "comune": "CASELLE TORINESE"
+        },
+        "grado": "FTAV.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-07-17",
+            "visita_medica": "2028-01-17"
+        },
+        "patenti": []
+    },
+    "7": {
+        "contatti": {
+            "telefono": "0125-615041",
+            "telefono1": "-",
+            "telefono2": "347-8730864"
+        },
+        "indirizzo": {
+            "via": "VIA CASALE,2/B",
+            "cap": "10015",
+            "comune": "IVREA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-03",
+            "visita_medica": "2027-06-03"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "8": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "346-7895724"
+        },
+        "indirizzo": {
+            "via": "VIA CERVERA 32",
+            "cap": "10080",
+            "comune": "COLLERETTO CASTELNUOVO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-11",
+            "visita_medica": "2027-08-11"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "9": {
+        "contatti": {
+            "telefono": "0124-513377",
+            "telefono1": "-",
+            "telefono2": "351-9775405"
+        },
+        "indirizzo": {
+            "via": "VIA SANTUARIO DI PIOVA 28",
+            "cap": "10080",
+            "comune": "CINTANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-18",
+            "visita_medica": "2027-08-18"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "10": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "331-1987577",
+            "telefono2": "328-0362170"
+        },
+        "indirizzo": {
+            "via": "STRADA PREIE 33",
+            "cap": "10010",
+            "comune": "TORRE CANAVESE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-13",
+            "visita_medica": "2027-06-13"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "11": {
+        "contatti": {
+            "telefono": "338-2844642",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA PERTINI 10",
+            "cap": "10080",
+            "comune": "VISTRORIO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-08",
+            "visita_medica": "2027-04-08"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "12": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "347-4163753"
+        },
+        "indirizzo": {
+            "via": "PIAZZA GENERALE FRANCO ROMANO 6 INT. 8",
+            "cap": "10081",
+            "comune": "CASTELLAMONTE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-03-13",
+            "visita_medica": "2027-09-13"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "13": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "348-0527264"
+        },
+        "indirizzo": {
+            "via": "VIA CONVENTO 3",
+            "cap": "10090",
+            "comune": "CUCEGLIO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-08",
+            "visita_medica": "2027-04-08"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "14": {
+        "contatti": {
+            "telefono": "0125-749162",
+            "telefono1": "-",
+            "telefono2": "334-3003522"
+        },
+        "indirizzo": {
+            "via": "VIA ALPI CHIARAMONTI N 8",
+            "cap": "10008",
+            "comune": "TRAVERSELLA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-29",
+            "visita_medica": "2027-04-29"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "15": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "335-7546491"
+        },
+        "indirizzo": {
+            "via": "VIA STRADA DEI SOSPIRI 3/5/A",
+            "cap": "10081",
+            "comune": "CASTELLAMONTE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-31",
+            "visita_medica": "2027-01-31"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "16": {
+        "contatti": {
+            "telefono": "335-7368282",
+            "telefono1": "331-1987570",
+            "telefono2": "346-0809282"
+        },
+        "indirizzo": {
+            "via": "CORSO INDIPENDENZA 114",
+            "cap": "10086",
+            "comune": "RIVAROLO CANAVESE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-05",
+            "visita_medica": "2027-05-05"
+        },
+        "patenti": []
+    },
+    "17": {
+        "contatti": {
+            "telefono": "348-4254052",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIALE KENNEDY15",
+            "cap": "10015",
+            "comune": "IVREA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-18",
+            "visita_medica": "2027-04-18"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "18": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "349-6666629"
+        },
+        "indirizzo": {
+            "via": "VIA BALUARDI N?2",
+            "cap": "10011",
+            "comune": "AGLIE'"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-05",
+            "visita_medica": "2027-05-05"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    }
+}

@@ -1,0 +1,376 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "347-7414895"
+        },
+        "indirizzo": {
+            "via": "FRAZIONE ANDRE' 44",
+            "cap": "10070",
+            "comune": "TRAVES"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-03-19",
+            "visita_medica": "2026-09-19"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "2": {
+        "contatti": {
+            "telefono": "328-7337966",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "REGIONE OVIGLIA INFERIORE 40",
+            "cap": "10074",
+            "comune": "LANZO TORINESE"
+        },
+        "grado": "FTAV.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-11-28",
+            "visita_medica": "2026-05-28"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "339-2658080",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA STURA 31",
+            "cap": "10070",
+            "comune": "GERMAGNANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-19",
+            "visita_medica": "2027-05-19"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "346-5219810"
+        },
+        "indirizzo": {
+            "via": "VIA S. ANNA 25",
+            "cap": "10070",
+            "comune": "BALANGERO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-03-25",
+            "visita_medica": "2027-09-25"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "5": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "366-2088729"
+        },
+        "indirizzo": {
+            "via": "VIA STRADALE MATHI 52",
+            "cap": "10070",
+            "comune": "BALANGERO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-26",
+            "visita_medica": "2027-05-26"
+        },
+        "patenti": []
+    },
+    "6": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "333-3613187"
+        },
+        "indirizzo": {
+            "via": "VIA MOLLIE 1",
+            "cap": "10070",
+            "comune": "SAN FRANCESCO AL CAMPO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-19",
+            "visita_medica": "2027-03-19"
+        },
+        "patenti": []
+    },
+    "7": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "391-7702152"
+        },
+        "indirizzo": {
+            "via": "FRAZ. VERNAI 35",
+            "cap": "10070",
+            "comune": "VIU'"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-12",
+            "visita_medica": "2027-05-12"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "8": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "342-8557930"
+        },
+        "indirizzo": {
+            "via": "VIA STRADALE LANZO 79",
+            "cap": "10070",
+            "comune": "BALANGERO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-03-12",
+            "visita_medica": "2026-09-12"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "9": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "345-2383637"
+        },
+        "indirizzo": {
+            "via": "VIA MOLARO 236",
+            "cap": "10070",
+            "comune": "COASSOLO TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-10",
+            "visita_medica": "2027-06-10"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "10": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "350-5953681"
+        },
+        "indirizzo": {
+            "via": "VIA TOINO 26",
+            "cap": "10074",
+            "comune": "LANZO TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-02-27",
+            "visita_medica": "2026-08-27"
+        },
+        "patenti": []
+    },
+    "11": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "333-6733566"
+        },
+        "indirizzo": {
+            "via": "REGIONE OVIGLIA SUPERIORE 122",
+            "cap": "10074",
+            "comune": "LANZO TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-03",
+            "visita_medica": "2027-03-03"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "12": {
+        "contatti": {
+            "telefono": "0123-346713",
+            "telefono1": "-",
+            "telefono2": "340-1360520"
+        },
+        "indirizzo": {
+            "via": "VIA GRANGE 11",
+            "cap": "10070",
+            "comune": "BALANGERO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-11",
+            "visita_medica": "2027-04-11"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "13": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "348-1788010"
+        },
+        "indirizzo": {
+            "via": "CORSO IV NOVEMBRE 36",
+            "cap": "10070",
+            "comune": "CAFASSE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-04-16",
+            "visita_medica": "2026-10-16"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "14": {
+        "contatti": {
+            "telefono": "331-1146394",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA SANTA LUCIA 14",
+            "cap": "10074",
+            "comune": "LANZO TORINESE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-29",
+            "visita_medica": "2027-04-29"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "15": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "391-1048742"
+        },
+        "indirizzo": {
+            "via": "VIA TORINO 88 INT. E",
+            "cap": "10074",
+            "comune": "LANZO TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-15",
+            "visita_medica": "2027-04-15"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "16": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "348-9933270"
+        },
+        "indirizzo": {
+            "via": "VIA FONTANA DEL MONTE 3",
+            "cap": "10074",
+            "comune": "LANZO TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-03-13",
+            "visita_medica": "2027-09-13"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "17": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "393-9878121"
+        },
+        "indirizzo": {
+            "via": "VIA MOLINO 40",
+            "cap": "10070",
+            "comune": "BALANGERO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-04",
+            "visita_medica": "2027-08-04"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "18": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "342-6797678",
+            "telefono2": "366-5775712"
+        },
+        "indirizzo": {
+            "via": "VIA VILLANOVA N? 54",
+            "cap": "10070",
+            "comune": "CAFASSE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-08-07",
+            "visita_medica": "2026-02-07"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "19": {
+        "contatti": {
+            "telefono": "0123-29581",
+            "telefono1": "331-1987331",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "REGIONE FUA N? 44",
+            "cap": "10074",
+            "comune": "LANZO TORINESE"
+        },
+        "grado": "FTAV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-17",
+            "visita_medica": "2027-06-17"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    }
+}

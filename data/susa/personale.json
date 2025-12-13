@@ -1,0 +1,298 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "348-6821582"
+        },
+        "indirizzo": {
+            "via": "VIA TORINO 92",
+            "cap": "10059",
+            "comune": "SUSA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-11-28",
+            "visita_medica": "2026-05-28"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "2": {
+        "contatti": {
+            "telefono": "0122-31185",
+            "telefono1": "347-767585",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "CORSO STATI UNITI 126/D",
+            "cap": "10059",
+            "comune": "SUSA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-06-06",
+            "visita_medica": "2027-12-06"
+        },
+        "patenti": []
+    },
+    "3": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "393-7775237"
+        },
+        "indirizzo": {
+            "via": "VIA FRANCESCO ROLANDO 35",
+            "cap": "10059",
+            "comune": "SUSA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-04-08",
+            "visita_medica": "2027-10-08"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "348-577040"
+        },
+        "indirizzo": {
+            "via": "VIA URBIANO 10",
+            "cap": "10059",
+            "comune": "SUSA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-03-05",
+            "visita_medica": "2026-09-05"
+        },
+        "patenti": []
+    },
+    "5": {
+        "contatti": {
+            "telefono": "0122-629232",
+            "telefono1": "-",
+            "telefono2": "340-3449328"
+        },
+        "indirizzo": {
+            "via": "VIIA FRATELLI VALLERO 3",
+            "cap": "10059",
+            "comune": "SUSA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-04-11",
+            "visita_medica": "2027-10-11"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "6": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "346-7576682"
+        },
+        "indirizzo": {
+            "via": "CORSO STATI UNITI 61",
+            "cap": "10059",
+            "comune": "SUSA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-04",
+            "visita_medica": "2027-08-04"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "7": {
+        "contatti": {
+            "telefono": "0122-980622",
+            "telefono1": "334-3944600",
+            "telefono2": "347-8740627"
+        },
+        "indirizzo": {
+            "via": "VIA BERENFELS  10",
+            "cap": "10059",
+            "comune": "SUSA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-08",
+            "visita_medica": "2027-04-08"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "8": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "347-1334699"
+        },
+        "indirizzo": {
+            "via": "FRAZIONE MOLINO 31",
+            "cap": "10050",
+            "comune": "VENAUS"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-25",
+            "visita_medica": "2027-08-25"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "9": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "392-2320910"
+        },
+        "indirizzo": {
+            "via": "FRAZ. BARMAFEISSARD 7",
+            "cap": "10050",
+            "comune": "CHIANOCCO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-04-03",
+            "visita_medica": "2027-10-03"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "10": {
+        "contatti": {
+            "telefono": "340-7052432",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA RIVO 12",
+            "cap": "10050",
+            "comune": "VENAUS"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-05-23",
+            "visita_medica": "2027-11-23"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "11": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "338-6031559"
+        },
+        "indirizzo": {
+            "via": "CORSO STATI UNITI 124",
+            "cap": "10059",
+            "comune": "SUSA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-01-16",
+            "visita_medica": "2026-07-16"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "12": {
+        "contatti": {
+            "telefono": "0122-50363",
+            "telefono1": "333-6395731",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA ANTICA REALE 2",
+            "cap": "10050",
+            "comune": "VENAUS"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-10",
+            "visita_medica": "2027-03-10"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "13": {
+        "contatti": {
+            "telefono": "347-2262474",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA GROSSE PIETRE 2",
+            "cap": "10050",
+            "comune": "GRAVERE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-03-14",
+            "visita_medica": "2027-09-14"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "14": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "380-7591581"
+        },
+        "indirizzo": {
+            "via": "CORSO STATI UNITI 102",
+            "cap": "10059",
+            "comune": "SUSA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-23",
+            "visita_medica": "2027-07-23"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "15": {
+        "contatti": {
+            "telefono": "331-2089011",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "CORSO COUVERT, 47",
+            "cap": "10059",
+            "comune": "SUSA"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-10",
+            "visita_medica": "2027-03-10"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    }
+}

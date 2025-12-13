@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "nome": "ALBERTO",
+        "cognome": "BLEYNAT",
+        "cf": "BLYLRT97P01G674L",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "bleynat.alberto"
+    },
+    {
+        "id": 2,
+        "nome": "ANDREA",
+        "cognome": "BOURLOT",
+        "cf": "BRLNDR03T07G674A",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "bourlot.andrea"
+    },
+    {
+        "id": 3,
+        "nome": "LEANDRO SALVATORE",
+        "cognome": "CIULLA",
+        "cf": "CLLLDR76E17L219N",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "ciulla.leandro.salvatore"
+    },
+    {
+        "id": 4,
+        "nome": "MATTEO",
+        "cognome": "LANTELME CHARRET",
+        "cf": "LNTMTT83S17G674J",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "lantelme.charret.matteo"
+    },
+    {
+        "id": 5,
+        "nome": "FEDERICO VALENTINO",
+        "cognome": "MANZON",
+        "cf": "MNZFRC74E27G674Z",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "manzon.federico.valentino"
+    },
+    {
+        "id": 6,
+        "nome": "IVAN",
+        "cognome": "PAGLIETTA",
+        "cf": "PGLVNI69T31G674K",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "paglietta.ivan"
+    },
+    {
+        "id": 7,
+        "nome": "DIEGO",
+        "cognome": "VERDONE",
+        "cf": "VRDDGI70C06G674E",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "verdone.diego"
+    }
+]

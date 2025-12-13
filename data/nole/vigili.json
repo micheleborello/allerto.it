@@ -1,0 +1,339 @@
+[
+    {
+        "id": 14,
+        "cognome": "AMATEIS",
+        "nome": "ALESSANDRO",
+        "grado": "VIG",
+        "attivo": 1,
+        "created_at": "2025-08-11 12:44:23",
+        "is_capo": 0,
+        "cf": "MTSLSN98E14C722D",
+        "email": "aleamateis@gmail.com"
+    },
+    {
+        "id": 1,
+        "cognome": "BORELLO",
+        "nome": "MICHELE",
+        "grado": "FTAV",
+        "attivo": 1,
+        "created_at": "2025-08-10 19:08:33",
+        "is_capo": 1,
+        "email": "borelloeferrari@gmail.com",
+        "cf": "BRLMHL78A06C722Y"
+    },
+    {
+        "id": 23,
+        "cognome": "Carelli",
+        "nome": "Fabrizio",
+        "grado": "FTAV",
+        "attivo": 1,
+        "is_capo": 0,
+        "created_at": "2025-10-24 16:59:48"
+    },
+    {
+        "id": 20,
+        "cognome": "CARESIO",
+        "nome": "MARCO",
+        "grado": "VIG",
+        "attivo": 1,
+        "created_at": "2025-08-11 12:45:49",
+        "is_capo": 0,
+        "cf": "CRSMRC89T18C722O",
+        "email": "nachosbdb@gmail.com"
+    },
+    {
+        "id": 2,
+        "cognome": "CAVALIERE",
+        "nome": "GIORGIO",
+        "grado": "VIG",
+        "attivo": 1,
+        "created_at": "2025-08-10 19:08:45",
+        "cf": "CVLGRG65D24F107G",
+        "is_capo": 0,
+        "email": "cavgio65@virgilio.it"
+    },
+    {
+        "id": 26,
+        "cognome": "Coletti",
+        "nome": "Erika",
+        "grado": "VIG",
+        "attivo": 1,
+        "is_capo": 0,
+        "created_at": "2025-10-24 17:01:12"
+    },
+    {
+        "id": 16,
+        "cognome": "COSMA",
+        "nome": "MASSIMO",
+        "grado": "VIG",
+        "attivo": 1,
+        "created_at": "2025-08-11 12:44:51",
+        "cf": "CSMMSM76M06I119H",
+        "is_capo": 0,
+        "email": "massimo.cosma@yahoo.it"
+    },
+    {
+        "id": 4,
+        "cognome": "COSTANTINO",
+        "nome": "EMANUELE",
+        "grado": "VIG",
+        "attivo": 1,
+        "created_at": "2025-08-10 19:10:30",
+        "cf": "CSTMNL71A25C722K",
+        "is_capo": 0,
+        "email": "emanuelecostantino@alice.it"
+    },
+    {
+        "id": 7,
+        "cognome": "COSTANTINO",
+        "nome": "PIETRO",
+        "grado": "VIG",
+        "attivo": 1,
+        "created_at": "2025-08-11 12:42:55",
+        "cf": "CSTPTR00E31C722S",
+        "is_capo": 0,
+        "email": "costantinopietro37@gmail.com"
+    },
+    {
+        "id": 25,
+        "cognome": "De Cilladi",
+        "nome": "Paolo Maurizio",
+        "grado": "FTAV",
+        "attivo": 1,
+        "is_capo": 0,
+        "created_at": "2025-10-24 17:01:00"
+    },
+    {
+        "id": 15,
+        "cognome": "GRIVETTO",
+        "nome": "ROBERTO",
+        "grado": "VIG",
+        "attivo": 1,
+        "created_at": "2025-08-11 12:44:34",
+        "cf": "GRVRRT71M20C722V",
+        "email": "r.grivetto@alice.it"
+    },
+    {
+        "id": 22,
+        "cognome": "HAJDUK",
+        "nome": "ALEKSANDRA ANNA",
+        "grado": "VIG",
+        "attivo": 1,
+        "created_at": "2025-08-12 11:21:38",
+        "is_capo": 0,
+        "cf": "HJDLSN81C53Z127U"
+    },
+    {
+        "id": 12,
+        "cognome": "LAGANA&#039;",
+        "nome": "FABIO",
+        "grado": "VIG",
+        "attivo": 1,
+        "created_at": "2025-08-11 12:43:58",
+        "cf": "LGNFBA76E03L727R",
+        "username": "lagana.fabio",
+        "email": "fabio.lagana@gmail.com"
+    },
+    {
+        "id": 31,
+        "cognome": "Macario Ban",
+        "nome": "Alberto",
+        "grado": "CSV",
+        "attivo": 1,
+        "is_capo": 0,
+        "created_at": "2025-10-29 17:52:18"
+    },
+    {
+        "id": 9,
+        "cognome": "MAGGIOLINO",
+        "nome": "GIOVANNA",
+        "grado": "VIG",
+        "attivo": 1,
+        "created_at": "2025-08-11 12:43:22",
+        "cf": "MGGGNN83C52C722L",
+        "email": "nelsonino83@gmail.com"
+    },
+    {
+        "id": 8,
+        "cognome": "MAGGIOLINO",
+        "nome": "IVAN",
+        "grado": "CSV",
+        "attivo": 1,
+        "created_at": "2025-08-11 12:43:11",
+        "cf": "MGGVNI78R23C722A",
+        "email": "ivan.maggiolino@gmail.com"
+    },
+    {
+        "id": 19,
+        "cognome": "MAGNETTI",
+        "nome": "MASSIMO",
+        "grado": "CSV",
+        "attivo": 1,
+        "created_at": "2025-08-11 12:45:25",
+        "cf": "MGNMSM70P03C722D",
+        "email": "massimo.magnetti.3@gmail.com"
+    },
+    {
+        "id": 24,
+        "cognome": "Marangoni",
+        "nome": "Fabio",
+        "grado": "FTAV",
+        "attivo": 1,
+        "is_capo": 0,
+        "created_at": "2025-10-24 17:00:07"
+    },
+    {
+        "id": 32,
+        "cognome": "Martini",
+        "nome": "Roberto",
+        "grado": "FTAV",
+        "attivo": 1,
+        "is_capo": 0,
+        "created_at": "2025-10-30 23:49:36"
+    },
+    {
+        "id": 29,
+        "cognome": "Mazza",
+        "nome": "Domenico",
+        "grado": "VIG",
+        "attivo": 1,
+        "is_capo": 0,
+        "created_at": "2025-10-29 16:22:56"
+    },
+    {
+        "id": 27,
+        "cognome": "Muraro",
+        "nome": "Claudio",
+        "grado": "FTAV",
+        "attivo": 1,
+        "is_capo": 0,
+        "created_at": "2025-10-24 21:28:45"
+    },
+    {
+        "id": 10,
+        "cognome": "OMIZZOLO",
+        "nome": "MASSIMO",
+        "grado": "VIG",
+        "attivo": 1,
+        "created_at": "2025-08-11 12:43:33",
+        "cf": "MZZMSM89H22C722Y",
+        "email": "omizz8922@gmail.com"
+    },
+    {
+        "id": 18,
+        "cognome": "ORIGLIA",
+        "nome": "CLAUDIO",
+        "grado": "VIG",
+        "attivo": 1,
+        "created_at": "2025-08-11 12:45:14",
+        "cf": "RGLCLD71L03C722E",
+        "email": "claudio.origlia@alice.it",
+        "is_capo": 0
+    },
+    {
+        "id": 13,
+        "cognome": "PALMA",
+        "nome": "SIMONE",
+        "grado": "VIG",
+        "attivo": 1,
+        "created_at": "2025-08-11 12:44:10",
+        "cf": "PLMSMN85S08E445K",
+        "email": "palma.simone@virgilio.it"
+    },
+    {
+        "id": 28,
+        "cognome": "Persichella",
+        "nome": "Andrea",
+        "grado": "FTAV",
+        "attivo": 1,
+        "is_capo": 0,
+        "created_at": "2025-10-29 16:15:48"
+    },
+    {
+        "id": 30,
+        "cognome": "Rosso",
+        "nome": "Simone",
+        "grado": "VIG",
+        "attivo": 1,
+        "is_capo": 0,
+        "created_at": "2025-10-29 17:52:06"
+    },
+    {
+        "id": 6,
+        "cognome": "SALDI",
+        "nome": "MANUEL",
+        "grado": "CSV",
+        "attivo": 1,
+        "created_at": "2025-08-10 19:10:53",
+        "cf": "SLDMNL85E08C722V",
+        "email": "drago3027@inwind.it"
+    },
+    {
+        "id": 21,
+        "cognome": "SBRANA",
+        "nome": "ALESSANDRA",
+        "grado": "VIG",
+        "attivo": 1,
+        "created_at": "2025-08-12 09:54:19",
+        "cf": "SBRLSN85D43G702X"
+    },
+    {
+        "id": 5,
+        "cognome": "SOFFIETTI",
+        "nome": "LUCA",
+        "grado": "CSV",
+        "attivo": 1,
+        "created_at": "2025-08-10 19:10:41",
+        "cf": "SFFLCU84C01C722Q",
+        "email": "soffiettiluca@gmail.com"
+    },
+    {
+        "id": 11,
+        "cognome": "SORRITELLI",
+        "nome": "CRISTIANO",
+        "grado": "VIG",
+        "attivo": 1,
+        "created_at": "2025-08-11 12:43:47",
+        "cf": "SRRCST77S13E445O",
+        "email": "cristiano.sorritelli@gmail.com"
+    },
+    {
+        "id": 34,
+        "cognome": "TURLETTO",
+        "nome": "ROBERTO",
+        "grado": "CSV",
+        "attivo": 1,
+        "is_capo": 0,
+        "created_at": "2025-11-23 11:50:18"
+    },
+    {
+        "id": 3,
+        "cognome": "UNET",
+        "nome": "BARBARA",
+        "grado": "VIG",
+        "attivo": 1,
+        "created_at": "2025-08-10 19:09:05",
+        "cf": "NTUBBR75D43C722J",
+        "email": "b.unet@libero.it"
+    },
+    {
+        "id": 33,
+        "cognome": "Venerandi",
+        "nome": "Ivano",
+        "grado": "FTAV",
+        "attivo": 1,
+        "is_capo": 0,
+        "created_at": "2025-11-02 11:21:41"
+    },
+    {
+        "id": 17,
+        "cognome": "ZIANO",
+        "nome": "SIMONE",
+        "grado": "VIG",
+        "attivo": 1,
+        "created_at": "2025-08-11 12:45:02",
+        "cf": "ZNISMN90T08C722C",
+        "email": "ziano37@gmail.com",
+        "is_capo": 0
+    }
+]

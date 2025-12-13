@@ -1,0 +1,2619 @@
+[
+    {
+        "type": "addestramento.create",
+        "ts": "2025-08-28 14:40:06",
+        "ts_iso": "2025-08-28T14:40:06+02:00",
+        "user": null,
+        "ip": "93.36.161.115",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "2d5eab1da7cc679d",
+            "data": "2025-08-28",
+            "inizio_dt": "2025-08-28T09:00:00",
+            "fine_dt": "2025-08-28T10:00:00",
+            "minuti": 60,
+            "attivita": "Test",
+            "recupero": false,
+            "presenti": [
+                {
+                    "vigile_id": 14,
+                    "nome": "Alessandro Amateis"
+                },
+                {
+                    "vigile_id": 1,
+                    "nome": "Michele Borello"
+                },
+                {
+                    "vigile_id": 20,
+                    "nome": "Marco Caresio"
+                },
+                {
+                    "vigile_id": 2,
+                    "nome": "Giorgio Cavaliere"
+                },
+                {
+                    "vigile_id": 16,
+                    "nome": "Massimo Cosma"
+                },
+                {
+                    "vigile_id": 4,
+                    "nome": "Emanuele Costantino"
+                },
+                {
+                    "vigile_id": 7,
+                    "nome": "Pietro Costantino"
+                },
+                {
+                    "vigile_id": 15,
+                    "nome": "Roberto Grivetto"
+                },
+                {
+                    "vigile_id": 22,
+                    "nome": "Aleksandra Hajduk"
+                },
+                {
+                    "vigile_id": 9,
+                    "nome": "Giovanna Maggiolino"
+                },
+                {
+                    "vigile_id": 8,
+                    "nome": "Ivan Maggiollino"
+                },
+                {
+                    "vigile_id": 19,
+                    "nome": "Massimo Magnetti"
+                },
+                {
+                    "vigile_id": 10,
+                    "nome": "Massimo Omizzolo"
+                },
+                {
+                    "vigile_id": 18,
+                    "nome": "Claudio Origlia"
+                },
+                {
+                    "vigile_id": 13,
+                    "nome": "Simone Palma"
+                },
+                {
+                    "vigile_id": 6,
+                    "nome": "Manuel Saldi"
+                },
+                {
+                    "vigile_id": 21,
+                    "nome": "Alessandra Sbrana"
+                },
+                {
+                    "vigile_id": 5,
+                    "nome": "Luca Soffietti"
+                },
+                {
+                    "vigile_id": 11,
+                    "nome": "Cristiano Sorritelli"
+                },
+                {
+                    "vigile_id": 3,
+                    "nome": "Barbara Unet"
+                },
+                {
+                    "vigile_id": 17,
+                    "nome": "Simone Ziano"
+                }
+            ]
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-08-29 21:33:50",
+        "ts_iso": "2025-08-29T21:33:50+02:00",
+        "user": null,
+        "ip": "93.69.88.66",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "943980f1caae6e42",
+            "data": "2025-08-29",
+            "inizio_dt": "2025-08-29T09:00:00",
+            "fine_dt": "2025-08-29T12:00:00",
+            "minuti": 180,
+            "attivita": "Test",
+            "recupero": false,
+            "presenti": []
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-08-29 21:35:56",
+        "ts_iso": "2025-08-29T21:35:56+02:00",
+        "user": null,
+        "ip": "93.69.88.66",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "943980f1caae6e42",
+            "vigile_id": 3,
+            "nome": "Barbara Unet",
+            "data": "2025-08-29",
+            "minuti": 180,
+            "at": "2025-08-29 21:35:56",
+            "at_iso": "2025-08-29T21:35:56+02:00",
+            "ip": "93.69.88.66",
+            "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-08-29 21:48:31",
+        "ts_iso": "2025-08-29T21:48:31+02:00",
+        "user": null,
+        "ip": "93.69.88.66",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "c97807720ee54bcc",
+            "data": "2024-06-02",
+            "inizio_dt": "2024-06-02T09:00:00",
+            "fine_dt": "2024-06-02T12:30:00",
+            "minuti": 210,
+            "attivita": "Generale",
+            "recupero": false,
+            "presenti": []
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-08-29 21:50:25",
+        "ts_iso": "2025-08-29T21:50:25+02:00",
+        "user": null,
+        "ip": "93.69.88.66",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "46464ddeaec94f53",
+            "data": "2025-06-09",
+            "inizio_dt": "2025-06-09T09:00:00",
+            "fine_dt": "2025-06-09T12:30:00",
+            "minuti": 210,
+            "attivita": "Generale",
+            "recupero": false,
+            "presenti": []
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-08-29 21:50:50",
+        "ts_iso": "2025-08-29T21:50:50+02:00",
+        "user": null,
+        "ip": "93.69.88.66",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "f7edea0ed146e027",
+            "data": "2025-06-16",
+            "inizio_dt": "2025-06-16T09:00:00",
+            "fine_dt": "2025-06-16T12:00:00",
+            "minuti": 180,
+            "attivita": "Generale",
+            "recupero": false,
+            "presenti": []
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-08-29 21:51:14",
+        "ts_iso": "2025-08-29T21:51:14+02:00",
+        "user": null,
+        "ip": "93.69.88.66",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "e0036d86c3919fe3",
+            "data": "2025-06-23",
+            "inizio_dt": "2025-06-23T09:30:00",
+            "fine_dt": "2025-06-23T12:30:00",
+            "minuti": 180,
+            "attivita": "Generale",
+            "recupero": false,
+            "presenti": []
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-08-29 21:51:30",
+        "ts_iso": "2025-08-29T21:51:30+02:00",
+        "user": null,
+        "ip": "93.69.88.66",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "132f9d2718e3b734",
+            "data": "2025-06-28",
+            "inizio_dt": "2025-06-28T21:00:00",
+            "fine_dt": "2025-06-28T23:30:00",
+            "minuti": 150,
+            "attivita": "Generale",
+            "recupero": false,
+            "presenti": []
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-08-29 21:52:05",
+        "ts_iso": "2025-08-29T21:52:05+02:00",
+        "user": null,
+        "ip": "93.69.88.66",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "9cf47fae0d2e5b9b",
+            "data": "2025-06-30",
+            "inizio_dt": "2025-06-30T09:20:00",
+            "fine_dt": "2025-06-30T12:30:00",
+            "minuti": 190,
+            "attivita": "Generale",
+            "recupero": false,
+            "presenti": []
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-08-29 21:53:16",
+        "ts_iso": "2025-08-29T21:53:16+02:00",
+        "user": null,
+        "ip": "93.69.88.66",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "c88cf135b26d2293",
+            "data": "2025-06-09",
+            "inizio_dt": "2025-06-09T09:00:00",
+            "fine_dt": "2025-06-09T12:30:00",
+            "minuti": 210,
+            "attivita": "Generale",
+            "recupero": false,
+            "presenti": []
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-08-29 21:54:17",
+        "ts_iso": "2025-08-29T21:54:17+02:00",
+        "user": null,
+        "ip": "93.69.88.66",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "b557add2abbee219",
+            "data": "2025-06-09",
+            "inizio_dt": "2025-06-09T09:00:00",
+            "fine_dt": "2025-06-09T12:30:00",
+            "minuti": 210,
+            "attivita": "Generale",
+            "recupero": false,
+            "presenti": []
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-08-30 13:27:51",
+        "ts_iso": "2025-08-30T13:27:51+02:00",
+        "user": null,
+        "ip": "93.36.163.3",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "a68794ab8ac4cbe9",
+            "data": "2024-06-01",
+            "inizio_dt": "2024-06-01T08:00:00",
+            "fine_dt": "2024-06-01T10:00:00",
+            "minuti": 120,
+            "attivita": "",
+            "recupero": false,
+            "presenti": []
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-08-30 13:38:11",
+        "ts_iso": "2025-08-30T13:38:11+02:00",
+        "user": null,
+        "ip": "93.36.163.3",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "90528cdee32aaec3",
+            "data": "2024-05-02",
+            "inizio_dt": "2024-05-02T01:00:00",
+            "fine_dt": "2024-05-02T03:03:00",
+            "minuti": 123,
+            "attivita": "partenza/assetto programmazione",
+            "recupero": false,
+            "presenti": []
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-08-31 10:02:27",
+        "ts_iso": "2025-08-31T10:02:27+02:00",
+        "user": null,
+        "ip": "192.116.0.165",
+        "ua": "Mozilla/5.0 (Windows NT 6.1; rv:109.0) Gecko/20100101 Firefox/115.0",
+        "data": {
+            "sessione_uid": "834f29d0a94f8a89",
+            "data": "2025-08-31",
+            "inizio_dt": "2025-08-31T09:31:00",
+            "fine_dt": "2025-08-31T12:00:00",
+            "minuti": 149,
+            "attivita": "Autorespiratori",
+            "recupero": false,
+            "presenti": []
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-08-31 10:03:40",
+        "ts_iso": "2025-08-31T10:03:40+02:00",
+        "user": null,
+        "ip": "93.69.88.66",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "834f29d0a94f8a89",
+            "vigile_id": 17,
+            "nome": "Simone Ziano",
+            "data": "2025-08-31",
+            "minuti": 149,
+            "at": "2025-08-31 10:03:40",
+            "at_iso": "2025-08-31T10:03:40+02:00",
+            "ip": "93.69.88.66",
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-08-31 10:04:01",
+        "ts_iso": "2025-08-31T10:04:01+02:00",
+        "user": null,
+        "ip": "5.90.98.43",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/25.0 Chrome/121.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "834f29d0a94f8a89",
+            "vigile_id": 3,
+            "nome": "Barbara Unet",
+            "data": "2025-08-31",
+            "minuti": 149,
+            "at": "2025-08-31 10:04:01",
+            "at_iso": "2025-08-31T10:04:01+02:00",
+            "ip": "5.90.98.43",
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/25.0 Chrome/121.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-08-31 10:04:01",
+        "ts_iso": "2025-08-31T10:04:01+02:00",
+        "user": null,
+        "ip": "109.53.197.91",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "834f29d0a94f8a89",
+            "vigile_id": 19,
+            "nome": "Massimo Magnetti",
+            "data": "2025-08-31",
+            "minuti": 149,
+            "at": "2025-08-31 10:04:01",
+            "at_iso": "2025-08-31T10:04:01+02:00",
+            "ip": "109.53.197.91",
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-08-31 10:04:52",
+        "ts_iso": "2025-08-31T10:04:52+02:00",
+        "user": null,
+        "ip": "93.69.88.66",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "834f29d0a94f8a89",
+            "vigile_id": 1,
+            "nome": "Michele Borello",
+            "data": "2025-08-31",
+            "minuti": 149,
+            "at": "2025-08-31 10:04:52",
+            "at_iso": "2025-08-31T10:04:52+02:00",
+            "ip": "93.69.88.66",
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-08-31 10:11:25",
+        "ts_iso": "2025-08-31T10:11:25+02:00",
+        "user": null,
+        "ip": "109.53.200.183",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/28.0 Chrome/130.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "834f29d0a94f8a89",
+            "vigile_id": 4,
+            "nome": "Emanuele Costantino",
+            "data": "2025-08-31",
+            "minuti": 149,
+            "at": "2025-08-31 10:11:25",
+            "at_iso": "2025-08-31T10:11:25+02:00",
+            "ip": "109.53.200.183",
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/28.0 Chrome/130.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-09-05 10:41:01",
+        "ts_iso": "2025-09-05T10:41:01+02:00",
+        "user": null,
+        "ip": "151.84.148.154",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0",
+        "data": {
+            "sessione_uid": "e54b07850adbdadd",
+            "data": "2025-09-05",
+            "inizio_dt": "2025-09-05T09:00:00",
+            "fine_dt": "2025-09-05T10:00:00",
+            "minuti": 60,
+            "attivita": "Test",
+            "recupero": false,
+            "presenti": []
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-09-05 22:09:40",
+        "ts_iso": "2025-09-05T22:09:40+02:00",
+        "user": null,
+        "ip": "31.26.224.142",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "c7760251c6c178e2",
+            "data": "2025-09-05",
+            "inizio_dt": "2025-09-05T21:00:00",
+            "fine_dt": "2025-09-05T22:00:00",
+            "minuti": 60,
+            "attivita": "Test",
+            "recupero": false,
+            "presenti": []
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-05 22:12:34",
+        "ts_iso": "2025-09-05T22:12:34+02:00",
+        "user": null,
+        "ip": "93.35.63.159",
+        "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/140.0.7339.39 Mobile/15E148 Safari/604.1",
+        "data": {
+            "sessione_uid": "c7760251c6c178e2",
+            "vigile_id": 9,
+            "nome": "Giovanna Maggiolino",
+            "data": "2025-09-05",
+            "minuti": 60,
+            "at": "2025-09-05 22:12:34",
+            "at_iso": "2025-09-05T22:12:34+02:00",
+            "ip": "93.35.63.159",
+            "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/140.0.7339.39 Mobile/15E148 Safari/604.1"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-05 22:13:22",
+        "ts_iso": "2025-09-05T22:13:22+02:00",
+        "user": null,
+        "ip": "93.35.63.159",
+        "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/140.0.7339.39 Mobile/15E148 Safari/604.1",
+        "data": {
+            "sessione_uid": "c7760251c6c178e2",
+            "vigile_id": 12,
+            "nome": "Fabio Laganà",
+            "data": "2025-09-05",
+            "minuti": 60,
+            "at": "2025-09-05 22:13:22",
+            "at_iso": "2025-09-05T22:13:22+02:00",
+            "ip": "93.35.63.159",
+            "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/140.0.7339.39 Mobile/15E148 Safari/604.1"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-05 22:13:26",
+        "ts_iso": "2025-09-05T22:13:26+02:00",
+        "user": null,
+        "ip": "2.36.17.36",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "c7760251c6c178e2",
+            "vigile_id": 17,
+            "nome": "Simone Ziano",
+            "data": "2025-09-05",
+            "minuti": 60,
+            "at": "2025-09-05 22:13:26",
+            "at_iso": "2025-09-05T22:13:26+02:00",
+            "ip": "2.36.17.36",
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-05 22:13:45",
+        "ts_iso": "2025-09-05T22:13:45+02:00",
+        "user": null,
+        "ip": "109.53.188.50",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/28.0 Chrome/130.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "c7760251c6c178e2",
+            "vigile_id": 8,
+            "nome": "Ivan Maggiollino",
+            "data": "2025-09-05",
+            "minuti": 60,
+            "at": "2025-09-05 22:13:45",
+            "at_iso": "2025-09-05T22:13:45+02:00",
+            "ip": "109.53.188.50",
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/28.0 Chrome/130.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-05 22:13:58",
+        "ts_iso": "2025-09-05T22:13:58+02:00",
+        "user": null,
+        "ip": "2.36.17.36",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/28.0 Chrome/130.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "c7760251c6c178e2",
+            "vigile_id": 11,
+            "nome": "Cristiano Sorritelli",
+            "data": "2025-09-05",
+            "minuti": 60,
+            "at": "2025-09-05 22:13:58",
+            "at_iso": "2025-09-05T22:13:58+02:00",
+            "ip": "2.36.17.36",
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/28.0 Chrome/130.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-05 22:14:12",
+        "ts_iso": "2025-09-05T22:14:12+02:00",
+        "user": null,
+        "ip": "109.53.158.110",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/28.0 Chrome/130.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "c7760251c6c178e2",
+            "vigile_id": 7,
+            "nome": "Pietro Costantino",
+            "data": "2025-09-05",
+            "minuti": 60,
+            "at": "2025-09-05 22:14:12",
+            "at_iso": "2025-09-05T22:14:12+02:00",
+            "ip": "109.53.158.110",
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/28.0 Chrome/130.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-05 22:14:20",
+        "ts_iso": "2025-09-05T22:14:20+02:00",
+        "user": null,
+        "ip": "109.53.184.90",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "c7760251c6c178e2",
+            "vigile_id": 18,
+            "nome": "Claudio Origlia",
+            "data": "2025-09-05",
+            "minuti": 60,
+            "at": "2025-09-05 22:14:20",
+            "at_iso": "2025-09-05T22:14:20+02:00",
+            "ip": "109.53.184.90",
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-05 22:14:27",
+        "ts_iso": "2025-09-05T22:14:27+02:00",
+        "user": null,
+        "ip": "2.36.17.36",
+        "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Brave/1 Mobile/15E148 Safari/604.1",
+        "data": {
+            "sessione_uid": "c7760251c6c178e2",
+            "vigile_id": 6,
+            "nome": "Manuel Saldi",
+            "data": "2025-09-05",
+            "minuti": 60,
+            "at": "2025-09-05 22:14:27",
+            "at_iso": "2025-09-05T22:14:27+02:00",
+            "ip": "2.36.17.36",
+            "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Brave/1 Mobile/15E148 Safari/604.1"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-05 22:16:59",
+        "ts_iso": "2025-09-05T22:16:59+02:00",
+        "user": null,
+        "ip": "5.90.115.62",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "c7760251c6c178e2",
+            "vigile_id": 13,
+            "nome": "Simone Palma",
+            "data": "2025-09-05",
+            "minuti": 60,
+            "at": "2025-09-05 22:16:59",
+            "at_iso": "2025-09-05T22:16:59+02:00",
+            "ip": "5.90.115.62",
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-05 22:17:06",
+        "ts_iso": "2025-09-05T22:17:06+02:00",
+        "user": null,
+        "ip": "217.201.148.210",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "c7760251c6c178e2",
+            "vigile_id": 2,
+            "nome": "Giorgio Cavaliere",
+            "data": "2025-09-05",
+            "minuti": 60,
+            "at": "2025-09-05 22:17:06",
+            "at_iso": "2025-09-05T22:17:06+02:00",
+            "ip": "217.201.148.210",
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-05 22:17:27",
+        "ts_iso": "2025-09-05T22:17:27+02:00",
+        "user": null,
+        "ip": "78.212.52.38",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "c7760251c6c178e2",
+            "vigile_id": 5,
+            "nome": "Luca Soffietti",
+            "data": "2025-09-05",
+            "minuti": 60,
+            "at": "2025-09-05 22:17:27",
+            "at_iso": "2025-09-05T22:17:27+02:00",
+            "ip": "78.212.52.38",
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-05 22:17:52",
+        "ts_iso": "2025-09-05T22:17:52+02:00",
+        "user": null,
+        "ip": "109.53.187.78",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "c7760251c6c178e2",
+            "vigile_id": 19,
+            "nome": "Massimo Magnetti",
+            "data": "2025-09-05",
+            "minuti": 60,
+            "at": "2025-09-05 22:17:52",
+            "at_iso": "2025-09-05T22:17:52+02:00",
+            "ip": "109.53.187.78",
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-05 22:18:05",
+        "ts_iso": "2025-09-05T22:18:05+02:00",
+        "user": null,
+        "ip": "94.32.40.179",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "c7760251c6c178e2",
+            "vigile_id": 15,
+            "nome": "Roberto Grivetto",
+            "data": "2025-09-05",
+            "minuti": 60,
+            "at": "2025-09-05 22:18:05",
+            "at_iso": "2025-09-05T22:18:05+02:00",
+            "ip": "94.32.40.179",
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-05 22:20:18",
+        "ts_iso": "2025-09-05T22:20:18+02:00",
+        "user": null,
+        "ip": "109.53.200.183",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/28.0 Chrome/130.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "c7760251c6c178e2",
+            "vigile_id": 4,
+            "nome": "Emanuele Costantino",
+            "data": "2025-09-05",
+            "minuti": 60,
+            "at": "2025-09-05 22:20:18",
+            "at_iso": "2025-09-05T22:20:18+02:00",
+            "ip": "109.53.200.183",
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/28.0 Chrome/130.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-05 22:20:38",
+        "ts_iso": "2025-09-05T22:20:38+02:00",
+        "user": null,
+        "ip": "37.163.77.57",
+        "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1",
+        "data": {
+            "sessione_uid": "c7760251c6c178e2",
+            "vigile_id": 10,
+            "nome": "Massimo Omizzolo",
+            "data": "2025-09-05",
+            "minuti": 60,
+            "at": "2025-09-05 22:20:38",
+            "at_iso": "2025-09-05T22:20:38+02:00",
+            "ip": "37.163.77.57",
+            "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-09-07 14:27:28",
+        "ts_iso": "2025-09-07T14:27:28+02:00",
+        "user": null,
+        "ip": "78.209.187.227",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "39d7589f9aa7fb52",
+            "data": "2025-09-07",
+            "inizio_dt": "2025-09-07T14:30:00",
+            "fine_dt": "2025-09-07T17:30:00",
+            "minuti": 180,
+            "attivita": "Motoseghe - Mototroncatori",
+            "recupero": false,
+            "presenti": []
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-07 14:27:56",
+        "ts_iso": "2025-09-07T14:27:56+02:00",
+        "user": null,
+        "ip": "109.53.175.193",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/28.0 Chrome/130.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "39d7589f9aa7fb52",
+            "vigile_id": 4,
+            "nome": "Emanuele Costantino",
+            "data": "2025-09-07",
+            "minuti": 180,
+            "at": "2025-09-07 14:27:56",
+            "at_iso": "2025-09-07T14:27:56+02:00",
+            "ip": "109.53.175.193",
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/28.0 Chrome/130.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-07 14:28:21",
+        "ts_iso": "2025-09-07T14:28:21+02:00",
+        "user": null,
+        "ip": "109.53.206.38",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/28.0 Chrome/130.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "39d7589f9aa7fb52",
+            "vigile_id": 11,
+            "nome": "Cristiano Sorritelli",
+            "data": "2025-09-07",
+            "minuti": 180,
+            "at": "2025-09-07 14:28:21",
+            "at_iso": "2025-09-07T14:28:21+02:00",
+            "ip": "109.53.206.38",
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/28.0 Chrome/130.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-07 14:29:48",
+        "ts_iso": "2025-09-07T14:29:48+02:00",
+        "user": null,
+        "ip": "78.209.234.162",
+        "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1",
+        "data": {
+            "sessione_uid": "39d7589f9aa7fb52",
+            "vigile_id": 10,
+            "nome": "Massimo Omizzolo",
+            "data": "2025-09-07",
+            "minuti": 180,
+            "at": "2025-09-07 14:29:48",
+            "at_iso": "2025-09-07T14:29:48+02:00",
+            "ip": "78.209.234.162",
+            "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-09-14 09:24:54",
+        "ts_iso": "2025-09-14T09:24:54+02:00",
+        "user": null,
+        "ip": "109.53.158.253",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "18d1bc17335a0a1b",
+            "data": "2025-09-14",
+            "inizio_dt": "2025-09-14T09:00:00",
+            "fine_dt": "2025-09-14T12:00:00",
+            "minuti": 180,
+            "attivita": "Martinetti e cuscini sollevatori.",
+            "recupero": false,
+            "presenti": []
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-14 09:25:48",
+        "ts_iso": "2025-09-14T09:25:48+02:00",
+        "user": null,
+        "ip": "93.69.94.187",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "18d1bc17335a0a1b",
+            "vigile_id": 20,
+            "nome": "Marco Caresio",
+            "data": "2025-09-14",
+            "minuti": 180,
+            "at": "2025-09-14 09:25:48",
+            "at_iso": "2025-09-14T09:25:48+02:00",
+            "ip": "93.69.94.187",
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-14 09:26:34",
+        "ts_iso": "2025-09-14T09:26:34+02:00",
+        "user": null,
+        "ip": "193.207.177.104",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "18d1bc17335a0a1b",
+            "vigile_id": 15,
+            "nome": "Roberto Grivetto",
+            "data": "2025-09-14",
+            "minuti": 180,
+            "at": "2025-09-14 09:26:34",
+            "at_iso": "2025-09-14T09:26:34+02:00",
+            "ip": "193.207.177.104",
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-14 09:27:09",
+        "ts_iso": "2025-09-14T09:27:09+02:00",
+        "user": null,
+        "ip": "109.53.190.36",
+        "ua": "Mozilla/5.0 (Linux; Android 15; CPH2557 Build/AP3A.240617.008) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.118 Mobile Safari/537.36 XiaoMi/MiuiBrowser/14.41.1-gn",
+        "data": {
+            "sessione_uid": "18d1bc17335a0a1b",
+            "vigile_id": 16,
+            "nome": "Massimo Cosma",
+            "data": "2025-09-14",
+            "minuti": 180,
+            "at": "2025-09-14 09:27:09",
+            "at_iso": "2025-09-14T09:27:09+02:00",
+            "ip": "109.53.190.36",
+            "ua": "Mozilla/5.0 (Linux; Android 15; CPH2557 Build/AP3A.240617.008) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.118 Mobile Safari/537.36 XiaoMi/MiuiBrowser/14.41.1-gn"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-14 09:27:15",
+        "ts_iso": "2025-09-14T09:27:15+02:00",
+        "user": null,
+        "ip": "109.53.193.208",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "18d1bc17335a0a1b",
+            "vigile_id": 2,
+            "nome": "Giorgio Cavaliere",
+            "data": "2025-09-14",
+            "minuti": 180,
+            "at": "2025-09-14 09:27:15",
+            "at_iso": "2025-09-14T09:27:15+02:00",
+            "ip": "109.53.193.208",
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-14 09:30:16",
+        "ts_iso": "2025-09-14T09:30:16+02:00",
+        "user": null,
+        "ip": "5.91.107.121",
+        "ua": "Mozilla/5.0 (Linux; Android 15; SM-A336B Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.7339.51 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "18d1bc17335a0a1b",
+            "vigile_id": 13,
+            "nome": "Simone Palma",
+            "data": "2025-09-14",
+            "minuti": 180,
+            "at": "2025-09-14 09:30:16",
+            "at_iso": "2025-09-14T09:30:16+02:00",
+            "ip": "5.91.107.121",
+            "ua": "Mozilla/5.0 (Linux; Android 15; SM-A336B Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.7339.51 Mobile Safari/537.36"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-14 09:32:37",
+        "ts_iso": "2025-09-14T09:32:37+02:00",
+        "user": null,
+        "ip": "104.28.60.90",
+        "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+        "data": {
+            "sessione_uid": "18d1bc17335a0a1b",
+            "vigile_id": 14,
+            "nome": "Alessandro Amateis",
+            "data": "2025-09-14",
+            "minuti": 180,
+            "at": "2025-09-14 09:32:37",
+            "at_iso": "2025-09-14T09:32:37+02:00",
+            "ip": "104.28.60.90",
+            "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-09-14 09:36:30",
+        "ts_iso": "2025-09-14T09:36:30+02:00",
+        "user": null,
+        "ip": "109.53.158.253",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "f5b0c4ca83ad54cb",
+            "data": "2025-09-14",
+            "inizio_dt": "2025-09-14T09:00:00",
+            "fine_dt": "2025-09-14T12:00:00",
+            "minuti": 180,
+            "attivita": "Martinetti e cuscini sollevatori.",
+            "recupero": false,
+            "presenti": []
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-14 12:58:45",
+        "ts_iso": "2025-09-14T12:58:45+02:00",
+        "user": null,
+        "ip": "109.53.195.80",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "18d1bc17335a0a1b",
+            "vigile_id": 8,
+            "nome": "Ivan Maggiollino",
+            "data": "2025-09-14",
+            "minuti": 180,
+            "at": "2025-09-14 12:58:45",
+            "at_iso": "2025-09-14T12:58:45+02:00",
+            "ip": "109.53.195.80",
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-09-21 11:46:28",
+        "ts_iso": "2025-09-21T11:46:28+02:00",
+        "user": null,
+        "ip": "93.69.94.187",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:142.0) Gecko/20100101 Firefox/142.0",
+        "data": {
+            "sessione_uid": "e7a292c1c546b685",
+            "data": "2025-09-21",
+            "inizio_dt": "2025-09-21T09:00:00",
+            "fine_dt": "2025-09-21T12:00:00",
+            "minuti": 180,
+            "attivita": "Attrezzatura dielettrica",
+            "recupero": false,
+            "presenti": []
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-21 11:47:30",
+        "ts_iso": "2025-09-21T11:47:30+02:00",
+        "user": null,
+        "ip": "193.207.129.78",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "e7a292c1c546b685",
+            "vigile_id": 15,
+            "nome": "Roberto Grivetto",
+            "data": "2025-09-21",
+            "minuti": 180,
+            "at": "2025-09-21 11:47:30",
+            "at_iso": "2025-09-21T11:47:30+02:00",
+            "ip": "193.207.129.78",
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-21 11:47:38",
+        "ts_iso": "2025-09-21T11:47:38+02:00",
+        "user": null,
+        "ip": "109.53.201.64",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "e7a292c1c546b685",
+            "vigile_id": 18,
+            "nome": "Claudio Origlia",
+            "data": "2025-09-21",
+            "minuti": 180,
+            "at": "2025-09-21 11:47:38",
+            "at_iso": "2025-09-21T11:47:38+02:00",
+            "ip": "109.53.201.64",
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-21 11:47:49",
+        "ts_iso": "2025-09-21T11:47:49+02:00",
+        "user": null,
+        "ip": "109.53.186.154",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "e7a292c1c546b685",
+            "vigile_id": 17,
+            "nome": "Simone Ziano",
+            "data": "2025-09-21",
+            "minuti": 180,
+            "at": "2025-09-21 11:47:49",
+            "at_iso": "2025-09-21T11:47:49+02:00",
+            "ip": "109.53.186.154",
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-21 11:48:12",
+        "ts_iso": "2025-09-21T11:48:12+02:00",
+        "user": null,
+        "ip": "104.28.98.59",
+        "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1",
+        "data": {
+            "sessione_uid": "e7a292c1c546b685",
+            "vigile_id": 14,
+            "nome": "Alessandro Amateis",
+            "data": "2025-09-21",
+            "minuti": 180,
+            "at": "2025-09-21 11:48:12",
+            "at_iso": "2025-09-21T11:48:12+02:00",
+            "ip": "104.28.98.59",
+            "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-21 11:48:29",
+        "ts_iso": "2025-09-21T11:48:29+02:00",
+        "user": null,
+        "ip": "109.53.156.157",
+        "ua": "Mozilla/5.0 (Linux; Android 15; CPH2557 Build/AP3A.240617.008) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.118 Mobile Safari/537.36 XiaoMi/MiuiBrowser/14.41.1-gn",
+        "data": {
+            "sessione_uid": "e7a292c1c546b685",
+            "vigile_id": 16,
+            "nome": "Massimo Cosma",
+            "data": "2025-09-21",
+            "minuti": 180,
+            "at": "2025-09-21 11:48:29",
+            "at_iso": "2025-09-21T11:48:29+02:00",
+            "ip": "109.53.156.157",
+            "ua": "Mozilla/5.0 (Linux; Android 15; CPH2557 Build/AP3A.240617.008) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.118 Mobile Safari/537.36 XiaoMi/MiuiBrowser/14.41.1-gn"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-21 11:48:54",
+        "ts_iso": "2025-09-21T11:48:54+02:00",
+        "user": null,
+        "ip": "93.69.94.187",
+        "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Brave/1 Mobile/15E148 Safari/604.1",
+        "data": {
+            "sessione_uid": "e7a292c1c546b685",
+            "vigile_id": 6,
+            "nome": "Manuel Saldi",
+            "data": "2025-09-21",
+            "minuti": 180,
+            "at": "2025-09-21 11:48:54",
+            "at_iso": "2025-09-21T11:48:54+02:00",
+            "ip": "93.69.94.187",
+            "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Brave/1 Mobile/15E148 Safari/604.1"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-21 12:10:11",
+        "ts_iso": "2025-09-21T12:10:11+02:00",
+        "user": null,
+        "ip": "109.53.183.200",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/28.0 Chrome/130.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "e7a292c1c546b685",
+            "vigile_id": 7,
+            "nome": "Pietro Costantino",
+            "data": "2025-09-21",
+            "minuti": 180,
+            "at": "2025-09-21 12:10:11",
+            "at_iso": "2025-09-21T12:10:11+02:00",
+            "ip": "109.53.183.200",
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/28.0 Chrome/130.0.0.0 Mobile Safari/537.36"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-09-23 13:38:20",
+        "ts_iso": "2025-09-23T13:38:20+02:00",
+        "user": null,
+        "ip": "151.84.148.154",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "d669add0e4205fb8",
+            "data": "2025-09-23",
+            "inizio_dt": "2025-09-23T09:38:00",
+            "fine_dt": "2025-09-23T13:38:00",
+            "minuti": 240,
+            "attivita": "Scala Italiana",
+            "recupero": false,
+            "presenti": []
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-23 13:38:29",
+        "ts_iso": "2025-09-23T13:38:29+02:00",
+        "user": null,
+        "ip": "151.84.148.154",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "d669add0e4205fb8",
+            "vigile_id": 1,
+            "nome": "Michele Borello",
+            "data": "2025-09-23",
+            "minuti": 240,
+            "at": "2025-09-23 13:38:29",
+            "at_iso": "2025-09-23T13:38:29+02:00",
+            "ip": "151.84.148.154",
+            "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+        }
+    },
+    {
+        "type": "checkin.ok",
+        "ts": "2025-09-23 13:39:01",
+        "ts_iso": "2025-09-23T13:39:01+02:00",
+        "user": null,
+        "ip": "151.84.148.154",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "d669add0e4205fb8",
+            "vigile_id": 22,
+            "nome": "Aleksandra Hajduk",
+            "data": "2025-09-23",
+            "minuti": 240,
+            "at": "2025-09-23 13:39:01",
+            "at_iso": "2025-09-23T13:39:01+02:00",
+            "ip": "151.84.148.154",
+            "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-09-26 11:24:51",
+        "ts_iso": "2025-09-26T11:24:51+02:00",
+        "user": null,
+        "ip": "151.84.148.154",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "1e940220287c7f1b",
+            "data": "2025-09-26",
+            "inizio_dt": "2025-09-26T09:00:00",
+            "fine_dt": "2025-09-26T12:30:00",
+            "minuti": 210,
+            "attivita": "Test",
+            "recupero": false,
+            "presenti": []
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-09-26 12:36:21",
+        "ts_iso": "2025-09-26T12:36:21+02:00",
+        "user": null,
+        "ip": "151.84.148.154",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "a8e30868c09801cb",
+            "data": "2025-09-26",
+            "inizio_dt": "2025-09-26T12:36:00",
+            "fine_dt": "2025-09-26T13:36:00",
+            "minuti": 60,
+            "attivita": "Test",
+            "recupero": false,
+            "presenti": []
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-09-27 12:35:03",
+        "ts_iso": "2025-09-27T12:35:03+02:00",
+        "user": "borello.michele",
+        "ip": "151.84.148.154",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "7b013da4338561d6",
+            "data": "2025-09-27",
+            "inizio_dt": "2025-09-27T12:34:00",
+            "fine_dt": "2025-09-27T13:34:00",
+            "minuti": 60,
+            "attivita": "Test",
+            "recupero": false,
+            "presenti": [],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-09-27 13:38:20",
+        "ts_iso": "2025-09-27T13:38:20+02:00",
+        "user": "borello.michele",
+        "ip": "93.36.162.191",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "8251eed1364115d4",
+            "data": "2025-09-26",
+            "inizio_dt": "2025-09-26T21:00:00",
+            "fine_dt": "2025-09-26T23:30:00",
+            "minuti": 150,
+            "attivita": "Sistemi di allertamento digitalizzati",
+            "recupero": false,
+            "presenti": [],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-09-27 15:15:04",
+        "ts_iso": "2025-09-27T15:15:04+02:00",
+        "user": "borello.michele",
+        "ip": "151.84.148.154",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "3f342e86c3f17e38",
+            "data": "2025-09-27",
+            "inizio_dt": "2025-09-27T15:14:00",
+            "fine_dt": "2025-09-27T16:14:00",
+            "minuti": 60,
+            "attivita": "Test",
+            "recupero": false,
+            "presenti": [],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-09-28 09:43:08",
+        "ts_iso": "2025-09-28T09:43:08+02:00",
+        "user": "unet.barbara",
+        "ip": "91.81.249.123",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0",
+        "data": {
+            "sessione_uid": "0a8d148832e60087",
+            "data": "2025-09-28",
+            "inizio_dt": "2025-09-28T09:00:00",
+            "fine_dt": "2025-09-28T12:00:00",
+            "minuti": 180,
+            "attivita": "Autorespiratori",
+            "recupero": false,
+            "presenti": [],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-09-28 09:48:19",
+        "ts_iso": "2025-09-28T09:48:19+02:00",
+        "user": "unet.barbara",
+        "ip": "91.81.249.123",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0",
+        "data": {
+            "sessione_uid": "4a56e1ec7ee531c4",
+            "data": "2025-09-28",
+            "inizio_dt": "2025-09-28T09:00:00",
+            "fine_dt": "2025-09-28T12:00:00",
+            "minuti": 180,
+            "attivita": "Autorespiratori",
+            "recupero": false,
+            "presenti": [],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-09-28 14:54:24",
+        "ts_iso": "2025-09-28T14:54:24+02:00",
+        "user": "unet.barbara",
+        "ip": "91.81.249.123",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0",
+        "data": {
+            "sessione_uid": "c8646707d793a247",
+            "data": "2025-09-26",
+            "inizio_dt": "2025-09-26T21:00:00",
+            "fine_dt": "2025-09-26T23:30:00",
+            "minuti": 150,
+            "attivita": "Generale",
+            "recupero": false,
+            "presenti": [],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-09-28 17:38:27",
+        "ts_iso": "2025-09-28T17:38:27+02:00",
+        "user": "unet.barbara",
+        "ip": "91.81.249.123",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0",
+        "data": {
+            "sessione_uid": "956bab1463161f70",
+            "data": "2025-09-12",
+            "inizio_dt": "2025-09-12T22:00:00",
+            "fine_dt": "2025-09-13T03:00:00",
+            "minuti": 300,
+            "attivita": "Simulazione intervento (specificare)",
+            "recupero": false,
+            "presenti": [],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-09-28 17:44:08",
+        "ts_iso": "2025-09-28T17:44:08+02:00",
+        "user": "unet.barbara",
+        "ip": "91.81.249.123",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0",
+        "data": {
+            "sessione_uid": "d32d4160547b3494",
+            "data": "2025-09-27",
+            "inizio_dt": "2025-09-27T09:00:00",
+            "fine_dt": "2025-09-27T12:00:00",
+            "minuti": 180,
+            "attivita": "Generale",
+            "recupero": true,
+            "presenti": [],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-10-01 12:01:59",
+        "ts_iso": "2025-10-01T12:01:59+02:00",
+        "user": "soffietti.luca",
+        "ip": "151.84.148.154",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "8a106d46eb8e9c03",
+            "data": "2025-10-01",
+            "inizio_dt": "2025-10-01T12:01:00",
+            "fine_dt": "2025-10-01T13:01:00",
+            "minuti": 60,
+            "attivita": "Test",
+            "recupero": false,
+            "presenti": [],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-10-01 15:36:36",
+        "ts_iso": "2025-10-01T15:36:36+02:00",
+        "user": "borello.michele",
+        "ip": "151.84.148.154",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "eab5e81f79ebb530",
+            "data": "2025-10-01",
+            "inizio_dt": "2025-10-01T15:34:00",
+            "fine_dt": "2025-10-01T16:34:00",
+            "minuti": 60,
+            "attivita": "Test",
+            "recupero": false,
+            "presenti": [],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-10-01 15:38:09",
+        "ts_iso": "2025-10-01T15:38:09+02:00",
+        "user": "borello.michele",
+        "ip": "151.84.148.154",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "2cb730270f551d92",
+            "data": "2025-10-01",
+            "inizio_dt": "2025-10-01T15:37:00",
+            "fine_dt": "2025-10-01T16:37:00",
+            "minuti": 60,
+            "attivita": "Test",
+            "recupero": false,
+            "presenti": [],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-10-01 16:00:09",
+        "ts_iso": "2025-10-01T16:00:09+02:00",
+        "user": "borello.michele",
+        "ip": "151.84.148.154",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "f2ac1dbb23f1febe",
+            "data": "2025-10-01",
+            "inizio_dt": "2025-10-01T15:59:00",
+            "fine_dt": "2025-10-01T16:59:00",
+            "minuti": 60,
+            "attivita": "Test",
+            "recupero": false,
+            "presenti": [],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-10-01 16:00:40",
+        "ts_iso": "2025-10-01T16:00:40+02:00",
+        "user": "borello.michele",
+        "ip": "151.84.148.154",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "a550de1658c38f16",
+            "data": "2025-10-01",
+            "inizio_dt": "2025-10-01T16:00:00",
+            "fine_dt": "2025-10-01T17:00:00",
+            "minuti": 60,
+            "attivita": "Test",
+            "recupero": false,
+            "presenti": [
+                {
+                    "vigile_id": 14,
+                    "nome": "ALESSANDRO AMATEIS"
+                },
+                {
+                    "vigile_id": 1,
+                    "nome": "MICHELE BORELLO"
+                },
+                {
+                    "vigile_id": 20,
+                    "nome": "MARCO CARESIO"
+                },
+                {
+                    "vigile_id": 2,
+                    "nome": "GIORGIO CAVALIERE"
+                },
+                {
+                    "vigile_id": 16,
+                    "nome": "MASSIMO COSMA"
+                },
+                {
+                    "vigile_id": 4,
+                    "nome": "EMANUELE COSTANTINO"
+                }
+            ],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-10-02 09:29:02",
+        "ts_iso": "2025-10-02T09:29:02+02:00",
+        "user": "soffietti.luca",
+        "ip": "151.84.148.154",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "d4dae1bb2d192f1f",
+            "data": "2025-10-02",
+            "inizio_dt": "2025-10-02T09:28:00",
+            "fine_dt": "2025-10-02T10:28:00",
+            "minuti": 60,
+            "attivita": "Test",
+            "recupero": false,
+            "presenti": [],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-10-05 10:32:04",
+        "ts_iso": "2025-10-05T10:32:04+02:00",
+        "user": "maggiolino.ivan",
+        "ip": "91.81.249.123",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "a7fff7989d6097d6",
+            "data": "2025-10-05",
+            "inizio_dt": "2025-10-05T09:00:00",
+            "fine_dt": "2025-10-05T12:00:00",
+            "minuti": 180,
+            "attivita": "Motoseghe - Mototroncatori",
+            "recupero": false,
+            "presenti": [],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-10-12 10:33:07",
+        "ts_iso": "2025-10-12T10:33:07+02:00",
+        "user": "saldi.manuel",
+        "ip": "217.201.191.161",
+        "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/141.0.7390.69 Mobile/15E148 Safari/604.1",
+        "data": {
+            "sessione_uid": "14c795c428a1e134",
+            "data": "2025-10-12",
+            "inizio_dt": "2025-10-12T08:30:00",
+            "fine_dt": "2025-10-12T12:30:00",
+            "minuti": 240,
+            "attivita": "Esercitazione tecniche di intervento",
+            "recupero": false,
+            "presenti": [],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-10-17 20:45:00",
+        "ts_iso": "2025-10-17T20:45:00+02:00",
+        "user": "borello.michele",
+        "ip": "109.119.31.10",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "c07802f4d11f76d3",
+            "data": "2025-10-17",
+            "inizio_dt": "2025-10-17T20:30:00",
+            "fine_dt": "2025-10-18T00:30:00",
+            "minuti": 240,
+            "attivita": "Dissesti statici",
+            "recupero": false,
+            "presenti": [],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-10-19 14:57:14",
+        "ts_iso": "2025-10-19T14:57:14+02:00",
+        "user": "unet.barbara",
+        "ip": "91.81.249.123",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "67035492177b9f1a",
+            "data": "2025-10-19",
+            "inizio_dt": "2025-10-19T09:00:00",
+            "fine_dt": "2025-10-19T12:00:00",
+            "minuti": 180,
+            "attivita": "Azione estinguente dell'acqua, della schiuma, della polvere, della CO2",
+            "recupero": false,
+            "presenti": [
+                {
+                    "vigile_id": 4,
+                    "nome": "EMANUELE COSTANTINO"
+                },
+                {
+                    "vigile_id": 10,
+                    "nome": "MASSIMO OMIZZOLO"
+                },
+                {
+                    "vigile_id": 5,
+                    "nome": "LUCA SOFFIETTI"
+                },
+                {
+                    "vigile_id": 11,
+                    "nome": "CRISTIANO SORRITELLI"
+                },
+                {
+                    "vigile_id": 3,
+                    "nome": "BARBARA UNET"
+                }
+            ],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-10-23 09:35:44",
+        "ts_iso": "2025-10-23T09:35:44+02:00",
+        "user": "borello.michele",
+        "ip": "151.84.148.154",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "bdb2a88f27a2b6e0",
+            "data": "2025-10-06",
+            "inizio_dt": "2025-10-06T19:59:00",
+            "fine_dt": "2025-10-06T23:59:00",
+            "minuti": 240,
+            "attivita": "Addestramento Fuori Sede",
+            "recupero": false,
+            "presenti": [
+                {
+                    "vigile_id": 1,
+                    "nome": "MICHELE BORELLO"
+                }
+            ],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-10-23 09:36:25",
+        "ts_iso": "2025-10-23T09:36:25+02:00",
+        "user": "borello.michele",
+        "ip": "151.84.148.154",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "3d5de40f10528782",
+            "data": "2025-10-08",
+            "inizio_dt": "2025-10-08T19:59:00",
+            "fine_dt": "2025-10-08T23:59:00",
+            "minuti": 240,
+            "attivita": "Addestramento Fuori Sede",
+            "recupero": false,
+            "presenti": [
+                {
+                    "vigile_id": 1,
+                    "nome": "MICHELE BORELLO"
+                }
+            ],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-10-23 09:36:45",
+        "ts_iso": "2025-10-23T09:36:45+02:00",
+        "user": "borello.michele",
+        "ip": "151.84.148.154",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "4efb70311487884a",
+            "data": "2025-10-10",
+            "inizio_dt": "2025-10-10T19:59:00",
+            "fine_dt": "2025-10-10T23:59:00",
+            "minuti": 240,
+            "attivita": "Addestramento Fuori Sede",
+            "recupero": false,
+            "presenti": [
+                {
+                    "vigile_id": 1,
+                    "nome": "MICHELE BORELLO"
+                }
+            ],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-10-23 09:37:49",
+        "ts_iso": "2025-10-23T09:37:49+02:00",
+        "user": "borello.michele",
+        "ip": "151.84.148.154",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "3ac85f399a67d022",
+            "data": "2025-10-13",
+            "inizio_dt": "2025-10-13T19:59:00",
+            "fine_dt": "2025-10-13T23:59:00",
+            "minuti": 240,
+            "attivita": "Addestramento Fuori Sede",
+            "recupero": false,
+            "presenti": [
+                {
+                    "vigile_id": 1,
+                    "nome": "MICHELE BORELLO"
+                }
+            ],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-10-24 20:50:42",
+        "ts_iso": "2025-10-24T20:50:42+02:00",
+        "user": "borello.michele",
+        "ip": "2.36.58.201",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0",
+        "data": {
+            "sessione_uid": "1eed92a276c280bd",
+            "data": "2025-10-24",
+            "inizio_dt": "2025-10-24T20:30:00",
+            "fine_dt": "2025-10-25T00:30:00",
+            "minuti": 240,
+            "attivita": "Dissesti statici",
+            "recupero": false,
+            "presenti": [
+                {
+                    "vigile_id": 1,
+                    "nome": "Michele Borello"
+                },
+                {
+                    "vigile_id": 23,
+                    "nome": "Fabrizio Carelli"
+                },
+                {
+                    "vigile_id": 2,
+                    "nome": "Giorgio Cavaliere"
+                },
+                {
+                    "vigile_id": 26,
+                    "nome": "Erika Coletti"
+                },
+                {
+                    "vigile_id": 16,
+                    "nome": "Massimo Cosma"
+                },
+                {
+                    "vigile_id": 25,
+                    "nome": "Paolo Maurizio De Cilladi"
+                },
+                {
+                    "vigile_id": 24,
+                    "nome": "Fabio Marangoni"
+                }
+            ],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-10-24 23:34:06",
+        "ts_iso": "2025-10-24T23:34:06+02:00",
+        "user": "borello.michele",
+        "ip": "2.36.58.201",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0",
+        "data": {
+            "sessione_uid": "ff9dfb9f10da24e9",
+            "data": "2025-10-21",
+            "inizio_dt": "2025-10-21T20:59:00",
+            "fine_dt": "2025-10-21T23:59:00",
+            "minuti": 180,
+            "attivita": "Attrezzature di primo soccorso",
+            "recupero": false,
+            "presenti": [
+                {
+                    "vigile_id": 14,
+                    "nome": "Alessandro Amateis"
+                },
+                {
+                    "vigile_id": 23,
+                    "nome": "Fabrizio Carelli"
+                },
+                {
+                    "vigile_id": 2,
+                    "nome": "Giorgio Cavaliere"
+                },
+                {
+                    "vigile_id": 26,
+                    "nome": "Erika Coletti"
+                },
+                {
+                    "vigile_id": 4,
+                    "nome": "Emanuele Costantino"
+                },
+                {
+                    "vigile_id": 7,
+                    "nome": "Pietro Costantino"
+                },
+                {
+                    "vigile_id": 15,
+                    "nome": "Roberto Grivetto"
+                },
+                {
+                    "vigile_id": 19,
+                    "nome": "Massimo Magnetti"
+                },
+                {
+                    "vigile_id": 24,
+                    "nome": "Fabio Marangoni"
+                },
+                {
+                    "vigile_id": 10,
+                    "nome": "Massimo Omizzolo"
+                },
+                {
+                    "vigile_id": 5,
+                    "nome": "Luca Soffietti"
+                },
+                {
+                    "vigile_id": 3,
+                    "nome": "Barbara Unet"
+                }
+            ],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-10-25 15:25:33",
+        "ts_iso": "2025-10-25T15:25:33+02:00",
+        "user": "borello.michele",
+        "ip": "151.84.148.154",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "02bae9883de99423",
+            "data": "2025-10-25",
+            "inizio_dt": "2025-10-25T15:25:00",
+            "fine_dt": "2025-10-25T16:25:00",
+            "minuti": 60,
+            "attivita": "Test",
+            "recupero": false,
+            "presenti": [],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-10-25 18:16:05",
+        "ts_iso": "2025-10-25T18:16:05+02:00",
+        "user": "borello.michele",
+        "ip": "151.84.148.154",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "ae2f40da7eba11ca",
+            "data": "2025-10-25",
+            "inizio_dt": "2025-10-25T18:15:00",
+            "fine_dt": "2025-10-25T19:15:00",
+            "minuti": 60,
+            "attivita": "Test",
+            "recupero": false,
+            "presenti": [],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-10-26 16:56:30",
+        "ts_iso": "2025-10-26T16:56:30+01:00",
+        "user": "borello.michele",
+        "ip": "93.36.160.251",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "03a3f577d3a2487b",
+            "data": "2025-10-26",
+            "inizio_dt": "2025-10-26T16:56:00",
+            "fine_dt": "2025-10-26T16:59:00",
+            "minuti": 3,
+            "attivita": "Test",
+            "recupero": false,
+            "presenti": [],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-10-29 16:17:28",
+        "ts_iso": "2025-10-29T16:17:28+01:00",
+        "user": "borello.michele",
+        "ip": "151.36.115.60",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "91efa8c9787887d6",
+            "data": "2025-10-28",
+            "inizio_dt": "2025-10-28T19:59:00",
+            "fine_dt": "2025-10-28T23:59:00",
+            "minuti": 240,
+            "attivita": "Dissesti statici",
+            "recupero": false,
+            "presenti": [
+                {
+                    "vigile_id": 1,
+                    "nome": "Michele Borello"
+                },
+                {
+                    "vigile_id": 28,
+                    "nome": "Andrea Persichella"
+                }
+            ],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-10-29 16:20:30",
+        "ts_iso": "2025-10-29T16:20:30+01:00",
+        "user": "borello.michele",
+        "ip": "151.36.115.60",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "7f6052135efd8e67",
+            "data": "2025-10-25",
+            "inizio_dt": "2025-10-25T08:00:00",
+            "fine_dt": "2025-10-25T12:00:00",
+            "minuti": 240,
+            "attivita": "Nodi e cordami",
+            "recupero": false,
+            "presenti": [
+                {
+                    "vigile_id": 1,
+                    "nome": "Michele Borello"
+                },
+                {
+                    "vigile_id": 28,
+                    "nome": "Andrea Persichella"
+                }
+            ],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-10-30 23:51:20",
+        "ts_iso": "2025-10-30T23:51:20+01:00",
+        "user": "borello.michele",
+        "ip": "151.46.9.97",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "9479adf97a4d3df9",
+            "data": "2025-10-30",
+            "inizio_dt": "2025-10-30T19:59:00",
+            "fine_dt": "2025-10-30T23:59:00",
+            "minuti": 240,
+            "attivita": "Attività di P.G. nell'ambito delle competenze del personale VV.F.",
+            "recupero": false,
+            "presenti": [
+                {
+                    "vigile_id": 1,
+                    "nome": "Michele Borello"
+                },
+                {
+                    "vigile_id": 32,
+                    "nome": "Roberto Martini"
+                }
+            ],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-10-31 00:38:36",
+        "ts_iso": "2025-10-31T00:38:36+01:00",
+        "user": "borello.michele",
+        "ip": "151.46.9.97",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "e4599106ca48b267",
+            "data": "2025-10-30",
+            "inizio_dt": "2025-10-30T19:59:00",
+            "fine_dt": "2025-10-30T23:59:00",
+            "minuti": 240,
+            "attivita": "Attività di P.G. nell'ambito delle competenze del personale VV.F.",
+            "recupero": false,
+            "presenti": [
+                {
+                    "vigile_id": 11,
+                    "nome": "Cristiano Sorritelli"
+                }
+            ],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-11-01 10:48:49",
+        "ts_iso": "2025-11-01T10:48:49+01:00",
+        "user": "borello.michele",
+        "ip": "2.36.58.201",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "a7c854f5fd599c6b",
+            "data": "2025-11-01",
+            "inizio_dt": "2025-11-01T09:00:00",
+            "fine_dt": "2025-11-01T12:00:00",
+            "minuti": 180,
+            "attivita": "Uso e manovra con maschera antigas e autoprotettori",
+            "recupero": false,
+            "presenti": [
+                {
+                    "vigile_id": 14,
+                    "nome": "Alessandro Amateis"
+                }
+            ],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-11-01 10:53:50",
+        "ts_iso": "2025-11-01T10:53:50+01:00",
+        "user": "saldi.manuel",
+        "ip": "2.36.58.201",
+        "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/142.0.7444.77 Mobile/15E148 Safari/604.1",
+        "data": {
+            "sessione_uid": "20b590aa9d6ecadb",
+            "data": "2025-11-01",
+            "inizio_dt": "2025-11-01T10:52:00",
+            "fine_dt": "2025-11-01T12:30:00",
+            "minuti": 98,
+            "attivita": "Esercitazione tecniche di intervento",
+            "recupero": false,
+            "presenti": [],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-11-02 11:18:08",
+        "ts_iso": "2025-11-02T11:18:08+01:00",
+        "user": "unet.barbara",
+        "ip": "2.36.58.201",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "6d7ba4bf267b47b5",
+            "data": "2025-10-26",
+            "inizio_dt": "2025-10-26T08:30:00",
+            "fine_dt": "2025-10-26T12:30:00",
+            "minuti": 240,
+            "attivita": "Generale",
+            "recupero": false,
+            "presenti": [
+                {
+                    "vigile_id": 2,
+                    "nome": "Giorgio Cavaliere"
+                },
+                {
+                    "vigile_id": 15,
+                    "nome": "Roberto Grivetto"
+                },
+                {
+                    "vigile_id": 8,
+                    "nome": "Ivan Maggiollino"
+                },
+                {
+                    "vigile_id": 19,
+                    "nome": "Massimo Magnetti"
+                },
+                {
+                    "vigile_id": 13,
+                    "nome": "Simone Palma"
+                }
+            ],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-11-02 11:21:09",
+        "ts_iso": "2025-11-02T11:21:09+01:00",
+        "user": "unet.barbara",
+        "ip": "2.36.58.201",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "61a5d912abea7d16",
+            "data": "2025-10-30",
+            "inizio_dt": "2025-10-30T20:30:00",
+            "fine_dt": "2025-10-30T21:10:00",
+            "minuti": 40,
+            "attivita": "Decreto legislativo 81/08",
+            "recupero": false,
+            "presenti": [
+                {
+                    "vigile_id": 14,
+                    "nome": "Alessandro Amateis"
+                },
+                {
+                    "vigile_id": 2,
+                    "nome": "Giorgio Cavaliere"
+                },
+                {
+                    "vigile_id": 4,
+                    "nome": "Emanuele Costantino"
+                },
+                {
+                    "vigile_id": 7,
+                    "nome": "Pietro Costantino"
+                },
+                {
+                    "vigile_id": 25,
+                    "nome": "Paolo Maurizio De Cilladi"
+                },
+                {
+                    "vigile_id": 8,
+                    "nome": "Ivan Maggiollino"
+                },
+                {
+                    "vigile_id": 13,
+                    "nome": "Simone Palma"
+                },
+                {
+                    "vigile_id": 5,
+                    "nome": "Luca Soffietti"
+                },
+                {
+                    "vigile_id": 17,
+                    "nome": "Simone Ziano"
+                }
+            ],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-11-02 11:23:44",
+        "ts_iso": "2025-11-02T11:23:44+01:00",
+        "user": "unet.barbara",
+        "ip": "2.36.58.201",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "d0e8c596169c6e6c",
+            "data": "2025-10-30",
+            "inizio_dt": "2025-10-30T20:30:00",
+            "fine_dt": "2025-10-31T00:30:00",
+            "minuti": 240,
+            "attivita": "Decreto legislativo 81/08",
+            "recupero": false,
+            "presenti": [
+                {
+                    "vigile_id": 25,
+                    "nome": "Paolo Maurizio De Cilladi"
+                },
+                {
+                    "vigile_id": 3,
+                    "nome": "Barbara Unet"
+                },
+                {
+                    "vigile_id": 33,
+                    "nome": "Ivano Venerandi"
+                }
+            ],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-11-02 11:42:28",
+        "ts_iso": "2025-11-02T11:42:28+01:00",
+        "user": "unet.barbara",
+        "ip": "2.36.58.201",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "f3332264080ec170",
+            "data": "2025-11-02",
+            "inizio_dt": "2025-11-02T09:00:00",
+            "fine_dt": "2025-11-02T12:00:00",
+            "minuti": 180,
+            "attivita": "Nodi e cordami",
+            "recupero": false,
+            "presenti": [
+                {
+                    "vigile_id": 1,
+                    "nome": "Michele Borello"
+                },
+                {
+                    "vigile_id": 4,
+                    "nome": "Emanuele Costantino"
+                },
+                {
+                    "vigile_id": 13,
+                    "nome": "Simone Palma"
+                },
+                {
+                    "vigile_id": 5,
+                    "nome": "Luca Soffietti"
+                },
+                {
+                    "vigile_id": 11,
+                    "nome": "Cristiano Sorritelli"
+                },
+                {
+                    "vigile_id": 3,
+                    "nome": "Barbara Unet"
+                }
+            ],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-11-09 08:56:03",
+        "ts_iso": "2025-11-09T08:56:03+01:00",
+        "user": "saldi.manuel",
+        "ip": "2.36.58.201",
+        "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/142.0.7444.128 Mobile/15E148 Safari/604.1",
+        "data": {
+            "sessione_uid": "bff56bbd67d4ba76",
+            "data": "2025-11-09",
+            "inizio_dt": "2025-11-09T09:00:00",
+            "fine_dt": "2025-11-09T12:30:00",
+            "minuti": 210,
+            "attivita": "Esercitazione con DPI",
+            "recupero": false,
+            "presenti": [],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-11-14 21:25:52",
+        "ts_iso": "2025-11-14T21:25:52+01:00",
+        "user": "Maggiolino.ivan",
+        "ip": "2.36.61.157",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0",
+        "data": {
+            "sessione_uid": "ececaabf83652a0f",
+            "data": "2025-11-14",
+            "inizio_dt": "2025-11-14T21:00:00",
+            "fine_dt": "2025-11-15T00:00:00",
+            "minuti": 180,
+            "attivita": "Attività di P.G. nell'ambito delle competenze del personale VV.F.",
+            "recupero": false,
+            "presenti": [],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-11-22 11:14:53",
+        "ts_iso": "2025-11-22T11:14:53+01:00",
+        "user": "borello.michele",
+        "ip": "151.84.148.154",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "957da6c15d5dbaad",
+            "data": "2025-11-08",
+            "inizio_dt": "2025-11-08T08:00:00",
+            "fine_dt": "2025-11-08T12:00:00",
+            "minuti": 240,
+            "attivita": "Addestramento Fuori Sede",
+            "recupero": false,
+            "presenti": [
+                {
+                    "vigile_id": 1,
+                    "nome": "MICHELE BORELLO"
+                }
+            ],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-11-22 11:16:39",
+        "ts_iso": "2025-11-22T11:16:39+01:00",
+        "user": "borello.michele",
+        "ip": "151.84.148.154",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "74f11a49d5c08d52",
+            "data": "2025-11-11",
+            "inizio_dt": "2025-11-11T19:59:00",
+            "fine_dt": "2025-11-11T23:59:00",
+            "minuti": 240,
+            "attivita": "Addestramento Fuori Sede",
+            "recupero": false,
+            "presenti": [
+                {
+                    "vigile_id": 1,
+                    "nome": "MICHELE BORELLO"
+                }
+            ],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-11-22 11:17:42",
+        "ts_iso": "2025-11-22T11:17:42+01:00",
+        "user": "borello.michele",
+        "ip": "151.84.148.154",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "a2c96f2a23e96518",
+            "data": "2025-11-13",
+            "inizio_dt": "2025-11-13T19:59:00",
+            "fine_dt": "2025-11-13T23:59:00",
+            "minuti": 240,
+            "attivita": "Addestramento Fuori Sede",
+            "recupero": false,
+            "presenti": [],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-11-23 09:22:38",
+        "ts_iso": "2025-11-23T09:22:38+01:00",
+        "user": "borello.michele",
+        "ip": "2.36.61.157",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0",
+        "data": {
+            "sessione_uid": "3460c371d9bc537c",
+            "data": "2025-11-23",
+            "inizio_dt": "2025-11-23T08:30:00",
+            "fine_dt": "2025-11-23T12:00:00",
+            "minuti": 210,
+            "attivita": "Attrezzature di primo soccorso",
+            "recupero": false,
+            "presenti": [
+                {
+                    "vigile_id": 1,
+                    "nome": "MICHELE BORELLO"
+                }
+            ],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-11-23 11:45:25",
+        "ts_iso": "2025-11-23T11:45:25+01:00",
+        "user": "borello.michele",
+        "ip": "2.36.61.157",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0",
+        "data": {
+            "sessione_uid": "1a90b3032f5d3150",
+            "data": "2025-11-16",
+            "inizio_dt": "2025-11-16T09:00:00",
+            "fine_dt": "2025-11-16T12:00:00",
+            "minuti": 180,
+            "attivita": "Autorespiratori",
+            "recupero": false,
+            "presenti": [
+                {
+                    "vigile_id": 20,
+                    "nome": "MARCO CARESIO"
+                },
+                {
+                    "vigile_id": 16,
+                    "nome": "MASSIMO COSMA"
+                },
+                {
+                    "vigile_id": 7,
+                    "nome": "PIETRO COSTANTINO"
+                },
+                {
+                    "vigile_id": 15,
+                    "nome": "ROBERTO GRIVETTO"
+                },
+                {
+                    "vigile_id": 8,
+                    "nome": "IVAN MAGGIOLINO"
+                },
+                {
+                    "vigile_id": 19,
+                    "nome": "MASSIMO MAGNETTI"
+                },
+                {
+                    "vigile_id": 18,
+                    "nome": "CLAUDIO ORIGLIA"
+                },
+                {
+                    "vigile_id": 17,
+                    "nome": "SIMONE ZIANO"
+                }
+            ],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-11-23 11:52:30",
+        "ts_iso": "2025-11-23T11:52:30+01:00",
+        "user": "borello.michele",
+        "ip": "2.36.61.157",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0",
+        "data": {
+            "sessione_uid": "456e5041d596acee",
+            "data": "2025-11-21",
+            "inizio_dt": "2025-11-21T20:29:00",
+            "fine_dt": "2025-11-21T23:59:00",
+            "minuti": 210,
+            "attivita": "Decreto legislativo 81/08",
+            "recupero": false,
+            "presenti": [
+                {
+                    "vigile_id": 1,
+                    "nome": "MICHELE BORELLO"
+                },
+                {
+                    "vigile_id": 2,
+                    "nome": "GIORGIO CAVALIERE"
+                },
+                {
+                    "vigile_id": 16,
+                    "nome": "MASSIMO COSMA"
+                },
+                {
+                    "vigile_id": 4,
+                    "nome": "EMANUELE COSTANTINO"
+                },
+                {
+                    "vigile_id": 23,
+                    "nome": "Fabrizio Carelli"
+                },
+                {
+                    "vigile_id": 25,
+                    "nome": "Paolo Maurizio De Cilladi"
+                },
+                {
+                    "vigile_id": 15,
+                    "nome": "ROBERTO GRIVETTO"
+                },
+                {
+                    "vigile_id": 19,
+                    "nome": "MASSIMO MAGNETTI"
+                },
+                {
+                    "vigile_id": 5,
+                    "nome": "LUCA SOFFIETTI"
+                },
+                {
+                    "vigile_id": 34,
+                    "nome": "ROBERTO TURLETTO"
+                },
+                {
+                    "vigile_id": 33,
+                    "nome": "Ivano Venerandi"
+                },
+                {
+                    "vigile_id": 17,
+                    "nome": "SIMONE ZIANO"
+                }
+            ],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-11-26 20:14:12",
+        "ts_iso": "2025-11-26T20:14:12+01:00",
+        "user": "Maggiolino.ivan",
+        "ip": "2.36.61.157",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0",
+        "data": {
+            "sessione_uid": "e48c3fa84b5aeb53",
+            "data": "2025-11-26",
+            "inizio_dt": "2025-11-26T20:30:00",
+            "fine_dt": "2025-11-27T00:00:00",
+            "minuti": 210,
+            "attivita": "polo didattico",
+            "recupero": false,
+            "presenti": [],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-11-27 21:12:52",
+        "ts_iso": "2025-11-27T21:12:52+01:00",
+        "user": "borello.michele",
+        "ip": "151.34.117.226",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "d916587ee6455087",
+            "data": "2025-11-27",
+            "inizio_dt": "2025-11-27T21:00:00",
+            "fine_dt": "2025-11-27T22:59:00",
+            "minuti": 119,
+            "attivita": "Attività di P.G. nell'ambito delle competenze del personale VV.F.",
+            "recupero": false,
+            "presenti": [],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-11-30 08:46:34",
+        "ts_iso": "2025-11-30T08:46:34+01:00",
+        "user": "Maggiolino.ivan",
+        "ip": "2.36.61.157",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "f1205a4d26824492",
+            "data": "2025-11-30",
+            "inizio_dt": "2025-11-30T09:00:00",
+            "fine_dt": "2025-11-30T12:00:00",
+            "minuti": 180,
+            "attivita": "Pompe e motopompe",
+            "recupero": false,
+            "presenti": [],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-12-07 11:59:20",
+        "ts_iso": "2025-12-07T11:59:20+01:00",
+        "user": "saldi.manuel",
+        "ip": "2.36.61.157",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+        "data": {
+            "sessione_uid": "1365105bae6b364f",
+            "data": "2025-12-07",
+            "inizio_dt": "2025-12-07T09:00:00",
+            "fine_dt": "2025-12-07T12:30:00",
+            "minuti": 210,
+            "attivita": "Stendimento tubazioni",
+            "recupero": false,
+            "presenti": [],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-12-12 21:29:19",
+        "ts_iso": "2025-12-12T21:29:19+01:00",
+        "user": "magnetti.massimo",
+        "ip": "2.36.61.157",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "0ac26c77b8468b91",
+            "data": "2025-12-12",
+            "inizio_dt": "2025-12-12T20:30:00",
+            "fine_dt": "2025-12-13T00:30:00",
+            "minuti": 240,
+            "attivita": "",
+            "recupero": false,
+            "presenti": [],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-12-12 22:06:28",
+        "ts_iso": "2025-12-12T22:06:28+01:00",
+        "user": "borello.michele",
+        "ip": "2.36.61.157",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "f80193902e6f6972",
+            "data": "2025-12-03",
+            "inizio_dt": "2025-12-03T22:30:00",
+            "fine_dt": "2025-12-04T00:30:00",
+            "minuti": 120,
+            "attivita": "Nodi e cordami",
+            "recupero": false,
+            "presenti": [
+                {
+                    "vigile_id": 11,
+                    "nome": "CRISTIANO SORRITELLI"
+                }
+            ],
+            "tenant": "nole"
+        }
+    },
+    {
+        "type": "addestramento.create",
+        "ts": "2025-12-12 22:08:42",
+        "ts_iso": "2025-12-12T22:08:42+01:00",
+        "user": "borello.michele",
+        "ip": "2.36.61.157",
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36",
+        "data": {
+            "sessione_uid": "e7546bab4fef7fef",
+            "data": "2025-12-11",
+            "inizio_dt": "2025-12-11T19:30:00",
+            "fine_dt": "2025-12-12T00:30:00",
+            "minuti": 300,
+            "attivita": "Nozioni di primo soccorso",
+            "recupero": false,
+            "presenti": [
+                {
+                    "vigile_id": 1,
+                    "nome": "MICHELE BORELLO"
+                },
+                {
+                    "vigile_id": 25,
+                    "nome": "Paolo Maurizio De Cilladi"
+                }
+            ],
+            "tenant": "nole"
+        }
+    }
+]

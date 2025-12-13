@@ -1,0 +1,220 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-1853743"
+        },
+        "indirizzo": {
+            "via": "VIA COSTONETTO 1",
+            "cap": "10050",
+            "comune": "CHIOMONTE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-04-09",
+            "visita_medica": "2026-10-09"
+        },
+        "patenti": []
+    },
+    "2": {
+        "contatti": {
+            "telefono": "0122-54537",
+            "telefono1": "328-4955710",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "STRADA  ANTICA DI  FRANCIA 10",
+            "cap": "10050",
+            "comune": "CHIOMONTE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-15",
+            "visita_medica": "2027-04-15"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "347-8957698",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA TORINO 11",
+            "cap": "10050",
+            "comune": "CHIOMONTE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-17",
+            "visita_medica": "2027-03-17"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "329-3423414"
+        },
+        "indirizzo": {
+            "via": "VIA VITTORIO EMANUELE 100",
+            "cap": "10050",
+            "comune": "CHIOMONTE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-03-14",
+            "visita_medica": "2027-09-14"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "5": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "339-3970706"
+        },
+        "indirizzo": {
+            "via": "PIAZZA EUROPA 5",
+            "cap": "10059",
+            "comune": "SUSA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-03-25",
+            "visita_medica": "2027-09-25"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "6": {
+        "contatti": {
+            "telefono": "0122-54596",
+            "telefono1": "-",
+            "telefono2": "349-3204335"
+        },
+        "indirizzo": {
+            "via": "VIA SAN GIOVANNI 5",
+            "cap": "10050",
+            "comune": "GRAVERE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-12",
+            "visita_medica": "2027-05-12"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "7": {
+        "contatti": {
+            "telefono": "0122-54433",
+            "telefono1": "-",
+            "telefono2": "339-6879516"
+        },
+        "indirizzo": {
+            "via": "VIA GENERALI SOLLIER 9",
+            "cap": "10050",
+            "comune": "CHIOMONTE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-17",
+            "visita_medica": "2027-04-17"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "8": {
+        "contatti": {
+            "telefono": "0122-54352",
+            "telefono1": "331-5788822",
+            "telefono2": "346-9776412"
+        },
+        "indirizzo": {
+            "via": "VIA SIBILLE 25",
+            "cap": "10100",
+            "comune": "CHIOMONTE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-17",
+            "visita_medica": "2027-06-17"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "9": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "340-3093831"
+        },
+        "indirizzo": {
+            "via": "VIA LEVIS 30",
+            "cap": "10050",
+            "comune": "CHIOMONTE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-13",
+            "visita_medica": "2027-08-13"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "10": {
+        "contatti": {
+            "telefono": "0122-54401",
+            "telefono1": "-",
+            "telefono2": "393-3122320"
+        },
+        "indirizzo": {
+            "via": "VIA LEVIS,33",
+            "cap": "10050",
+            "comune": "CHIOMONTE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2017-02-22",
+            "visita_medica": "2019-08-22"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "11": {
+        "contatti": {
+            "telefono": "-54596",
+            "telefono1": "-",
+            "telefono2": "347-2558094"
+        },
+        "indirizzo": {
+            "via": "VIA SAN GIOVANNI 5",
+            "cap": "10050",
+            "comune": "GRAVERE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-12",
+            "visita_medica": "2027-05-12"
+        },
+        "patenti": [
+            "2° grado"
+        ]
+    }
+}

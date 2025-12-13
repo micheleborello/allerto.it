@@ -1,0 +1,256 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "338-9962780",
+            "telefono2": "331-6887959"
+        },
+        "indirizzo": {
+            "via": "VIA BORGO VECCHIO 30",
+            "cap": "10041",
+            "comune": "CARIGNANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-03-12",
+            "visita_medica": "2026-09-12"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "2": {
+        "contatti": {
+            "telefono": "011-9699651",
+            "telefono1": "338-6290003",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA LEONARDO FEA 20",
+            "cap": "10100",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-03-26",
+            "visita_medica": "2026-09-26"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "339-5432534",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "BORGATA CAMPAGNINO 3",
+            "cap": "10041",
+            "comune": "CARIGNANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-04-05",
+            "visita_medica": "2026-10-05"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "347-8824695"
+        },
+        "indirizzo": {
+            "via": "VIA FACCIO,25",
+            "cap": "10041",
+            "comune": "CARIGNANO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-04-16",
+            "visita_medica": "2026-10-16"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "5": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "393-1949059"
+        },
+        "indirizzo": {
+            "via": "VIA COSSU 48",
+            "cap": "10041",
+            "comune": "CARIGNANO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-18",
+            "visita_medica": "2027-08-18"
+        },
+        "patenti": []
+    },
+    "6": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "339-2522359"
+        },
+        "indirizzo": {
+            "via": "VIA ISONZO 31",
+            "cap": "10041",
+            "comune": "CARIGNANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-26",
+            "visita_medica": "2027-05-26"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "7": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "345-7861310"
+        },
+        "indirizzo": {
+            "via": "STRADA PIOBESI 32",
+            "cap": "10041",
+            "comune": "CARIGNANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-05-20",
+            "visita_medica": "2027-11-20"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "8": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "333-7449829"
+        },
+        "indirizzo": {
+            "via": "BORGATA GORRA N 22",
+            "cap": "10041",
+            "comune": "CARIGNANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-07-31",
+            "visita_medica": "2028-01-31"
+        },
+        "patenti": []
+    },
+    "9": {
+        "contatti": {
+            "telefono": "338-6797414",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "BORGATA LA GORRA N. 22",
+            "cap": "10041",
+            "comune": "CARIGNANO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-19",
+            "visita_medica": "2027-05-19"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "10": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "366-7098481"
+        },
+        "indirizzo": {
+            "via": "VIA PADRE LANTERI 38",
+            "cap": "10048",
+            "comune": "CARIGNANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-04-10",
+            "visita_medica": "2027-10-10"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "11": {
+        "contatti": {
+            "telefono": "011-9697270",
+            "telefono1": "338-2840380",
+            "telefono2": "331-6888349"
+        },
+        "indirizzo": {
+            "via": "VIA BORGO VECCHIO 57",
+            "cap": "10041",
+            "comune": "CARIGNANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-29",
+            "visita_medica": "2027-04-29"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "12": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "338-4060418"
+        },
+        "indirizzo": {
+            "via": "VIA BORGO VECCHIO 59",
+            "cap": "10041",
+            "comune": "CARIGNANO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-03",
+            "visita_medica": "2027-06-03"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "13": {
+        "contatti": {
+            "telefono": "011-6405442",
+            "telefono1": "-",
+            "telefono2": "349-6852108"
+        },
+        "indirizzo": {
+            "via": "STRADA GENOVA 56/2",
+            "cap": "10024",
+            "comune": "MONCALIERI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-04",
+            "visita_medica": "2027-08-04"
+        },
+        "patenti": []
+    }
+}

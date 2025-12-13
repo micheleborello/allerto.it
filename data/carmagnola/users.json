@@ -1,0 +1,228 @@
+[
+    {
+        "username": "albertino.pierluigi",
+        "password_hash": "$2y$10$o2bsvWGZ07rEoRIUs9xc1ODMo9GkZ3mPEOT5Gr3NiCmKZue310bJ.",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "audrito.antonio",
+        "password_hash": "$2y$10$1VNbf0J1kk8CETJj1ui9euxj9Xje3w5WG4lpy3wX7sJQ.5Cwieot6",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "barra.manuele",
+        "password_hash": "$2y$10$LksQSMs8T1Irnz02s1nZhelUpbc/54V2bX04gIK3ofhOb62WZ22gO",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "bergese.emanuele",
+        "password_hash": "$2y$10$3t8gfFAgNjh2Emf2LHHUTeMgNQjq92yH7V0LLir8GxRDwkFqSHk1O",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "bottan.alfredo",
+        "password_hash": "$2y$10$BltC4N6UhKmSnAhHXkPpNeuELkRQKOY5aawX1DN2dGhS06sTab8Me",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "bottan.luca",
+        "password_hash": "$2y$10$0Y0.Nh3g14/as7mixgAyweLYc4qhoh2LQtg8bT7NwV1BX3BCKpFEG",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "cascio.alberto",
+        "password_hash": "$2y$10$z9tje8YpBvwllIysgBEMN.cPYOVHVv0h0sJ.WFcm5JigaWOga7OmS",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "cravero.andrea",
+        "password_hash": "$2y$10$lycqYszNLSvjBwMKsz6pweB3FBZqxd2LdLvz/kV//DhdfrTkp09u6",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "faranna.vittorioalberto",
+        "password_hash": "$2y$10$yYGGPShrXLC3agTaVCN48OroU7qLGSPMobIuY6xybD9RnAQAFuaNm",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "favaro.dario",
+        "password_hash": "$2y$10$6x9jXW/u5VFprXCDnvjgvutUHtJb7DpyH2ymfGyP6iLx0TTfST3HW",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "gallesio.danilo",
+        "password_hash": "$2y$10$/vv2mQ2M75T4XmJasw/v6uJ0ZLpW385MiDOL7/8Y47xT3GFFLdsjS",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "milanesio.marco",
+        "password_hash": "$2y$10$0CGw1DX/JFYrVFs3y9duLuchguRm5iEH8rI4sMrB2fFP5HmePuzqC",
+        "is_capo": 1,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "edit:addestramenti",
+            "view:personale",
+            "edit:personale",
+            "view:attivita",
+            "edit:attivita",
+            "view:infortuni",
+            "edit:infortuni",
+            "view:riepilogo",
+            "edit:riepilogo",
+            "export:pdf",
+            "admin:perms",
+            "admin:pins"
+        ]
+    },
+    {
+        "username": "milanesio.michelangelo",
+        "password_hash": "$2y$10$/YhlWLeN32yKIRI4.wHNFOOBWLud25F/OobdIBQsbB5G9H01TXDXe",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "montisci.enricomaria",
+        "password_hash": "$2y$10$S7Hfb4cgEA.DZ6W0l41T9ObPEADIpap8nhC0520Ri9wRCCwSjdrb2",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "naddeo.riccardo",
+        "password_hash": "$2y$10$fR.Ke0TtQvW/ZlY/kdkFwuM1BFqRpFWxy.JHE82ujDAHScy5WtOoq",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "panepinto.luisa",
+        "password_hash": "$2y$10$dgV4amuZV1UehV7Qw.JQJORr1emXlXlrRRcBJ77yxbvK4o0vtJ.wC",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "pecoraro.pietro",
+        "password_hash": "$2y$10$iVYfVcCze8BckjMkDUx7L.HnvpVKbmCchCqQYMCJHc0YDW9vx9cmu",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "ranaldo.mattia",
+        "password_hash": "$2y$10$v2B52o9UwVaBQlrzJqit9O9RKXnx988AzIhbBpcfT5teBwH3g4Xa.",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    }
+]

@@ -1,0 +1,140 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "351-5615266"
+        },
+        "indirizzo": {
+            "via": "VIA MAISONETTA 15",
+            "cap": "10050",
+            "comune": "SANT'ANTONINO DI SUSA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-11-21",
+            "visita_medica": "2026-05-21"
+        },
+        "patenti": []
+    },
+    "2": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "366-1116831"
+        },
+        "indirizzo": {
+            "via": "VIA SUSA 17",
+            "cap": "10050",
+            "comune": "SANT'ANTONINO DI SUSA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-25",
+            "visita_medica": "2027-08-25"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "320-7237820"
+        },
+        "indirizzo": {
+            "via": "VIA PEIROLERO,12",
+            "cap": "10050",
+            "comune": "VAIE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-29",
+            "visita_medica": "2027-04-29"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "011-9649703",
+            "telefono1": "349-5335618",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA GEN.CANTORE 49",
+            "cap": "10050",
+            "comune": "CHIUSA DI SAN MICHELE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-10",
+            "visita_medica": "2027-03-10"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "5": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "366-5775914"
+        },
+        "indirizzo": {
+            "via": "VIA PAPA GIOVANNI XXIII 14",
+            "cap": "10055",
+            "comune": "CONDOVE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-07-10",
+            "visita_medica": "2026-01-10"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "6": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "338-4859178"
+        },
+        "indirizzo": {
+            "via": "BORG. POISATTO 9 SUB C",
+            "cap": "10055",
+            "comune": "CONDOVE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-19",
+            "visita_medica": "2027-03-19"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "7": {
+        "contatti": {
+            "telefono": "339-4188334",
+            "telefono1": "-",
+            "telefono2": "340-2306105"
+        },
+        "indirizzo": {
+            "via": "FRAZ. MOLERE 10 LETT.BIS",
+            "cap": "10050",
+            "comune": "BORGONE SUSA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-29",
+            "visita_medica": "2027-05-29"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    }
+}

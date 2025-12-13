@@ -1,0 +1,336 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "375-8021288"
+        },
+        "indirizzo": {
+            "via": "VIA GIUSEPPE VERDI N 8 / BIS",
+            "cap": "10124",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-05-08",
+            "visita_medica": "2027-11-08"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "2": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "340-8427039"
+        },
+        "indirizzo": {
+            "via": "VIA CALUSO VALPERGA 16 SCALA   A",
+            "cap": "10100",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-28",
+            "visita_medica": "2027-08-31"
+        },
+        "patenti": []
+    },
+    "3": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "328-5577986"
+        },
+        "indirizzo": {
+            "via": "VIA ALDO MORO 102",
+            "cap": "10071",
+            "comune": "BORGARO TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-15",
+            "visita_medica": "2027-04-15"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "335-5655193",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA GARIBALDI 11",
+            "cap": "10048",
+            "comune": "VINOVO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-05",
+            "visita_medica": "2027-05-05"
+        },
+        "patenti": []
+    },
+    "5": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "346-7162608"
+        },
+        "indirizzo": {
+            "via": "STRADA  GENOVA 108/C",
+            "cap": "10024",
+            "comune": "MONCALIERI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-05-29",
+            "visita_medica": "2025-11-29"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "6": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "346-0272150"
+        },
+        "indirizzo": {
+            "via": "VIA STAZIONE 59",
+            "cap": "10060",
+            "comune": "NONE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-15",
+            "visita_medica": "2027-04-15"
+        },
+        "patenti": []
+    },
+    "7": {
+        "contatti": {
+            "telefono": "011-4550720",
+            "telefono1": "-",
+            "telefono2": "366-5775694"
+        },
+        "indirizzo": {
+            "via": "VIA CASTELLETTO N. 43",
+            "cap": "10040",
+            "comune": "PIOBESI TORINESE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-17",
+            "visita_medica": "2027-03-17"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "8": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "348-3196363"
+        },
+        "indirizzo": {
+            "via": "VIA G. AMENDOLA 13",
+            "cap": "10042",
+            "comune": "NICHELINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-01",
+            "visita_medica": "2027-04-01"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "9": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "320-6813306"
+        },
+        "indirizzo": {
+            "via": "C.SO CORSICA 24",
+            "cap": "10134",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-01",
+            "visita_medica": "2027-04-01"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "10": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "333-7942517"
+        },
+        "indirizzo": {
+            "via": "VIA VINCENZO MONTI 16",
+            "cap": "10043",
+            "comune": "ORBASSANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-17",
+            "visita_medica": "2027-03-17"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "11": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "334-9023624"
+        },
+        "indirizzo": {
+            "via": "VIA GIUSTI 39",
+            "cap": "10042",
+            "comune": "NICHELINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-11",
+            "visita_medica": "2027-08-11"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "12": {
+        "contatti": {
+            "telefono": "011-6813221",
+            "telefono1": "-",
+            "telefono2": "334-8446306"
+        },
+        "indirizzo": {
+            "via": "VIA MERCATO,5",
+            "cap": "10024",
+            "comune": "MONCALIERI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-26",
+            "visita_medica": "2027-05-26"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "13": {
+        "contatti": {
+            "telefono": "335-7281777",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA BUENOS AIRES 58",
+            "cap": "10137",
+            "comune": "TORINO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-01",
+            "visita_medica": "2027-04-01"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "14": {
+        "contatti": {
+            "telefono": "339-8572896",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "BORGATA TETTI PERETTI N. 25",
+            "cap": "10041",
+            "comune": "CARIGNANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-05",
+            "visita_medica": "2027-05-05"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "15": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "351-3737171"
+        },
+        "indirizzo": {
+            "via": "VIA NOVI 3",
+            "cap": "10040",
+            "comune": "PRALORMO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-24",
+            "visita_medica": "2027-03-24"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "16": {
+        "contatti": {
+            "telefono": "011-6928102",
+            "telefono1": "-",
+            "telefono2": "338-4056820"
+        },
+        "indirizzo": {
+            "via": "VIALE DEL CASTELLO 34",
+            "cap": "10024",
+            "comune": "MONCALIERI"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-08",
+            "visita_medica": "2027-04-08"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "17": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "347-5549291"
+        },
+        "indirizzo": {
+            "via": "VIA CARIGNANO N?2",
+            "cap": "10048",
+            "comune": "VINOVO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-04",
+            "visita_medica": "2027-08-04"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    }
+}

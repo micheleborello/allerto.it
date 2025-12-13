@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "nome": "STEFANO",
+        "cognome": "ANRO&#039;",
+        "cf": "NRASFN89S20E379I",
+        "attivo": 1,
+        "grado": "CSV.",
+        "ingresso": "",
+        "username": "anro.stefano"
+    },
+    {
+        "id": 2,
+        "nome": "ANDREA",
+        "cognome": "ARENA",
+        "cf": "RNANDR74H19C133B",
+        "attivo": 1,
+        "grado": "CSV.",
+        "ingresso": "",
+        "username": "arena.andrea"
+    },
+    {
+        "id": 3,
+        "nome": "GIAMPIERO",
+        "cognome": "BALLISAI",
+        "cf": "BLLGPR69R17L219Z",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "ballisai.giampiero"
+    },
+    {
+        "id": 4,
+        "nome": "ANDREA",
+        "cognome": "CAPPA",
+        "cf": "CPPNDR78A04C133D",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "cappa.andrea"
+    },
+    {
+        "id": 5,
+        "nome": "ALESSANDRO",
+        "cognome": "DI DOMENICO",
+        "cf": "DDMLSN98M22B791P",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "di.domenico.alessandro"
+    },
+    {
+        "id": 6,
+        "nome": "MAURO",
+        "cognome": "ESPOSITO",
+        "cf": "SPSMRA65D26C722Z",
+        "attivo": 1,
+        "grado": "FTAV.",
+        "ingresso": "",
+        "username": "esposito.mauro"
+    },
+    {
+        "id": 7,
+        "nome": "DOMENICO ETTORE",
+        "cognome": "GAMBONE",
+        "cf": "GMBDNC69A02E379R",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "gambone.domenico.ettore"
+    },
+    {
+        "id": 8,
+        "nome": "ENRICO",
+        "cognome": "NARETTO",
+        "cf": "NRTNRC89L14L219Y",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "naretto.enrico"
+    },
+    {
+        "id": 9,
+        "nome": "ANTONINO",
+        "cognome": "NASTRO",
+        "cf": "NSTNNN72R08C133A",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "nastro.antonino"
+    },
+    {
+        "id": 10,
+        "nome": "LUIGI",
+        "cognome": "PAGLIERO",
+        "cf": "PGLLGU65E04C133F",
+        "attivo": 1,
+        "grado": "CSV.",
+        "ingresso": "",
+        "username": "pagliero.luigi"
+    },
+    {
+        "id": 11,
+        "nome": "PAOLO",
+        "cognome": "PEDULLI",
+        "cf": "PDLPLA64T31D458X",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "pedulli.paolo"
+    },
+    {
+        "id": 12,
+        "nome": "GIAN LUCA",
+        "cognome": "PERUFFO",
+        "cf": "PRFGLC80D16E379W",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "peruffo.gian.luca"
+    },
+    {
+        "id": 13,
+        "nome": "LUCA",
+        "cognome": "QUADRANTI",
+        "cf": "QDRLCU86H16E379U",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "quadranti.luca"
+    },
+    {
+        "id": 14,
+        "nome": "ALFREDO",
+        "cognome": "SAUDINO FUSET",
+        "cf": "SDNLRD66R21E379X",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "saudino.fuset.alfredo"
+    },
+    {
+        "id": 15,
+        "nome": "PAOLO GIUSEPPE",
+        "cognome": "TURBINE",
+        "cf": "TRBPGS70E24C133Y",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "turbine.paolo.giuseppe"
+    },
+    {
+        "id": 16,
+        "nome": "ALBERTO",
+        "cognome": "VARELLO",
+        "cf": "VRLLRT69A05H340W",
+        "attivo": 1,
+        "grado": "CSV.",
+        "ingresso": "",
+        "username": "varello.alberto"
+    },
+    {
+        "id": 17,
+        "nome": "FRANCESCO",
+        "cognome": "ZITO",
+        "cf": "ZTIFNC94H20D208E",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "zito.francesco"
+    },
+    {
+        "id": 18,
+        "nome": "JACOPO",
+        "cognome": "ZUCCO",
+        "cf": "ZCCJCP89D17E379V",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "zucco.jacopo"
+    }
+]

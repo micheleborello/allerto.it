@@ -1,0 +1,314 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "339-5380277",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA TRATTENERO 16",
+            "cap": "10053",
+            "comune": "BUSSOLENO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-19",
+            "visita_medica": "2027-05-19"
+        },
+        "patenti": [
+            "2° grado"
+        ]
+    },
+    "2": {
+        "contatti": {
+            "telefono": "0122-647816",
+            "telefono1": "347-4700813",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA GUERINO IVOL 4",
+            "cap": "10050",
+            "comune": "CHIANOCCO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-29",
+            "visita_medica": "2027-04-29"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "328-7307715"
+        },
+        "indirizzo": {
+            "via": "VIA CIRCONVALLAZIONE, 4",
+            "cap": "10053",
+            "comune": "BUSSOLENO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-19",
+            "visita_medica": "2027-05-19"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "351-4373031"
+        },
+        "indirizzo": {
+            "via": "VIA SAN PIETRO D'OLLESIA 5 C",
+            "cap": "10053",
+            "comune": "BUSSOLENO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-25",
+            "visita_medica": "2027-08-25"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "5": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "340-2392128"
+        },
+        "indirizzo": {
+            "via": "VIA BALBO 10",
+            "cap": "10050",
+            "comune": "VENAUS"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-05",
+            "visita_medica": "2027-06-05"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "6": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "345-780818"
+        },
+        "indirizzo": {
+            "via": "FRAZIONE TRINITA' 53",
+            "cap": "10059",
+            "comune": "MOMPANTERO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-03-05",
+            "visita_medica": "2026-09-05"
+        },
+        "patenti": []
+    },
+    "7": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "366-5776001"
+        },
+        "indirizzo": {
+            "via": "BORGATA MALPASSO 1",
+            "cap": "10050",
+            "comune": "SAN GIORIO DI SUSA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-12",
+            "visita_medica": "2027-05-12"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "8": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "348-9844607"
+        },
+        "indirizzo": {
+            "via": "VIA COUNTIER 29",
+            "cap": "10053",
+            "comune": "BUSSOLENO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-02-27",
+            "visita_medica": "2026-08-27"
+        },
+        "patenti": []
+    },
+    "9": {
+        "contatti": {
+            "telefono": "0122-647685",
+            "telefono1": "339-4362173",
+            "telefono2": "331-6888116"
+        },
+        "indirizzo": {
+            "via": "FRAZIONE VERNETTO 72",
+            "cap": "10050",
+            "comune": "CHIANOCCO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-31",
+            "visita_medica": "2027-01-31"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "10": {
+        "contatti": {
+            "telefono": "0122-48695",
+            "telefono1": "333-3679293",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA RUBATTERA N? 9",
+            "cap": "10053",
+            "comune": "BUSSOLENO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-15",
+            "visita_medica": "2027-05-15"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "11": {
+        "contatti": {
+            "telefono": "011-9642330",
+            "telefono1": "347-9437421",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA CADUTI DI NASSIRYA N? 2",
+            "cap": "10050",
+            "comune": "SANT'ANTONINO DI SUSA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-15",
+            "visita_medica": "2027-05-15"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "12": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "388-0439016"
+        },
+        "indirizzo": {
+            "via": "VIA IMPERO ROMANO 1",
+            "cap": "10059",
+            "comune": "SUSA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-14",
+            "visita_medica": "2027-05-14"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "13": {
+        "contatti": {
+            "telefono": "347-2521800",
+            "telefono1": "-",
+            "telefono2": "333-1188047"
+        },
+        "indirizzo": {
+            "via": "VIA CASTELPIETRA 20",
+            "cap": "10059",
+            "comune": "SUSA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-03",
+            "visita_medica": "2027-06-03"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "14": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "333-565003"
+        },
+        "indirizzo": {
+            "via": "FRAZIONE CAMPOSCIUTTO 28",
+            "cap": "10050",
+            "comune": "CHIANOCCO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-11-14",
+            "visita_medica": "2026-05-14"
+        },
+        "patenti": []
+    },
+    "15": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "348-625543"
+        },
+        "indirizzo": {
+            "via": "STRADA MONGINEVRO 11",
+            "cap": "10053",
+            "comune": "BUSSOLENO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-11-14",
+            "visita_medica": "2026-05-14"
+        },
+        "patenti": []
+    },
+    "16": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "333-6877683"
+        },
+        "indirizzo": {
+            "via": "VIA SALINA 29",
+            "cap": "10053",
+            "comune": "BUSSOLENO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-25",
+            "visita_medica": "2027-08-25"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    }
+}

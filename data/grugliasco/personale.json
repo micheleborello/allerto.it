@@ -1,0 +1,670 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "366-5775770"
+        },
+        "indirizzo": {
+            "via": "VIA MICHIARDI,47/49",
+            "cap": "10095",
+            "comune": "GRUGLIASCO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-04-16",
+            "visita_medica": "2026-10-16"
+        },
+        "patenti": [
+            "2° grado"
+        ]
+    },
+    "2": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "338-8904000"
+        },
+        "indirizzo": {
+            "via": "VIA FRATELLI VILLANI 21",
+            "cap": "10093",
+            "comune": "COLLEGNO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2016-11-24",
+            "visita_medica": "2019-05-24"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "324-8674474"
+        },
+        "indirizzo": {
+            "via": "VIA ALESSANDRO LA MARMORA150",
+            "cap": "10095",
+            "comune": "GRUGLIASCO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-25",
+            "visita_medica": "2027-08-25"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "011-4152931",
+            "telefono1": "331-6887928",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA TORINO 28",
+            "cap": "10093",
+            "comune": "COLLEGNO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-10",
+            "visita_medica": "2027-03-10"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "5": {
+        "contatti": {
+            "telefono": "347-1728902",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA GIOSUE' BORSI 89",
+            "cap": "10100",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-31",
+            "visita_medica": "2027-04-30"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "6": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "346-6202085"
+        },
+        "indirizzo": {
+            "via": "VIA MARZABOTTO 5",
+            "cap": "10093",
+            "comune": "COLLEGNO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-03-28",
+            "visita_medica": "2027-09-28"
+        },
+        "patenti": []
+    },
+    "7": {
+        "contatti": {
+            "telefono": "011-618003",
+            "telefono1": "338-4710968",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA PIO VII N? 136",
+            "cap": "10127",
+            "comune": "TORINO"
+        },
+        "grado": "FTAV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-17",
+            "visita_medica": "2027-06-17"
+        },
+        "patenti": [
+            "2° grado"
+        ]
+    },
+    "8": {
+        "contatti": {
+            "telefono": "340-2310796",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA FILIBERTO PINGONE 2",
+            "cap": "10122",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-10",
+            "visita_medica": "2027-06-10"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "9": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "347-8254228"
+        },
+        "indirizzo": {
+            "via": "VIA AOSTA,13",
+            "cap": "10095",
+            "comune": "GRUGLIASCO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-08-08",
+            "visita_medica": "2027-02-08"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "10": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-6888054"
+        },
+        "indirizzo": {
+            "via": "VIA GUARINO GUARINI 4",
+            "cap": "10095",
+            "comune": "GRUGLIASCO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-17",
+            "visita_medica": "2027-06-17"
+        },
+        "patenti": []
+    },
+    "11": {
+        "contatti": {
+            "telefono": "349-1660708",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA ENRICO MONTANARO 12",
+            "cap": "10095",
+            "comune": "GRUGLIASCO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-10",
+            "visita_medica": "2027-03-10"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "12": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "347-8248305"
+        },
+        "indirizzo": {
+            "via": "VIA SANTORRE DI SANTROSA,20",
+            "cap": "10093",
+            "comune": "COLLEGNO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-03",
+            "visita_medica": "2027-06-03"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "13": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "348-2440957"
+        },
+        "indirizzo": {
+            "via": "CORSO MONTE CUCCO 86 SCALA  A",
+            "cap": "10141",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-21",
+            "visita_medica": "2027-04-21"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "14": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "392-3828740"
+        },
+        "indirizzo": {
+            "via": "VIA SALVO D'ACQUISTO 31",
+            "cap": "10095",
+            "comune": "GRUGLIASCO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-12",
+            "visita_medica": "2027-05-12"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "15": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "340-4104558"
+        },
+        "indirizzo": {
+            "via": "CORSO ROSSELLI 155 SCALA C",
+            "cap": "10100",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-03",
+            "visita_medica": "2027-03-03"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "16": {
+        "contatti": {
+            "telefono": "00-0",
+            "telefono1": "-",
+            "telefono2": "335-8363396"
+        },
+        "indirizzo": {
+            "via": "CORSO FRATELLI CERVI N? 21",
+            "cap": "10095",
+            "comune": "GRUGLIASCO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-02",
+            "visita_medica": "2027-01-02"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "17": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "328-0242388"
+        },
+        "indirizzo": {
+            "via": "VIA MONGINEVRO N?165",
+            "cap": "10141",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-17",
+            "visita_medica": "2027-03-17"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "18": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "339-8096246"
+        },
+        "indirizzo": {
+            "via": "VIA GIACOSA 3",
+            "cap": "10095",
+            "comune": "GRUGLIASCO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-22",
+            "visita_medica": "2027-04-22"
+        },
+        "patenti": []
+    },
+    "19": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "333-2249648"
+        },
+        "indirizzo": {
+            "via": "VIA LEON TRON 47",
+            "cap": "10095",
+            "comune": "GRUGLIASCO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-03",
+            "visita_medica": "2027-03-03"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "20": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-6888059"
+        },
+        "indirizzo": {
+            "via": "VIA GIACOMO PUCCINI 1",
+            "cap": "10093",
+            "comune": "COLLEGNO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-20",
+            "visita_medica": "2027-03-20"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "21": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "333-6291895"
+        },
+        "indirizzo": {
+            "via": "VIA LAMARMORA 82/A",
+            "cap": "10095",
+            "comune": "GRUGLIASCO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-12",
+            "visita_medica": "2027-05-12"
+        },
+        "patenti": []
+    },
+    "22": {
+        "contatti": {
+            "telefono": "335-6601484",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA CREA 43/C",
+            "cap": "10095",
+            "comune": "GRUGLIASCO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-24",
+            "visita_medica": "2027-07-24"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "23": {
+        "contatti": {
+            "telefono": "338-8250122",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA BALTIMORA 133",
+            "cap": "10100",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-01-16",
+            "visita_medica": "2026-07-16"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "24": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "392-4947273"
+        },
+        "indirizzo": {
+            "via": "VIA MICHELE COPPINO 110",
+            "cap": "10100",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-08-02",
+            "visita_medica": "2027-02-02"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "25": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "373-7955383"
+        },
+        "indirizzo": {
+            "via": "VIA ALLE FABBRICHE 142/A",
+            "cap": "10072",
+            "comune": "CASELLE TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-14",
+            "visita_medica": "2027-07-14"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "26": {
+        "contatti": {
+            "telefono": "011-7802656",
+            "telefono1": "-",
+            "telefono2": "339-6302576"
+        },
+        "indirizzo": {
+            "via": "STRADA SAN FIRMINO 11/3 SC A",
+            "cap": "10095",
+            "comune": "GRUGLIASCO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-24",
+            "visita_medica": "2027-01-24"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "27": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "340-0014533"
+        },
+        "indirizzo": {
+            "via": "VIA BRENTA N?14",
+            "cap": "10040",
+            "comune": "RIVALTA DI TORINO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-14",
+            "visita_medica": "2027-07-14"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "28": {
+        "contatti": {
+            "telefono": "333-3031910",
+            "telefono1": "333-1580546",
+            "telefono2": "331-6888062"
+        },
+        "indirizzo": {
+            "via": "VIA FAGNANO N? 10",
+            "cap": "10144",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-24",
+            "visita_medica": "2027-04-24"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "29": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-1987619"
+        },
+        "indirizzo": {
+            "via": "CORSO CANONICO GIUSEPPE ALLAMANO 53",
+            "cap": "10100",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-08-02",
+            "visita_medica": "2027-02-02"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "30": {
+        "contatti": {
+            "telefono": "328-4226750",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA SAN MARCHESE 42/2",
+            "cap": "10078",
+            "comune": "VENARIA REALE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-13",
+            "visita_medica": "2027-03-13"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "31": {
+        "contatti": {
+            "telefono": "011-781353",
+            "telefono1": "-",
+            "telefono2": "340-7690110"
+        },
+        "indirizzo": {
+            "via": "VIA CAVALIERI DI VITTORIO VENETO 35",
+            "cap": "10095",
+            "comune": "GRUGLIASCO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-03",
+            "visita_medica": "2027-03-03"
+        },
+        "patenti": []
+    },
+    "32": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "391-1769987"
+        },
+        "indirizzo": {
+            "via": "VIA DON MARIO CAUSTICO 14 SC. C INT. 5",
+            "cap": "10095",
+            "comune": "GRUGLIASCO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-03",
+            "visita_medica": "2027-06-03"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "33": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "349-6219529"
+        },
+        "indirizzo": {
+            "via": "VIA MARZABOTTO 1 INT.9",
+            "cap": "10095",
+            "comune": "GRUGLIASCO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-26",
+            "visita_medica": "2027-01-26"
+        },
+        "patenti": []
+    },
+    "34": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "340-5897070"
+        },
+        "indirizzo": {
+            "via": "VIA PINEROLO,10",
+            "cap": "10045",
+            "comune": "PIOSSASCO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-12",
+            "visita_medica": "2027-05-12"
+        },
+        "patenti": [
+            "2° grado"
+        ]
+    }
+}

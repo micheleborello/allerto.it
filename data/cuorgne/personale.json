@@ -1,0 +1,278 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "339-3759640"
+        },
+        "indirizzo": {
+            "via": "LOCALITA' SAN MARTINO 2",
+            "cap": "10087",
+            "comune": "VALPERGA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-01-23",
+            "visita_medica": "2026-07-23"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "2": {
+        "contatti": {
+            "telefono": "331-8617221",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA CAMPI N. 2",
+            "cap": "10080",
+            "comune": "BORGIALLO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-03",
+            "visita_medica": "2027-06-03"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "345-2286375"
+        },
+        "indirizzo": {
+            "via": "VIA BELMONTE 6 LETTERA C",
+            "cap": "10082",
+            "comune": "CUORGNE'"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-18",
+            "visita_medica": "2027-08-18"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "0124-68570",
+            "telefono1": "338-5087499",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA MATTEOTTI 33",
+            "cap": "10082",
+            "comune": "CUORGNE'"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-07",
+            "visita_medica": "2027-07-07"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "5": {
+        "contatti": {
+            "telefono": "0124-666913",
+            "telefono1": "-",
+            "telefono2": "347-8113154"
+        },
+        "indirizzo": {
+            "via": "VIA BRIGATE PARTIGIANE, 39",
+            "cap": "10082",
+            "comune": "CUORGNE'"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-07",
+            "visita_medica": "2027-08-07"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "6": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "346-3529629"
+        },
+        "indirizzo": {
+            "via": "VIA CRESTO 28",
+            "cap": "10080",
+            "comune": "CHIESANUOVA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-02-27",
+            "visita_medica": "2026-08-27"
+        },
+        "patenti": []
+    },
+    "7": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "348-732344"
+        },
+        "indirizzo": {
+            "via": "STRADA ANTICA DELLE VIGNE 17",
+            "cap": "10080",
+            "comune": "BORGIALLO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-07",
+            "visita_medica": "2027-08-07"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "8": {
+        "contatti": {
+            "telefono": "0124-620203",
+            "telefono1": "-",
+            "telefono2": "328-2195012"
+        },
+        "indirizzo": {
+            "via": "LOC. CASCINETTE,15",
+            "cap": "10082",
+            "comune": "CUORGNE'"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-31",
+            "visita_medica": "2027-01-31"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "9": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "379-1315958"
+        },
+        "indirizzo": {
+            "via": "LOC. PIOVA -PRIACCO  N3",
+            "cap": "10082",
+            "comune": "CUORGNE'"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-09-04",
+            "visita_medica": "2026-03-04"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "10": {
+        "contatti": {
+            "telefono": "0124-85117",
+            "telefono1": "347-8822831",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA ORCO N?3",
+            "cap": "10085",
+            "comune": "PONT-CANAVESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-07-18",
+            "visita_medica": "2026-01-18"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "11": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "345-2242226"
+        },
+        "indirizzo": {
+            "via": "VIALE DEI MILLE 11",
+            "cap": "10082",
+            "comune": "CUORGNE'"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-01-23",
+            "visita_medica": "2026-07-23"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "12": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-1987327"
+        },
+        "indirizzo": {
+            "via": "STRADA PROVINCIALE PER CUORGNE' 45 LETT.1",
+            "cap": "10081",
+            "comune": "CASTELLAMONTE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-07-18",
+            "visita_medica": "2026-01-18"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "13": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "346-9556212"
+        },
+        "indirizzo": {
+            "via": "FRAZIONE RONCORE SUPERIORE 43",
+            "cap": "10080",
+            "comune": "LOCANA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-11-28",
+            "visita_medica": "2026-05-28"
+        },
+        "patenti": []
+    },
+    "14": {
+        "contatti": {
+            "telefono": "0124-68300",
+            "telefono1": "347-4124539",
+            "telefono2": "331-1987679"
+        },
+        "indirizzo": {
+            "via": "VIA VERDI N? 31",
+            "cap": "10087",
+            "comune": "VALPERGA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-12",
+            "visita_medica": "2027-03-12"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    }
+}

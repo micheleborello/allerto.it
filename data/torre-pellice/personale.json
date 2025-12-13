@@ -1,0 +1,256 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "339-1400511",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA A. GRAMSCI 42",
+            "cap": "10066",
+            "comune": "TORRE PELLICE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-04-05",
+            "visita_medica": "2026-10-05"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "2": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "340-1808503"
+        },
+        "indirizzo": {
+            "via": "VIA / PIAZZA MARTIRI 40",
+            "cap": "10060",
+            "comune": "VILLAR PELLICE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-04-05",
+            "visita_medica": "2026-10-05"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "0121-909744",
+            "telefono2": "339-1855548"
+        },
+        "indirizzo": {
+            "via": "VIA MARCONI 12",
+            "cap": "10062",
+            "comune": "LUSERNA SAN GIOVANNI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2096-05-01",
+            "visita_medica": "2098-11-01"
+        },
+        "patenti": []
+    },
+    "4": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "346-6923262"
+        },
+        "indirizzo": {
+            "via": "VIA FOSSAT 55",
+            "cap": "10060",
+            "comune": "SAN SECONDO DI PINEROLO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2022-11-29",
+            "visita_medica": "2025-05-29"
+        },
+        "patenti": []
+    },
+    "5": {
+        "contatti": {
+            "telefono": "339-8256978",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA STAMPERIA 25/2",
+            "cap": "10066",
+            "comune": "TORRE PELLICE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-05-28",
+            "visita_medica": "2026-11-28"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "6": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "340-6769102"
+        },
+        "indirizzo": {
+            "via": "VIA SERVERA 2",
+            "cap": "10066",
+            "comune": "TORRE PELLICE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-24",
+            "visita_medica": "2027-04-24"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "7": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "388-6240392"
+        },
+        "indirizzo": {
+            "via": "VIA UMBERTO CAGLI 15",
+            "cap": "10060",
+            "comune": "SAN SECONDO DI PINEROLO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-21",
+            "visita_medica": "2027-08-21"
+        },
+        "patenti": []
+    },
+    "8": {
+        "contatti": {
+            "telefono": "366-5775695",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA PASCHETTO 4/6",
+            "cap": "10066",
+            "comune": "TORRE PELLICE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-23",
+            "visita_medica": "2027-01-23"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "9": {
+        "contatti": {
+            "telefono": "338-9394460",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA PRACASTEL 9",
+            "cap": "10066",
+            "comune": "TORRE PELLICE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-04",
+            "visita_medica": "2027-08-04"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "10": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "333-3910206"
+        },
+        "indirizzo": {
+            "via": "VIA BAGNOLO 29",
+            "cap": "10060",
+            "comune": "BIBIANA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-17",
+            "visita_medica": "2027-03-17"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "11": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "328-6683871"
+        },
+        "indirizzo": {
+            "via": "VIA BODOIRA 10",
+            "cap": "10060",
+            "comune": "BIBIANA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-17",
+            "visita_medica": "2027-03-17"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "12": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "338-6801473"
+        },
+        "indirizzo": {
+            "via": "VIA CAVOUR 32",
+            "cap": "10062",
+            "comune": "LUSERNA SAN GIOVANNI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-17",
+            "visita_medica": "2027-03-17"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "13": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "338-2035421"
+        },
+        "indirizzo": {
+            "via": "VIA ROMA 2",
+            "cap": "10060",
+            "comune": "VILLAR PELLICE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-27",
+            "visita_medica": "2027-08-27"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    }
+}

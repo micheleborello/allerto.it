@@ -1,0 +1,322 @@
+[
+    {
+        "label": "Accertamenti sui luoghi, sulle cose e sulle persone",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Addestramento Fuori Sede",
+        "tipo": "varie"
+    },
+    {
+        "label": "Apparati illuminazione",
+        "tipo": "pratica"
+    },
+    {
+        "label": "Attività di P.G. nell'ambito delle competenze del personale VV.F.",
+        "tipo": "teoria"
+    },
+    {
+        "label": "AttivitàPolizia:  Amministrativa - Reati",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Attrezzatura dielettrica",
+        "tipo": "varie"
+    },
+    {
+        "label": "Attrezzature di primo soccorso",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Attrezzature per la protezione delle vie respiratorie",
+        "tipo": "teoria"
+    },
+    {
+        "label": "AUTOMEZZI in dotazione",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Autorespiratori",
+        "tipo": "pratica"
+    },
+    {
+        "label": "Azione estinguente dell'acqua, della schiuma, della polvere, della CO2",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Bocchelli, lance, ecc.",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Campo di infiammabilità e temperatura di accensione",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Caratteristiche delle principali sostanze pericolose (GPL, benzina, metano, acetilene, etc.)",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Carico di incendio e velocità di combustione",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Cenni sulla responsabilità del soccorritore",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Che cos'è l'A.D.R, Classi e sottoclassi,",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Chimica e fisica del fuoco",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Classi d'incendio",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Codice Penale; Codice di Procedura Penale; Funzione della P.G.",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Collegamenti radio: CH radio provinciali – regionali",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Costruzioni, dissesti e impianti",
+        "tipo": "teoria"
+    },
+    {
+        "label": "D.lgs. n. 217\/2005; D.lgs. n. 139\/2008; D.lgs. n. 97\/2017;  D.lgs. n. 127\/2018",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Decreto legislativo 81\/08",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Dinamica e fasi dell’incendio",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Dispositivi di protezioni individuali",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Elettrotecnica e rischio elettrico",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Esercitazione con DPI",
+        "tipo": "pratica"
+    },
+    {
+        "label": "Esercitazione tecniche di intervento",
+        "tipo": "pratica"
+    },
+    {
+        "label": "Esplosimetri",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Estricazione dei feriti",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Formazione del lavoratore ai sensi del dlgs 81\/08",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Formazione per L.I.F.M.",
+        "tipo": "pratica"
+    },
+    {
+        "label": "Generale",
+        "tipo": "varie"
+    },
+    {
+        "label": "Gruppi da taglio",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Gruppi elettrogeni",
+        "tipo": "teoria"
+    },
+    {
+        "label": "I prodotti della combustione (fumi, opacità, tossicità, etc)",
+        "tipo": "teoria"
+    },
+    {
+        "label": "I soggetti della prevenzione: obblighi e diritti",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Idraulica - Principi di idrostatica, fondamenti di idraulica, idraulica applicata antincendi, cenni di costruzioni idrauliche",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Il triangolo del fuoco",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Informativa al P.M,",
+        "tipo": "teoria"
+    },
+    {
+        "label": "INTERVENTI - in presenza di rischio acquatico",
+        "tipo": "pratica"
+    },
+    {
+        "label": "INTERVENTI - in presenza di rischio di cadute dall’alto",
+        "tipo": "teoria"
+    },
+    {
+        "label": "INTERVENTI - in presenza di sostanze radioattive",
+        "tipo": "teoria"
+    },
+    {
+        "label": "INTERVENTI - Incendio alloggio; Incidente stradale; Incendio boschivo",
+        "tipo": "teoria"
+    },
+    {
+        "label": "L'evoluzione della normativa in materia di sicurezza",
+        "tipo": "teoria"
+    },
+    {
+        "label": "La combustione: in fase gassosa, dei liquidi e dei solidi",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Lance schiumogene",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Lavorare in sicurezza (POS)",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Martinetti e cuscini sollevatori",
+        "tipo": "pratica"
+    },
+    {
+        "label": "Martinetti e cuscini sollevatori.",
+        "tipo": "pratica"
+    },
+    {
+        "label": "Mobilitazione in caso di calamità",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Motoseghe - Mototroncatori",
+        "tipo": "pratica"
+    },
+    {
+        "label": "Motoventilatori",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Nodi e cordami",
+        "tipo": "pratica"
+    },
+    {
+        "label": "Nozioni di primo soccorso",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Organizzazione centrale e territoriale del Corpo Nazionale dei Vigili del Fuoco",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Organizzazione e ruolo del CNVVF in ambito di Protezione Civile",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Pompe e motopompe",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Principi di fisica, struttura della materia, passaggi di stato",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Principi di sicurezza elettrica e incendi di apparecchiature elettriche.",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Rapporto di intervento (importanza e modalità di compilazione)",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Reazioni chimiche, la combustione, fenomeni fisici e chimici derivanti da una combustione",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Scala a ganci",
+        "tipo": "pratica"
+    },
+    {
+        "label": "Scala Italiana",
+        "tipo": "pratica"
+    },
+    {
+        "label": "Scuola guida",
+        "tipo": "pratica"
+    },
+    {
+        "label": "segnalazioni di pericolo,  SIGEM, scenari incidentali coinvolgenti sostanze pericolose.",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Simulazione incendi",
+        "tipo": "pratica"
+    },
+    {
+        "label": "Simulazione intervento (specificare)",
+        "tipo": "pratica"
+    },
+    {
+        "label": "Sistemi di allertamento digitalizzati",
+        "tipo": "pratica"
+    },
+    {
+        "label": "Soccorso pubblico, prevenzione incendi,  attività di vigilanza,  attività di protezione civile",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Sostanze combustibili e comburenti",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Sostanze pericolose - Rischi correlati, trasporto, etichettatura",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Stendimento tubazioni",
+        "tipo": "pratica"
+    },
+    {
+        "label": "Tecniche di intervento con l'uso di elicottero",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Test",
+        "tipo": "varie"
+    },
+    {
+        "label": "Tubi di mandata, tubi di aspirazione",
+        "tipo": "teoria"
+    },
+    {
+        "label": "uniformi e distintivi",
+        "tipo": "teoria"
+    },
+    {
+        "label": "Uso e manovra con maschera antigas e autoprotettori",
+        "tipo": "pratica"
+    },
+    {
+        "label": "Ustioni, Lesioni traumatiche, Asfissia, Emorragie\/Amputazioni, Avvelenamenti\/Intossicazioni",
+        "tipo": "teoria"
+    }
+]

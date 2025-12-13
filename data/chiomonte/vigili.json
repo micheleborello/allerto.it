@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "nome": "JACOPO",
+        "cognome": "BONO",
+        "cf": "BNOJCP89B13F335N",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "bono.jacopo"
+    },
+    {
+        "id": 2,
+        "nome": "FEDERICO",
+        "cognome": "FONTAN",
+        "cf": "FNTFRC88D12L219D",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "fontan.federico"
+    },
+    {
+        "id": 3,
+        "nome": "ALESSANDRO",
+        "cognome": "JACOB",
+        "cf": "JCBLSN88D07L013A",
+        "attivo": 1,
+        "grado": "CSV.",
+        "ingresso": "",
+        "username": "jacob.alessandro"
+    },
+    {
+        "id": 4,
+        "nome": "FILIPPO",
+        "cognome": "LEONE",
+        "cf": "LNEFPP01P15L013K",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "leone.filippo"
+    },
+    {
+        "id": 5,
+        "nome": "AMEDEO",
+        "cognome": "MARCON",
+        "cf": "MRCMDA94A28L013W",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "marcon.amedeo"
+    },
+    {
+        "id": 6,
+        "nome": "WANDA",
+        "cognome": "MONTABONE",
+        "cf": "MNTWND66P62A518C",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "montabone.wanda"
+    },
+    {
+        "id": 7,
+        "nome": "CLAUDIO",
+        "cognome": "SIBILLE",
+        "cf": "SBLCLD84P01L013U",
+        "attivo": 1,
+        "grado": "CSV.",
+        "ingresso": "",
+        "username": "sibille.claudio"
+    },
+    {
+        "id": 8,
+        "nome": "FLAVIO",
+        "cognome": "SIBILLE",
+        "cf": "SBLFLV66B15C639T",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "sibille.flavio"
+    },
+    {
+        "id": 9,
+        "nome": "RICCARDO",
+        "cognome": "TALARICO",
+        "cf": "TLRRCR94E13L013E",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "talarico.riccardo"
+    },
+    {
+        "id": 10,
+        "nome": "FABIO",
+        "cognome": "TOURNOUR",
+        "cf": "TRNFBA89R26L013Z",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "tournour.fabio"
+    },
+    {
+        "id": 11,
+        "nome": "ROBERTO",
+        "cognome": "TOURNOUR",
+        "cf": "TRNRRT67C23C639Q",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "tournour.roberto"
+    }
+]

@@ -1,0 +1,498 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "333-1559483"
+        },
+        "indirizzo": {
+            "via": "VIA MONCENISIO 28",
+            "cap": "10094",
+            "comune": "GIAVENO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-21",
+            "visita_medica": "2027-04-21"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "2": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "348-7759233"
+        },
+        "indirizzo": {
+            "via": "CORSO LAGHI 257",
+            "cap": "10051",
+            "comune": "AVIGLIANA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-29",
+            "visita_medica": "2027-04-29"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "347-8884036"
+        },
+        "indirizzo": {
+            "via": "VIA AUDIBERT 1",
+            "cap": "10054",
+            "comune": "CESANA TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-09-18",
+            "visita_medica": "2026-03-18"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "346-3082091"
+        },
+        "indirizzo": {
+            "via": "VIA BRAIDA VECCHIA 63 LETT.1",
+            "cap": "10090",
+            "comune": "BUTTIGLIERA ALTA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-04-23",
+            "visita_medica": "2026-10-23"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "5": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "347-8691493"
+        },
+        "indirizzo": {
+            "via": "VIA GUIDO PORTIGLIATTI 31",
+            "cap": "10051",
+            "comune": "AVIGLIANA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-04-01",
+            "visita_medica": "2027-10-01"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "6": {
+        "contatti": {
+            "telefono": "339-2618748",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "CORSO LAGHI 19",
+            "cap": "10090",
+            "comune": "BUTTIGLIERA ALTA"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-10",
+            "visita_medica": "2027-04-10"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "7": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "340-0893911"
+        },
+        "indirizzo": {
+            "via": "VIA COPOTTI 1 LETTERA B",
+            "cap": "10050",
+            "comune": "VILLAR FOCCHIARDO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-30",
+            "visita_medica": "2027-01-30"
+        },
+        "patenti": [
+            "2° grado"
+        ]
+    },
+    "8": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "334-8870569"
+        },
+        "indirizzo": {
+            "via": "VIA MONTEBELLO 5",
+            "cap": "10050",
+            "comune": "BRUZOLO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-18",
+            "visita_medica": "2027-08-18"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "9": {
+        "contatti": {
+            "telefono": "011-9399584",
+            "telefono1": "-",
+            "telefono2": "348-7801689"
+        },
+        "indirizzo": {
+            "via": "VIA GIAVENO,24",
+            "cap": "10057",
+            "comune": "SANT'AMBROGIO DI TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-05-28",
+            "visita_medica": "2026-11-28"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "10": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "366-5775775"
+        },
+        "indirizzo": {
+            "via": "VIA CONTI CARRON 18",
+            "cap": "10090",
+            "comune": "BUTTIGLIERA ALTA"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-24",
+            "visita_medica": "2027-04-24"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "11": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "334-1500394"
+        },
+        "indirizzo": {
+            "via": "VIA NORBERTO ROSA 6",
+            "cap": "10051",
+            "comune": "AVIGLIANA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-18",
+            "visita_medica": "2027-08-18"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "12": {
+        "contatti": {
+            "telefono": "327-8139803",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA STRETTA 30",
+            "cap": "10050",
+            "comune": "SANT'ANTONINO DI SUSA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-19",
+            "visita_medica": "2027-05-19"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "13": {
+        "contatti": {
+            "telefono": "339-2223793",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA DON BALBIANO N. 27/G",
+            "cap": "10051",
+            "comune": "AVIGLIANA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-07",
+            "visita_medica": "2027-05-07"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "14": {
+        "contatti": {
+            "telefono": "338-8020281",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "BORGATA BERTASSI N. 2",
+            "cap": "10040",
+            "comune": "RUBIANA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-08-07",
+            "visita_medica": "2027-02-07"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "15": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "347-5196112"
+        },
+        "indirizzo": {
+            "via": "VIA FALCONE 35",
+            "cap": "10051",
+            "comune": "AVIGLIANA"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-08-08",
+            "visita_medica": "2027-02-08"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "16": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "339-7102301"
+        },
+        "indirizzo": {
+            "via": "VIA ALESSANDRIA 34/A",
+            "cap": "10090",
+            "comune": "TRANA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-15",
+            "visita_medica": "2027-04-15"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "17": {
+        "contatti": {
+            "telefono": "011-9320359",
+            "telefono1": "338-2817340",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA CHIATTERA 10",
+            "cap": "10051",
+            "comune": "AVIGLIANA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-13",
+            "visita_medica": "2027-06-13"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "18": {
+        "contatti": {
+            "telefono": "011-9321765",
+            "telefono1": "338-2033651",
+            "telefono2": "348-6011441"
+        },
+        "indirizzo": {
+            "via": "VIA MUSINE' 9",
+            "cap": "10090",
+            "comune": "BUTTIGLIERA ALTA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-12",
+            "visita_medica": "2027-05-12"
+        },
+        "patenti": []
+    },
+    "19": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "334-5833625"
+        },
+        "indirizzo": {
+            "via": "VIA IV NOVEMBRE 16",
+            "cap": "10051",
+            "comune": "AVIGLIANA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-28",
+            "visita_medica": "2027-08-31"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "20": {
+        "contatti": {
+            "telefono": "011-9399569",
+            "telefono1": "339-3999275",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA TRIESTE 23",
+            "cap": "10057",
+            "comune": "SANT'AMBROGIO DI TORINO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-24",
+            "visita_medica": "2027-03-24"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "21": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "011-9367397",
+            "telefono2": "349-1140234"
+        },
+        "indirizzo": {
+            "via": "VIA MARIO GRECO 36/A",
+            "cap": "10090",
+            "comune": "BUTTIGLIERA ALTA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-10",
+            "visita_medica": "2027-03-10"
+        },
+        "patenti": [
+            "2° grado"
+        ]
+    },
+    "22": {
+        "contatti": {
+            "telefono": "011-9313518",
+            "telefono1": "339-8007448",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "CORSO LAGHI 81",
+            "cap": "10051",
+            "comune": "AVIGLIANA"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-12",
+            "visita_medica": "2027-05-12"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "23": {
+        "contatti": {
+            "telefono": "011-9348013",
+            "telefono1": "347-1472453",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA MONCENISIO N. 62",
+            "cap": "10051",
+            "comune": "AVIGLIANA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-29",
+            "visita_medica": "2027-04-29"
+        },
+        "patenti": []
+    },
+    "24": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "346-2478342"
+        },
+        "indirizzo": {
+            "via": "VIA CINATO ATTILIO 18",
+            "cap": "10040",
+            "comune": "CAPRIE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-14",
+            "visita_medica": "2027-07-14"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "25": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-8666323"
+        },
+        "indirizzo": {
+            "via": "VIA CARNINO 9",
+            "cap": "10057",
+            "comune": "SANT'AMBROGIO DI TORINO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-08-07",
+            "visita_medica": "2027-02-07"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    }
+}

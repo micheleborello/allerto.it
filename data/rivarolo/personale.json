@@ -1,0 +1,416 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "333-3480787"
+        },
+        "indirizzo": {
+            "via": "STRADA DEL CASINO 37/1",
+            "cap": "10081",
+            "comune": "CASTELLAMONTE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-03-26",
+            "visita_medica": "2026-09-26"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "2": {
+        "contatti": {
+            "telefono": "0124-27685",
+            "telefono1": "-",
+            "telefono2": "380-5145244"
+        },
+        "indirizzo": {
+            "via": "VIA FAVRIA N. 17",
+            "cap": "10086",
+            "comune": "RIVAROLO CANAVESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-08-08",
+            "visita_medica": "2027-02-08"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "338-8047614"
+        },
+        "indirizzo": {
+            "via": "VIA ROMANO VACHA 3",
+            "cap": "10080",
+            "comune": "OGLIANICO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-05-07",
+            "visita_medica": "2026-11-07"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "340-4160158"
+        },
+        "indirizzo": {
+            "via": "VIA ADALBERTO MARIANO 18",
+            "cap": "10086",
+            "comune": "RIVAROLO CANAVESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-02-27",
+            "visita_medica": "2026-08-27"
+        },
+        "patenti": []
+    },
+    "5": {
+        "contatti": {
+            "telefono": "340-3607179",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIALE DEI CADUTI N. 2/A",
+            "cap": "10080",
+            "comune": "LUSIGLIE'"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-29",
+            "visita_medica": "2027-04-29"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "6": {
+        "contatti": {
+            "telefono": "347-5638823",
+            "telefono1": "331-5788636",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA NEUSCHELLER,40",
+            "cap": "10040",
+            "comune": "RIVAROSSA"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-08-07",
+            "visita_medica": "2027-02-07"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "7": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "348-6922336"
+        },
+        "indirizzo": {
+            "via": "VIA  NAZARIO SAURO 14/A",
+            "cap": "10083",
+            "comune": "FAVRIA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-25",
+            "visita_medica": "2027-01-25"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "8": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "333-9948814"
+        },
+        "indirizzo": {
+            "via": "VIA CESARE BURIO 16 - CORTEREGGIO",
+            "cap": "10090",
+            "comune": "SAN GIORGIO CANAVESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-25",
+            "visita_medica": "2027-01-25"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "9": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "339-3807087"
+        },
+        "indirizzo": {
+            "via": "VIA GIULIO PASTORE 7",
+            "cap": "10086",
+            "comune": "RIVAROLO CANAVESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-11",
+            "visita_medica": "2027-08-11"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "10": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "366-5775642"
+        },
+        "indirizzo": {
+            "via": "BORGATA SANT'ANTONIO 24",
+            "cap": "10083",
+            "comune": "FAVRIA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-08-01",
+            "visita_medica": "2027-02-01"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "11": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "339-7704596"
+        },
+        "indirizzo": {
+            "via": "VIA BICOCCA 2",
+            "cap": "10086",
+            "comune": "RIVAROLO CANAVESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-11",
+            "visita_medica": "2027-08-11"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "12": {
+        "contatti": {
+            "telefono": "011-9886186",
+            "telefono1": "-",
+            "telefono2": "346-1290551"
+        },
+        "indirizzo": {
+            "via": "VIA STAFFETTE PARTIGIANE 1",
+            "cap": "10086",
+            "comune": "RIVAROLO CANAVESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-24",
+            "visita_medica": "2027-03-24"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "13": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "349-2210717"
+        },
+        "indirizzo": {
+            "via": "VIA VALENTINO BONAUDO 2",
+            "cap": "10083",
+            "comune": "FAVRIA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-11",
+            "visita_medica": "2027-08-11"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "14": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "345-307035"
+        },
+        "indirizzo": {
+            "via": "STRADA PROVINCIALE X CUCEGLIO 111",
+            "cap": "10011",
+            "comune": "AGLIE'"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-02-27",
+            "visita_medica": "2026-08-27"
+        },
+        "patenti": []
+    },
+    "15": {
+        "contatti": {
+            "telefono": "0124-7262",
+            "telefono1": "-",
+            "telefono2": "366-5775643"
+        },
+        "indirizzo": {
+            "via": "VIA CASTAGNERI 19",
+            "cap": "10086",
+            "comune": "RIVAROLO CANAVESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-15",
+            "visita_medica": "2027-04-15"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "16": {
+        "contatti": {
+            "telefono": "347-1716696",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA RICETTI 3",
+            "cap": "10080",
+            "comune": "OGLIANICO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-01",
+            "visita_medica": "2027-04-01"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "17": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "335-5288713"
+        },
+        "indirizzo": {
+            "via": "VIA STRADA PROVINCIALE PER FRONT 12",
+            "cap": "10083",
+            "comune": "FAVRIA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-03",
+            "visita_medica": "2027-03-03"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "18": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "335-619123"
+        },
+        "indirizzo": {
+            "via": "VIA DON STEFANO NIDA 1",
+            "cap": "10086",
+            "comune": "RIVAROLO CANAVESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-03-05",
+            "visita_medica": "2026-09-05"
+        },
+        "patenti": []
+    },
+    "19": {
+        "contatti": {
+            "telefono": "347-4247243",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA RICETTI 7",
+            "cap": "10080",
+            "comune": "OGLIANICO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-11",
+            "visita_medica": "2027-04-11"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "20": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-5788986"
+        },
+        "indirizzo": {
+            "via": "VIA SALASSA 1",
+            "cap": "10080",
+            "comune": "OGLIANICO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-01",
+            "visita_medica": "2027-04-01"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "21": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-1987620"
+        },
+        "indirizzo": {
+            "via": "VIA IVREA 4",
+            "cap": "10083",
+            "comune": "FAVRIA"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-10-23",
+            "visita_medica": "2026-04-23"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    }
+}

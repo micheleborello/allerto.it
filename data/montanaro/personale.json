@@ -1,0 +1,310 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "393-9536166"
+        },
+        "indirizzo": {
+            "via": "VIA G. MAZZINI 22",
+            "cap": "10017",
+            "comune": "MONTANARO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-03-12",
+            "visita_medica": "2026-09-12"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "2": {
+        "contatti": {
+            "telefono": "011-9883778",
+            "telefono1": "331-6888205",
+            "telefono2": "345-6560275"
+        },
+        "indirizzo": {
+            "via": "VIA PEZZA 21",
+            "cap": "10090",
+            "comune": "CUCEGLIO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-03-26",
+            "visita_medica": "2026-09-26"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "346-5145148",
+            "telefono1": "011-9834806",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA BELVEDERE 25",
+            "cap": "10035",
+            "comune": "MAZZE'"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-14",
+            "visita_medica": "2027-05-14"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "340-2205295"
+        },
+        "indirizzo": {
+            "via": "VIA GIOVANNI XXIII N?91",
+            "cap": "10020",
+            "comune": "LAURIANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-11-21",
+            "visita_medica": "2026-05-21"
+        },
+        "patenti": []
+    },
+    "5": {
+        "contatti": {
+            "telefono": "011-9192298",
+            "telefono1": "331-6888222",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA MONTENERO 23",
+            "cap": "10014",
+            "comune": "CALUSO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-13",
+            "visita_medica": "2027-06-13"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "6": {
+        "contatti": {
+            "telefono": "011-9883307",
+            "telefono1": "-",
+            "telefono2": "340-2796791"
+        },
+        "indirizzo": {
+            "via": "VIA PRINCIPE TOMMASO 10",
+            "cap": "10090",
+            "comune": "FOGLIZZO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2017-03-03",
+            "visita_medica": "2019-09-03"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "7": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "340-6406224"
+        },
+        "indirizzo": {
+            "via": "VIA D. BEVILACQUA 22",
+            "cap": "10017",
+            "comune": "MONTANARO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-15",
+            "visita_medica": "2027-04-15"
+        },
+        "patenti": []
+    },
+    "8": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "335-6019893"
+        },
+        "indirizzo": {
+            "via": "VIA RIVERA 73",
+            "cap": "10034",
+            "comune": "CHIVASSO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2017-04-27",
+            "visita_medica": "2019-10-27"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "9": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "392-1160660"
+        },
+        "indirizzo": {
+            "via": "VIA UMBERTO I? 83",
+            "cap": "10090",
+            "comune": "FOGLIZZO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-14",
+            "visita_medica": "2027-08-14"
+        },
+        "patenti": []
+    },
+    "10": {
+        "contatti": {
+            "telefono": "348-6433662",
+            "telefono1": "-",
+            "telefono2": "376-1008423"
+        },
+        "indirizzo": {
+            "via": "VIA MONTEGRAPPA 4",
+            "cap": "10090",
+            "comune": "GASSINO TORINESE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-03-14",
+            "visita_medica": "2027-09-14"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "11": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "327-1679707"
+        },
+        "indirizzo": {
+            "via": "VIA ROMA 8",
+            "cap": "10030",
+            "comune": "VISCHE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-02-20",
+            "visita_medica": "2026-08-20"
+        },
+        "patenti": []
+    },
+    "12": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "393-1944846"
+        },
+        "indirizzo": {
+            "via": "VIA MONTE GRAPPA 40/B",
+            "cap": "10034",
+            "comune": "CHIVASSO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-22",
+            "visita_medica": "2027-04-22"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "13": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "349-3031911"
+        },
+        "indirizzo": {
+            "via": "VIA MURATORI 1",
+            "cap": "10017",
+            "comune": "MONTANARO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-04",
+            "visita_medica": "2027-08-04"
+        },
+        "patenti": []
+    },
+    "14": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "366-3348620"
+        },
+        "indirizzo": {
+            "via": "VIA XX SETTEMBRE 57/C",
+            "cap": "10030",
+            "comune": "RONDISSONE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-02-20",
+            "visita_medica": "2026-08-20"
+        },
+        "patenti": []
+    },
+    "15": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "339-6268352"
+        },
+        "indirizzo": {
+            "via": "VIA S. PELLICO 11 SCALA  C INT.2",
+            "cap": "10017",
+            "comune": "MONTANARO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-26",
+            "visita_medica": "2027-05-26"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "16": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "345-9435134"
+        },
+        "indirizzo": {
+            "via": "VIA REVEL 8",
+            "cap": "10017",
+            "comune": "MONTANARO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-05",
+            "visita_medica": "2027-05-05"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    }
+}

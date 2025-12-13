@@ -1,0 +1,712 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "338-9974099",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "STRADA PIOSSASCO 69",
+            "cap": "10043",
+            "comune": "ORBASSANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-12",
+            "visita_medica": "2027-05-12"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "2": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "339-8049282"
+        },
+        "indirizzo": {
+            "via": "VIA CARIGNANO 30/57",
+            "cap": "10040",
+            "comune": "RIVALTA DI TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-30",
+            "visita_medica": "2027-01-30"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "334-1704164",
+            "telefono1": "-",
+            "telefono2": "331-1987448"
+        },
+        "indirizzo": {
+            "via": "VIA GARIBALDI 23",
+            "cap": "10091",
+            "comune": "ALPIGNANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2016-07-05",
+            "visita_medica": "2019-01-05"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "0121-352144",
+            "telefono1": "331-6887890",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA FERRERI 3",
+            "cap": "10060",
+            "comune": "FROSSASCO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-04-23",
+            "visita_medica": "2026-10-23"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "5": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "328-8876120"
+        },
+        "indirizzo": {
+            "via": "VIA V.LO SACRA S. MICHELE 1/1",
+            "cap": "10043",
+            "comune": "ORBASSANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-24",
+            "visita_medica": "2027-03-24"
+        },
+        "patenti": []
+    },
+    "6": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "348-4828473"
+        },
+        "indirizzo": {
+            "via": "VIA GERBOLE 70",
+            "cap": "10040",
+            "comune": "VOLVERA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-29",
+            "visita_medica": "2027-04-29"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "7": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "349-1616563"
+        },
+        "indirizzo": {
+            "via": "VIA NIZZA 50 SCALA B",
+            "cap": "10126",
+            "comune": "TORINO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-03",
+            "visita_medica": "2027-03-03"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "8": {
+        "contatti": {
+            "telefono": "333-9902518",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA MONSIGNOR DE MARCHI 17",
+            "cap": "10060",
+            "comune": "OSASCO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-03",
+            "visita_medica": "2027-06-03"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "9": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "347-3780021"
+        },
+        "indirizzo": {
+            "via": "VIALE FABRIZIO DE ANDRE' 55 SCALA C INT-4",
+            "cap": "10095",
+            "comune": "GRUGLIASCO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-22",
+            "visita_medica": "2027-04-22"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "10": {
+        "contatti": {
+            "telefono": "011-9047073",
+            "telefono1": "-",
+            "telefono2": "331-1987596"
+        },
+        "indirizzo": {
+            "via": "VIA PUCCINI 5",
+            "cap": "10040",
+            "comune": "RIVALTA DI TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-15",
+            "visita_medica": "2027-05-15"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "11": {
+        "contatti": {
+            "telefono": "335-7281513",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA KERBAKER N? 2",
+            "cap": "10127",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-17",
+            "visita_medica": "2027-06-17"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "12": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "339-1893672"
+        },
+        "indirizzo": {
+            "via": "VIA SAVERIO POSITANO 13/C",
+            "cap": "10044",
+            "comune": "PIANEZZA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-12",
+            "visita_medica": "2027-05-12"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "13": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "377-4786481"
+        },
+        "indirizzo": {
+            "via": "PIAZZA QUATTRO NOVEMBRE 3",
+            "cap": "10093",
+            "comune": "COLLEGNO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-05",
+            "visita_medica": "2027-05-05"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "14": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "347-8477922"
+        },
+        "indirizzo": {
+            "via": "VIA AMENDOLA 2",
+            "cap": "10028",
+            "comune": "TROFARELLO"
+        },
+        "grado": "FTAV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-12",
+            "visita_medica": "2027-06-12"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "15": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "375-5475873"
+        },
+        "indirizzo": {
+            "via": "VIA CESARE BATTISTI 7",
+            "cap": "10093",
+            "comune": "COLLEGNO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-17",
+            "visita_medica": "2027-06-17"
+        },
+        "patenti": []
+    },
+    "16": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "377-0806526"
+        },
+        "indirizzo": {
+            "via": "CORSO LIONE 46",
+            "cap": "10100",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-02",
+            "visita_medica": "2027-01-02"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "17": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "339-8450471"
+        },
+        "indirizzo": {
+            "via": "VIA TARTINI GIUSEPPE 31 PIANO 1?  NUI:59",
+            "cap": "10100",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-08-06",
+            "visita_medica": "2027-02-06"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "18": {
+        "contatti": {
+            "telefono": "011-3971156",
+            "telefono1": "-",
+            "telefono2": "329-9129236"
+        },
+        "indirizzo": {
+            "via": "VIA MIRAFIORI,19/E",
+            "cap": "10092",
+            "comune": "BEINASCO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-12",
+            "visita_medica": "2027-06-12"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "19": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "347-3246571"
+        },
+        "indirizzo": {
+            "via": "VIA PRAMOLLO 2/D",
+            "cap": "10100",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-11-21",
+            "visita_medica": "2026-05-21"
+        },
+        "patenti": []
+    },
+    "20": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "340-6199575"
+        },
+        "indirizzo": {
+            "via": "C.SO SIRACUSA 3/C",
+            "cap": "10100",
+            "comune": "TORINO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-30",
+            "visita_medica": "2027-01-30"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "21": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "346-1767689"
+        },
+        "indirizzo": {
+            "via": "VIA BALME 16",
+            "cap": "10143",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-19",
+            "visita_medica": "2027-03-19"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "22": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "338-2085356"
+        },
+        "indirizzo": {
+            "via": "VIA CELESTE NEGARVILLE,5",
+            "cap": "10135",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-29",
+            "visita_medica": "2027-04-29"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "23": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "339-1709864"
+        },
+        "indirizzo": {
+            "via": "VIA PAOLO SARPI 88",
+            "cap": "10134",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-05",
+            "visita_medica": "2027-06-05"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "24": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "333-3274599"
+        },
+        "indirizzo": {
+            "via": "CORSO SEBASTOPOLI 219",
+            "cap": "10137",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-26",
+            "visita_medica": "2027-05-26"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "25": {
+        "contatti": {
+            "telefono": "340-7926631",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA SAN GIOVANNI 2",
+            "cap": "10092",
+            "comune": "BEINASCO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-12",
+            "visita_medica": "2027-05-12"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "26": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-2605906"
+        },
+        "indirizzo": {
+            "via": "VIA QUINTINO SELLA 14/B",
+            "cap": "10043",
+            "comune": "ORBASSANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-22",
+            "visita_medica": "2027-04-22"
+        },
+        "patenti": []
+    },
+    "27": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "346-4994123"
+        },
+        "indirizzo": {
+            "via": "SLARGO GOFFREDO MAMELI 2",
+            "cap": "10043",
+            "comune": "ORBASSANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-05-24",
+            "visita_medica": "2026-11-24"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "28": {
+        "contatti": {
+            "telefono": "011-9046208",
+            "telefono1": "339-5342853",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA DANTE ALIGHIERI 58",
+            "cap": "10040",
+            "comune": "RIVALTA DI TORINO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-06-25",
+            "visita_medica": "2026-12-25"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "29": {
+        "contatti": {
+            "telefono": "011-9047197",
+            "telefono1": "331-5788641",
+            "telefono2": "347-4236614"
+        },
+        "indirizzo": {
+            "via": "C.SO FRATELLI CERVI 56",
+            "cap": "10095",
+            "comune": "GRUGLIASCO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-10-09",
+            "visita_medica": "2026-04-09"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "30": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "393-9130816"
+        },
+        "indirizzo": {
+            "via": "VIA ORBASSANO 26",
+            "cap": "10060",
+            "comune": "NONE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-03-28",
+            "visita_medica": "2027-09-28"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "31": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "348-4297185"
+        },
+        "indirizzo": {
+            "via": "VIA GIAVENO 186",
+            "cap": "10040",
+            "comune": "RIVALTA DI TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-17",
+            "visita_medica": "2027-03-17"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "32": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "351-6618265"
+        },
+        "indirizzo": {
+            "via": "VIA C.SO KENNEDY J.F. 31",
+            "cap": "10093",
+            "comune": "COLLEGNO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-20",
+            "visita_medica": "2027-08-20"
+        },
+        "patenti": []
+    },
+    "33": {
+        "contatti": {
+            "telefono": "349-6159457",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA BELLINI 47",
+            "cap": "10040",
+            "comune": "RIVALTA DI TORINO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-05-14",
+            "visita_medica": "2026-11-14"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "34": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "380-1056768"
+        },
+        "indirizzo": {
+            "via": "VIALE FABRIZIO DE ANDRE' 5/A",
+            "cap": "10095",
+            "comune": "GRUGLIASCO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-05-24",
+            "visita_medica": "2026-11-24"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "35": {
+        "contatti": {
+            "telefono": "335-476172",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA SAN MARTINO 12/C",
+            "cap": "10060",
+            "comune": "CANTALUPA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-10",
+            "visita_medica": "2027-06-10"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "36": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "342-5604021"
+        },
+        "indirizzo": {
+            "via": "VIA B. CELLINI 8",
+            "cap": "10040",
+            "comune": "RIVALTA DI TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-02",
+            "visita_medica": "2027-01-02"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    }
+}

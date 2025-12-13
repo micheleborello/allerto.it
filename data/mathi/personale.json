@@ -1,0 +1,320 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "339-7711748"
+        },
+        "indirizzo": {
+            "via": "VIA TORINO 189",
+            "cap": "10076",
+            "comune": "NOLE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-25",
+            "visita_medica": "2027-01-25"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "2": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "339-6581086"
+        },
+        "indirizzo": {
+            "via": "VIA POMETTI 58",
+            "cap": "10075",
+            "comune": "MATHI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-06",
+            "visita_medica": "2027-08-06"
+        },
+        "patenti": []
+    },
+    "3": {
+        "contatti": {
+            "telefono": "347-9082164",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA BALANGERO 24",
+            "cap": "10070",
+            "comune": "CAFASSE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-04-16",
+            "visita_medica": "2026-10-16"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "0123-346598",
+            "telefono1": "-",
+            "telefono2": "338-9177542"
+        },
+        "indirizzo": {
+            "via": "CORSO BORLA, 41",
+            "cap": "10070",
+            "comune": "BALANGERO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-21",
+            "visita_medica": "2027-07-21"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "5": {
+        "contatti": {
+            "telefono": "011-9269890",
+            "telefono1": "335-6517194",
+            "telefono2": "331-6888366"
+        },
+        "indirizzo": {
+            "via": "VIA POMETTI 32",
+            "cap": "10075",
+            "comune": "MATHI"
+        },
+        "grado": "FTAV.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-21",
+            "visita_medica": "2027-07-21"
+        },
+        "patenti": [
+            "2° grado"
+        ]
+    },
+    "6": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "371-1294187"
+        },
+        "indirizzo": {
+            "via": "VIA TORINO 2",
+            "cap": "10070",
+            "comune": "CAFASSE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-04-08",
+            "visita_medica": "2027-10-08"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "7": {
+        "contatti": {
+            "telefono": "0123-320634",
+            "telefono1": "-",
+            "telefono2": "347-4634174"
+        },
+        "indirizzo": {
+            "via": "PIAZZA GENERALE OTTAVIO ROLLE 1",
+            "cap": "10074",
+            "comune": "LANZO TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-12",
+            "visita_medica": "2027-05-12"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "8": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "348-3128431"
+        },
+        "indirizzo": {
+            "via": "VIA TRIESTE,33",
+            "cap": "10075",
+            "comune": "MATHI"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-24",
+            "visita_medica": "2027-01-24"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "9": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "388-8763141"
+        },
+        "indirizzo": {
+            "via": "VIA DON BOSCO 21",
+            "cap": "10075",
+            "comune": "MATHI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-26",
+            "visita_medica": "2027-01-26"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "10": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-8120887"
+        },
+        "indirizzo": {
+            "via": "FRAZ. VORAGNO 43/1",
+            "cap": "10070",
+            "comune": "CERES"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-08",
+            "visita_medica": "2027-04-08"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "11": {
+        "contatti": {
+            "telefono": "347-7135037",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA SAN GIORGIO N? 19",
+            "cap": "10075",
+            "comune": "MATHI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-05",
+            "visita_medica": "2027-05-05"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "12": {
+        "contatti": {
+            "telefono": "379-1458814",
+            "telefono1": "-",
+            "telefono2": "331-1987296"
+        },
+        "indirizzo": {
+            "via": "PIAZZA EUROPA 28",
+            "cap": "10070",
+            "comune": "CERES"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-03",
+            "visita_medica": "2027-03-03"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "13": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "347-0102936"
+        },
+        "indirizzo": {
+            "via": "STRADA LOTTI LA PIE' 14",
+            "cap": "10070",
+            "comune": "SAN CARLO CANAVESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-17",
+            "visita_medica": "2027-03-17"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "14": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "338-5952939"
+        },
+        "indirizzo": {
+            "via": "VIA TORINO 222",
+            "cap": "10076",
+            "comune": "NOLE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-19",
+            "visita_medica": "2027-05-19"
+        },
+        "patenti": [
+            "2° grado"
+        ]
+    },
+    "15": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "339-7691750"
+        },
+        "indirizzo": {
+            "via": "VIA TORINO 44/B",
+            "cap": "10070",
+            "comune": "BALANGERO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-15",
+            "visita_medica": "2027-04-15"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "16": {
+        "contatti": {
+            "telefono": "347-8198980",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA SAN GIOVANNI 29",
+            "cap": "10075",
+            "comune": "MATHI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-26",
+            "visita_medica": "2027-05-26"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    }
+}

@@ -1,0 +1,314 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "348-8742199"
+        },
+        "indirizzo": {
+            "via": "VIA MONGINEVRO,83",
+            "cap": "10056",
+            "comune": "OULX"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-24",
+            "visita_medica": "2027-03-24"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "2": {
+        "contatti": {
+            "telefono": "0122-831372",
+            "telefono1": "-",
+            "telefono2": "338-8361356"
+        },
+        "indirizzo": {
+            "via": "VIA ROMA 8",
+            "cap": "10056",
+            "comune": "OULX"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-02-13",
+            "visita_medica": "2026-08-13"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-6888418"
+        },
+        "indirizzo": {
+            "via": "VIA ROMA,22",
+            "cap": "10050",
+            "comune": "SALBERTRAND"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-21",
+            "visita_medica": "2027-04-21"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "0122-850180",
+            "telefono1": "-",
+            "telefono2": "380-7204420"
+        },
+        "indirizzo": {
+            "via": "PIAZZA ASIETTA 4",
+            "cap": "10050",
+            "comune": "SAUZE D'OULX"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-29",
+            "visita_medica": "2027-04-29"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "5": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "328-4026717"
+        },
+        "indirizzo": {
+            "via": "VIA DEL CASELLO 9",
+            "cap": "10056",
+            "comune": "OULX"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-03-25",
+            "visita_medica": "2027-09-25"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "6": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "339-2333158"
+        },
+        "indirizzo": {
+            "via": "VIA DEL FORNO 2",
+            "cap": "10050",
+            "comune": "SAUZE D'OULX"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-10",
+            "visita_medica": "2027-03-10"
+        },
+        "patenti": []
+    },
+    "7": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "339-4711384"
+        },
+        "indirizzo": {
+            "via": "VIA BAYA' 14",
+            "cap": "10050",
+            "comune": "SAUZE D'OULX"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-12",
+            "visita_medica": "2027-05-12"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "8": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "338-2793992"
+        },
+        "indirizzo": {
+            "via": "FRAZIONE MELEZET 23",
+            "cap": "10052",
+            "comune": "BARDONECCHIA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-03-25",
+            "visita_medica": "2027-09-25"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "9": {
+        "contatti": {
+            "telefono": "338-5632509",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA VERCELLINO 28 - FRAZ.GAD",
+            "cap": "10056",
+            "comune": "OULX"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-24",
+            "visita_medica": "2027-03-24"
+        },
+        "patenti": []
+    },
+    "10": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "334-5385391"
+        },
+        "indirizzo": {
+            "via": "VIA PIETRO VERCELLINO 29/M",
+            "cap": "10056",
+            "comune": "OULX"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-02-13",
+            "visita_medica": "2026-08-13"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "11": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "338-2729130"
+        },
+        "indirizzo": {
+            "via": "BORGATA CONSTANS 1",
+            "cap": "10056",
+            "comune": "OULX"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-03-13",
+            "visita_medica": "2027-09-13"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "12": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "339-1359845"
+        },
+        "indirizzo": {
+            "via": "VIA XXV APRILE 50",
+            "cap": "10056",
+            "comune": "OULX"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2022-05-30",
+            "visita_medica": "2024-11-30"
+        },
+        "patenti": []
+    },
+    "13": {
+        "contatti": {
+            "telefono": "340-5297960",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA ROMA,15",
+            "cap": "10050",
+            "comune": "SALBERTRAND"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-12",
+            "visita_medica": "2027-05-12"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "14": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-6887905"
+        },
+        "indirizzo": {
+            "via": "CORSO MONTENERO 21/A",
+            "cap": "10056",
+            "comune": "OULX"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-19",
+            "visita_medica": "2027-05-19"
+        },
+        "patenti": []
+    },
+    "15": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "348-0327766"
+        },
+        "indirizzo": {
+            "via": "VIA DEI LAGHI 41 SCALA G",
+            "cap": "10056",
+            "comune": "OULX"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-08-02",
+            "visita_medica": "2027-02-02"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "16": {
+        "contatti": {
+            "telefono": "349-5236918",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA MADONNA DEL COTOLIVIER",
+            "cap": "10056",
+            "comune": "OULX"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-05",
+            "visita_medica": "2027-05-05"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    }
+}

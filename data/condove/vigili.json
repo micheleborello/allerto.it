@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "nome": "ROBERTO",
+        "cognome": "BONAUDO",
+        "cf": "BNDRRT77A13C955I",
+        "attivo": 1,
+        "grado": "CSV.",
+        "ingresso": "",
+        "username": "bonaudo.roberto"
+    },
+    {
+        "id": 2,
+        "nome": "ALDO GIORGIO",
+        "cognome": "BUCCI",
+        "cf": "BCCLGR66H25L219L",
+        "attivo": 1,
+        "grado": "CSV.",
+        "ingresso": "",
+        "username": "bucci.aldo.giorgio"
+    },
+    {
+        "id": 3,
+        "nome": "PAOLO MARCELLO",
+        "cognome": "CANEPA",
+        "cf": "CNPPMR79P04D969E",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "canepa.paolo.marcello"
+    },
+    {
+        "id": 4,
+        "nome": "LAURA DOMENICA",
+        "cognome": "FASANO",
+        "cf": "FSNLDM78L71E020V",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "fasano.laura.domenica"
+    },
+    {
+        "id": 5,
+        "nome": "ROBERTO",
+        "cognome": "FERRARIS",
+        "cf": "FRRRRT65M21L219E",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "ferraris.roberto"
+    },
+    {
+        "id": 6,
+        "nome": "ENZO",
+        "cognome": "GIRODO",
+        "cf": "GRDNZE64P11A518F",
+        "attivo": 1,
+        "grado": "CSV.",
+        "ingresso": "",
+        "username": "girodo.enzo"
+    },
+    {
+        "id": 7,
+        "nome": "MARCO",
+        "cognome": "PAOLONE",
+        "cf": "PLNMRC61D20L219Q",
+        "attivo": 1,
+        "grado": "FTAV.",
+        "ingresso": "",
+        "username": "paolone.marco"
+    },
+    {
+        "id": 9,
+        "nome": "ANDREA",
+        "cognome": "TABONE",
+        "cf": "TBNNDR78H09L219R",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "tabone.andrea"
+    },
+    {
+        "id": 8,
+        "nome": "MASSIMO",
+        "cognome": "TABONE",
+        "cf": "TBNMSM74C31L219I",
+        "attivo": 1,
+        "grado": "CSV.",
+        "ingresso": "",
+        "username": "tabone.massimo"
+    },
+    {
+        "id": 10,
+        "nome": "GIOVANNI",
+        "cognome": "VALENTINO",
+        "cf": "VLNGNN68C12D009J",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "valentino.giovanni"
+    },
+    {
+        "id": 11,
+        "nome": "CARMELA",
+        "cognome": "VECCHIO",
+        "cf": "VCCCML66B61A518E",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "vecchio.carmela"
+    }
+]

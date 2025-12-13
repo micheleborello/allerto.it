@@ -1,0 +1,1924 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "",
+            "email": "",
+            "telefono1": "-",
+            "telefono2": "334-6616444"
+        },
+        "indirizzo": {
+            "via": "",
+            "cap": "",
+            "comune": ""
+        },
+        "ingresso": "2000-02-15",
+        "uscita": "",
+        "idoneita": "operativo",
+        "patenti": [],
+        "abilitazioni": [],
+        "scadenze": {
+            "visita_medica": "2028-03-02",
+            "patente_b": "2027-06-13",
+            "visita_medica_ultima": "2025-09-02"
+        },
+        "note": "",
+        "data_nascita": "",
+        "grado": "FTAV.",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file": "data/nole/uploads/doc_identita/classic-line_20250819_193243.png",
+            "file_fronte": "data/nole/uploads/doc_identita/CARTA_IDENTITA_MICHELE_BORELLO_FRONTE_20251003_162722.jpg",
+            "file_retro": "data/nole/uploads/doc_identita/CARTA_IDENTITA_BORELLO_MICHELE_RETRO_20251003_162722.jpg"
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "file": "data/nole/uploads/patente_civile/Logo2-400x182_20250819_193243.png",
+            "categorie": [],
+            "file_fronte": "data/nole/uploads/patente_civile/PATENTE_CIVILE_MICHELE_BORELLO_FRONTE_20251003_162722.jpg",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "data/nole/uploads/patente_ministeriale/pat.min.fronte_Borello_20251003_162722.jpg",
+        "abilitazioni_dettaglio": [],
+        "dpi": [],
+        "patente_ministeriale": {
+            "file_fronte": "data/nole/uploads/patente_ministeriale/pat.min.fronte_Borello_20251003_162722.jpg",
+            "file_retro": "data/nole/uploads/patente_ministeriale/pat.min.retro_Borello_20251003_162722.jpg"
+        },
+        "id": 1,
+        "note_docs": [],
+        "cf": "BRLMHL78A06C722Y",
+        "cod_sede": "3027",
+        "data_inizio_qualifica": "2023-11-24",
+        "track_richieste": {
+            "elmo_intervento": true,
+            "sottocasco_ignifugo": false,
+            "elmo_multifunzione": true,
+            "completo_antifiamma": false,
+            "guanti_intervento": true,
+            "calzature_intervento": false,
+            "completo_antipioggia": false
+        }
+    },
+    "2": {
+        "contatti": {
+            "telefono": "",
+            "email": "",
+            "telefono1": "-",
+            "telefono2": "348-6642214"
+        },
+        "indirizzo": {
+            "via": "",
+            "cap": "",
+            "comune": ""
+        },
+        "scadenze": {
+            "visita_medica": "2027-06-10",
+            "patente_b": "2030-03-12",
+            "visita_medica_ultima": "2024-12-10"
+        },
+        "ingresso": "2007-06-15",
+        "uscita": "",
+        "idoneita": "operativo",
+        "patenti": [],
+        "abilitazioni": [],
+        "data_nascita": "",
+        "grado": "VIG.",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "data/nole/uploads/patente_ministeriale/Pat_Cavaliere_fronte_20250909_092633.jpeg",
+        "abilitazioni_dettaglio": [],
+        "dpi": [],
+        "note": "",
+        "patente_ministeriale": {
+            "file_fronte": "data/nole/uploads/patente_ministeriale/Pat_Cavaliere_fronte_20250909_092633.jpeg",
+            "file_retro": "data/nole/uploads/patente_ministeriale/Pat_Cavaliere_Retro_20250909_105141.jpeg"
+        },
+        "id": 2,
+        "cf": "CVLGRG65D24F107G",
+        "cod_sede": "3027",
+        "data_inizio_qualifica": "2018-01-01",
+        "note_docs": [],
+        "track_richieste": {
+            "elmo_intervento": false,
+            "sottocasco_ignifugo": true,
+            "elmo_multifunzione": false,
+            "completo_antifiamma": true,
+            "guanti_intervento": true,
+            "calzature_intervento": false,
+            "completo_antipioggia": true
+        }
+    },
+    "3": {
+        "contatti": {
+            "telefono": "3470483146",
+            "email": "b.unet@libero.it",
+            "telefono1": "347-483146",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "Borgata remondato 104",
+            "cap": "10070",
+            "comune": "Rocca canavese"
+        },
+        "scadenze": {
+            "visita_medica": "2027-05-19",
+            "patente_b": "2030-03-12",
+            "visita_medica_ultima": "2024-11-19"
+        },
+        "ingresso": "1997-02-19",
+        "uscita": "",
+        "idoneita": "operativo",
+        "patenti": [],
+        "abilitazioni": [],
+        "data_nascita": "1975-04-03",
+        "grado": "VIG.",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "data/nole/uploads/patente_ministeriale/Pat_unet_fonte_20250909_091921.jpeg",
+        "abilitazioni_dettaglio": [],
+        "dpi": [],
+        "note": "",
+        "patente_ministeriale": {
+            "file_fronte": "data/nole/uploads/patente_ministeriale/Pat_unet_fonte_20250909_091921.jpeg",
+            "file_retro": "data/nole/uploads/patente_ministeriale/Pat_Unet_Retro_20250909_105219.jpeg"
+        },
+        "id": 3,
+        "cf": "NTUBBR75D43C722J",
+        "cod_sede": "3027",
+        "data_inizio_qualifica": "2018-01-01",
+        "track_richieste": {
+            "elmo_intervento": false,
+            "sottocasco_ignifugo": false,
+            "elmo_multifunzione": false,
+            "completo_antifiamma": false,
+            "guanti_intervento": false,
+            "calzature_intervento": false,
+            "completo_antipioggia": false
+        }
+    },
+    "12": {
+        "contatti": {
+            "telefono": "+393351613350",
+            "email": "fabio.lagana@gmail.com",
+            "telefono1": "366-5776015",
+            "telefono2": "335-1613350"
+        },
+        "indirizzo": {
+            "via": "STRADA GROSSO,1 A",
+            "cap": "10076",
+            "comune": "NOLE"
+        },
+        "scadenze": {
+            "visita_medica": "2027-08-11",
+            "patente_b": "2021-06-30",
+            "visita_medica_ultima": "2025-02-11"
+        },
+        "ingresso": "2010-04-30",
+        "uscita": "",
+        "idoneita": "operativo",
+        "patenti": [
+            "1° grado"
+        ],
+        "abilitazioni": [],
+        "data_nascita": "1976-05-03",
+        "grado": "VIG.",
+        "grado_numero": "12685",
+        "documento_identita": {
+            "tipo": "CI",
+            "numero": "CA86485JF",
+            "scadenza": "2032-05-03",
+            "file": "data/nole/uploads/doc_identita/CIE-Fabio_Laganà_20250829_102817.pdf",
+            "file_fronte": "data/nole/uploads/doc_identita/CIE-Fabio_Laganà_20250829_102817.pdf",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "U19M40672N",
+            "scadenza": "2030-05-03",
+            "categorie": [],
+            "file": "data/nole/uploads/patente_civile/PAT_Fabio_Lagana_20250829_102817.pdf",
+            "file_fronte": "data/nole/uploads/patente_civile/PAT_Fabio_Lagana_20250829_102817.pdf",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "",
+        "abilitazioni_dettaglio": [],
+        "dpi": [],
+        "note": "",
+        "patente_ministeriale": {
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "id": 12,
+        "cf": "LGNFBA76E03L727R",
+        "cod_sede": "3027",
+        "cod_sede_aggregato": "3025",
+        "cod_sede_aggregato_nome": "Distaccamento di Mathi",
+        "data_inizio_qualifica": "2018-01-01"
+    },
+    "13": {
+        "contatti": {
+            "telefono": "",
+            "email": "",
+            "telefono1": "340-9297494",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "",
+            "cap": "",
+            "comune": ""
+        },
+        "scadenze": {
+            "visita_medica": "2027-03-03",
+            "patente_b": "2029-09-26",
+            "visita_medica_ultima": "2024-09-03"
+        },
+        "ingresso": "2004-12-15",
+        "uscita": "",
+        "idoneita": "operativo",
+        "patenti": [],
+        "abilitazioni": [],
+        "data_nascita": "",
+        "grado": "VIG.",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "data/nole/uploads/patente_ministeriale/Pat_palma_Fronte_20250909_092435.jpeg",
+        "abilitazioni_dettaglio": [
+            {
+                "nome": "patente 1° grado retro",
+                "numero": "50559",
+                "scadenza": "2029-09-26",
+                "file": "data/nole/uploads/abilitazioni/Pat_Palma_Retro_20250909_092435.jpeg"
+            }
+        ],
+        "dpi": [],
+        "note": "",
+        "patente_ministeriale": {
+            "file_fronte": "data/nole/uploads/patente_ministeriale/Pat_palma_Fronte_20250909_092435.jpeg",
+            "file_retro": "data/nole/uploads/patente_ministeriale/Pat_Palma_Retro_20250909_105202.jpeg"
+        },
+        "id": 13,
+        "cf": "PLMSMN85S08E445K",
+        "cod_sede": "3027",
+        "cod_sede_aggregato": "3025",
+        "cod_sede_aggregato_nome": "Distaccamento di Mathi",
+        "data_inizio_qualifica": "2018-01-01",
+        "track_richieste": {
+            "elmo_intervento": true,
+            "sottocasco_ignifugo": false,
+            "elmo_multifunzione": false,
+            "completo_antifiamma": false,
+            "guanti_intervento": false,
+            "calzature_intervento": false,
+            "completo_antipioggia": true
+        }
+    },
+    "14": {
+        "contatti": {
+            "telefono": "",
+            "email": "",
+            "telefono1": "-",
+            "telefono2": "327-7591108"
+        },
+        "indirizzo": {
+            "via": "",
+            "cap": "",
+            "comune": ""
+        },
+        "scadenze": {
+            "visita_medica": "2027-08-18",
+            "patente_b": "2029-03-26",
+            "visita_medica_ultima": "2025-02-18"
+        },
+        "ingresso": "2023-06-15",
+        "uscita": "",
+        "idoneita": "operativo",
+        "patenti": [],
+        "abilitazioni": [],
+        "note": "03/11/25 - Modulo incompatibilità compilato - Dichiarata nessuna incompatibilità",
+        "data_nascita": "",
+        "grado": "VIG.",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "",
+        "abilitazioni_dettaglio": [],
+        "dpi": [],
+        "patente_ministeriale": {
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "id": 14,
+        "cf": "MTSLSN98E14C722D",
+        "cod_sede": "3027",
+        "cod_sede_aggregato": "3025",
+        "cod_sede_aggregato_nome": "Distaccamento di Mathi",
+        "data_inizio_qualifica": "2024-02-23",
+        "track_richieste": {
+            "elmo_intervento": true,
+            "sottocasco_ignifugo": true,
+            "elmo_multifunzione": true,
+            "completo_antifiamma": false,
+            "guanti_intervento": true,
+            "calzature_intervento": true,
+            "completo_antipioggia": false
+        }
+    },
+    "16": {
+        "contatti": {
+            "telefono": "",
+            "email": "",
+            "telefono1": "347-1686670",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "",
+            "cap": "",
+            "comune": ""
+        },
+        "scadenze": {
+            "visita_medica": "2027-04-15",
+            "patente_b": "2029-12-02",
+            "visita_medica_ultima": "2024-10-15"
+        },
+        "ingresso": "2006-06-30",
+        "uscita": "",
+        "idoneita": "operativo",
+        "patenti": [],
+        "abilitazioni": [],
+        "data_nascita": "",
+        "grado": "VIG.",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "data/nole/uploads/patente_ministeriale/Pat_Cosma_fronte_20250909_092257.jpeg",
+        "abilitazioni_dettaglio": [],
+        "dpi": [],
+        "note": "",
+        "patente_ministeriale": {
+            "file_fronte": "data/nole/uploads/patente_ministeriale/Pat_Cosma_fronte_20250909_092257.jpeg",
+            "file_retro": "data/nole/uploads/patente_ministeriale/Pat_Cosma_Retro_20250909_105237.jpeg"
+        },
+        "id": 16,
+        "cf": "CSMMSM76M06I119H",
+        "cod_sede": "3027",
+        "data_inizio_qualifica": "2018-01-01",
+        "note_docs": [],
+        "track_richieste": {
+            "elmo_intervento": true,
+            "sottocasco_ignifugo": true,
+            "elmo_multifunzione": false,
+            "completo_antifiamma": true,
+            "guanti_intervento": true,
+            "calzature_intervento": false,
+            "completo_antipioggia": true
+        }
+    },
+    "21": {
+        "contatti": {
+            "telefono": "-",
+            "email": "",
+            "telefono1": "-",
+            "telefono2": "371-4261776"
+        },
+        "indirizzo": {
+            "via": "VIA CIRCONVALAZIONE 32",
+            "cap": "10076",
+            "comune": "NOLE"
+        },
+        "scadenze": {
+            "visita_medica": "2027-07-21",
+            "patente_b": "",
+            "visita_medica_ultima": "2025-01-21"
+        },
+        "ingresso": "2009-07-15",
+        "uscita": "",
+        "idoneita": "non_operativo",
+        "patenti": [],
+        "abilitazioni": [],
+        "note": "",
+        "data_nascita": "",
+        "grado": "VIG.",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "",
+        "abilitazioni_dettaglio": [],
+        "dpi": [],
+        "patente_ministeriale": {
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "id": 21,
+        "cf": "SBRLSN85D43G702X",
+        "cod_sede": "3027",
+        "data_inizio_qualifica": "2023-07-13"
+    },
+    "20": {
+        "contatti": {
+            "telefono": "011-9243267",
+            "telefono1": "-",
+            "telefono2": "349-1022213",
+            "email": ""
+        },
+        "indirizzo": {
+            "via": "BORGATA SAN ROCCO,23/BIS",
+            "cap": "10070",
+            "comune": "ROCCA CANAVESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-21",
+            "visita_medica": "2027-07-21",
+            "patente_b": "2028-11-08"
+        },
+        "patenti": [
+            "3° grado"
+        ],
+        "ingresso": "2010-06-30",
+        "uscita": "",
+        "idoneita": "operativo",
+        "abilitazioni": [
+            "L.I.F.M",
+            "BLSD",
+            "Alto RIschio"
+        ],
+        "data_nascita": "1988-12-18",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file_fronte": "data/nole/uploads/doc_identita/CARTA_IDENTITA_FRONTE_CARESIO_MARCO_20251003_164752.jpg",
+            "file_retro": "data/nole/uploads/doc_identita/CARTA_IDENTITA_RETRO_CARESIO_MARCO_20251003_164752.jpg"
+        },
+        "patente_civile": {
+            "numero": "U1W739621N",
+            "scadenza": "",
+            "categorie": [
+                "B",
+                "BE",
+                "C",
+                "CE",
+                "D",
+                "DE"
+            ],
+            "file_fronte": "data/nole/uploads/patente_civile/PATENTE_CIVILE_FRONTE_CARESIO_MARCO_20251003_164752.jpg",
+            "file_retro": "data/nole/uploads/patente_civile/PATENTE_CIVILE_RETROCARESIO_MARCO_20251003_164752.jpg"
+        },
+        "patente_ministeriale": {
+            "file_fronte": "data/nole/uploads/patente_ministeriale/PATENTE_MINISTERIALE_FRONTE_CARESIO_MARCO_20251003_164752.jpg",
+            "file_retro": "data/nole/uploads/patente_ministeriale/PATENTE_MINISTERIALE_RETRO_CARESIO_MARCO_20251003_164752.jpg"
+        },
+        "patente_ministeriale_file": "data/nole/uploads/patente_ministeriale/PATENTE_MINISTERIALE_FRONTE_CARESIO_MARCO_20251003_164752.jpg",
+        "abilitazioni_dettaglio": [
+            {
+                "nome": "L.I.F.M.",
+                "numero": "CITY 120-APS 190 ZF- ATECO 120 -ABP MAN 4000-ABP MAN 7700- RENAULT 33546",
+                "scadenza": "",
+                "file": ""
+            },
+            {
+                "nome": "BLSD",
+                "numero": "96928",
+                "scadenza": "2021-03-18",
+                "file": "data/nole/uploads/abilitazioni/TESSERINO_BLSDCARESIO_MARCO_20251003_164752.jpg"
+            },
+            {
+                "nome": "Alto Rischio",
+                "numero": "006979/17",
+                "scadenza": "",
+                "file": ""
+            }
+        ],
+        "dpi": [
+            {
+                "item": "Antifiamma",
+                "taglia": "XL",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "Pantanomex",
+                "taglia": "XL",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "Guanti",
+                "taglia": "10",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "Completo Antipioggia",
+                "taglia": "XL",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "Giacca divisa invernale",
+                "taglia": "XL",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "Pantaloni divisa invernale",
+                "taglia": "58",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "Giacca divisa estiva",
+                "taglia": "58",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "Pantaloni divisa Estiva",
+                "taglia": "58",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "Maglione rosso",
+                "taglia": "5",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "maglione verde",
+                "taglia": "5",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "polo rossa",
+                "taglia": "5",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "Anfibi",
+                "taglia": "43",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "stivali bassi",
+                "taglia": "43",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "stivali tutta coscia",
+                "taglia": "43",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "fregi di qualifica",
+                "taglia": "",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "cinturone",
+                "taglia": "",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "elmetto",
+                "taglia": "nero",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "sottocasco",
+                "taglia": "",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            },
+            {
+                "item": "pila",
+                "taglia": "",
+                "assegnato": "",
+                "scadenza": "",
+                "quantita": 1,
+                "note": "",
+                "file": ""
+            }
+        ],
+        "note": "03/11/25 - Modulo incompatibilità compilato - Dichiarata nessuna incompatibilità",
+        "id": 20,
+        "cf": "CRSMRC89T18C722O",
+        "cod_sede": "3027",
+        "data_inizio_qualifica": "2018-01-01"
+    },
+    "4": {
+        "contatti": {
+            "telefono": "011-92961556",
+            "telefono1": "347-2992633",
+            "telefono2": "-",
+            "email": ""
+        },
+        "indirizzo": {
+            "via": "STRADA GROSSO 10",
+            "cap": "10076",
+            "comune": "NOLE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-03",
+            "visita_medica": "2027-06-03",
+            "patente_b": "2026-08-03"
+        },
+        "patenti": [
+            "3° grado"
+        ],
+        "id": 4,
+        "cf": "CSTMNL71A25C722K",
+        "cod_sede": "3027",
+        "cod_sede_aggregato": "3025",
+        "cod_sede_aggregato_nome": "Distaccamento di Mathi",
+        "data_inizio_qualifica": "2018-01-01",
+        "ingresso": "2000-01-31",
+        "uscita": "",
+        "idoneita": "operativo",
+        "abilitazioni": [],
+        "data_nascita": "",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale": {
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "",
+        "abilitazioni_dettaglio": [],
+        "dpi": [],
+        "note": "03/11/25 - Modulo incompatibilità compilato - Dichiarata nessuna incompatibilità",
+        "note_docs": []
+    },
+    "7": {
+        "contatti": {
+            "telefono": "",
+            "telefono1": "-",
+            "telefono2": "347-8346364",
+            "email": ""
+        },
+        "indirizzo": {
+            "via": "",
+            "cap": "",
+            "comune": ""
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-25",
+            "visita_medica": "2027-08-25",
+            "patente_b": "2029-03-26"
+        },
+        "patenti": [],
+        "id": 7,
+        "cf": "CSTPTR00E31C722S",
+        "cod_sede": "3027",
+        "cod_sede_aggregato": "3025",
+        "cod_sede_aggregato_nome": "Distaccamento di Mathi",
+        "data_inizio_qualifica": "2024-02-23",
+        "ingresso": "2023-02-10",
+        "uscita": "",
+        "idoneita": "operativo",
+        "abilitazioni": [],
+        "data_nascita": "",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale": {
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "",
+        "abilitazioni_dettaglio": [],
+        "dpi": [],
+        "note": "",
+        "note_docs": [],
+        "track_richieste": {
+            "elmo_intervento": true,
+            "sottocasco_ignifugo": true,
+            "elmo_multifunzione": true,
+            "completo_antifiamma": false,
+            "guanti_intervento": true,
+            "calzature_intervento": true,
+            "completo_antipioggia": false
+        }
+    },
+    "15": {
+        "contatti": {
+            "telefono": "",
+            "telefono1": "-",
+            "telefono2": "347-2299486",
+            "email": ""
+        },
+        "indirizzo": {
+            "via": "",
+            "cap": "",
+            "comune": ""
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-19",
+            "visita_medica": "2027-05-19",
+            "patente_b": "2027-10-03"
+        },
+        "patenti": [],
+        "id": 15,
+        "cf": "GRVRRT71M20C722V",
+        "cod_sede": "3027",
+        "cod_sede_aggregato": "3025",
+        "cod_sede_aggregato_nome": "Distaccamento di Mathi",
+        "data_inizio_qualifica": "2018-01-01",
+        "ingresso": "1995-02-15",
+        "data_nascita": "",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file_fronte": "data/nole/uploads/doc_identita/c.i.fronte_20251206_185858.pdf",
+            "file_retro": "data/nole/uploads/doc_identita/c.i.retro_20251206_185858.pdf"
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file_fronte": "data/nole/uploads/patente_civile/patentefronte1_20251206_185858.pdf",
+            "file_retro": "data/nole/uploads/patente_civile/patenteretro1_20251206_185858.pdf"
+        },
+        "patente_ministeriale": {
+            "file_fronte": "data/nole/uploads/patente_ministeriale/patentefronte1_20251206_185858.pdf",
+            "file_retro": "data/nole/uploads/patente_ministeriale/patenteretro1_20251206_185858.pdf"
+        },
+        "abilitazioni": [],
+        "abilitazioni_dettaglio": [],
+        "dpi": [],
+        "note": "",
+        "track_richieste": {
+            "elmo_intervento": true,
+            "sottocasco_ignifugo": true,
+            "elmo_multifunzione": false,
+            "completo_antifiamma": false,
+            "guanti_intervento": false,
+            "calzature_intervento": true,
+            "completo_antipioggia": false
+        }
+    },
+    "23": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "349-5182755"
+        },
+        "indirizzo": {
+            "via": "LOCALITA' CASE POL 5",
+            "cap": "10073",
+            "comune": "CIRIE'"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-05",
+            "visita_medica": "2027-05-05"
+        },
+        "patenti": [],
+        "id": 23
+    },
+    "24": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "366-5776015",
+            "telefono2": "335-1613350"
+        },
+        "indirizzo": {
+            "via": "STRADA GROSSO,1 A",
+            "cap": "10076",
+            "comune": "NOLE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-11",
+            "visita_medica": "2027-08-11"
+        },
+        "patenti": [
+            "1° grado"
+        ],
+        "id": 24
+    },
+    "9": {
+        "contatti": {
+            "telefono": "011-9298508",
+            "telefono1": "-",
+            "telefono2": "346-0854449",
+            "email": ""
+        },
+        "indirizzo": {
+            "via": "VIA CAMPANELLE 3",
+            "cap": "10075",
+            "comune": "MATHI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-22",
+            "visita_medica": "2027-04-22",
+            "patente_b": "2023-05-02"
+        },
+        "patenti": [],
+        "id": 9,
+        "cf": "MGGGNN83C52C722L",
+        "cod_sede": "3027",
+        "cod_sede_aggregato": "3025",
+        "cod_sede_aggregato_nome": "Distaccamento di Mathi",
+        "data_inizio_qualifica": "2018-01-01",
+        "ingresso": "2007-09-30",
+        "data_nascita": "",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale": {
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "abilitazioni": [],
+        "abilitazioni_dettaglio": [],
+        "dpi": [],
+        "note": ""
+    },
+    "25": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "348-5730864"
+        },
+        "indirizzo": {
+            "via": "VIA GUGLIELMO MARCONI 7",
+            "cap": "10073",
+            "comune": "CIRIE'"
+        },
+        "grado": "FTAV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-03",
+            "visita_medica": "2027-03-03"
+        },
+        "patenti": [
+            "3° grado"
+        ],
+        "id": 25
+    },
+    "19": {
+        "contatti": {
+            "telefono": "011-9268420",
+            "telefono1": "349-3480136",
+            "telefono2": "-",
+            "email": "massimo.magnetti.3@gmail.com"
+        },
+        "indirizzo": {
+            "via": "VIA SAN MICHELE 7",
+            "cap": "10070",
+            "comune": "GROSSO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-15",
+            "visita_medica": "2027-04-15",
+            "patente_b": "2027-10-03"
+        },
+        "patenti": [],
+        "id": 19,
+        "cf": "MGNMSM70P03C722D",
+        "cod_sede": "3027",
+        "cod_sede_aggregato": "3025",
+        "cod_sede_aggregato_nome": "Distaccamento di Mathi",
+        "data_inizio_qualifica": "2018-01-01",
+        "ingresso": "1996-07-18",
+        "data_nascita": "",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale": {
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "abilitazioni": [],
+        "abilitazioni_dettaglio": [],
+        "dpi": [],
+        "note": ""
+    },
+    "10": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "348-6273140"
+        },
+        "indirizzo": {
+            "via": "VIA BEPPE FENOGLIO 25",
+            "cap": "10073",
+            "comune": "CIRIE'"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-08",
+            "visita_medica": "2027-04-08",
+            "patente_b": "2026-04-28"
+        },
+        "patenti": [
+            "1° grado"
+        ],
+        "id": 10,
+        "cf": "MZZMSM89H22C722Y",
+        "cod_sede": "3027",
+        "cod_sede_aggregato": "3025",
+        "cod_sede_aggregato_nome": "Distaccamento di Mathi",
+        "data_inizio_qualifica": "2018-11-22",
+        "ingresso": "2017-08-31"
+    },
+    "18": {
+        "contatti": {
+            "telefono": "",
+            "telefono1": "-",
+            "telefono2": "340-3017339",
+            "email": ""
+        },
+        "indirizzo": {
+            "via": "",
+            "cap": "",
+            "comune": ""
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-12",
+            "visita_medica": "2027-05-12",
+            "patente_b": "2027-06-13"
+        },
+        "patenti": [],
+        "id": 18,
+        "cf": "RGLCLD71L03C722E",
+        "cod_sede": "3027",
+        "data_inizio_qualifica": "2018-01-01",
+        "ingresso": "1999-03-30",
+        "uscita": "",
+        "idoneita": "operativo",
+        "abilitazioni": [],
+        "data_nascita": "",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale": {
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "",
+        "abilitazioni_dettaglio": [],
+        "dpi": [],
+        "note": "",
+        "note_docs": [],
+        "track_richieste": {
+            "elmo_intervento": true,
+            "sottocasco_ignifugo": true,
+            "elmo_multifunzione": false,
+            "completo_antifiamma": true,
+            "guanti_intervento": false,
+            "calzature_intervento": true,
+            "completo_antipioggia": false
+        }
+    },
+    "6": {
+        "contatti": {
+            "telefono": "3311987414",
+            "telefono1": "-",
+            "telefono2": "331-1987414",
+            "email": "drago3027@inwind.it"
+        },
+        "indirizzo": {
+            "via": "VIA TORINO 47",
+            "cap": "10073",
+            "comune": "Ciriè"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-29",
+            "visita_medica": "2027-04-29",
+            "patente_b": "2030-09-29"
+        },
+        "patenti": [],
+        "ingresso": "2004-02-14",
+        "uscita": "",
+        "idoneita": "operativo",
+        "abilitazioni": [],
+        "data_nascita": "1985-05-08",
+        "grado_numero": "02702",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file_fronte": "data/nole/uploads/doc_identita/IMG_3272_20251101_111134.jpeg",
+            "file_retro": "data/nole/uploads/doc_identita/Screenshot_2025-11-01_11.09.25__20251101_111134.png"
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file_fronte": "data/nole/uploads/patente_civile/IMG_3714_20251109_141641.jpeg",
+            "file_retro": "data/nole/uploads/patente_civile/IMG_3715_20251109_141641.jpeg"
+        },
+        "patente_ministeriale": {
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "",
+        "abilitazioni_dettaglio": [],
+        "dpi": [],
+        "note": "",
+        "id": 6,
+        "cf": "SLDMNL85E08C722V",
+        "cod_sede": "3027",
+        "cod_sede_aggregato": "3038",
+        "cod_sede_aggregato_nome": "Distaccamento di S.Maurizio Canavese",
+        "data_inizio_qualifica": "2025-02-18",
+        "track_richieste": {
+            "elmo_intervento": false,
+            "sottocasco_ignifugo": false,
+            "elmo_multifunzione": false,
+            "completo_antifiamma": false,
+            "guanti_intervento": false,
+            "calzature_intervento": false,
+            "completo_antipioggia": false
+        }
+    },
+    "5": {
+        "contatti": {
+            "telefono": "011-9297180",
+            "telefono1": "347-1229413",
+            "telefono2": "-",
+            "email": ""
+        },
+        "indirizzo": {
+            "via": "VIA MARTIRI DELLA LIBERTA' 1",
+            "cap": "10070",
+            "comune": "VILLANOVA CANAVESE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-15",
+            "visita_medica": "2027-04-15",
+            "patente_b": "2030-09-29"
+        },
+        "patenti": [
+            "3° grado"
+        ],
+        "ingresso": "2003-03-15",
+        "uscita": "",
+        "idoneita": "operativo",
+        "abilitazioni": [
+            "foglio guida 2025"
+        ],
+        "data_nascita": "",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale": {
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "",
+        "abilitazioni_dettaglio": [
+            {
+                "nome": "foglio di guida per attesa patente 10/10/25",
+                "numero": "",
+                "scadenza": "",
+                "file": "data/nole/uploads/abilitazioni/SOFFIETTI_-_FOGLIO_DI_GUIDA_signed_20251010_105952.pdf"
+            }
+        ],
+        "dpi": [],
+        "note": "",
+        "id": 5,
+        "cf": "SFFLCU84C01C722Q",
+        "cod_sede": "3027",
+        "cod_sede_aggregato": "3025",
+        "cod_sede_aggregato_nome": "Distaccamento di Mathi",
+        "data_inizio_qualifica": "2025-02-18"
+    },
+    "11": {
+        "contatti": {
+            "telefono": "",
+            "telefono1": "-",
+            "telefono2": "-",
+            "email": ""
+        },
+        "indirizzo": {
+            "via": "",
+            "cap": "",
+            "comune": ""
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-12",
+            "visita_medica": "2027-05-12",
+            "patente_b": "2026-06-16"
+        },
+        "patenti": [
+            "1° grado"
+        ],
+        "id": 11,
+        "cf": "SRRCST77S13E445O",
+        "cod_sede": "3027",
+        "cod_sede_aggregato": "3025",
+        "cod_sede_aggregato_nome": "Distaccamento di Mathi",
+        "data_inizio_qualifica": "2018-01-01",
+        "ingresso": "2004-12-15",
+        "data_nascita": "",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "Carta d'Identità",
+            "numero": "CA17728QP",
+            "scadenza": "2032-11-13",
+            "file_fronte": "data/nole/uploads/doc_identita/c.i._e_c.f._Sorritelli_Cristiano_20251204_153223.pdf",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "U182C1857K",
+            "scadenza": "2031-11-13",
+            "categorie": [
+                "A",
+                "B"
+            ],
+            "file_fronte": "data/nole/uploads/patente_civile/Patente_Sorritelli_Cristiano_20251204_153223.pdf",
+            "file_retro": ""
+        },
+        "patente_ministeriale": {
+            "file_fronte": "data/nole/uploads/patente_ministeriale/Patente_VVF_Sorritelli_Cristiano_20251204_153223.pdf",
+            "file_retro": ""
+        },
+        "abilitazioni": [],
+        "abilitazioni_dettaglio": [],
+        "dpi": [],
+        "track_richieste": {
+            "elmo_intervento": false,
+            "sottocasco_ignifugo": false,
+            "elmo_multifunzione": false,
+            "completo_antifiamma": false,
+            "guanti_intervento": false,
+            "calzature_intervento": false,
+            "completo_antipioggia": false
+        },
+        "note": ""
+    },
+    "17": {
+        "contatti": {
+            "telefono": "3479125029",
+            "telefono1": "-",
+            "telefono2": "347-9125029",
+            "email": "ziano37@gmail.com"
+        },
+        "indirizzo": {
+            "via": "Via Europa 24",
+            "cap": "10076",
+            "comune": "Nole"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-25",
+            "visita_medica": "2027-08-25",
+            "patente_b": "2029-03-26"
+        },
+        "patenti": [],
+        "id": 17,
+        "cf": "ZNISMN90T08C722C",
+        "cod_sede": "3027",
+        "cod_sede_aggregato": "3025",
+        "cod_sede_aggregato_nome": "Distaccamento di Mathi",
+        "data_inizio_qualifica": "2024-02-23",
+        "ingresso": "2023-02-10",
+        "data_nascita": "1990-12-08",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale": {
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "abilitazioni": [],
+        "abilitazioni_dettaglio": [],
+        "dpi": [],
+        "note": "",
+        "track_richieste": {
+            "elmo_intervento": false,
+            "sottocasco_ignifugo": false,
+            "elmo_multifunzione": false,
+            "completo_antifiamma": false,
+            "guanti_intervento": false,
+            "calzature_intervento": false,
+            "completo_antipioggia": false
+        },
+        "uscita": "",
+        "idoneita": "operativo",
+        "patente_ministeriale_file": "",
+        "note_docs": []
+    },
+    "26": {
+        "contatti": {
+            "telefono": "-",
+            "email": "",
+            "telefono1": "-",
+            "telefono2": ""
+        },
+        "indirizzo": {
+            "via": "",
+            "cap": "",
+            "comune": "MATHI"
+        },
+        "scadenze": {
+            "visita_medica": "",
+            "patente_b": "",
+            "visita_medica_ultima": ""
+        },
+        "ingresso": "",
+        "uscita": "",
+        "idoneita": "operativo",
+        "patenti": [
+            "2° grado"
+        ],
+        "abilitazioni": [],
+        "data_nascita": "",
+        "grado": "VIG.",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "",
+        "abilitazioni_dettaglio": [
+            {
+                "nome": "",
+                "numero": "",
+                "scadenza": "",
+                "file": ""
+            }
+        ],
+        "dpi": [],
+        "note": "",
+        "patente_ministeriale": {
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "id": 26
+    },
+    "27": {
+        "contatti": {
+            "telefono": "-",
+            "email": "",
+            "telefono1": "-",
+            "telefono2": ""
+        },
+        "indirizzo": {
+            "via": "",
+            "cap": "",
+            "comune": ""
+        },
+        "scadenze": {
+            "visita_medica": "",
+            "patente_b": "",
+            "visita_medica_ultima": ""
+        },
+        "ingresso": "",
+        "uscita": "",
+        "idoneita": "operativo",
+        "patenti": [
+            ""
+        ],
+        "abilitazioni": [],
+        "data_nascita": "",
+        "grado": "FTAV.",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "",
+        "abilitazioni_dettaglio": [
+            {
+                "nome": "",
+                "numero": "",
+                "scadenza": "",
+                "file": ""
+            }
+        ],
+        "dpi": [],
+        "note": "",
+        "patente_ministeriale": {
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "id": 27
+    },
+    "28": {
+        "contatti": {
+            "telefono": "-",
+            "email": "",
+            "telefono1": "-",
+            "telefono2": ""
+        },
+        "indirizzo": {
+            "via": "",
+            "cap": "",
+            "comune": ""
+        },
+        "scadenze": {
+            "visita_medica": "",
+            "patente_b": "",
+            "visita_medica_ultima": ""
+        },
+        "ingresso": "",
+        "uscita": "",
+        "idoneita": "operativo",
+        "patenti": [
+            ""
+        ],
+        "abilitazioni": [],
+        "data_nascita": "",
+        "grado": "FTAV.",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "",
+        "abilitazioni_dettaglio": [
+            {
+                "nome": "",
+                "numero": "",
+                "scadenza": "",
+                "file": ""
+            }
+        ],
+        "dpi": [],
+        "note": "",
+        "patente_ministeriale": {
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "id": 28
+    },
+    "29": {
+        "contatti": {
+            "telefono": "-",
+            "email": "",
+            "telefono1": "-",
+            "telefono2": ""
+        },
+        "indirizzo": {
+            "via": "",
+            "cap": "",
+            "comune": ""
+        },
+        "scadenze": {
+            "visita_medica": "",
+            "patente_b": "",
+            "visita_medica_ultima": ""
+        },
+        "ingresso": "",
+        "uscita": "",
+        "idoneita": "operativo",
+        "patenti": [
+            ""
+        ],
+        "abilitazioni": [],
+        "data_nascita": "",
+        "grado": "FTAV.",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "",
+        "abilitazioni_dettaglio": [
+            {
+                "nome": "",
+                "numero": "",
+                "scadenza": "",
+                "file": ""
+            }
+        ],
+        "dpi": [],
+        "note": "",
+        "patente_ministeriale": {
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "id": 29
+    },
+    "30": {
+        "contatti": {
+            "telefono": "-",
+            "email": "",
+            "telefono1": "-",
+            "telefono2": ""
+        },
+        "indirizzo": {
+            "via": "",
+            "cap": "",
+            "comune": ""
+        },
+        "scadenze": {
+            "visita_medica": "",
+            "patente_b": "",
+            "visita_medica_ultima": ""
+        },
+        "ingresso": "",
+        "uscita": "",
+        "idoneita": "operativo",
+        "patenti": [
+            ""
+        ],
+        "abilitazioni": [],
+        "data_nascita": "",
+        "grado": "FTAV.",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "",
+        "abilitazioni_dettaglio": [
+            {
+                "nome": "",
+                "numero": "",
+                "scadenza": "",
+                "file": ""
+            }
+        ],
+        "dpi": [],
+        "note": "",
+        "patente_ministeriale": {
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "id": 30
+    },
+    "31": {
+        "contatti": {
+            "telefono": "-",
+            "email": "",
+            "telefono1": "-",
+            "telefono2": ""
+        },
+        "indirizzo": {
+            "via": "",
+            "cap": "",
+            "comune": ""
+        },
+        "scadenze": {
+            "visita_medica": "",
+            "patente_b": "",
+            "visita_medica_ultima": ""
+        },
+        "ingresso": "",
+        "uscita": "",
+        "idoneita": "operativo",
+        "patenti": [
+            ""
+        ],
+        "abilitazioni": [],
+        "data_nascita": "",
+        "grado": "VIG.",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "",
+        "abilitazioni_dettaglio": [
+            {
+                "nome": "",
+                "numero": "",
+                "scadenza": "",
+                "file": ""
+            }
+        ],
+        "dpi": [],
+        "note": "",
+        "patente_ministeriale": {
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "id": 31
+    },
+    "8": {
+        "contatti": {
+            "telefono": "",
+            "email": "",
+            "telefono2": "348-5730864"
+        },
+        "indirizzo": {
+            "via": "",
+            "cap": "",
+            "comune": ""
+        },
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale": {
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "scadenze": {
+            "patente_b": "2029-04-08",
+            "visita_medica_ultima": "2024-09-03",
+            "visita_medica": "2027-03-03"
+        },
+        "dpi": [],
+        "abilitazioni_dettaglio": [],
+        "data_nascita": "",
+        "grado_numero": "",
+        "patenti": [],
+        "abilitazioni": [],
+        "note": "",
+        "id": 8,
+        "grado": "CSV.",
+        "cf": "MGGVNI78R23C722A",
+        "cod_sede": "3027",
+        "cod_sede_aggregato": "3025",
+        "cod_sede_aggregato_nome": "Distaccamento di Mathi",
+        "data_inizio_qualifica": "2018-01-01",
+        "ingresso": "1999-01-02",
+        "track_richieste": {
+            "elmo_intervento": false,
+            "sottocasco_ignifugo": true,
+            "elmo_multifunzione": false,
+            "completo_antifiamma": false,
+            "guanti_intervento": false,
+            "calzature_intervento": false,
+            "completo_antipioggia": false
+        }
+    },
+    "22": {
+        "contatti": {
+            "telefono": "",
+            "email": "",
+            "telefono2": "349-5182755"
+        },
+        "indirizzo": {
+            "via": "LOCALITA' CASE POL 5",
+            "cap": "10073",
+            "comune": "CIRIE'"
+        },
+        "scadenze": {
+            "visita_medica": "2027-05-05",
+            "patente_b": "",
+            "visita_medica_ultima": "2024-11-05"
+        },
+        "ingresso": "2017-02-15",
+        "uscita": "",
+        "idoneita": "non_operativo",
+        "patenti": [],
+        "abilitazioni": [],
+        "data_nascita": "",
+        "grado": "VIG.",
+        "grado_numero": "",
+        "documento_identita": {
+            "tipo": "",
+            "numero": "",
+            "scadenza": "",
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_civile": {
+            "numero": "",
+            "scadenza": "",
+            "categorie": [],
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale": {
+            "file_fronte": "",
+            "file_retro": ""
+        },
+        "patente_ministeriale_file": "",
+        "abilitazioni_dettaglio": [],
+        "dpi": [],
+        "note": "Inviata proposta di cancellazione 2025",
+        "id": 22,
+        "note_docs": [],
+        "cf": "HJDLSN81C53Z127U",
+        "cod_sede": "3027",
+        "data_inizio_qualifica": "2018-02-03"
+    }
+}

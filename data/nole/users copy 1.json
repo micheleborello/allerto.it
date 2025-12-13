@@ -1,0 +1,284 @@
+[
+    {
+        "username": "amateis.alessandro",
+        "password_hash": "$2y$10$zfSvVfn6/W16LJk7vco6Tu8XCKduNl3veaPB4mPd36/pgCO9kuW7q",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "borello.michele",
+        "password_hash": "$2y$10$E6NvbRZerYMcifLPFKEklu8Vvcy7mimAKAu6EZP0AVFO2CGSKeMEG",
+        "is_capo": 1,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "edit:addestramenti",
+            "view:personale",
+            "edit:personale",
+            "view:attivita",
+            "edit:attivita",
+            "view:infortuni",
+            "edit:infortuni",
+            "view:riepilogo",
+            "edit:riepilogo",
+            "export:pdf",
+            "admin:perms",
+            "admin:pins"
+        ]
+    },
+    {
+        "username": "caresio.marco",
+        "password_hash": "$2y$10$GagiX/gY2AtHt/ktDdznVeKIKew2Q3TTy4Qo6yPsZp7.rqRRC9gPq",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "cavaliere.giorgio",
+        "password_hash": "$2y$10$W5dZTkRC5lt4RUJ8Rn5Bl.VsWqpJJdAxPsuuKdOrIgxgsYXVJ5fSS",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "cosma.massimo",
+        "password_hash": "$2y$10$uuXH1t4SmwrzGzQKRVZREOzIJXxjk.0QBLj1f6sddAUBlZ0xHVj62",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "costantino.emanuele",
+        "password_hash": "$2y$10$Dns1/lqhQ05I..poqQ3ZDuOHi9u9TRvWjyqSthzjB749/LN7s2vKG",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "costantino.pietro",
+        "password_hash": "$2y$10$QHOUjrOStVI38huoOjQGo.HsVaBM4mhXgNuc.UD3ZtrKpy68Sv2Ie",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "grivetto.roberto",
+        "password_hash": "$2y$10$bzM7OTNiagiH.THRuK4MNuWEUyQcNreWiqufYpiBt/mDhqz/vExmC",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "hajduk.aleksandraanna",
+        "password_hash": "$2y$10$Z2c3fBelwlYvSKPbMhOEtuA0Mh1x8mp4ekgkl3d.1LEzVzxuG2Rkq",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "lagana.fabio",
+        "password_hash": "$2y$10$Kndt6REkuGek9Gz80QBaW.oYJCFv6.CFRCWJWSq7Ms42yv4AmrMnm",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "maggiolino.giovanna",
+        "password_hash": "$2y$10$F0lPOEuMUl2o6JpAZK.kcu4ByAeKuDcsPjqF664TCV.B2F8FqPThq",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "maggiolino.ivan",
+        "password_hash": "$2y$10$wAwwAnQhQzoPCkYRPcdZB.RRC8MtW4mgt91dIK45153V57vfHfhN.",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "magnetti.massimo",
+        "password_hash": "$2y$10$Wi1N7SjBq4cJoI0VYU4Iee/jyy4sYUs04tc4dmWukj2Hj5T/cK3qO",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "omizzolo.massimo",
+        "password_hash": "$2y$10$.RP1VDRhRfaoosLQlGps9uZQ0RHQGCEW3Fz8HKb/ixDPmoLAO9W7G",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "origlia.claudio",
+        "password_hash": "$2y$10$6SwvIrtNs2GDzX4H80wk9eMRpKLxDhJr0HoKlFRdpLt82aWpCErqG",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "palma.simone",
+        "password_hash": "$2y$10$NhI90r7Jmpg.QyqCO55WGuwj9dOdQoOOTM/f02oJyYFyqkFGeg3qm",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "saldi.manuel",
+        "password_hash": "$2y$10$wcF562QBQNgmw5.Wal5tAOB4vdUoBRBHTojISIRnqRarstpr0dkMO",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "sbrana.alessandra",
+        "password_hash": "$2y$10$VmL//lSMVNP3XdzEo/f/iujXRS4gqQJ6xBAN/QaFY7mRtkc6YcqC2",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "soffietti.luca",
+        "password_hash": "$2y$10$nOkfX/Xc6xJJleKfXFTLuuSrb771PuHELJGAP0cuP5NDprabh0.1C",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "sorritelli.cristiano",
+        "password_hash": "$2y$10$dlrIY0I28.xubdE3TRnujOrBEIpzlTTy0PfVwF9AmZUViowN7OMz6",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    },
+    {
+        "username": "unet.barbara",
+        "password_hash": "$2y$10$I8o4dUCab43pLxIKj.C6IuaZtRKD/5VcpzGNcoXZNO85SaoFUhjAS",
+        "is_capo": 1,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "edit:addestramenti",
+            "view:personale",
+            "edit:personale",
+            "view:attivita",
+            "edit:attivita",
+            "view:infortuni",
+            "edit:infortuni",
+            "view:riepilogo",
+            "edit:riepilogo",
+            "export:pdf"
+        ]
+    },
+    {
+        "username": "ziano.simone",
+        "password_hash": "$2y$10$/lUSI58qTcaRSwq7Dh4Bg.2wMvpvihvWVIO//9VQmrHLC5/Xa6tpq",
+        "is_capo": 0,
+        "perms": [
+            "view:index",
+            "edit:index",
+            "view:addestramenti",
+            "view:attivita",
+            "edit:attivita"
+        ]
+    }
+]

@@ -1,0 +1,342 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "379-1047877"
+        },
+        "indirizzo": {
+            "via": "VIA GIOVANNI BRUNERO 29",
+            "cap": "10077",
+            "comune": "SAN MAURIZIO CANAVESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-04-18",
+            "visita_medica": "2027-10-18"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "2": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-1987413"
+        },
+        "indirizzo": {
+            "via": "VIA MONS. CAMOSETTI 28",
+            "cap": "10073",
+            "comune": "CIRIE'"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-05-24",
+            "visita_medica": "2026-11-24"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "011-9276426",
+            "telefono1": "330-602090",
+            "telefono2": "331-6888074"
+        },
+        "indirizzo": {
+            "via": "VIA PERRERO 12",
+            "cap": "10070",
+            "comune": "SAN FRANCESCO AL CAMPO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-14",
+            "visita_medica": "2027-07-14"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "333-5969325"
+        },
+        "indirizzo": {
+            "via": "VIA CANONICO MAFFEI 176",
+            "cap": "10077",
+            "comune": "SAN MAURIZIO CANAVESE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-05-14",
+            "visita_medica": "2026-11-14"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "5": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "353-4415162"
+        },
+        "indirizzo": {
+            "via": "VIA TRIVERI 67",
+            "cap": "10073",
+            "comune": "CIRIE'"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-17",
+            "visita_medica": "2027-03-17"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "6": {
+        "contatti": {
+            "telefono": "393-9604621",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA BRUNA, 88",
+            "cap": "10070",
+            "comune": "SAN FRANCESCO AL CAMPO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-17",
+            "visita_medica": "2027-03-17"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "7": {
+        "contatti": {
+            "telefono": "348-3008197",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA TORINO 1",
+            "cap": "10070",
+            "comune": "SAN FRANCESCO AL CAMPO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-22",
+            "visita_medica": "2027-04-22"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "8": {
+        "contatti": {
+            "telefono": "011-9228228",
+            "telefono1": "392-5954345",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA GIUSEPPE VERDI N. 16",
+            "cap": "10070",
+            "comune": "SAN CARLO CANAVESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-03",
+            "visita_medica": "2027-06-03"
+        },
+        "patenti": [
+            "2° grado"
+        ]
+    },
+    "9": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-1987349"
+        },
+        "indirizzo": {
+            "via": "LOC.CASCINETTO 14 -FRAZ.DEVESI",
+            "cap": "10073",
+            "comune": "CIRIE'"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-05-28",
+            "visita_medica": "2026-11-28"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "10": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "340-9513616"
+        },
+        "indirizzo": {
+            "via": "LOC.TEDESCHI 20",
+            "cap": "10040",
+            "comune": "LEINI'"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-03-13",
+            "visita_medica": "2027-09-13"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "11": {
+        "contatti": {
+            "telefono": "338-5812237",
+            "telefono1": "331-6888077",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "STRADA DEI FORNERO 6/A",
+            "cap": "10070",
+            "comune": "SAN CARLO CANAVESE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-20",
+            "visita_medica": "2027-03-20"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "12": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "338-2978002"
+        },
+        "indirizzo": {
+            "via": "VIA PEROTTI 9",
+            "cap": "10072",
+            "comune": "CASELLE TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-17",
+            "visita_medica": "2027-06-17"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "13": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "338-9149214"
+        },
+        "indirizzo": {
+            "via": "VIA AUDELLO 21 S.D.",
+            "cap": "10072",
+            "comune": "CASELLE TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-08-08",
+            "visita_medica": "2027-02-08"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "14": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "348-7958231"
+        },
+        "indirizzo": {
+            "via": "VIA COCHETTO 242",
+            "cap": "10070",
+            "comune": "COASSOLO TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-05-14",
+            "visita_medica": "2026-11-14"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "15": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "347-9050058"
+        },
+        "indirizzo": {
+            "via": "VIA BAGLIONI,1",
+            "cap": "10077",
+            "comune": "SAN MAURIZIO CANAVESE"
+        },
+        "grado": "FTAV.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-07-24",
+            "visita_medica": "2026-01-24"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "16": {
+        "contatti": {
+            "telefono": "340-8145500",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA SAN CARLO 12 INT. 3",
+            "cap": "10070",
+            "comune": "SAN FRANCESCO AL CAMPO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-10",
+            "visita_medica": "2027-03-10"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "17": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "320-3909054"
+        },
+        "indirizzo": {
+            "via": "VIA STURA 43",
+            "cap": "10077",
+            "comune": "SAN MAURIZIO CANAVESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-06",
+            "visita_medica": "2027-08-06"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    }
+}

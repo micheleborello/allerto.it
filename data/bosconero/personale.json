@@ -1,0 +1,300 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "351-8257430"
+        },
+        "indirizzo": {
+            "via": "VIA UMBERTO I? - N?24",
+            "cap": "10088",
+            "comune": "VOLPIANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-03",
+            "visita_medica": "2027-06-03"
+        },
+        "patenti": [
+            "2° grado"
+        ]
+    },
+    "2": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-5788886"
+        },
+        "indirizzo": {
+            "via": "VIA ARGENTERA 19 - MASTRI",
+            "cap": "10080",
+            "comune": "BOSCONERO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-22",
+            "visita_medica": "2027-04-22"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "331-5788645",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA CARLO ALBERTO 43",
+            "cap": "10080",
+            "comune": "SAN BENIGNO CANAVESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-08-01",
+            "visita_medica": "2027-02-01"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "011-9889962",
+            "telefono1": "328-9669830",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA ANTONIO ULIGINI 18 INT. D",
+            "cap": "10086",
+            "comune": "RIVAROLO CANAVESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-05",
+            "visita_medica": "2027-05-05"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "5": {
+        "contatti": {
+            "telefono": "335-5271755",
+            "telefono1": "331-6887925",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA TRENTO 91",
+            "cap": "10080",
+            "comune": "BOSCONERO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-21",
+            "visita_medica": "2027-07-21"
+        },
+        "patenti": []
+    },
+    "6": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "366-5775720"
+        },
+        "indirizzo": {
+            "via": "VIA C. PAVESE 6",
+            "cap": "10070",
+            "comune": "FRONT"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-17",
+            "visita_medica": "2027-03-17"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "7": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "346-8707593"
+        },
+        "indirizzo": {
+            "via": "VIA LODOVICO TARIZZO 17",
+            "cap": "10083",
+            "comune": "FAVRIA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-11",
+            "visita_medica": "2027-08-11"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "8": {
+        "contatti": {
+            "telefono": "347-7315781",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIALE CAPPO 13",
+            "cap": "10090",
+            "comune": "SAN GIUSTO CANAVESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-04-10",
+            "visita_medica": "2027-10-10"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "9": {
+        "contatti": {
+            "telefono": "376-1257960",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA LA DILETTA N?1/G",
+            "cap": "10040",
+            "comune": "RIVAROSSA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-03",
+            "visita_medica": "2027-06-03"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "10": {
+        "contatti": {
+            "telefono": "011-9954955",
+            "telefono1": "338-1773063",
+            "telefono2": "331-6888359"
+        },
+        "indirizzo": {
+            "via": "VIA ARGENTERA 5",
+            "cap": "10080",
+            "comune": "BOSCONERO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-02",
+            "visita_medica": "2027-01-02"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "11": {
+        "contatti": {
+            "telefono": "011-9954978",
+            "telefono1": "-",
+            "telefono2": "348-0438715"
+        },
+        "indirizzo": {
+            "via": "VIA BERNARDINO LUINI 163",
+            "cap": "10149",
+            "comune": "TORINO"
+        },
+        "grado": "FTAV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-15",
+            "visita_medica": "2027-04-15"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "12": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "351-8781514"
+        },
+        "indirizzo": {
+            "via": "VIA GARIBALDI 12",
+            "cap": "10090",
+            "comune": "MONTALENGHE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-06",
+            "visita_medica": "2027-06-06"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "13": {
+        "contatti": {
+            "telefono": "348-8002700",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA XXV APRILE 15",
+            "cap": "10080",
+            "comune": "BOSCONERO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-22",
+            "visita_medica": "2027-04-22"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "14": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "334-1766767"
+        },
+        "indirizzo": {
+            "via": "VIA COSTANTINO NIGRA 54",
+            "cap": "10080",
+            "comune": "BOSCONERO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-11",
+            "visita_medica": "2027-08-11"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "15": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "340-8710684"
+        },
+        "indirizzo": {
+            "via": "VIA TRIESTE 11",
+            "cap": "10080",
+            "comune": "BOSCONERO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-11",
+            "visita_medica": "2027-08-11"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    }
+}

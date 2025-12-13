@@ -1,0 +1,166 @@
+{
+    "3002": {
+        "slug": "alpignano",
+        "name": "Distaccamento di Alpignano"
+    },
+    "3003": {
+        "slug": "avigliana",
+        "name": "Distaccamento di Avigliana"
+    },
+    "3004": {
+        "slug": "bardonecchia",
+        "name": "Distaccamento di Bardonecchia"
+    },
+    "3005": {
+        "slug": "borgone-di-susa",
+        "name": "Distaccamento di Borgone di Susa"
+    },
+    "3006": {
+        "slug": "bosconero",
+        "name": "Distaccamento di Bosconero"
+    },
+    "3007": {
+        "slug": "bussoleno",
+        "name": "Distaccamento di Bussoleno"
+    },
+    "3008": {
+        "slug": "sestriere",
+        "name": "Distaccamento di Sestriere"
+    },
+    "3009": {
+        "slug": "carignano",
+        "name": "Distaccamento di Carignano"
+    },
+    "3010": {
+        "slug": "carmagnola",
+        "name": "Distaccamento di Carmagnola"
+    },
+    "3011": {
+        "slug": "caselle",
+        "name": "Distaccamento di Caselle"
+    },
+    "3012": {
+        "slug": "castellamonte",
+        "name": "Distaccamento di Castellamonte"
+    },
+    "3013": {
+        "slug": "chiomonte",
+        "name": "Distaccamento di Chiomonte"
+    },
+    "3014": {
+        "slug": "chivasso",
+        "name": "Distaccamento di Chivasso"
+    },
+    "3015": {
+        "slug": "condove",
+        "name": "Distaccamento di Condove"
+    },
+    "3016": {
+        "slug": "cuorgne",
+        "name": "Distaccamento di Cuorgne"
+    },
+    "3017": {
+        "slug": "fenestrelle",
+        "name": "Distaccamento di Fenestrelle"
+    },
+    "3020": {
+        "slug": "giaveno",
+        "name": "Distaccamento di Giaveno"
+    },
+    "3021": {
+        "slug": "grugliasco",
+        "name": "Distaccamento di Grugliasco"
+    },
+    "3022": {
+        "slug": "santena",
+        "name": "Distaccamento di Santena"
+    },
+    "3023": {
+        "slug": "lanzo",
+        "name": "Distaccamento di Lanzo"
+    },
+    "3024": {
+        "slug": "luserna-san-giovanni",
+        "name": "Distaccamento di Luserna San Giovanni"
+    },
+    "3025": {
+        "slug": "mathi",
+        "name": "Distaccamento di Mathi"
+    },
+    "3026": {
+        "slug": "montanaro",
+        "name": "Distaccamento di Montanaro"
+    },
+    "3027": {
+        "slug": "nole",
+        "name": "Distaccamento di Nole"
+    },
+    "3031": {
+        "slug": "rivalta",
+        "name": "Distaccamento di Rivalta"
+    },
+    "3032": {
+        "slug": "riva-presso-phieri",
+        "name": "Distaccamento di Riva presso Phieri"
+    },
+    "3033": {
+        "slug": "rivarolo",
+        "name": "Distaccamento di Rivarolo"
+    },
+    "3034": {
+        "slug": "rivoli",
+        "name": "Distaccamento di Rivoli"
+    },
+    "3036": {
+        "slug": "salbertrand",
+        "name": "Distaccamento di Salbertrand"
+    },
+    "3037": {
+        "slug": "s-antonino-di-susa",
+        "name": "Distaccamento di S.Antonino di Susa"
+    },
+    "3038": {
+        "slug": "s-maurizio-canavese",
+        "name": "Distaccamento di S.Maurizio Canavese"
+    },
+    "3039": {
+        "slug": "sauze-d-oulx",
+        "name": "Distaccamento di Sauze d Oulx"
+    },
+    "3040": {
+        "slug": "susa",
+        "name": "Distaccamento di Susa"
+    },
+    "3041": {
+        "slug": "torre-pellice",
+        "name": "Distaccamento di Torre Pellice"
+    },
+    "3042": {
+        "slug": "oulx",
+        "name": "Distaccamento di Oulx"
+    },
+    "3043": {
+        "slug": "venaria",
+        "name": "Distaccamento di Venaria"
+    },
+    "3045": {
+        "slug": "vinovo",
+        "name": "Distaccamento di Vinovo"
+    },
+    "3046": {
+        "slug": "volpiano",
+        "name": "Distaccamento di Volpiano"
+    },
+    "5040": {
+        "slug": "viu",
+        "name": "Distaccamento di Viu"
+    },
+    "1000": {
+        "slug": "s1000",
+        "name": "Distaccamento 1000"
+    },
+    "3001": {
+        "slug": "s3001",
+        "name": "Distaccamento 3001"
+    }
+}

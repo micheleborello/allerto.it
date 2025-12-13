@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "nome": "NICHOLAS",
+        "cognome": "BAUDRACCO",
+        "cf": "BDRNHL98M15G674U",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "baudracco.nicholas"
+    },
+    {
+        "id": 2,
+        "nome": "GIORGIO",
+        "cognome": "BERGER",
+        "cf": "BRGGRG65C14G674U",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "berger.giorgio"
+    },
+    {
+        "id": 3,
+        "nome": "DAVIDE",
+        "cognome": "BONNIN",
+        "cf": "BNNDVD71P14G674N",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "bonnin.davide"
+    },
+    {
+        "id": 4,
+        "nome": "SIMONE",
+        "cognome": "BUNIVA",
+        "cf": "BNVSMN87P20G674L",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "buniva.simone"
+    },
+    {
+        "id": 5,
+        "nome": "NICOLO&#039;",
+        "cognome": "GUGLIELMET",
+        "cf": "GGLNCL94A15G674B",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "guglielmet.nicolo"
+    },
+    {
+        "id": 6,
+        "nome": "DANIELE",
+        "cognome": "PERROT",
+        "cf": "PRRDNL95P14G674I",
+        "attivo": 1,
+        "grado": "VIG.",
+        "ingresso": "",
+        "username": "perrot.daniele"
+    }
+]

@@ -1,0 +1,476 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "392-6142409"
+        },
+        "indirizzo": {
+            "via": "VIALE EUROPA 13",
+            "cap": "10060",
+            "comune": "CAMPIGLIONE-FENILE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-04",
+            "visita_medica": "2027-08-04"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "2": {
+        "contatti": {
+            "telefono": "0121-352144",
+            "telefono1": "331-6887893",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA S. DE VITIS 41",
+            "cap": "10060",
+            "comune": "FROSSASCO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-08-07",
+            "visita_medica": "2026-02-07"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "0121-909341",
+            "telefono1": "-",
+            "telefono2": "347-9162166"
+        },
+        "indirizzo": {
+            "via": "STRADA DEL PALAS 19",
+            "cap": "10062",
+            "comune": "LUSERNA SAN GIOVANNI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-08",
+            "visita_medica": "2027-04-08"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "335-8330579"
+        },
+        "indirizzo": {
+            "via": "VIA SAN VINCENZO N. 15/D",
+            "cap": "10060",
+            "comune": "BIBIANA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-08",
+            "visita_medica": "2027-04-08"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "5": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "342-5605476"
+        },
+        "indirizzo": {
+            "via": "VIA DELLA LIBERTA' 18",
+            "cap": "10060",
+            "comune": "BIBIANA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-10",
+            "visita_medica": "2027-06-10"
+        },
+        "patenti": []
+    },
+    "6": {
+        "contatti": {
+            "telefono": "0121-559306",
+            "telefono1": "-",
+            "telefono2": "335-1704243"
+        },
+        "indirizzo": {
+            "via": "VIA SAN VINCENZO N. 27/D",
+            "cap": "10060",
+            "comune": "BIBIANA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-28",
+            "visita_medica": "2027-07-28"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "7": {
+        "contatti": {
+            "telefono": "0121-933017",
+            "telefono1": "-",
+            "telefono2": "366-5775902"
+        },
+        "indirizzo": {
+            "via": "VIA GUARDIA PIEMONTESE 26",
+            "cap": "10066",
+            "comune": "TORRE PELLICE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-26",
+            "visita_medica": "2027-05-26"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "8": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "334-7769150"
+        },
+        "indirizzo": {
+            "via": "VIA APPIA 28",
+            "cap": "10062",
+            "comune": "LUSERNA SAN GIOVANNI"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-29",
+            "visita_medica": "2027-05-29"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "9": {
+        "contatti": {
+            "telefono": "0121-90666",
+            "telefono1": "338-5875452",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA SARET 24",
+            "cap": "10062",
+            "comune": "LUSERNA SAN GIOVANNI"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-17",
+            "visita_medica": "2027-04-17"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "10": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "366-5775758"
+        },
+        "indirizzo": {
+            "via": "LOCALITA' STALLE 9",
+            "cap": "10062",
+            "comune": "LUSERNA SAN GIOVANNI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-08",
+            "visita_medica": "2027-04-08"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "11": {
+        "contatti": {
+            "telefono": "333-6547285",
+            "telefono1": "0121-954167",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA BIBIANA N. 1",
+            "cap": "10060",
+            "comune": "LUSERNETTA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-19",
+            "visita_medica": "2027-05-19"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "12": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "333-8622227"
+        },
+        "indirizzo": {
+            "via": "VIA BIBIANA 30",
+            "cap": "10060",
+            "comune": "CAMPIGLIONE-FENILE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-21",
+            "visita_medica": "2027-07-21"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "13": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-6888166"
+        },
+        "indirizzo": {
+            "via": "VIA AZZARIO 19/B",
+            "cap": "10069",
+            "comune": "VILLAR PEROSA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-21",
+            "visita_medica": "2027-07-21"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "14": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "393-5695168"
+        },
+        "indirizzo": {
+            "via": "VIA ANGROGNA N?2",
+            "cap": "10066",
+            "comune": "TORRE PELLICE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-08",
+            "visita_medica": "2027-04-08"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "15": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "331-1987582",
+            "telefono2": "346-8003417"
+        },
+        "indirizzo": {
+            "via": "STRADA CAFFARO 6",
+            "cap": "10060",
+            "comune": "BRICHERASIO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-10",
+            "visita_medica": "2027-06-10"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "16": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "339-8243038"
+        },
+        "indirizzo": {
+            "via": "VIA DELLA FABBRICA 1",
+            "cap": "10060",
+            "comune": "PINASCA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-19",
+            "visita_medica": "2027-05-19"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "17": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "340-6270134"
+        },
+        "indirizzo": {
+            "via": "VIA SAN GIOVANNI 1",
+            "cap": "10066",
+            "comune": "TORRE PELLICE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-19",
+            "visita_medica": "2027-05-19"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "18": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "335-7184316"
+        },
+        "indirizzo": {
+            "via": "VIA ARNAUD 24 INT. 1",
+            "cap": "10066",
+            "comune": "TORRE PELLICE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-08",
+            "visita_medica": "2027-04-08"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "19": {
+        "contatti": {
+            "telefono": "0121-901823",
+            "telefono1": "-",
+            "telefono2": "338-4103261"
+        },
+        "indirizzo": {
+            "via": "VIA CADUTI PER LA LIBERTA' 44",
+            "cap": "10062",
+            "comune": "LUSERNA SAN GIOVANNI"
+        },
+        "grado": "FTAV.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-04",
+            "visita_medica": "2027-08-04"
+        },
+        "patenti": [
+            "2° grado"
+        ]
+    },
+    "20": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "348-7000564"
+        },
+        "indirizzo": {
+            "via": "LOCALITA'  GARSINERA 262",
+            "cap": "10060",
+            "comune": "ANGROGNA"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-08",
+            "visita_medica": "2027-04-08"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "21": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "392-2978993"
+        },
+        "indirizzo": {
+            "via": "VIA BASSA DEL CASTELLO 53",
+            "cap": "10060",
+            "comune": "BIBIANA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-15",
+            "visita_medica": "2027-04-15"
+        },
+        "patenti": []
+    },
+    "22": {
+        "contatti": {
+            "telefono": "0121-590117",
+            "telefono1": "-",
+            "telefono2": "335-5602398"
+        },
+        "indirizzo": {
+            "via": "VIA BIBIANA 8",
+            "cap": "10060",
+            "comune": "CAMPIGLIONE-FENILE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-29",
+            "visita_medica": "2027-04-29"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "23": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "388-1478726"
+        },
+        "indirizzo": {
+            "via": "VIA MADONNA DELLE GRAZIE 25",
+            "cap": "10060",
+            "comune": "BIBIANA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-18",
+            "visita_medica": "2027-08-18"
+        },
+        "patenti": []
+    },
+    "24": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "320-0237403"
+        },
+        "indirizzo": {
+            "via": "VIA FERRUCCIO PARRI 6",
+            "cap": "10066",
+            "comune": "TORRE PELLICE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-31",
+            "visita_medica": "2027-01-31"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    }
+}

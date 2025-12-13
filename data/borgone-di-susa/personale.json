@@ -1,0 +1,460 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-1987451"
+        },
+        "indirizzo": {
+            "via": "VIA CARLO CARLI  112",
+            "cap": "10050",
+            "comune": "SAN GIORIO DI SUSA"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-05",
+            "visita_medica": "2027-05-05"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "2": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-1987370"
+        },
+        "indirizzo": {
+            "via": "VIA AUGUSTO ABEGG N. 88",
+            "cap": "10050",
+            "comune": "BORGONE SUSA"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-12",
+            "visita_medica": "2027-03-12"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "3": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "340-0746289"
+        },
+        "indirizzo": {
+            "via": "VIA DEI MILLE 25/B",
+            "cap": "10050",
+            "comune": "BRUZOLO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-06-25",
+            "visita_medica": "2026-12-25"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "346-5844961"
+        },
+        "indirizzo": {
+            "via": "BORGATA VIGNASSA 15",
+            "cap": "10050",
+            "comune": "SANT'ANTONINO DI SUSA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-18",
+            "visita_medica": "2027-08-18"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "5": {
+        "contatti": {
+            "telefono": "011-9645392",
+            "telefono1": "333-7689637",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA FRANCESCO PERODO N? 2",
+            "cap": "10050",
+            "comune": "BORGONE SUSA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-26",
+            "visita_medica": "2027-05-26"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "6": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "331-1987452"
+        },
+        "indirizzo": {
+            "via": "VIA ANTONIO CHIABERTO 4",
+            "cap": "10050",
+            "comune": "VILLAR FOCCHIARDO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-18",
+            "visita_medica": "2027-08-18"
+        },
+        "patenti": [
+            "2° grado"
+        ]
+    },
+    "7": {
+        "contatti": {
+            "telefono": "339-6554948",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA EDMONDO DE AMICIS 20",
+            "cap": "10055",
+            "comune": "CONDOVE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-13",
+            "visita_medica": "2027-06-13"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "8": {
+        "contatti": {
+            "telefono": "389-8933088",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "FRAZIONE  VOLPI N 10",
+            "cap": "10050",
+            "comune": "SAN DIDERO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-03-12",
+            "visita_medica": "2026-09-12"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "9": {
+        "contatti": {
+            "telefono": "011-9643039",
+            "telefono1": "340-2704724",
+            "telefono2": "366-5775671"
+        },
+        "indirizzo": {
+            "via": "VIALE KENNEDY 25",
+            "cap": "10040",
+            "comune": "CAPRIE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-17",
+            "visita_medica": "2027-06-17"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "10": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "366-5775718"
+        },
+        "indirizzo": {
+            "via": "VIA DI MEZZO 24/A",
+            "cap": "10050",
+            "comune": "VILLAR FOCCHIARDO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-28",
+            "visita_medica": "2027-07-28"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "11": {
+        "contatti": {
+            "telefono": "011-9642157",
+            "telefono1": "338-6375427",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA VICOLO SILVIO PELLICO 4",
+            "cap": "10055",
+            "comune": "CONDOVE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-03-04",
+            "visita_medica": "2027-09-04"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "12": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "346-0916193"
+        },
+        "indirizzo": {
+            "via": "VIA MARIO TACCA 17/BIS",
+            "cap": "10050",
+            "comune": "BORGONE SUSA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-05-13",
+            "visita_medica": "2027-11-13"
+        },
+        "patenti": []
+    },
+    "13": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "393-1291551"
+        },
+        "indirizzo": {
+            "via": "VIA GUIDO BOBBA 46",
+            "cap": "10050",
+            "comune": "BORGONE SUSA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-05-28",
+            "visita_medica": "2026-11-28"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "14": {
+        "contatti": {
+            "telefono": "0122-50144",
+            "telefono1": "333-3622708",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA ROMA 95",
+            "cap": "10050",
+            "comune": "VENAUS"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-08-07",
+            "visita_medica": "2027-02-07"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "15": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "338-7799566"
+        },
+        "indirizzo": {
+            "via": "VIA DEI MILLE 10",
+            "cap": "10050",
+            "comune": "BRUZOLO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-03-12",
+            "visita_medica": "2026-09-12"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "16": {
+        "contatti": {
+            "telefono": "011-9644559",
+            "telefono1": "339-8569824",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "BORGATA POISATTO N? 2",
+            "cap": "10055",
+            "comune": "CONDOVE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-10",
+            "visita_medica": "2027-04-10"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "17": {
+        "contatti": {
+            "telefono": "328-6749362",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "FRAZIONE CHIANTUSELLO N 36",
+            "cap": "10050",
+            "comune": "BORGONE SUSA"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-21",
+            "visita_medica": "2027-08-21"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "18": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "320-0638844"
+        },
+        "indirizzo": {
+            "via": "VIA GIACOMO LEOPARDI 40 LETT.2",
+            "cap": "10055",
+            "comune": "CONDOVE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-18",
+            "visita_medica": "2027-08-18"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "19": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "342-1517827"
+        },
+        "indirizzo": {
+            "via": "VIA FEDERICO MARCONCINI 10",
+            "cap": "10050",
+            "comune": "BRUZOLO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-24",
+            "visita_medica": "2027-01-24"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "20": {
+        "contatti": {
+            "telefono": "333-6190820",
+            "telefono1": "-",
+            "telefono2": "389-8879488"
+        },
+        "indirizzo": {
+            "via": "VIA CONDOVE N 93",
+            "cap": "10050",
+            "comune": "BORGONE SUSA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-17",
+            "visita_medica": "2027-06-17"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "21": {
+        "contatti": {
+            "telefono": "348-5853721",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA CHIESALI 7",
+            "cap": "10050",
+            "comune": "VILLAR FOCCHIARDO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-21",
+            "visita_medica": "2027-08-21"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "22": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "349-0088521"
+        },
+        "indirizzo": {
+            "via": "VIA DEI MILLE 38",
+            "cap": "10050",
+            "comune": "BRUZOLO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-01-16",
+            "visita_medica": "2026-07-16"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "23": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "340-7149125"
+        },
+        "indirizzo": {
+            "via": "VIA TARRO BOIRO 5 SUB. BIS",
+            "cap": "10050",
+            "comune": "BORGONE SUSA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-24",
+            "visita_medica": "2027-03-24"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    }
+}

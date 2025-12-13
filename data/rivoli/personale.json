@@ -1,0 +1,760 @@
+{
+    "1": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "340-5097969"
+        },
+        "indirizzo": {
+            "via": "VIA EUROPA 2",
+            "cap": "10060",
+            "comune": "CANDIOLO"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-05",
+            "visita_medica": "2027-06-05"
+        },
+        "patenti": []
+    },
+    "2": {
+        "contatti": {
+            "telefono": "011-9310056",
+            "telefono1": "334-1462089",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "FRAZ. FONTANELLE 7",
+            "cap": "10090",
+            "comune": "REANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-29",
+            "visita_medica": "2027-05-29"
+        },
+        "patenti": []
+    },
+    "3": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "338-4021794"
+        },
+        "indirizzo": {
+            "via": "VIA MARTIRI DELLA LIBERTA' 21",
+            "cap": "10048",
+            "comune": "VINOVO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-03-12",
+            "visita_medica": "2026-09-12"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "4": {
+        "contatti": {
+            "telefono": "011-9530790",
+            "telefono1": "331-6888429",
+            "telefono2": "347-7603042"
+        },
+        "indirizzo": {
+            "via": "VIA FREJUS 42",
+            "cap": "10098",
+            "comune": "RIVOLI"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-03-19",
+            "visita_medica": "2026-09-19"
+        },
+        "patenti": [
+            "2° grado"
+        ]
+    },
+    "5": {
+        "contatti": {
+            "telefono": "392-935148",
+            "telefono1": "-",
+            "telefono2": "392-0935148"
+        },
+        "indirizzo": {
+            "via": "STRADA DEI CAMPI 10/1",
+            "cap": "10090",
+            "comune": "ROSTA"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-04-05",
+            "visita_medica": "2026-10-05"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "6": {
+        "contatti": {
+            "telefono": "000-0",
+            "telefono1": "-",
+            "telefono2": "331-6888292"
+        },
+        "indirizzo": {
+            "via": "VIA LANZO 6/3",
+            "cap": "10098",
+            "comune": "RIVOLI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-12",
+            "visita_medica": "2027-05-12"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "7": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "340-4844340"
+        },
+        "indirizzo": {
+            "via": "VIA TIZIANO LANZA 9",
+            "cap": "10095",
+            "comune": "GRUGLIASCO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-04",
+            "visita_medica": "2027-08-04"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "8": {
+        "contatti": {
+            "telefono": "338-5779545",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA LANZO 6/3",
+            "cap": "10098",
+            "comune": "RIVOLI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-03",
+            "visita_medica": "2027-06-03"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "9": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "328-0469545"
+        },
+        "indirizzo": {
+            "via": "C.SO SEBASTOPOLI 241",
+            "cap": "10100",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-21",
+            "visita_medica": "2027-07-21"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "10": {
+        "contatti": {
+            "telefono": "011-9359469",
+            "telefono1": "-",
+            "telefono2": "335-386662"
+        },
+        "indirizzo": {
+            "via": "VIA FONTANA 18",
+            "cap": "10040",
+            "comune": "ALMESE"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-21",
+            "visita_medica": "2027-08-21"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "11": {
+        "contatti": {
+            "telefono": "011-3971010",
+            "telefono1": "-",
+            "telefono2": "333-8572262"
+        },
+        "indirizzo": {
+            "via": "VIA MIRAFIORI 8",
+            "cap": "10092",
+            "comune": "BEINASCO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-03-19",
+            "visita_medica": "2026-09-19"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "12": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "371-1350087"
+        },
+        "indirizzo": {
+            "via": "VIA AL CASTELLO 14/A",
+            "cap": "10090",
+            "comune": "BUTTIGLIERA ALTA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-04-16",
+            "visita_medica": "2026-10-16"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "13": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "333-7491592"
+        },
+        "indirizzo": {
+            "via": "VIA VIGNA 7/3",
+            "cap": "10066",
+            "comune": "TORRE PELLICE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-06",
+            "visita_medica": "2027-08-06"
+        },
+        "patenti": []
+    },
+    "14": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "348-7180890"
+        },
+        "indirizzo": {
+            "via": "VIA CARLO ALBERTO VIDUA 11",
+            "cap": "10144",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-02-04",
+            "visita_medica": "2027-08-04"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "15": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "393-6622531"
+        },
+        "indirizzo": {
+            "via": "VIA DRUENTO,4/R",
+            "cap": "10040",
+            "comune": "GIVOLETTO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-09-10",
+            "visita_medica": "2027-03-10"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "16": {
+        "contatti": {
+            "telefono": "347-1392089",
+            "telefono1": "-",
+            "telefono2": "011-9948018"
+        },
+        "indirizzo": {
+            "via": "C.SO LUIGI EINAUDI 111/B",
+            "cap": "10098",
+            "comune": "RIVOLI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-18",
+            "visita_medica": "2027-04-18"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "17": {
+        "contatti": {
+            "telefono": "011-9594316",
+            "telefono1": "333-7200017",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA SESTRIERE 67",
+            "cap": "10098",
+            "comune": "RIVOLI"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-13",
+            "visita_medica": "2027-06-13"
+        },
+        "patenti": []
+    },
+    "18": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "339-2507605"
+        },
+        "indirizzo": {
+            "via": "VIA SAPRI 25",
+            "cap": "10100",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-05",
+            "visita_medica": "2027-05-05"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "19": {
+        "contatti": {
+            "telefono": "011-9644444",
+            "telefono1": "347-2632477",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "PZA MARTIRI DELLA LIBERTA` 8",
+            "cap": "10099",
+            "comune": "CONDOVE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-04-09",
+            "visita_medica": "2026-10-09"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "20": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "366-5775683"
+        },
+        "indirizzo": {
+            "via": "VIA PAOLO GAIDANO 141 SC. D P 07 NUI 13",
+            "cap": "10137",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-26",
+            "visita_medica": "2027-05-26"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "21": {
+        "contatti": {
+            "telefono": "011-9597102",
+            "telefono1": "349-6173243",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA CAGLIARI 20",
+            "cap": "10153",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-07-24",
+            "visita_medica": "2026-01-24"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "22": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "340-8727717"
+        },
+        "indirizzo": {
+            "via": "VIA TIRASEGNO, 26",
+            "cap": "10098",
+            "comune": "RIVOLI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-05",
+            "visita_medica": "2027-05-05"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "23": {
+        "contatti": {
+            "telefono": "348-3840441",
+            "telefono1": "331-6888216",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA FRANCESCO CIGNA N. 4/BIS",
+            "cap": "10152",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2023-06-05",
+            "visita_medica": "2025-12-05"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "24": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "392-0362151"
+        },
+        "indirizzo": {
+            "via": "VIA GARRONE 8",
+            "cap": "10044",
+            "comune": "PIANEZZA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-29",
+            "visita_medica": "2027-04-29"
+        },
+        "patenti": []
+    },
+    "25": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "342-8287550"
+        },
+        "indirizzo": {
+            "via": "VIA MERCADANTE  SAVERIO 92",
+            "cap": "10154",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-11",
+            "visita_medica": "2027-04-11"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "26": {
+        "contatti": {
+            "telefono": "349-2325570",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA PELLICE 70 LETT 03",
+            "cap": "10098",
+            "comune": "RIVOLI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-10",
+            "visita_medica": "2027-04-10"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "27": {
+        "contatti": {
+            "telefono": "011-9649812",
+            "telefono1": "392-3102473",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA TORINO 242",
+            "cap": "10050",
+            "comune": "SANT'ANTONINO DI SUSA"
+        },
+        "grado": "CSV.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-07-25",
+            "visita_medica": "2027-01-25"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "28": {
+        "contatti": {
+            "telefono": "011-9961287",
+            "telefono1": "-",
+            "telefono2": "338-6527822"
+        },
+        "indirizzo": {
+            "via": "VIA FABBRICHE 144",
+            "cap": "10072",
+            "comune": "CASELLE TORINESE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-08",
+            "visita_medica": "2027-04-08"
+        },
+        "patenti": []
+    },
+    "29": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "347-2582620"
+        },
+        "indirizzo": {
+            "via": "STRADA  ALTESSANO 130/18/A",
+            "cap": "10151",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-08",
+            "visita_medica": "2027-04-08"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "30": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "335-1736358"
+        },
+        "indirizzo": {
+            "via": "VIA COSSU 42",
+            "cap": "10041",
+            "comune": "CARIGNANO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-12-17",
+            "visita_medica": "2027-06-17"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "31": {
+        "contatti": {
+            "telefono": "338-4411922",
+            "telefono1": "-",
+            "telefono2": "-"
+        },
+        "indirizzo": {
+            "via": "VIA GARIBALDI 2",
+            "cap": "10095",
+            "comune": "GRUGLIASCO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-08-08",
+            "visita_medica": "2027-02-08"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "32": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "348-6449760"
+        },
+        "indirizzo": {
+            "via": "VIA SIRO BONETTO 5",
+            "cap": "10060",
+            "comune": "VIRLE PIEMONTE"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-05-24",
+            "visita_medica": "2026-11-24"
+        },
+        "patenti": []
+    },
+    "33": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "320-1547693"
+        },
+        "indirizzo": {
+            "via": "CORSO MONTE CUCCO 103",
+            "cap": "10100",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-26",
+            "visita_medica": "2027-05-26"
+        },
+        "patenti": [
+            "3° grado"
+        ]
+    },
+    "34": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "346-6745564"
+        },
+        "indirizzo": {
+            "via": "VIA PONATA 14",
+            "cap": "10090",
+            "comune": "ROSTA"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2017-02-14",
+            "visita_medica": "2019-08-14"
+        },
+        "patenti": []
+    },
+    "35": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "328-4694252"
+        },
+        "indirizzo": {
+            "via": "VIA GIACINTO AVET N. 8",
+            "cap": "10144",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-11-26",
+            "visita_medica": "2027-05-26"
+        },
+        "patenti": []
+    },
+    "36": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "329-9722230"
+        },
+        "indirizzo": {
+            "via": "VIA BARACCA 37/A",
+            "cap": "10095",
+            "comune": "GRUGLIASCO"
+        },
+        "grado": "FTAV.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-14",
+            "visita_medica": "2027-07-14"
+        },
+        "patenti": []
+    },
+    "37": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "346-8484077"
+        },
+        "indirizzo": {
+            "via": "CORSO KENNEDY 34 INT.15",
+            "cap": "10098",
+            "comune": "RIVOLI"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-03-20",
+            "visita_medica": "2027-09-20"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "38": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "393-4177572"
+        },
+        "indirizzo": {
+            "via": "VIA TOLMINO N? 24",
+            "cap": "10141",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2025-01-14",
+            "visita_medica": "2027-07-14"
+        },
+        "patenti": [
+            "1° grado"
+        ]
+    },
+    "39": {
+        "contatti": {
+            "telefono": "-",
+            "telefono1": "-",
+            "telefono2": "320-7277869"
+        },
+        "indirizzo": {
+            "via": "VIA THURES 32",
+            "cap": "10142",
+            "comune": "TORINO"
+        },
+        "grado": "VIG.",
+        "scadenze": {
+            "visita_medica_ultima": "2024-10-17",
+            "visita_medica": "2027-04-17"
+        },
+        "patenti": []
+    }
+}

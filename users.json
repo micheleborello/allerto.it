@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "username": "michele.borello",
+        "name": "michele borello",
+        "role": "tenant",
+        "tenant_slug": "nole",
+        "active": 1,
+        "password_hash": "$2y$10$FCXighRVpQ8GAIaB8SMUg.9zYkNiDZuO3P2/WTcqlNjo9XtlIoeka"
+    },
+    {
+        "id": 2,
+        "username": "rivarolo",
+        "name": "rivarolo",
+        "role": "tenant",
+        "tenant_slug": "rivarolo",
+        "active": 1,
+        "password_hash": "$2y$10$geJiaFOT2M7jZmwelWOHD.4H/rgbEkPeimb69bKLem/uof4NVc0dO"
+    }
+]

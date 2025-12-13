@@ -1,0 +1,301 @@
+[
+    {
+        "id": 1,
+        "nome": "MAURO",
+        "cognome": "AVRILETTI",
+        "cf": "VRLMRA68L27L727O",
+        "attivo": 0,
+        "grado": "CSV",
+        "ingresso": "",
+        "username": "avriletti.mauro"
+    },
+    {
+        "id": 2,
+        "nome": "LUCA",
+        "cognome": "BERGAMO",
+        "cf": "BRGLCU75M03L727G",
+        "attivo": 1,
+        "grado": "VIG",
+        "ingresso": "",
+        "username": "bergamo.luca"
+    },
+    {
+        "id": 3,
+        "nome": "MASSIMO",
+        "cognome": "BORSETTO",
+        "cf": "BRSMSM72A15G674G",
+        "attivo": 1,
+        "grado": "VIG",
+        "ingresso": "",
+        "username": "borsetto.massimo"
+    },
+    {
+        "id": 4,
+        "nome": "CATELLO",
+        "cognome": "CASTALDO",
+        "cf": "CSTCLL67M05L049O",
+        "attivo": 1,
+        "grado": "CSV",
+        "ingresso": "",
+        "username": "castaldo.catello"
+    },
+    {
+        "id": 5,
+        "nome": "ALESSIO FRANCESCO",
+        "cognome": "CECCONELLO",
+        "cf": "CCCLSF82P09L727C",
+        "attivo": 1,
+        "grado": "VIG",
+        "ingresso": "",
+        "username": "cecconello.alessio.francesco"
+    },
+    {
+        "id": 6,
+        "nome": "ALEX",
+        "cognome": "CROSASSO",
+        "cf": "CRSLXA88M20A518V",
+        "attivo": 1,
+        "grado": "VIG",
+        "ingresso": "",
+        "username": "crosasso.alex"
+    },
+    {
+        "id": 7,
+        "nome": "GABRIELE",
+        "cognome": "DE FUSCO",
+        "cf": "DFSGRL96B03L219R",
+        "attivo": 1,
+        "grado": "VIG",
+        "ingresso": "",
+        "username": "de.fusco.gabriele"
+    },
+    {
+        "id": 8,
+        "nome": "SERGIO",
+        "cognome": "DE NIGRIS",
+        "cf": "DNGSRG66R06L219T",
+        "attivo": 1,
+        "grado": "CSV",
+        "ingresso": "",
+        "username": "de.nigris.sergio"
+    },
+    {
+        "id": 9,
+        "nome": "MICHELE",
+        "cognome": "DI GENNARO",
+        "cf": "DGNMHL78C23L219U",
+        "attivo": 1,
+        "grado": "VIG",
+        "ingresso": "",
+        "username": "di.gennaro.michele"
+    },
+    {
+        "id": 10,
+        "nome": "ANDREA",
+        "cognome": "FELICIONI",
+        "cf": "FLCNDR68A02H501L",
+        "attivo": 1,
+        "grado": "CSV",
+        "ingresso": "",
+        "username": "felicioni.andrea"
+    },
+    {
+        "id": 11,
+        "nome": "BRUNO",
+        "cognome": "FENOGLIO",
+        "cf": "FNGBRN65M30C665L",
+        "attivo": 1,
+        "grado": "VIG",
+        "ingresso": "",
+        "username": "fenoglio.bruno"
+    },
+    {
+        "id": 12,
+        "nome": "MARCO",
+        "cognome": "FERROTTI",
+        "cf": "FRRMRC66S03L219I",
+        "attivo": 1,
+        "grado": "VIG",
+        "ingresso": "",
+        "username": "ferrotti.marco"
+    },
+    {
+        "id": 13,
+        "nome": "TERESA",
+        "cognome": "GRANATO",
+        "cf": "GRNTRS72H56L219J",
+        "attivo": 1,
+        "grado": "VIG",
+        "ingresso": "",
+        "username": "granato.teresa"
+    },
+    {
+        "id": 14,
+        "nome": "GREGORIO",
+        "cognome": "GULLI&#039;",
+        "cf": "GLLGGR68M17C352Q",
+        "attivo": 1,
+        "grado": "VIG",
+        "ingresso": "",
+        "username": "gulli.gregorio"
+    },
+    {
+        "id": 15,
+        "nome": "ANDREA VALENTINA",
+        "cognome": "LAMA",
+        "cf": "LMANRV85P64L418L",
+        "attivo": 1,
+        "grado": "VIG",
+        "ingresso": "",
+        "username": "lama.andrea.valentina"
+    },
+    {
+        "id": 16,
+        "nome": "DAVIDE",
+        "cognome": "MANGIA",
+        "cf": "MNGDVD84C13L219G",
+        "attivo": 1,
+        "grado": "VIG",
+        "ingresso": "",
+        "username": "mangia.davide"
+    },
+    {
+        "id": 17,
+        "nome": "FRANCO JERRY",
+        "cognome": "MARTINELLI",
+        "cf": "MRTFNC77L16L219C",
+        "attivo": 1,
+        "grado": "CSV",
+        "ingresso": "",
+        "username": "martinelli.franco.jerry"
+    },
+    {
+        "id": 18,
+        "nome": "STEFANO",
+        "cognome": "MELOTTI",
+        "cf": "MLTSFN65B04L219Y",
+        "attivo": 1,
+        "grado": "VIG",
+        "ingresso": "",
+        "username": "melotti.stefano"
+    },
+    {
+        "id": 19,
+        "nome": "MARCO",
+        "cognome": "MERONI",
+        "cf": "MRNMRC88C10F335J",
+        "attivo": 1,
+        "grado": "VIG",
+        "ingresso": "",
+        "username": "meroni.marco"
+    },
+    {
+        "id": 20,
+        "nome": "MANUELA",
+        "cognome": "MICELOTTA",
+        "cf": "MCLMNL69R56L219B",
+        "attivo": 1,
+        "grado": "CSV",
+        "ingresso": "",
+        "username": "micelotta.manuela"
+    },
+    {
+        "id": 21,
+        "nome": "MARCO",
+        "cognome": "MURAGLIA",
+        "cf": "MRGMRC71L06L219R",
+        "attivo": 1,
+        "grado": "VIG",
+        "ingresso": "",
+        "username": "muraglia.marco"
+    },
+    {
+        "id": 22,
+        "nome": "GIUSEPPE",
+        "cognome": "NERI",
+        "cf": "NREGPP83P23L727V",
+        "attivo": 1,
+        "grado": "VIG",
+        "ingresso": "",
+        "username": "neri.giuseppe"
+    },
+    {
+        "id": 23,
+        "nome": "PAOLO",
+        "cognome": "OCCHETTI",
+        "cf": "CCHPLA70E19L219Z",
+        "attivo": 0,
+        "grado": "VIG",
+        "ingresso": "",
+        "username": "occhetti.paolo"
+    },
+    {
+        "id": 24,
+        "nome": "GIUSEPPE",
+        "cognome": "PARDUCCI",
+        "cf": "PRDGPP65R08D883F",
+        "attivo": 1,
+        "grado": "VIG",
+        "ingresso": "",
+        "username": "parducci.giuseppe"
+    },
+    {
+        "id": 26,
+        "nome": "AURELIO ALESSIO",
+        "cognome": "PERRUCCI",
+        "cf": "PRRRLS96A03L727T",
+        "attivo": 1,
+        "grado": "VIG",
+        "ingresso": "",
+        "username": "perrucci.aurelio.alessio"
+    },
+    {
+        "id": 25,
+        "nome": "GIUSEPPE",
+        "cognome": "PERRUCCI",
+        "cf": "PRRGPP66D07G098C",
+        "attivo": 1,
+        "grado": "VIG",
+        "ingresso": "",
+        "username": "perrucci.giuseppe"
+    },
+    {
+        "id": 27,
+        "nome": "LUCA",
+        "cognome": "PROVARONI",
+        "cf": "PRVLCU66T20L219M",
+        "attivo": 1,
+        "grado": "CSV",
+        "ingresso": "",
+        "username": "provaroni.luca"
+    },
+    {
+        "id": 28,
+        "nome": "CLAUDIA",
+        "cognome": "TANDA",
+        "cf": "TNDCLD89L69B157V",
+        "attivo": 1,
+        "grado": "VIG",
+        "ingresso": "",
+        "username": "tanda.claudia"
+    },
+    {
+        "id": 29,
+        "nome": "MAURIZIO",
+        "cognome": "VARSALONA",
+        "cf": "VRSMRZ75M23L219P",
+        "attivo": 1,
+        "grado": "VIG",
+        "ingresso": "",
+        "username": "varsalona.maurizio"
+    },
+    {
+        "id": 30,
+        "cognome": "MARTINI",
+        "nome": "ROBERTO",
+        "grado": "FTAV",
+        "attivo": 1,
+        "is_capo": 1,
+        "created_at": "2025-11-30 17:39:14"
+    }
+]
