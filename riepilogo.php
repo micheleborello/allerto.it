@@ -369,13 +369,13 @@ $defaultBody    = "Buongiorno\n\ncon la presente sono ad inviare in allegato il 
            href="?tipo=mensile&mese=<?php echo htmlspecialchars($meseStr); ?>&scala_rec=<?php echo $scalaRec?'1':'0'; ?>">Mensile</a>
       </div>
 
-      <form class="d-flex align-items-center gap-2 ms-2" method="get">
+      <form class="d-flex align-items-center gap-2 ms-2" method="get" id="form-mese">
         <input type="hidden" name="tipo" value="<?php echo htmlspecialchars($tipo); ?>">
         <input type="hidden" name="scala_rec" value="<?php echo $scalaRec?'1':'0'; ?>">
         <label for="meseTop" class="form-label mb-0 fw-semibold"><?php echo $tipo==='annuale'?'Mese di riferimento':'Mese'; ?></label>
         <input id="meseTop" type="month" class="form-control form-control-sm" name="mese"
-               value="<?php echo htmlspecialchars($meseStr); ?>">
-        <button class="btn btn-sm btn-outline-primary">Vai</button>
+               value="<?php echo htmlspecialchars($meseStr); ?>"
+               onchange="this.form.submit()">
       </form>
 
       <form class="ms-2" method="get">
