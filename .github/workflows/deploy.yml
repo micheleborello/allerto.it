@@ -13,14 +13,19 @@ jobs:
 
       # Se non hai build npm/composer, salta. Altrimenti aggiungi i comandi di build.
 
-      - name: Deploy via SFTP
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+      - name: Deploy via FTPS
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.FTP_HOST }}      # host o IP
-          username: ${{ secrets.FTP_USER }}    # utente SFTP
-          password: ${{ secrets.FTP_PASS }}    # password SFTP
-          port: ${{ secrets.FTP_PORT }}        # tipicamente 22
-          local_path: "./"
-          remote_path: ${{ secrets.REMOTE_DIR }}
-          delete_remote_files: false           # non cancellare file remoti
-          sftpArgs: "-o StrictHostKeyChecking=no"
+          username: ${{ secrets.FTP_USER }}    # utente FTP/FTPS
+          password: ${{ secrets.FTP_PASS }}    # password FTP/FTPS
+          port: ${{ secrets.FTP_PORT }}        # tipicamente 21 per FTP/FTPS
+          protocol: ftps                       # usa FTPS esplicito
+          server-dir: ${{ secrets.REMOTE_DIR }}/
+          log-level: minimal
+          exclude: |
+            **/.git*
+            **/.github/**
+            **/node_modules/**
+            **/vendor/**
+            config.local.php
