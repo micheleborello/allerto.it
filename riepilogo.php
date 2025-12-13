@@ -461,7 +461,7 @@ $defaultBody    = "Buongiorno\n\ncon la presente sono ad inviare in allegato il 
         se l’elenco dei vigili non è completo, verifica lo stato
         <em>Visualizzato/Non visualizzato</em> nella pagina <em>Gestione Vigili</em>.
       </span>
-      <a class="btn btn-sm btn-outline-primary ms-2 align-text-bottom" href="https://allerto.it/vigili.php" target="_blank" rel="noopener">Apri Gestione Vigili</a>
+      <a class="btn btn-sm btn-outline-primary ms-2 align-text-bottom" href="vigili.php" target="_blank" rel="noopener">Apri Gestione Vigili</a>
     </div>
   <?php else: ?>
     <div class="alert alert-info mt-2">
