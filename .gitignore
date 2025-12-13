@@ -1,0 +1,48 @@
+# Config locali/segreti
+.env
+.env.*
+config.local.php
+*.local.php
+
+# Dipendenze
+vendor/
+node_modules/
+
+# Cache/temp
+.cache/
+tmp/
+temp/
+*.tmp
+*.swp
+*.swo
+
+# Log
+logs/
+*.log
+error_log
+
+# Build/output
+dist/
+build/
+coverage/
+reports/
+
+# IDE/editor
+.vscode/
+.idea/
+*.iml
+
+# Backup ed esportazioni
+*.bak
+*.orig
+*.old
+*.save
+*.zip
+*.tar
+*.gz
+*.tgz
+*.7z
+
+# Sistema
+.DS_Store
+Thumbs.db

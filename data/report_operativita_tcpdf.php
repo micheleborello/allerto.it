@@ -356,13 +356,3 @@ $pdf->writeHTML(
 
 if (ob_get_length()) { @ob_end_clean(); }
 $pdf->Output('report_operativita_'.$meseStr.'.pdf', 'I');
-Da ripetere negli altri due report
-Negli altri file (report_mensile_tcpdf.php e report_annuale_tcpdf.php) inserisci subito dopo i require lo stesso blocco SHIM caserme e i fallback per le costanti che vedi nella sezione:
-
-php
-Copia codice
-/* -------------------- SHIM caserme (se mancanti) -------------------- */
-// ... load_caserme / save_caserme ...
-
-/* -------------------- Fallback costanti dati (se mancanti) -------------------- */
-// ... DATA_DIR, VIGILI_JSON, ADDESTR_JSON, INFORTUNI_JSON ...
