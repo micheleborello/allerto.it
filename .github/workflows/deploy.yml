@@ -1,0 +1,31 @@
+name: Deploy to hosting
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Se non hai build npm/composer, salta. Altrimenti aggiungi i comandi di build.
+
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASS }}
+          port: ${{ secrets.FTP_PORT }}
+          server-dir: ${{ secrets.REMOTE_DIR }}/
+          protocol: ftp  # metti sftp se supportato
+          log-level: minimal
+          # Opzionale: exclude per non caricare file ignorati
+          exclude: |
+            **/.git*
+            **/.github/**
+            **/node_modules/**
+            **/vendor/**
