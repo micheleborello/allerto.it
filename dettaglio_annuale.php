@@ -48,7 +48,7 @@ $VIGILI_JSON  = defined('VIGILI_JSON')  ? VIGILI_JSON  : _path('vigili.json');
 $ADDESTR_JSON = defined('ADDESTR_JSON') ? ADDESTR_JSON : _path('addestramenti.json');
 
 // ---- carica dati base
-$vigili = load_json($VIGILI_JSON);
+$vigili = sanitize_vigili_list(load_json($VIGILI_JSON));
 $map = [];
 foreach ($vigili as $v) { $map[(int)($v['id'] ?? 0)] = $v; }
 if (!isset($map[$vigileId])) { http_response_code(404); die('Vigile non trovato'); }

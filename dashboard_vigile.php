@@ -147,7 +147,7 @@ $me_username = current_username();
 $me_userkey  = _norm_userkey($me_username);
 
 /* ===== Carica dati ===== */
-$vigili       = _json_load_relaxed(_path('vigili.json'));
+$vigili       = sanitize_vigili_list(_json_load_relaxed(_path('vigili.json')));
 $personaleMap = _json_load_relaxed(_path('personale.json'));
 $allAdd       = _json_load_relaxed(_path('addestramenti.json'));
 

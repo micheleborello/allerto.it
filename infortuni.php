@@ -57,7 +57,7 @@ if (!function_exists('save_json_atomic')) {
   }
 }
 if (!function_exists('load_vigili')) {
-  function load_vigili(){ return load_json(VIGILI_JSON); }
+  function load_vigili(){ return sanitize_vigili_list(load_json(VIGILI_JSON)); }
 }
 if (!function_exists('save_vigili')) {
   function save_vigili($rows){ save_json_atomic(VIGILI_JSON, $rows); }

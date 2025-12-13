@@ -76,7 +76,7 @@ function _ensure_personale_is_map($arr){
 }
 
 /* ===== Load/Save ===== */
-if (!function_exists('load_vigili'))  { function load_vigili(){ return load_json_relaxed(VIGILI_JSON); } }
+if (!function_exists('load_vigili'))  { function load_vigili(){ return sanitize_vigili_list(load_json_relaxed(VIGILI_JSON)); } }
 if (!function_exists('save_vigili'))  { function save_vigili($rows){ save_json_atomic(VIGILI_JSON,$rows); } }
 if (!function_exists('load_personale')){
   function load_personale(){ return _ensure_personale_is_map(load_json_relaxed(PERSONALE_JSON)); }

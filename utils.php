@@ -34,6 +34,20 @@ function sanitize_text($s): string {
   return html_entity_decode((string)$s, ENT_QUOTES | ENT_HTML5, 'UTF-8');
 }
 
+/**
+ * Sanitizza campi tipici anagrafica vigili/users.
+ * Non fa escape HTML: farlo sempre in output.
+ */
+function sanitize_vigili_list(array $rows): array {
+  foreach ($rows as &$r) {
+    foreach (['cognome','nome','email','username','grado','ruolo'] as $k) {
+      if (isset($r[$k])) $r[$k] = sanitize_text($r[$k]);
+    }
+  }
+  unset($r);
+  return $rows;
+}
+
 function minuti_da_intervallo_datetime(string $inizioIso, string $fineIso): int {
   if (!preg_match('/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?$/', $inizioIso) ||
       !preg_match('/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?$/', $fineIso)) {

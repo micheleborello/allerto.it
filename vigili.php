@@ -94,7 +94,7 @@ function _backend_label() { return 'json'; }
 if (!function_exists('read_vigili')) {
   function read_vigili() {
     // usa sempre i JSON locali (tenant-aware)
-    $out = load_json(VIGILI_JSON);
+    $out = sanitize_vigili_list(load_json(VIGILI_JSON));
     // normalizza gradi e attivo
     foreach ($out as &$v) {
       if (isset($v['grado']) && $v['grado'] !== null && $v['grado'] !== '') {

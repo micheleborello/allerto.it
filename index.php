@@ -105,7 +105,7 @@ if (!defined('INFORTUNI_JSON')) define('INFORTUNI_JSON', _path('infortuni.json')
 if (!file_exists(INFORTUNI_JSON)) { @file_put_contents(INFORTUNI_JSON, "[]"); }
 
 // ====== Carico VIGILI (prima del debug!) e ordino
-$vigili = load_vigili_local();
+$vigili = sanitize_vigili_list(load_vigili_local());
 if (!is_array($vigili)) $vigili = [];
 usort($vigili, fn($a,$b)=>strcmp(
   trim(($a['cognome']??'').' '.($a['nome']??'')),
