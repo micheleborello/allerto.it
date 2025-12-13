@@ -21,7 +21,7 @@ jobs:
           password: ${{ secrets.FTP_PASS }}    # password FTP
           port: ${{ secrets.FTP_PORT }}        # tipicamente 21 per FTP
           protocol: ftp
-          server-dir: ${{ secrets.REMOTE_DIR }}/
+          server-dir: ${{ secrets.REMOTE_DIR }}
           log-level: minimal
           exclude: |
             **/.git/**
