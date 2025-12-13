@@ -173,8 +173,10 @@ while ($cur < $end) { $mesiFinestra[] = $cur->format('Y-m'); $cur->modify('+1 mo
 
 /* -------------------- UTILS -------------------- */
 $mesiIT = [1=>'GENNAIO',2=>'FEBBRAIO',3=>'MARZO',4=>'APRILE',5=>'MAGGIO',6=>'GIUGNO',7=>'LUGLIO',8=>'AGOSTO',9=>'SETTEMBRE',10=>'OTTOBRE',11=>'NOVEMBRE',12=>'DICEMBRE'];
-$mTxt   = $mesiIT[$rifM] ?? '';
-$yTxt   = (string)$rifY;
+// Etichetta mese di riferimento: usa il mese SUCCESSIVO a quello selezionato in riepilogo
+$nextRef = (clone $startRef)->modify('+1 month');
+$mTxt   = $mesiIT[(int)$nextRef->format('n')] ?? '';
+$yTxt   = $nextRef->format('Y');
 $fmtIT  = fn(string $ymd) => substr($ymd,8,2).'/'.substr($ymd,5,2).'/'.substr($ymd,0,4);
 $ore_hhmm = fn(int $min)  => sprintf('%d.%02d', intdiv($min,60), $min%60);
 
@@ -300,7 +302,7 @@ $pdf->notaLegale  =
 
 $pdf->SetCreator('Sistema Ore Addestramento');
 $pdf->SetAuthor('Sistema');
-$pdf->SetTitle('Stato operatività '.$meseStr.' — '.$casermaName);
+$pdf->SetTitle('Stato operatività '.$nextRef->format('Y-m').' – '.$casermaName);
 $pdf->SetMargins(15, 48, 15);
 $pdf->SetHeaderMargin(8);
 $pdf->SetAutoPageBreak(true, 35);
