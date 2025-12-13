@@ -180,6 +180,11 @@ $yTxt   = $nextRef->format('Y');
 $fmtIT  = fn(string $ymd) => substr($ymd,8,2).'/'.substr($ymd,5,2).'/'.substr($ymd,0,4);
 $ore_hhmm = fn(int $min)  => sprintf('%d.%02d', intdiv($min,60), $min%60);
 
+// Intestazione visiva: mese successivo a quello selezionato (calcolo resta sui 12 mesi precedenti)
+$nextRef = (clone $startRef)->modify('+1 month');
+$mTxt = $mesiIT[(int)$nextRef->format('n')] ?? $mTxt;
+$yTxt = $nextRef->format('Y');
+
 // minuti robusti
 $minutiRecord = function(array $r): int {
   if (isset($r['minuti'])) return (int)$r['minuti'];
@@ -294,11 +299,12 @@ class PDF extends TCPDF {
 }
 $pdf = new PDF('P','mm','A4', true, 'UTF-8', false);
 $pdf->meseAnno    = ($mTxt && $yTxt) ? ($mTxt.' '.$yTxt) : $meseStr;
-$pdf->finestraTxt = 'Periodo: '.$fmtIT($winStartStr).' – '.$fmtIT($winEndStr);
+$pdf->finestraTxt = 'Periodo: '.$fmtIT($winStartStr).' - '.$fmtIT($winEndStr);
 $pdf->titolo3     = 'Distaccamento di '.$casermaName;
 $pdf->notaLegale  =
   "Il sottoscritto, consapevole che la dichiarazione mendace e la falsità in atti costituiscono reato ai sensi dell'art. 76 del D.P.R. 445/2000, ".
   "dichiara sotto la propria responsabilità di aver verificato che i nominativi in oggetto hanno partecipato agli addestramenti indicati.";
+$pdf->SetTitle('Stato operatività '.$nextRef->format('Y-m').' - '.$casermaName);
 
 $pdf->SetCreator('Sistema Ore Addestramento');
 $pdf->SetAuthor('Sistema');
