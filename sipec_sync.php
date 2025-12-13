@@ -102,6 +102,11 @@ function _json_save_pretty(string $path, $arr): void {
   @chmod($path, 0664);
 }
 
+// ---------- Sanitizzazione testo ----------
+function sanitize_text($s): string {
+  return html_entity_decode((string)$s, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+}
+
 // ---------- Date helpers ----------
 function _parse_sipec_date(string $s): ?string {
   $s = trim($s);

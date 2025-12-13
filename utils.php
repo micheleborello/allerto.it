@@ -26,6 +26,14 @@ function ore_decimali(int $minuti, int $precisione = 2): float {
   return round($minuti / 60, $precisione);
 }
 
+/**
+ * Sanitizza testo eliminando entita' HTML alla fonte.
+ * Usa comunque htmlspecialchars in output.
+ */
+function sanitize_text($s): string {
+  return html_entity_decode((string)$s, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+}
+
 function minuti_da_intervallo_datetime(string $inizioIso, string $fineIso): int {
   if (!preg_match('/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?$/', $inizioIso) ||
       !preg_match('/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?$/', $fineIso)) {
