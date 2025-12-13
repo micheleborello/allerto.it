@@ -115,6 +115,7 @@ function get_first_nonempty($arr, array $paths, string $default=''){
 function _is_image_url($url){
   return (bool)preg_match('~\.(jpe?g|png|gif|webp|bmp|svg)$~i', (string)$url);
 }
+$baseHref = rtrim(dirname($_SERVER['SCRIPT_NAME'] ?? ''), '/').'/';
 
 /* ===== Normalizza per matching cognome.nome ~ username ===== */
 function _norm_userkey($s){
@@ -301,7 +302,7 @@ if ($_SERVER['REQUEST_METHOD']==='POST') {
     $rec['scadenze']  = $rec['scadenze']  ?? [];
 
     $rec['contatti']['telefono'] = trim((string)($_POST['telefono'] ?? ''));
-    $rec['contatti']['email']    = trim((string)($_POST['email'] ?? ''));
+    $rec['contatti']['email']    = sanitize_text(trim((string)($_POST['email'] ?? '')));
     $rec['indirizzo']['via']     = trim((string)($_POST['via'] ?? ''));
     $rec['indirizzo']['cap']     = trim((string)($_POST['cap'] ?? ''));
     $rec['indirizzo']['comune']  = trim((string)($_POST['comune'] ?? ''));
@@ -422,6 +423,19 @@ if ($_SERVER['REQUEST_METHOD']==='POST') {
 
     // Salva
     $personaleMap[$me_id] = $rec;
+    // Aggiorna anche la mail in vigili.json per coerenza con "Gestione Mail"
+    $vigiliRaw = _json_load_relaxed(_path('vigili.json'));
+    if (is_array($vigiliRaw)) {
+      foreach ($vigiliRaw as &$vv) {
+        if ((int)($vv['id'] ?? 0) === $me_id) {
+          $vv['email'] = $rec['contatti']['email'];
+          break;
+        }
+      }
+      unset($vv);
+      _json_save_atomic(_path('vigili.json'), $vigiliRaw);
+    }
+
     _json_save_atomic(_path('personale.json'), $personaleMap);
 
     $MSG='Dati aggiornati correttamente.';
@@ -514,6 +528,7 @@ function initials($name){
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="<?php echo h($baseHref); ?>">
 <title>La mia scheda | AllertoGest</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <style>
