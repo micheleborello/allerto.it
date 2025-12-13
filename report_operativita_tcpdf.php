@@ -154,7 +154,7 @@ if (is_array($infortuni)) {
 $rifY  = (int)substr($meseStr,0,4);
 $rifM  = (int)substr($meseStr,5,2);
 $startRef   = DateTime::createFromFormat('Y-m-d', sprintf('%04d-%02d-01', $rifY, $rifM));
-$winStart   = (clone $startRef)->modify('-13 months'); // inclusivo: 12 mesi precedenti il mese selezionato
+$winStart   = (clone $startRef)->modify('-12 months'); // inclusivo: 12 mesi precedenti il mese selezionato
 $winEnd     = (clone $startRef)->modify('-1 day');     // fino all'ultimo giorno del mese precedente
 $winStartStr = $winStart->format('Y-m-d');
 $winEndStr   = $winEnd->format('Y-m-d');
