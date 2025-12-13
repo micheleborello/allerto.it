@@ -306,9 +306,11 @@ foreach ($vigili as $v) {
   if (!$includiVuoti && empty($lista)) continue;
   $printed = true;
 
-  $gradoOrig   = htmlspecialchars($v['grado']   ?? '', ENT_QUOTES, 'UTF-8');
-  $cognomeOrig = htmlspecialchars($v['cognome'] ?? '', ENT_QUOTES, 'UTF-8');
-  $nomeOrig    = htmlspecialchars($v['nome']    ?? '', ENT_QUOTES, 'UTF-8');
+  // Decodifica eventuali entitÃ  HTML nei nomi e ri-escapa in uscita
+  $san = fn($s) => htmlspecialchars(html_entity_decode((string)$s, ENT_QUOTES | ENT_HTML5, 'UTF-8'), ENT_QUOTES, 'UTF-8');
+  $gradoOrig   = $san($v['grado']   ?? '');
+  $cognomeOrig = $san($v['cognome'] ?? '');
+  $nomeOrig    = $san($v['nome']    ?? '');
 
   $haInf = ha_infortunio_nel_mese($vid, $prefix, $INFORTUNI);
   $infDal = $haInf ? data_inizio_infortunio_mese($vid, $prefix, $INFORTUNI) : null;
