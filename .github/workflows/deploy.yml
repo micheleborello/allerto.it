@@ -13,14 +13,14 @@ jobs:
 
       # Se non hai build npm/composer, salta. Altrimenti aggiungi i comandi di build.
 
-      - name: Deploy via FTPS
+      - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.FTP_HOST }}      # host o IP
-          username: ${{ secrets.FTP_USER }}    # utente FTP/FTPS
-          password: ${{ secrets.FTP_PASS }}    # password FTP/FTPS
-          port: ${{ secrets.FTP_PORT }}        # tipicamente 21 per FTP/FTPS
-          protocol: ftps                       # usa FTPS esplicito
+          username: ${{ secrets.FTP_USER }}    # utente FTP
+          password: ${{ secrets.FTP_PASS }}    # password FTP
+          port: ${{ secrets.FTP_PORT }}        # tipicamente 21 per FTP
+          protocol: ftp
           server-dir: ${{ secrets.REMOTE_DIR }}/
           log-level: minimal
           exclude: |
