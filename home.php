@@ -48,6 +48,7 @@ if (!empty($_SESSION['TENANT_USER'])) $logged = true;
       justify-content: center;
       font-size: 1.2rem;
     }
+    a, a:hover, a:focus { text-decoration: none !important; }
   </style>
 </head>
 <body>
