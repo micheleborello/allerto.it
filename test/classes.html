@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz VVF - Istruttore</title>
+  <style>
+    :root { --bg:#f8fafc; --card:#ffffff; --accent:#ea580c; --text:#0f172a; --muted:#475569; --border:#e2e8f0; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif; background: radial-gradient(circle at 20% 20%, #e2e8f0 0, #f8fafc 60%); color:var(--text); }
+    .app { max-width: 1200px; margin:0 auto; padding:20px; }
+    header { display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-bottom:12px; }
+    h1 { margin:0; }
+    .panel { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:14px; margin-bottom:12px; box-shadow:0 8px 18px rgba(0,0,0,0.12); }
+    .split { display:grid; grid-template-columns:280px 1fr; gap:12px; }
+    .class-list { list-style:none; padding:0; margin:0; }
+    .class-list li { padding:10px; border:1px solid var(--border); border-radius:10px; margin-bottom:8px; cursor:pointer; }
+    .class-list li.active { border-color:var(--accent); box-shadow:0 6px 14px rgba(234,88,12,0.18); }
+    .small { color:var(--muted); font-size:13px; }
+    .section { margin-top:10px; }
+    .pill { display:inline-block; background:#f1f5f9; border:1px solid var(--border); border-radius:999px; padding:4px 8px; font-size:12px; color:var(--muted); margin-right:6px; }
+    button { border:none; border-radius:10px; padding:9px 12px; font-weight:700; cursor:pointer; background:var(--accent); color:#fff; box-shadow:0 6px 16px rgba(0,0,0,0.12); }
+    button:disabled { opacity:0.5; cursor:not-allowed; }
+    select { width:100%; padding:9px; border-radius:8px; border:1px solid var(--border); background:#fff; color:var(--text); }
+    ul { list-style:none; padding:0; margin:6px 0 0; }
+    li { margin-bottom:6px; }
+    .result-card { border:1px solid var(--border); border-radius:10px; padding:8px; margin-bottom:8px; background:#f8fafc; }
+    .btn-small { padding:6px 10px; border-radius:8px; font-size:12px; }
+    .link { color:#ea580c; text-decoration:none; font-weight:700; }
+    @media (max-width:640px){
+      .app { padding:12px; }
+      header { flex-direction:column; align-items:flex-start; gap:6px; }
+      .split { grid-template-columns:1fr; }
+      button, select { width:100%; }
+      .class-list li { margin-bottom:10px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Area Istruttore</h1>
+      <div id="user-info" class="small" style="margin-left:auto;"></div>
+      <a class="link" href="index.html">Home</a>
+    </header>
+
+    <div id="status" class="small"></div>
+
+    <div class="panel">
+      <div class="split">
+        <div>
+          <strong>Le mie classi</strong>
+          <ul id="class-list" class="class-list"></ul>
+        </div>
+        <div id="class-detail">
+          <div class="small">Seleziona una classe per vedere studenti e test.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const STORAGE_USERS = "vvf_users";
+    const STORAGE_CLASSES = "vvf_classes";
+    const STORAGE_RESULTS = "vvf_results";
+    const STORAGE_TESTS = "vvf_tests";
+    const STORAGE_VIDEOS = "vvf_videos";
+    const STORAGE_SESSION = "vvf_logged_user";
+    const API_URL = "save_data.php";
+    const API_TOKEN = "ALLERTO";
+
+    const statusEl = document.getElementById("status");
+    const userInfoEl = document.getElementById("user-info");
+    const classListEl = document.getElementById("class-list");
+    const classDetailEl = document.getElementById("class-detail");
+
+    let users = loadJSON(STORAGE_USERS, []);
+    let classes = loadJSON(STORAGE_CLASSES, []);
+    let results = loadJSON(STORAGE_RESULTS, []);
+    let tests = loadJSON(STORAGE_TESTS, []);
+    let videos = [];
+    let currentClass = null;
+    let me = null;
+    const decoder = document.createElement("textarea");
+
+    init();
+
+    function decodeHTML(text){
+      if(text===null || text===undefined) return "";
+      decoder.innerHTML = text;
+      return decoder.value;
+    }
+    function loadJSON(key, fallback){ try{const v=localStorage.getItem(key); return v?JSON.parse(v):fallback;}catch{return fallback;} }
+    function saveJSON(key,data){ localStorage.setItem(key, JSON.stringify(data)); }
+    async function loadRemote(type, fallback){
+      if(!API_TOKEN) return fallback;
+      try{
+        const res=await fetch(`${API_URL}?type=${encodeURIComponent(type)}&token=${encodeURIComponent(API_TOKEN)}`);
+        const json=await res.json().catch(()=>null);
+        if(!res.ok) throw new Error((json && json.error) ? json.error : `HTTP ${res.status}`);
+        if(json && json.data!==undefined) return (json.data===null?fallback:json.data);
+      }catch(err){ console.warn("Load remote", type, err); statusEl.textContent = `Errore caricamento ${type}: ${err.message}`; }
+      return fallback;
+    }
+    async function saveRemote(type,data){
+      if(!API_TOKEN) return;
+      try{
+        const res = await fetch(`${API_URL}?type=${encodeURIComponent(type)}&token=${encodeURIComponent(API_TOKEN)}`,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)});
+        const json = await res.json().catch(()=>null);
+        if(!res.ok) throw new Error((json && json.error) ? json.error : `HTTP ${res.status}`);
+      }catch(err){ console.warn("Save remote", type, err); statusEl.textContent = `Errore salvataggio ${type}: ${err.message}`; }
+    }
+
+    async function init(){
+      users = ensureArray(await loadRemote("vvf_users", users));
+      classes = ensureArray(await loadRemote("vvf_classes", classes));
+      results = ensureArray(await loadRemote("vvf_results", results));
+      tests = ensureArray(await loadRemote("vvf_tests", tests));
+      videos = ensureArray(await loadRemote("vvf_videos", videos));
+      users.forEach(u=>{ if(u.name){ const dec=decodeHTML(u.name); if(dec!==u.name) u.name=dec; } });
+      classes.forEach(c=>{ if(c.name){ const dec=decodeHTML(c.name); if(dec!==c.name) c.name=dec; } });
+      tests.forEach(t=>{ if(t.title){ const dec=decodeHTML(t.title); if(dec!==t.title) t.title=dec; } });
+      saveJSON(STORAGE_USERS, users); saveJSON(STORAGE_CLASSES, classes); saveJSON(STORAGE_RESULTS, results); saveJSON(STORAGE_TESTS, tests);
+
+      const session = loadJSON(STORAGE_SESSION, null);
+      if(!session){ statusEl.textContent = "Devi accedere come istruttore."; return; }
+      me = users.find(u=>u.username && u.username.toLowerCase()===session.username.toLowerCase() && u.password===session.password);
+      if(!me){ statusEl.textContent = "Sessione non valida. Torna alla home."; return; }
+      const roles = new Set(me.roles || [me.role]);
+      if(!(roles.has("instructor") || roles.has("admin"))){ statusEl.textContent = "Accesso negato. Solo istruttori/admin."; return; }
+      userInfoEl.textContent = `Istruttore: ${me.name || me.username}`;
+
+      renderClasses();
+    }
+
+    function ensureArray(val){ return Array.isArray(val)?val:[]; }
+    function getUserClassIds(u){ return Array.isArray(u.classIds)?u.classIds.map(String):(u.classId?[String(u.classId)]:[]); }
+
+    function renderClasses(){
+      classListEl.innerHTML = "";
+      const myClasses = classes.filter(c => (me.classIds||[]).map(String).includes(String(c.id)) || (me.roles||[]).includes("admin"));
+      if(!myClasses.length){ classListEl.innerHTML = '<li class="small">Nessuna classe assegnata.</li>'; classDetailEl.innerHTML='<div class="small">Nessuna classe disponibile.</div>'; return; }
+      myClasses.forEach(c=>{
+        const li=document.createElement("li");
+        li.textContent = c.name;
+        li.dataset.id = c.id;
+        if(currentClass && currentClass.id===c.id) li.classList.add("active");
+        li.onclick=()=>{ currentClass = c; renderClasses(); renderDetail(); };
+        classListEl.appendChild(li);
+      });
+      if(!currentClass) { currentClass = myClasses[0]; renderDetail(); }
+    }
+
+    function renderDetail(){
+      if(!currentClass){ classDetailEl.innerHTML='<div class="small">Seleziona una classe.</div>'; return; }
+      const students = users.filter(u=> (u.roles||[]).includes("student") && getUserClassIds(u).includes(String(currentClass.id)));
+      const classResults = results.filter(r=> students.find(s=> (s.username||"").toLowerCase()===(r.username||"").toLowerCase()));
+      const classTests = tests.filter(t=> (currentClass.testsAllowed||[]).includes(t.id));
+      const classVideos = videos.filter(v => (v.assigned_classes||[]).map(String).includes(String(currentClass.id)));
+
+      classDetailEl.innerHTML = `
+        <div><strong>${escapeHTML(currentClass.name)}</strong></div>
+        <div class="small">Test assegnati: ${classTests.length}</div>
+        <div class="section">
+          <strong>Gestione test della classe</strong>
+          <div class="small">Scegli un test e premi "Aggiungi". Usa il pulsante Rimuovi accanto a ciascun test per toglierlo.</div>
+          <div style="display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:8px; margin-top:6px;">
+            <div>
+              <label class="small" for="test-picker">Seleziona test</label>
+              <select id="test-picker" aria-label="Test disponibili" title="Test disponibili"></select>
+              <button id="add-test" class="btn-small" style="margin-top:6px;">Aggiungi test</button>
+              <button id="clear-tests" class="btn-small" style="margin-top:6px; background:#f87171;">Rimuovi tutti i test</button>
+            </div>
+            <div>
+              <div class="small"><strong>Test assegnati</strong></div>
+              <ul id="assigned-tests"></ul>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <strong>Gestione video della classe</strong>
+          <div class="small">Scegli un video e premi "Aggiungi". Usa Rimuovi per toglierlo dalla classe.</div>
+          <div style="display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:8px; margin-top:6px;">
+            <div>
+              <label class="small" for="video-picker">Seleziona video</label>
+              <select id="video-picker" aria-label="Video disponibili" title="Video disponibili"></select>
+              <button id="add-video" class="btn-small" style="margin-top:6px;">Aggiungi video</button>
+              <button id="clear-videos" class="btn-small" style="margin-top:6px; background:#f87171;">Rimuovi tutti i video</button>
+            </div>
+            <div>
+              <div class="small"><strong>Video assegnati</strong></div>
+              <ul id="assigned-videos"></ul>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <strong>Studenti (${students.length})</strong>
+          ${students.length?'<ul id="student-list"></ul>':'<div class="small">Nessun studente assegnato.</div>'}
+        </div>
+      `;
+
+      const addTestBtn = document.getElementById("add-test");
+      const testPicker = document.getElementById("test-picker");
+      const clearTestsBtn = document.getElementById("clear-tests");
+      const assignedUl = document.getElementById("assigned-tests");
+      const videoPicker = document.getElementById("video-picker");
+      const addVideoBtn = document.getElementById("add-video");
+      const clearVideosBtn = document.getElementById("clear-videos");
+      const assignedVideosUl = document.getElementById("assigned-videos");
+      
+     
+
+      function refreshAssignOptions(){
+        const selectedIds = new Set(currentClass.testsAllowed||[]);
+        testPicker.innerHTML = '<option value="">-- Seleziona test --</option>' + tests
+          .map(t=>`<option value="${t.id}" ${selectedIds.has(t.id)?"disabled":""}>${escapeHTML(t.title)}</option>`).join("");
+      }
+      function refreshVideoOptions(){
+        const selectedIds = new Set((currentClass.videosAllowed||[]).map(String));
+        videoPicker.innerHTML = '<option value="">-- Seleziona video --</option>' + videos
+          .map(v=>`<option value="${v.id}" ${selectedIds.has(String(v.id))?"disabled":""}>${escapeHTML(v.title||v.id)}</option>`).join("");
+      }
+      function renderAssignedList(){
+        assignedUl.innerHTML = "";
+        if(!classTests.length){ assignedUl.innerHTML = '<li class="small">Nessun test assegnato.</li>'; return; }
+        classTests.forEach(t=>{
+          const li=document.createElement("li");
+          li.textContent = t.title;
+          const btn=document.createElement("button");
+          btn.className="btn-small";
+          btn.style.background="#f87171";
+          btn.style.marginLeft="8px";
+          btn.textContent="Rimuovi";
+          btn.onclick=()=>{
+            currentClass.testsAllowed = (currentClass.testsAllowed||[]).filter(id=>id!==t.id);
+            saveJSON(STORAGE_CLASSES, classes);
+            saveRemote("vvf_classes", classes);
+            renderDetail();
+            renderClasses();
+          };
+          li.appendChild(btn);
+          assignedUl.appendChild(li);
+        });
+      }
+      function renderAssignedVideos(){
+        assignedVideosUl.innerHTML = "";
+        if(!classVideos.length){ assignedVideosUl.innerHTML = '<li class="small">Nessun video assegnato.</li>'; return; }
+        classVideos.forEach(v=>{
+          const li=document.createElement("li");
+          li.textContent = v.title || v.id;
+          const btn=document.createElement("button");
+          btn.className="btn-small";
+          btn.style.background="#f87171";
+          btn.style.marginLeft="8px";
+          btn.textContent="Rimuovi";
+          btn.onclick=()=>{
+            v.assigned_classes = Array.isArray(v.assigned_classes)?v.assigned_classes:[];
+            v.assigned_classes = v.assigned_classes.filter(x=>String(x)!==String(currentClass.id));
+            currentClass.videosAllowed = (currentClass.videosAllowed||[]).filter(x=>String(x)!==String(v.id));
+            saveJSON(STORAGE_CLASSES, classes);
+            saveRemote("vvf_classes", classes);
+            saveRemote("vvf_videos", videos);
+            renderDetail();
+            renderClasses();
+          };
+          li.appendChild(btn);
+          assignedVideosUl.appendChild(li);
+        });
+      }
+      refreshAssignOptions();
+      renderAssignedList();
+      refreshVideoOptions();
+      renderAssignedVideos();
+
+      addTestBtn.onclick = ()=>{
+        const id = testPicker.value;
+        if(!id) return;
+        currentClass.testsAllowed = Array.from(new Set([...(currentClass.testsAllowed||[]), id]));
+        saveJSON(STORAGE_CLASSES, classes);
+        saveRemote("vvf_classes", classes);
+        renderDetail();
+        renderClasses();
+      };
+      clearTestsBtn.onclick = ()=>{
+        currentClass.testsAllowed = [];
+        saveJSON(STORAGE_CLASSES, classes);
+        saveRemote("vvf_classes", classes);
+        renderDetail();
+        renderClasses();
+      };
+      addVideoBtn.onclick = ()=>{
+        const id = videoPicker.value;
+        if(!id) return;
+        const vid = videos.find(v=>String(v.id)===String(id));
+        if(!vid) return;
+        vid.assigned_classes = Array.from(new Set([...(Array.isArray(vid.assigned_classes)?vid.assigned_classes:[]), String(currentClass.id)]));
+        currentClass.videosAllowed = Array.from(new Set([...(currentClass.videosAllowed||[]), String(id)]));
+        saveJSON(STORAGE_CLASSES, classes);
+        saveRemote("vvf_classes", classes);
+        saveRemote("vvf_videos", videos);
+        renderDetail();
+        renderClasses();
+      };
+      clearVideosBtn.onclick = ()=>{
+        videos.forEach(v=>{
+          v.assigned_classes = Array.isArray(v.assigned_classes)?v.assigned_classes:[];
+          v.assigned_classes = v.assigned_classes.filter(x=>String(x)!==String(currentClass.id));
+        });
+        currentClass.videosAllowed = [];
+        saveJSON(STORAGE_CLASSES, classes);
+        saveRemote("vvf_classes", classes);
+        saveRemote("vvf_videos", videos);
+        renderDetail();
+        renderClasses();
+      };
+
+      const studentList = document.getElementById("student-list");
+      if(students.length){
+        students.forEach(s=>{
+          const stuResults = classResults.filter(r=> (r.username||"").toLowerCase()===(s.username||"").toLowerCase());
+          const li=document.createElement("li");
+          li.innerHTML = `<strong>${escapeHTML(s.name||s.username||"?")}</strong> <span class="small">${stuResults.length} test</span>`;
+          if(stuResults.length){
+            const resUl=document.createElement("ul");
+            stuResults.forEach((res,idx)=>{
+              const test = tests.find(t=>t.id===res.testId);
+              const revLabel = res.reviewed ? " (confermato)" : " (nuovo)";
+              const durLabel = (res.durationSec || res.durationSec===0) ? formatDuration(res.durationSec) : "-";
+              const resLi=document.createElement("li");
+              resLi.className="result-card";
+              if(!res.reviewed){ resLi.style.borderColor="#ef4444"; resLi.style.boxShadow="0 0 0 2px rgba(239,68,68,0.15)"; }
+              resLi.innerHTML = `
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                  <div><strong>${escapeHTML(test?test.title:"Test")}</strong> - ${res.correct}/${res.total} (${res.pct}%) ${revLabel}</div>
+                  ${!res.reviewed?'<span class="pill" style="background:#fee2e2; color:#b91c1c; border-color:#fecdd3;">NUOVO</span>':''}
+                </div>
+                 <div class="small">${new Date(res.at).toLocaleString()} | Tempo: ${durLabel}</div>
+                <div class="flex-row" style="margin-top:6px;">
+                  <button class="btn-small" data-idx="${results.indexOf(res)}">Apri risposte</button>
+                  <button class="btn-small" data-rev="${results.indexOf(res)}">${res.reviewed?"Segna da visionare":"Segna visionato"}</button>
+                  <button class="btn-small" data-del="${results.indexOf(res)}" style="background:#f87171;">Elimina</button>
+                </div>
+              `;
+              resUl.appendChild(resLi);
+            });
+            li.appendChild(resUl);
+          }
+          studentList.appendChild(li);
+        });
+      }
+
+      classDetailEl.querySelectorAll('button[data-idx]').forEach(btn=>{
+        btn.onclick = ()=>{
+          const idx = Number(btn.dataset.idx);
+          openResultDetail(idx);
+        };
+      });
+      classDetailEl.querySelectorAll('button[data-rev]').forEach(btn=>{
+        btn.onclick = ()=>{
+          const idx = Number(btn.dataset.rev);
+          if(idx>=0 && idx<results.length){
+            results[idx].reviewed = !results[idx].reviewed;
+            saveJSON(STORAGE_RESULTS, results);
+            saveRemote("vvf_results", results);
+            renderDetail();
+          }
+        };
+      });
+      classDetailEl.querySelectorAll('button[data-del]').forEach(btn=>{
+        btn.onclick = ()=>{
+          const idx = Number(btn.dataset.del);
+          if(idx>=0 && idx<results.length){
+            results.splice(idx,1);
+            saveJSON(STORAGE_RESULTS, results);
+            saveRemote("vvf_results", results);
+            renderDetail();
+          }
+        };
+      });
+    }
+
+    function openResultDetail(idx){
+      const res = results[idx];
+      if(!res){ alert("Risultato non trovato"); return; }
+      const test = tests.find(t=>t.id===res.testId);
+      if(!test){ alert("Test non trovato"); return; }
+      const durLabel = (res.durationSec || res.durationSec===0) ? formatDuration(res.durationSec) : "-";
+      const html = `
+        <div><strong>${escapeHTML(test.title)}</strong> - ${escapeHTML(res.student||res.username||"?")}</div>
+        <div class="small">${new Date(res.at).toLocaleString()} | Punteggio: ${res.correct}/${res.total} (${res.pct}%) | Tempo: ${durLabel}</div>
+        ${test.questions.map((q,i)=>{
+          const given = res.answers ? res.answers[i] : null;
+          return `<div style="margin-top:8px; padding:8px; border:1px solid ${given===q.answerIndex?'#16a34a':'#e2e8f0'}; border-radius:8px; background:#f8fafc;">
+            <strong>${i+1}. ${escapeHTML(q.question)}</strong>
+            ${q.options.map((opt,oi)=>`<div class="small" style="padding-left:6px; ${oi===q.answerIndex?'color:#16a34a;':''} ${given===oi && oi!==q.answerIndex?'color:#dc2626;':''}">- ${escapeHTML(opt)}${oi===q.answerIndex?' (corretta)':''}${given===oi && oi!==q.answerIndex?' (segnata)':''}${given===oi && oi===q.answerIndex?' (segnata/corretta)':''}</div>`).join("")}
+          </div>`;
+        }).join("")}
+      `;
+      const win = window.open("", "_blank", "width=800,height=600,scrollbars=yes");
+      win.document.write(`<!doctype html><html><head><title>Dettaglio risultato</title><meta charset="utf-8"><style>body{font-family:Segoe UI,Arial,sans-serif; padding:12px; color:#0f172a; background:#f8fafc;} .small{color:#475569;font-size:13px;}</style></head><body>${html}</body></html>`);
+      win.document.close();
+    }
+
+    function formatDuration(sec){
+      if(sec===null || sec===undefined) return "-";
+      const m = Math.floor(sec/60);
+      const s = sec%60;
+      return `${m}m ${s}s`;
+    }
+    function escapeHTML(str){ return String(str||"").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[ch])); }
+  </script>
+</body>
+</html>
