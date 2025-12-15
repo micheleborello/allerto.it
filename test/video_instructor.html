@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Video - Istruttore</title>
+  <style>
+    body { font-family:"Segoe UI",system-ui,-apple-system,sans-serif; background:#0b1021; color:#e5e7eb; margin:0; }
+    .app { max-width: 1200px; margin: 0 auto; padding: 24px; }
+    h1 { margin:0 0 8px; }
+    .panel { background:#111827; border:1px solid #1f2937; border-radius:14px; padding:16px; margin-bottom:14px; }
+    .muted { color:#9ca3af; font-size:13px; }
+    .video-card { background:#0f172a; border:1px solid #1f2937; border-radius:12px; padding:12px; margin-bottom:12px; }
+    .classes { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
+    label.cls { border:1px solid #1f2937; padding:6px 10px; border-radius:10px; background:#0b1224; cursor:pointer; }
+    .badge { display:inline-block; padding:4px 8px; border-radius:999px; background:#1f2937; color:#9ca3af; font-size:12px; }
+    button { border:0; border-radius:10px; padding:9px 12px; background:#0ea5e9; color:#0b0b0b; font-weight:700; cursor:pointer; box-shadow:0 8px 16px rgba(0,0,0,.25); }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <h1>Video (Istruttore)</h1>
+    <p class="muted">Assegna i video alle classi. Gli allievi vedranno solo i video della loro classe.</p>
+
+    <div class="panel">
+      <div id="list"></div>
+    </div>
+  </div>
+
+  <script>
+    const TOKEN = 'ALLERTO';
+    let videos=[], classes=[];
+
+    const escapeHtml = s => String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+    async function loadJson(type){
+      const r = await fetch('save_data.php?type='+encodeURIComponent(type));
+      const j = await r.json();
+      return j.data || [];
+    }
+    async function saveVideos(){
+      await fetch('save_data.php?type=vvf_videos&token='+encodeURIComponent(TOKEN), {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify(videos)
+      });
+    }
+
+    function render(){
+      const wrap=document.getElementById('list');
+      if(!videos.length){ wrap.innerHTML='<div class="muted">Nessun video pubblicato.</div>'; return; }
+      wrap.innerHTML = videos.map(v=>{
+        const assigned = Array.isArray(v.assigned_classes)?v.assigned_classes:[];
+        const clsChecks = classes.map(c=>{
+          const checked = assigned.includes(c.id) ? 'checked' : '';
+          return `<label class="cls"><input type="checkbox" data-vid="${v.id}" data-clsid="${c.id}" ${checked}> ${escapeHtml(c.name)}</label>`;
+        }).join(' ');
+        const totViews = v.views ? Object.keys(v.views).length : 0;
+        return `<div class="video-card">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;">
+            <div>
+              <div><strong>${escapeHtml(v.title||'')}</strong></div>
+              <div class="muted">${escapeHtml(v.descr||'')}</div>
+            </div>
+            <span class="badge">Visti: ${totViews}</span>
+          </div>
+          <div class="muted">File: ${escapeHtml(v.url||'')}</div>
+          <div class="classes">${clsChecks}</div>
+        </div>`;
+      }).join('');
+      wrap.querySelectorAll('input[type="checkbox"]').forEach(cb=>{
+        cb.addEventListener('change', onToggleClass);
+      });
+    }
+
+    function onToggleClass(ev){
+      const vid = ev.target.dataset.vid;
+      const cls = ev.target.dataset.clsid;
+      const v = videos.find(x=>x.id===vid); if(!v) return;
+      v.assigned_classes = Array.isArray(v.assigned_classes)?v.assigned_classes:[];
+      if(ev.target.checked){
+        if(!v.assigned_classes.includes(cls)) v.assigned_classes.push(cls);
+      } else {
+        v.assigned_classes = v.assigned_classes.filter(x=>x!==cls);
+      }
+      saveVideos().catch(console.error);
+    }
+
+    async function init(){
+      [videos, classes] = await Promise.all([loadJson('vvf_videos'), loadJson('vvf_classes')]);
+      render();
+    }
+    init();
+  </script>
+</body>
+</html>

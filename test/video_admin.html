@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gestione Video - Admin</title>
+  <style>
+    body { font-family: "Segoe UI", system-ui, -apple-system, sans-serif; background:#0b1021; color:#e5e7eb; margin:0; }
+    .app { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    h1 { margin: 0 0 8px; }
+    .panel { background:#111827; border:1px solid #1f2937; border-radius:14px; padding:16px; margin-bottom:16px; }
+    label { display:block; margin-top:8px; font-weight:600; }
+    input[type="text"], textarea { width:100%; padding:10px; border-radius:10px; border:1px solid #1f2937; background:#0f172a; color:#e5e7eb; }
+    textarea { min-height:80px; }
+    input[type="file"] { color:#e5e7eb; margin-top:6px; }
+    button { border:0; border-radius:10px; padding:10px 14px; background:#10b981; color:#0b0b0b; font-weight:700; cursor:pointer; box-shadow:0 8px 18px rgba(0,0,0,.3); }
+    button:disabled { opacity:.6; cursor:not-allowed; }
+    .list { display:grid; gap:10px; }
+    .card { background:#0f172a; border:1px solid #1f2937; border-radius:12px; padding:12px; }
+    .muted { color:#9ca3af; font-size:13px; }
+    .badge { display:inline-block; padding:4px 8px; border-radius:999px; background:#1f2937; color:#9ca3af; font-size:12px; }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <h1>Gestione Video (Admin)</h1>
+    <p class="muted">Carica un video e pubblicalo per istruttori e allievi.</p>
+
+    <div class="panel">
+      <label>Titolo</label>
+      <input type="text" id="title" placeholder="Titolo video">
+      <label>Descrizione</label>
+      <textarea id="descr" placeholder="Breve descrizione"></textarea>
+      <label>File video (mp4/mov/webm/mkv)</label>
+      <input type="file" id="file" accept=".mp4,.mov,.webm,.mkv">
+      <button id="btnUpload" style="margin-top:12px;">Carica e pubblica</button>
+      <div id="msg" class="muted" style="margin-top:8px;"></div>
+    </div>
+
+    <div class="panel">
+      <h3 style="margin-top:0;">Video pubblicati</h3>
+      <div id="videoList" class="list"></div>
+    </div>
+  </div>
+
+  <script>
+    const TOKEN = 'ALLERTO';
+    const msg = document.getElementById('msg');
+    const btn = document.getElementById('btnUpload');
+    let videos = [];
+
+    const uuid = ()=>crypto.randomUUID ? crypto.randomUUID() : 'v_'+Math.random().toString(36).slice(2);
+
+    async function loadVideos(){
+      const r = await fetch('save_data.php?type=vvf_videos');
+      const j = await r.json();
+      videos = Array.isArray(j.data) ? j.data : [];
+      renderList();
+    }
+
+    function renderList(){
+      const wrap = document.getElementById('videoList');
+      if (!videos.length) { wrap.innerHTML = '<div class="muted">Nessun video caricato.</div>'; return; }
+      wrap.innerHTML = videos.map(v => `
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <div><strong>${escapeHtml(v.title||'')}</strong></div>
+            <span class="badge">${(v.assigned_classes||[]).length} classi</span>
+          </div>
+          <div class="muted">${escapeHtml(v.descr||'')}</div>
+          <div class="muted">File: ${escapeHtml(v.url||'')}</div>
+          <div class="muted">Caricato da: ${escapeHtml(v.created_by||'')}</div>
+        </div>`).join('');
+    }
+
+    function escapeHtml(s){ return String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+    async function saveVideos(){
+      await fetch('save_data.php?type=vvf_videos&token='+encodeURIComponent(TOKEN), {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify(videos)
+      });
+    }
+
+    btn.addEventListener('click', async ()=>{
+      const title = document.getElementById('title').value.trim();
+      const descr = document.getElementById('descr').value.trim();
+      const file = document.getElementById('file').files[0];
+      if (!title || !file) { msg.textContent = 'Titolo e file video sono obbligatori.'; return; }
+      btn.disabled = true; msg.textContent = 'Caricamento in corso...';
+      const fd = new FormData();
+      fd.append('file', file);
+      fd.append('token', TOKEN);
+      try{
+        const up = await fetch('upload_video.php', { method:'POST', body: fd });
+        const uj = await up.json();
+        if (!uj.ok) throw new Error(uj.error || 'Upload fallito');
+        const url = uj.url;
+        videos.push({
+          id: uuid(),
+          title, descr,
+          url,
+          created_by: 'admin',
+          assigned_classes: [],
+          views: {}
+        });
+        await saveVideos();
+        document.getElementById('title').value='';
+        document.getElementById('descr').value='';
+        document.getElementById('file').value='';
+        msg.textContent = 'Video caricato e salvato.';
+        loadVideos();
+      }catch(err){
+        msg.textContent = 'Errore: '+err.message;
+      }finally{
+        btn.disabled = false;
+      }
+    });
+
+    loadVideos();
+  </script>
+</body>
+</html>

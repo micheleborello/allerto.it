@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Video - Allievo</title>
+  <style>
+    body { font-family:"Segoe UI",system-ui,-apple-system,sans-serif; background:#0b1021; color:#e5e7eb; margin:0; }
+    .app { max-width: 1100px; margin: 0 auto; padding: 20px; }
+    h1 { margin:0 0 10px; }
+    .panel { background:#111827; border:1px solid #1f2937; border-radius:14px; padding:14px; margin-bottom:14px; }
+    label { font-weight:600; display:block; margin-top:8px; }
+    input, select { width:100%; padding:10px; border-radius:10px; border:1px solid #1f2937; background:#0f172a; color:#e5e7eb; }
+    .video-card { background:#0f172a; border:1px solid #1f2937; border-radius:12px; padding:12px; margin-bottom:12px; }
+    .muted { color:#9ca3af; font-size:13px; }
+    button { border:0; border-radius:10px; padding:8px 12px; background:#10b981; color:#0b0b0b; font-weight:700; cursor:pointer; }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <h1>Video assegnati</h1>
+    <p class="muted">Seleziona il tuo nome/ID e la classe per vedere i video assegnati.</p>
+
+    <div class="panel">
+      <label>Il tuo nome / ID</label>
+      <input type="text" id="studentId" placeholder="es. nome.cognome">
+      <label>Classe</label>
+      <select id="classSel"></select>
+      <button id="btnLoad" style="margin-top:10px;">Mostra video</button>
+      <div id="info" class="muted" style="margin-top:6px;"></div>
+    </div>
+
+    <div id="videos"></div>
+  </div>
+
+  <script>
+    const TOKEN = 'ALLERTO';
+    let videos=[], classes=[];
+
+    const escapeHtml = s => String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+    async function loadJson(type){
+      const r = await fetch('save_data.php?type='+encodeURIComponent(type));
+      const j = await r.json();
+      return j.data || [];
+    }
+    async function saveVideos(){
+      await fetch('save_data.php?type=vvf_videos&token='+encodeURIComponent(TOKEN), {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify(videos)
+      });
+    }
+
+    function populateClasses(){
+      const sel=document.getElementById('classSel');
+      sel.innerHTML = classes.map(c=>`<option value="${escapeHtml(c.id)}">${escapeHtml(c.name)}</option>`).join('');
+    }
+
+    function renderVideos(){
+      const container=document.getElementById('videos');
+      const student = document.getElementById('studentId').value.trim();
+      const cls = document.getElementById('classSel').value;
+      if(!student || !cls){ container.innerHTML=''; return; }
+      const filtered = videos.filter(v => (v.assigned_classes||[]).includes(cls));
+      if(!filtered.length){ container.innerHTML='<div class="muted">Nessun video assegnato a questa classe.</div>'; return; }
+      container.innerHTML = filtered.map(v=>{
+        const viewed = v.views && v.views[student] && v.views[student].seen;
+        return `<div class="video-card">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;">
+            <div><strong>${escapeHtml(v.title||'')}</strong><div class="muted">${escapeHtml(v.descr||'')}</div></div>
+            <span class="muted">${viewed?'✅ visto':'⬜ non visto'}</span>
+          </div>
+          <video controls style="width:100%;max-height:360px;margin-top:8px;" src="${escapeHtml(v.url||'')}"></video>
+          <button data-vid="${v.id}" style="margin-top:8px;">Segna come visto</button>
+        </div>`;
+      }).join('');
+      container.querySelectorAll('button[data-vid]').forEach(btn=>{
+        btn.addEventListener('click', ()=> markSeen(btn.dataset.vid, student));
+      });
+    }
+
+    async function markSeen(vid, student){
+      const v = videos.find(x=>x.id===vid); if(!v) return;
+      if (!v.views) v.views = {};
+      v.views[student] = { seen:true, seen_at:new Date().toISOString() };
+      await saveVideos();
+      renderVideos();
+    }
+
+    document.getElementById('btnLoad').addEventListener('click', renderVideos);
+
+    async function init(){
+      [videos, classes] = await Promise.all([loadJson('vvf_videos'), loadJson('vvf_classes')]);
+      populateClasses();
+    }
+    init();
+  </script>
+</body>
+</html>
