@@ -46,6 +46,19 @@ $err  = '';
 $next = $_POST['next'] ?? ($_GET['next'] ?? 'index.php');
 if (empty($_SESSION['csrf'])) $_SESSION['csrf'] = bin2hex(random_bytes(16));
 
+// Normalizza username in formato nome.cognome (solo tenant)
+function normalize_username_nome_cognome(string $u): string {
+    $u = strtolower(trim($u));
+    // sostituisci spazi/underscore con punto
+    $u = preg_replace('/[\\s_]+/', '.', $u);
+    // togli caratteri non alfanumerici/punto
+    $u = preg_replace('/[^a-z0-9\\.]+/', '', $u);
+    // compat: inverti se scritto "cognome nome" con spazio -> già sopra produce cognome.nome
+    $u = preg_replace('/\\.\\.+/', '.', $u);          // punti multipli -> uno
+    $u = trim($u, '.');                               // niente punti ai bordi
+    return $u;
+}
+
 // ===== Anti-bruteforce semplice per sessione =====
 $LOCK_SECONDS = 60;
 $MAX_ERRORS   = 5;
@@ -71,6 +84,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $username = trim((string)($_POST['username'] ?? ''));
         $password = (string)($_POST['password'] ?? '');
         $slug     = trim((string)($_POST['slug'] ?? ''));
+
+        // Forza formato nome.cognome per login tenant (non superadmin)
+        if ($tipo === 'tenant' || $tipo === '') {
+            $username = normalize_username_nome_cognome($username);
+        }
 
         // helper: destinazione post-login per tenant
         $dest_for_tenant = function() use ($next) {
