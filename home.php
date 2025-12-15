@@ -1,7 +1,7 @@
 <?php
 // home.php — landing pubblica: scegli AllertoGest o e-learning (prima del login)
 ob_start();
-$elearningUrl = 'test/'; // cartella e-learning (ex test) nella root
+$elearningUrl = 'https://allerto.it/test'; // cartella e-learning (ex test) nella root
 
 // Se già autenticato come tenant, mostra link rapido alla dashboard
 $logged = false;
