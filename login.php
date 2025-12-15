@@ -147,8 +147,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     .brand-circle{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#0d6efd;color:#fff;margin:0 auto 12px;font-weight:700}
     .muted{color:#6c757d}
     .eye-btn{position:absolute;right:.75rem;top:50%;transform:translateY(-50%);border:0;background:transparent}
-    .btn, a.btn { text-decoration: none !important; }
-    a.btn:hover { text-decoration: none !important; }
+    a, a:hover, a:focus { text-decoration: none !important; }
+    .btn, .btn:hover, .btn:focus { text-decoration: none !important; }
   </style>
 </head>
 <body>

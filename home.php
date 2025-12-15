@@ -90,7 +90,7 @@ if (!empty($_SESSION['TENANT_USER'])) $logged = true;
             </div>
           </div>
           <h4 class="card-title mb-2">Vai all'area e-learning</h4>
-          <p class="card-text text-muted mb-0">Entra nell'area formativa integrata (cartella “test”).</p>
+          <p class="card-text text-muted mb-0">Entra nell'area formativa integrata.</p>
         </div>
       </a>
     </div>
