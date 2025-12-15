@@ -162,7 +162,8 @@ if ($rifYmDT) {
 }
 
 /* ======= Dati JSON (tenant-aware) ======= */
-$vigili = array_values(array_filter(sanitize_vigili_list(load_json(VIGILI_JSON)), fn($v)=> (int)($v['attivo'] ?? 1) === 1));
+// In riepilogo mostriamo anche i vigili non attivi (come in addestramenti/index)
+$vigili = array_values(sanitize_vigili_list(load_json(VIGILI_JSON)));
 $add    = load_json(ADDESTR_JSON);
 
 // Infortuni → mappa [vid] => [[dal, al], ...]
