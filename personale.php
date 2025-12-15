@@ -614,8 +614,6 @@ function h($s){ return htmlspecialchars((string)$s, ENT_QUOTES, 'UTF-8'); }
   .sipec-badge { font-size:.75rem; }
   .sipec-readonly { background: #fff8e1 !important; }
   .legend-sipec small { font-size: .9rem; }
-  /* === Larghezza maggiore per la colonna Ingresso === */
-  th.col-ingresso, td.col-ingresso { min-width: 12.5rem; } /* ~200px: più largo e leggibile */
 </style>
 </head>
 <body class="bg-light">
@@ -673,9 +671,6 @@ if (is_file($menuPath)) { include $menuPath; }
               <th>#</th>
               <th>Vigile</th>
               <th>Anagrafica</th>
-              <th>Contatti</th>
-              <th>Indirizzo</th>
-              <th class="col-ingresso">Ingresso</th>
               <th>Idoneità</th>
               <th>Doc.</th>
               <th class="text-end">Azioni</th>
@@ -690,14 +685,7 @@ if (is_file($menuPath)) { include $menuPath; }
               $grado_disp = $p['grado'] ?? ($v['grado'] ?? '');
               $grado      = h($grado_disp);
 
-              $tel  = h(pget($p,'contatti.telefono'));
-              $tel1 = h(pget($p,'contatti.telefono1'));
-              $tel2 = h(pget($p,'contatti.telefono2'));
               $mail = h(pget($p,'contatti.email'));
-
-              $via  = h(pget($p,'indirizzo.via'));
-              $cap  = h(pget($p,'indirizzo.cap'));
-              $com  = h(pget($p,'indirizzo.comune'));
               $ing  = h(pget($p,'ingresso'));
               $ido  = pget($p,'idoneita','operativo');
               $badge = $ido==='operativo' ? 'success' : ($ido==='sospeso' ? 'warning' : 'danger');
@@ -714,20 +702,19 @@ if (is_file($menuPath)) { include $menuPath; }
               // ====== ICON LINKS (FIX percorsi) ======
               $docI = $p['documento_identita'] ?? [];
               $doc_front = (string)($docI['file_fronte'] ?? ($docI['file'] ?? ''));
-              $docI_link = $doc_front !== '' ? '<a href="'.h($doc_front).'" target="_blank" title="Documento identità (fronte)">🪪</a>' : '';
-
               $pc   = $p['patente_civile'] ?? [];
               $pc_front = (string)($pc['file_fronte'] ?? ($pc['file'] ?? ''));
-              $pc_link = $pc_front !== '' ? '<a href="'.h($pc_front).'" target="_blank" title="Patente civile (fronte)">🚗</a>' : '';
-
               $pm_front = (string)(($p['patente_ministeriale']['file_fronte'] ?? '') ?: ($p['patente_ministeriale_file'] ?? ''));
-              $pm_link  = $pm_front !== '' ? '<a href="'.h($pm_front).'" target="_blank" title="Patente ministeriale (fronte)">🚒</a>' : '';
-
               $abil_det  = (array)($p['abilitazioni_dettaglio'] ?? []);
-              $abil_link = count($abil_det)>0 ? '<span title="Abilitazioni con file">🎓×'.count($abil_det).'</span>' : '';
-
               $dpi_list  = (array)($p['dpi'] ?? []);
-              $dpi_badge = count($dpi_list)>0 ? '<span title="DPI/vestiario">🧰×'.count($dpi_list).'</span>' : '';
+
+              $doc_badges = [];
+              if ($doc_front !== '') $doc_badges[] = '<a class="badge text-bg-secondary text-decoration-none" href="'.h($doc_front).'" target="_blank" title="Documento identità (fronte)">ID</a>';
+              if ($pc_front  !== '') $doc_badges[] = '<a class="badge text-bg-secondary text-decoration-none" href="'.h($pc_front).'" target="_blank" title="Patente civile (fronte)">PC</a>';
+              if ($pm_front  !== '') $doc_badges[] = '<a class="badge text-bg-secondary text-decoration-none" href="'.h($pm_front).'" target="_blank" title="Patente ministeriale (fronte)">PM</a>';
+              if (count($abil_det)>0) $doc_badges[] = '<span class="badge text-bg-info" title="Abilitazioni con file">ABIL ×'.count($abil_det).'</span>';
+              if (count($dpi_list)>0)  $doc_badges[] = '<span class="badge text-bg-info" title="DPI/Vestiario">DPI ×'.count($dpi_list).'</span>';
+              $doc_cell = $doc_badges ? implode(' ', $doc_badges) : '—';
 
               $isCapoBadge = !empty($v['is_capo']) ? ' <span class="badge text-bg-warning">Capo</span>' : '';
             ?>
@@ -744,22 +731,11 @@ if (is_file($menuPath)) { include $menuPath; }
                 <?php if ($cf): ?>CF: <?= $cf ?><br><?php endif; ?>
                 <?php if ($sede): ?>Sede: <?= $sede ?><br><?php endif; ?>
                 <?php if ($sedeAgg): ?>Aggregato: <?= $sedeAggNome ? ($sedeAggNome.' ('.$sedeAgg.')') : $sedeAgg ?><?php endif; ?>
+                <?php if ($ing): ?><br><span class="text-muted">Ingresso: <?= $ing ?></span><?php endif; ?>
+                <?php if ($mail): ?><br>✉️ <?= $mail ?><?php endif; ?>
               </td>
-              <td class="small">
-                <?php if ($tel): ?>📞 <?= $tel ?><br><?php endif; ?>
-                <?php if ($tel1 && $tel1!==$tel): ?>📞1 <?= $tel1 ?><br><?php endif; ?>
-                <?php if ($tel2 && $tel2!==$tel && $tel2!==$tel1): ?>📞2 <?= $tel2 ?><br><?php endif; ?>
-                <?php if ($mail): ?>✉️ <?= $mail ?><?php endif; ?>
-              </td>
-              <td class="small">
-                <?= $via ?>
-                <?= ($cap||$com) ? '<br>'.($cap? $cap.' ' : '').$com : '' ?>
-              </td>
-              <td class="col-ingresso"><span class="small"><?= $ing ?: '—' ?></span></td>
               <td><span class="badge text-bg-<?= $badge ?>"><?= h(strtoupper(str_replace('_',' ',$ido))) ?></span></td>
-              <td class="small">
-                <?= $docI_link ?> <?= $pc_link ?> <?= $pm_link ?> <?= $abil_link ?> <?= $dpi_badge ?>
-              </td>
+              <td class="small"><?= $doc_cell ?></td>
               <td class="text-end">
                 <button
                   type="button"
