@@ -5,7 +5,7 @@ ob_start();
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-// ---- performance / timeout ----
+// ----  performance / timeout ----
 @ini_set('max_execution_time', '300'); // 5 minuti
 @set_time_limit(300);
 
