@@ -74,12 +74,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // helper: destinazione post-login per tenant
         $dest_for_tenant = function() use ($next) {
-            // Se l’utente è “vigile” (tenant non-capo) → dashboard_vigile
-            if (function_exists('auth_is_vigile') && auth_is_vigile()) {
-                return 'dashboard_vigile.php';
-            }
-            // Se non è vigile (capo o con permessi) → usa $next se passato, altrimenti index.php
-            return $next ?: 'index.php';
+            // Dopo login porta sempre a una home di scelta (dashboard o test), salvo redirect esplicito
+            if ($next !== '') return $next;
+            return 'home.php';
         };
 
         if ($tipo === 'superadmin') {
