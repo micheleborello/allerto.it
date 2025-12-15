@@ -87,20 +87,14 @@ function try_login_tenant_auto(string $username, string $password, array $distac
 // ===== POST: Login =====
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!hash_equals($_SESSION['csrf'] ?? '', $_POST['csrf'] ?? '')) {
-        http_response_code(400); die('Bad CSRF');
-    }
+        $err = 'Sessione scaduta, ricarica la pagina e riprova.';
+    } else {
     if ($locked) {
         $err = 'Troppi tentativi. Attendi qualche secondo e riprova.';
     } else {
-        $tipo     = $_POST['tipo'] ?? '';
-        $username = trim((string)($_POST['username'] ?? ''));
-        $password = (string)($_POST['password'] ?? '');
-        $slug     = ''; // selezione distaccamento non più richiesta (auto)
-
-        // Forza formato nome.cognome per login tenant (non superadmin)
-        if ($tipo === 'tenant' || $tipo === '') {
-            $username = normalize_username_nome_cognome($username);
-        }
+        $username_raw = trim((string)($_POST['username'] ?? ''));
+        $password     = (string)($_POST['password'] ?? '');
+        $slug         = ''; // selezione distaccamento non più richiesta (auto)
 
         // helper: destinazione post-login per tenant
         $dest_for_tenant = function() use ($next) {
@@ -109,44 +103,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             return 'home.php';
         };
 
-        if ($tipo === 'superadmin') {
-            if ($username !== '' && $password !== '' && auth_login_superadmin($username, $password)) {
-                $_SESSION['mfa_ok'] = 1;
-                $_SESSION['login_fail'] = 0;
-                $_SESSION['login_lock_until'] = 0;
-                header('Location: ' . ($next ?: 'index.php')); exit;
-            }
-            $err = 'Credenziali superadmin non valide.';
-        } elseif ($tipo === 'tenant') {
-            if ($username !== '' && $password !== '') {
-                $usedSlug = try_login_tenant_auto($username, $password, $distaccamenti);
-                if ($usedSlug !== '') {
-                    $_SESSION['mfa_ok'] = 1;
-                    $_SESSION['login_fail'] = 0;
-                    $_SESSION['login_lock_until'] = 0;
-                    header('Location: ' . $dest_for_tenant()); exit;
-                }
-            }
-            $err = 'Credenziali Distaccamento non valide.';
-        } else {
-            // fallback: prima superadmin poi tenant (se ha indicato slug)
-            if ($username !== '' && $password !== '' && auth_login_superadmin($username, $password)) {
-                $_SESSION['mfa_ok'] = 1;
-                $_SESSION['login_fail'] = 0;
-                $_SESSION['login_lock_until'] = 0;
-                header('Location: ' . ($next ?: 'index.php')); exit;
-            }
-            if ($username !== '' && $password !== '') {
-                $usedSlug = try_login_tenant_auto($username, $password, $distaccamenti);
-                if ($usedSlug !== '') {
-                    $_SESSION['mfa_ok'] = 1;
-                    $_SESSION['login_fail'] = 0;
-                    $_SESSION['login_lock_until'] = 0;
-                    header('Location: ' . $dest_for_tenant()); exit;
-                }
-            }
-            $err = 'Credenziali non valide o tipo di accesso non selezionato.';
+        // 1) tenta superadmin con username così com'è
+        if ($username_raw !== '' && $password !== '' && auth_login_superadmin($username_raw, $password)) {
+            $_SESSION['mfa_ok'] = 1;
+            $_SESSION['login_fail'] = 0;
+            $_SESSION['login_lock_until'] = 0;
+            header('Location: ' . ($next ?: 'index.php')); exit;
         }
+
+        // 2) tenta tenant su tutti i distaccamenti con username normalizzato nome.cognome
+        $username = normalize_username_nome_cognome($username_raw);
+        if ($username !== '' && $password !== '') {
+            $usedSlug = try_login_tenant_auto($username, $password, $distaccamenti);
+            if ($usedSlug !== '') {
+                $_SESSION['mfa_ok'] = 1;
+                $_SESSION['login_fail'] = 0;
+                $_SESSION['login_lock_until'] = 0;
+                header('Location: ' . $dest_for_tenant()); exit;
+            }
+        }
+        $err = 'Credenziali non valide.';
 
         if ($err !== '') {
             $fails = (int)($_SESSION['login_fail'] ?? 0);
@@ -197,28 +173,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <?php endif; ?>
 
         <?php
-          $POST_tipo = $_POST['tipo'] ?? '';
           $POST_username = $_POST['username'] ?? '';
-          $POST_slug = ''; // non serve più
-          $soloUno = count($distaccamenti) === 1 ? ($distaccamenti[0]['slug'] ?? '') : '';
         ?>
 
         <form method="post" novalidate>
           <input type="hidden" name="csrf" value="<?= htmlspecialchars($_SESSION['csrf']) ?>">
           <input type="hidden" name="next" value="<?= htmlspecialchars($next) ?>">
-
-          <div class="mb-3">
-            <label class="form-label d-block">Tipo di accesso</label>
-            <div class="btn-group" role="group" aria-label="Tipo di accesso">
-              <input type="radio" class="btn-check" name="tipo" id="tipoSuper" value="superadmin" autocomplete="off" required <?= $POST_tipo==='superadmin'?'checked':'' ?>>
-              <label class="btn btn-outline-primary" for="tipoSuper">Super Admin</label>
-
-              <input type="radio" class="btn-check" name="tipo" id="tipoTenant" value="tenant" autocomplete="off" required <?= $POST_tipo==='tenant' || ($POST_tipo==='' && $POST_slug!=='') ?'checked':'' ?>>
-              <label class="btn btn-outline-primary" for="tipoTenant">Distaccamento</label>
-            </div>
-          </div>
-
-          <!-- Selezione distaccamento rimossa: rilevato automaticamente da username/password -->
 
           <div class="mb-3">
             <label class="form-label">Utente</label>
@@ -249,8 +209,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   </div>
 
   <script>
-    const tipoSuper  = document.getElementById('tipoSuper');
-    const tipoTenant = document.getElementById('tipoTenant');
     const forgotLink = document.getElementById('forgotLink');
 
     function updateForgotLink(){
@@ -259,7 +217,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       if (forgotLink) forgotLink.setAttribute('href', url);
     }
 
-    [tipoSuper, tipoTenant].forEach(r => r && r.addEventListener('change', updateForgotLink));
     updateForgotLink();
 
     (function(){
