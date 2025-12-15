@@ -193,6 +193,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
           <div class="d-grid gap-2 mt-3">
             <button class="btn btn-primary btn-lg" type="submit" <?= $locked?'disabled':'' ?>>Entra</button>
+            <a class="btn btn-outline-secondary" href="https://allerto.it/test" target="_blank" rel="noopener">Vai a Test</a>
           </div>
         </form>
 
