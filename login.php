@@ -97,9 +97,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // helper: destinazione post-login per tenant
         $dest_for_tenant = function() use ($next) {
-            // Dopo login porta sempre a una home di scelta (dashboard o test), salvo redirect esplicito
+            // Dopo login utente porta di default alla dashboard vigile (salvo redirect esplicito)
             if ($next !== '') return $next;
-            return 'home.php';
+            return 'dashboard_vigile.php';
         };
 
         // 1) tenta superadmin con username così com'è
