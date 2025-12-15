@@ -3,7 +3,7 @@
 # ============================
 AddDefaultCharset UTF-8
 Options -Indexes
-DirectoryIndex login.php
+DirectoryIndex home.php login.php
 
 # ===================================
 # Rewrite base (necessario una volta)
