@@ -312,9 +312,14 @@ if ($_SERVER['REQUEST_METHOD']==='POST' && (($_POST['action']??'')==='sipec_pull
   if (!isset($personale[$id]) || !is_array($personale[$id])) $personale[$id]=[];
   $P = &$personale[$id];
 
-  $t1 = trim((string)($match['telefoni'][0]['tel1']??'')); if ($t1!=='' && $t1!=='-') $P['contatti']['telefono']=$t1;
-  $t2 = trim((string)($match['telefoni'][0]['tel2']??'')); if ($t2!=='' && $t2!=='-') $P['contatti']['telefono1']=$t2;
-  $t3 = trim((string)($match['telefoni'][0]['tel3']??'')); if ($t3!=='' && $t3!=='-') $P['contatti']['telefono2']=$t3;
+  $t1 = trim((string)($match['telefoni'][0]['tel1']??''));
+  $t2 = trim((string)($match['telefoni'][0]['tel2']??''));
+  $t3 = trim((string)($match['telefoni'][0]['tel3']??''));
+  $tel_candidates = array_filter([$t1,$t2,$t3], fn($t)=>$t!=='' && $t!=='-' && !preg_match('/^0[0-9]/',$t));
+  $cell = reset($tel_candidates) ?: ($t1 ?: ($t2 ?: $t3));
+  if ($cell!=='' && $cell!=='-') $P['contatti']['telefono']=$cell;
+  if ($t2!=='' && $t2!=='-') $P['contatti']['telefono1']=$t2;
+  if ($t3!=='' && $t3!=='-') $P['contatti']['telefono2']=$t3;
 
   $via = trim((string)($match['via']??'')); if ($via!=='') $P['indirizzo']['via']=$via;
   $cap = trim((string)($match['cap']??'')); if ($cap!=='') $P['indirizzo']['cap']=$cap;
@@ -338,6 +343,12 @@ if ($_SERVER['REQUEST_METHOD']==='POST' && (($_POST['action']??'')==='sipec_pull
   [$grades, $expiry] = _ministeriale_from_specials((array)($match['specializzazioni']??[]));
   if ($grades) $P['patenti'] = $grades;
   if ($expiry) $P['scadenze']['patente_b'] = $expiry;
+  $abilDesc = [];
+  foreach ((array)($match['specializzazioni']??[]) as $sp) {
+    $desc = trim((string)($sp['descrizione'] ?? ''));
+    if ($desc !== '') $abilDesc[] = $desc;
+  }
+  if ($abilDesc) $P['abilitazioni'] = $abilDesc;
 
   $inizioQual = _parse_sipec_date_smart((string)($match['dataInizioQualifica']??''));
   if ($inizioQual) $P['data_inizio_qualifica'] = $inizioQual;

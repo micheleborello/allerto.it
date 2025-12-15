@@ -330,8 +330,10 @@ foreach ($bySede as $codSede => $rows) {
     $tel1 = trim((string)($r['telefoni'][0]['tel1'] ?? ''));
     $tel2 = trim((string)($r['telefoni'][0]['tel2'] ?? ''));
     $tel3 = trim((string)($r['telefoni'][0]['tel3'] ?? ''));
+    $tel_candidates = array_filter([$tel1, $tel2, $tel3], fn($t) => $t !== '' && !preg_match('/^0[0-9]/', $t));
+    $cell = reset($tel_candidates) ?: ($tel1 ?: ($tel2 ?: $tel3));
     $P['contatti'] = $P['contatti'] ?? [];
-    if ($tel1 !== '') $P['contatti']['telefono'] = $tel1;
+    if ($cell !== '') $P['contatti']['telefono'] = $cell;
     if ($tel2 !== '') $P['contatti']['telefono1'] = $tel2;
     if ($tel3 !== '') $P['contatti']['telefono2'] = $tel3;
 
@@ -344,6 +346,7 @@ foreach ($bySede as $codSede => $rows) {
     if ($com !== '') $P['indirizzo']['comune'] = $com;
 
     $P['grado'] = _map_grado((string)($r['qualifica'] ?? ($P['grado'] ?? '')));
+    $P['cod_sede_aggregato'] = trim((string)($r['cod_sede_aggregato'] ?? ''));
 
     $P['scadenze'] = $P['scadenze'] ?? [];
     $ultima   = _parse_sipec_date((string)($r['data_certificazione'] ?? ''));
@@ -351,7 +354,30 @@ foreach ($bySede as $codSede => $rows) {
     if ($ultima   !== null) $P['scadenze']['visita_medica_ultima'] = $ultima;
     if ($scadenza !== null) $P['scadenze']['visita_medica']        = $scadenza;
 
-    $P['patenti'] = _patenti_from_special((array)($r['specializzazioni'] ?? []));
+    // Scadenza patente ministeriale e gradi AM1/AM2/AM3
+    $grades = [];
+    $pmExpiry = null;
+    $abilDesc = [];
+    foreach ((array)($r['specializzazioni'] ?? []) as $sp) {
+      $cod = strtoupper((string)($sp['codice'] ?? ''));
+      $desc = trim((string)($sp['descrizione'] ?? ''));
+      if ($desc !== '') $abilDesc[] = $desc;
+      if ($cod === 'AM1') $grades[] = '1° grado';
+      if ($cod === 'AM2') $grades[] = '2° grado';
+      if ($cod === 'AM3') $grades[] = '3° grado';
+      $f = _parse_sipec_date((string)($sp['fine'] ?? ''));
+      if ($f) {
+        if ($pmExpiry === null || strcmp($f, $pmExpiry) > 0) $pmExpiry = $f;
+      }
+    }
+    $grades = array_values(array_unique($grades));
+    $P['patenti'] = $grades ?: ['Nessuna'];
+    $P['abilitazioni'] = $abilDesc;
+    if ($pmExpiry) $P['scadenze']['patente_b'] = $pmExpiry;
+
+    // Date aggiuntive
+    $P['data_inizio_qualifica'] = _parse_sipec_date((string)($r['dataInizioQualifica'] ?? ($P['data_inizio_qualifica'] ?? '')));
+    $P['ingresso'] = _parse_sipec_date((string)($r['dataAssunzione'] ?? ($P['ingresso'] ?? '')));
 
     unset($P);
   }
