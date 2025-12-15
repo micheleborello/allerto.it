@@ -72,6 +72,18 @@ if (!empty($_GET['slug'])) {
     $prefSlug = preg_replace('/[^a-z0-9_-]/i','', (string)$_GET['slug']);
 }
 
+// Tentativo automatico: prova a fare login tenant su tutti i distaccamenti
+function try_login_tenant_auto(string $username, string $password, array $distaccamenti): string {
+    foreach ($distaccamenti as $d) {
+        $slug = $d['slug'] ?? '';
+        if ($slug === '') continue;
+        if (auth_login_tenant($slug, $username, $password)) {
+            return $slug;
+        }
+    }
+    return '';
+}
+
 // ===== POST: Login =====
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!hash_equals($_SESSION['csrf'] ?? '', $_POST['csrf'] ?? '')) {
@@ -83,7 +95,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $tipo     = $_POST['tipo'] ?? '';
         $username = trim((string)($_POST['username'] ?? ''));
         $password = (string)($_POST['password'] ?? '');
-        $slug     = trim((string)($_POST['slug'] ?? ''));
+        $slug     = ''; // selezione distaccamento non più richiesta (auto)
 
         // Forza formato nome.cognome per login tenant (non superadmin)
         if ($tipo === 'tenant' || $tipo === '') {
@@ -106,11 +118,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
             $err = 'Credenziali superadmin non valide.';
         } elseif ($tipo === 'tenant') {
-            if ($username !== '' && $password !== '' && $slug !== '' && auth_login_tenant($slug, $username, $password)) {
-                $_SESSION['mfa_ok'] = 1;
-                $_SESSION['login_fail'] = 0;
-                $_SESSION['login_lock_until'] = 0;
-                header('Location: ' . $dest_for_tenant()); exit;
+            if ($username !== '' && $password !== '') {
+                $usedSlug = try_login_tenant_auto($username, $password, $distaccamenti);
+                if ($usedSlug !== '') {
+                    $_SESSION['mfa_ok'] = 1;
+                    $_SESSION['login_fail'] = 0;
+                    $_SESSION['login_lock_until'] = 0;
+                    header('Location: ' . $dest_for_tenant()); exit;
+                }
             }
             $err = 'Credenziali Distaccamento non valide.';
         } else {
@@ -121,11 +136,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $_SESSION['login_lock_until'] = 0;
                 header('Location: ' . ($next ?: 'index.php')); exit;
             }
-            if ($username !== '' && $password !== '' && $slug !== '' && auth_login_tenant($slug, $username, $password)) {
-                $_SESSION['mfa_ok'] = 1;
-                $_SESSION['login_fail'] = 0;
-                $_SESSION['login_lock_until'] = 0;
-                header('Location: ' . $dest_for_tenant()); exit;
+            if ($username !== '' && $password !== '') {
+                $usedSlug = try_login_tenant_auto($username, $password, $distaccamenti);
+                if ($usedSlug !== '') {
+                    $_SESSION['mfa_ok'] = 1;
+                    $_SESSION['login_fail'] = 0;
+                    $_SESSION['login_lock_until'] = 0;
+                    header('Location: ' . $dest_for_tenant()); exit;
+                }
             }
             $err = 'Credenziali non valide o tipo di accesso non selezionato.';
         }
@@ -181,7 +199,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <?php
           $POST_tipo = $_POST['tipo'] ?? '';
           $POST_username = $_POST['username'] ?? '';
-          $POST_slug = $_POST['slug'] ?? ($prefSlug ?: '');
+          $POST_slug = ''; // non serve più
           $soloUno = count($distaccamenti) === 1 ? ($distaccamenti[0]['slug'] ?? '') : '';
         ?>
 
@@ -200,28 +218,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
           </div>
 
-          <div id="slugWrap" class="mb-3" style="<?= (($POST_tipo==='tenant' || $POST_slug!=='' ) ? '' : 'display:none;') ?>">
-            <label class="form-label">Seleziona Distaccamento</label>
-            <?php if (!empty($distaccamenti)): ?>
-              <select class="form-select" name="slug" id="slugSel" autocomplete="organization">
-                <?php if (!$soloUno): ?>
-                  <option value="" <?= $POST_slug===''?'selected':'' ?> disabled>— scegli —</option>
-                <?php endif; ?>
-                <?php foreach ($distaccamenti as $d): ?>
-                  <option value="<?= htmlspecialchars($d['slug']) ?>"
-                          <?= ($POST_slug===$d['slug'] || ($soloUno && $soloUno===$d['slug']))?'selected':'' ?>>
-                    <?= htmlspecialchars($d['name']) ?>
-                  </option>
-                <?php endforeach; ?>
-              </select>
-              <div class="form-text">È la cartella dati del Distaccamento.</div>
-            <?php else: ?>
-              <div class="alert alert-warning mb-0">
-                Nessun Distaccamento trovato. Accedi come Super Admin e crea il primo da
-                <em>Impostazioni → Distaccamenti</em>, oppure crea <code>/data/&lt;slug&gt;/users.json</code>.
-              </div>
-            <?php endif; ?>
-          </div>
+          <!-- Selezione distaccamento rimossa: rilevato automaticamente da username/password -->
 
           <div class="mb-3">
             <label class="form-label">Utente</label>
@@ -254,24 +251,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <script>
     const tipoSuper  = document.getElementById('tipoSuper');
     const tipoTenant = document.getElementById('tipoTenant');
-    const slugWrap   = document.getElementById('slugWrap');
-    const slugSel    = document.getElementById('slugSel');
     const forgotLink = document.getElementById('forgotLink');
 
-    function toggleSlug(){
-      slugWrap.style.display = (tipoTenant && tipoTenant.checked) ? '' : 'none';
-      updateForgotLink();
-    }
     function updateForgotLink(){
       const next = <?= json_encode($next, JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE) ?>;
-      const slug = (slugSel && slugSel.value) ? slugSel.value : '';
-      const url = 'vol_pwd_reset.php' + (slug ? ('?slug='+encodeURIComponent(slug)) : '') + (next ? ( (slug?'&':'?') + 'next=' + encodeURIComponent(next) ) : '');
+      const url = 'vol_pwd_reset.php' + (next ? ('?next=' + encodeURIComponent(next)) : '');
       if (forgotLink) forgotLink.setAttribute('href', url);
     }
 
-    [tipoSuper, tipoTenant].forEach(r => r && r.addEventListener('change', toggleSlug));
-    if (slugSel) slugSel.addEventListener('change', updateForgotLink);
-    toggleSlug(); updateForgotLink();
+    [tipoSuper, tipoTenant].forEach(r => r && r.addEventListener('change', updateForgotLink));
+    updateForgotLink();
 
     (function(){
       const btn = document.getElementById('togglePwd');
