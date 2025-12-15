@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz VVF - Allievo</title>
+  <style>
+    :root { --bg: #f8fafc; --card: #ffffff; --accent: #ea580c; --text: #0f172a; --muted: #475569; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: "Segoe UI","Helvetica Neue",Arial,sans-serif; background: radial-gradient(circle at 20% 20%, #e2e8f0 0, #f8fafc 60%); color: var(--text); }
+    .app { max-width: 900px; margin: 0 auto; padding: 18px; }
+    header { display:flex; align-items:center; gap:10px; margin-bottom:12px; }
+    h1 { margin:0; letter-spacing:0.2px; }
+    .panel { background: var(--card); border:1px solid #e2e8f0; border-radius:12px; padding:14px; margin-bottom:12px; box-shadow:0 8px 18px rgba(0,0,0,0.12); }
+    select, input[type="text"], input[type="password"] { width: 100%; padding: 10px; border-radius: 10px; border: 1px solid #cbd5e1; background: #fff; color: var(--text); }
+    button { border:none; border-radius:10px; padding: 10px 12px; font-weight:700; cursor:pointer; background: var(--accent); color:#fff; box-shadow:0 6px 16px rgba(0,0,0,0.12); }
+    button:disabled { opacity:0.5; cursor:not-allowed; }
+    .card { background: var(--card); border:1px solid #e2e8f0; border-radius:12px; padding:14px; margin-bottom:10px; }
+    .test-grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); gap:10px; margin-top:8px; }
+    .test-card { position:relative; border:1px solid #e2e8f0; border-radius:12px; padding:12px; background:#fff; box-shadow:0 6px 14px rgba(0,0,0,0.08); cursor:pointer; transition:transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease; min-height:80px; }
+    .test-card:hover { transform: translateY(-2px); box-shadow:0 10px 20px rgba(0,0,0,0.12); }
+    .test-card .title { font-weight:700; }
+    .test-card .hint { position:absolute; right:10px; bottom:10px; font-size:12px; color:#ea580c; opacity:0; transition:opacity 120ms ease; }
+    .test-card:hover .hint { opacity:1; }
+    .test-card.disabled { opacity:0.4; cursor:not-allowed; }
+    .test-card.selected { border-color:#ea580c; box-shadow:0 10px 22px rgba(234,88,12,0.18); }
+    .stats-card { background: linear-gradient(135deg, #fef3c7, #fde68a); border:1px solid #fcd34d; color:#92400e; border-radius:12px; padding:10px; box-shadow:0 8px 18px rgba(0,0,0,0.08); margin-top:8px; }
+    .q-head { display:flex; gap:8px; align-items:baseline; flex-wrap:wrap; }
+    .q-num { background: var(--accent); color:#0b0b0b; border-radius:999px; padding:3px 9px; font-weight:700; }
+    .options { margin-top:10px; display:grid; gap:8px; }
+    .option { display:grid; grid-template-columns:20px 1fr; gap:8px; align-items:center; padding:9px 10px; border-radius:10px; background:#f8fafc; border:1px solid #e2e8f0; }
+    input[type="radio"] { accent-color: var(--accent); }
+    .badge { background:#f1f5f9; border:1px solid #e2e8f0; border-radius:999px; padding:4px 8px; color: var(--muted); font-size:12px; }
+    .summary { display:grid; grid-template-columns: repeat(auto-fit,minmax(120px,1fr)); gap:8px; margin-top:8px; }
+    .small { color: var(--muted); font-size:13px; }
+    @media (max-width:700px){ .options{gap:6px;} .option{grid-template-columns:18px 1fr;} }
+    @media (max-width:640px){
+      .app { padding: 12px; }
+      header { flex-direction:column; align-items:flex-start; gap:6px; }
+      button, input, select { width:100%; }
+      .test-grid { grid-template-columns: repeat(auto-fit,minmax(140px,1fr)); }
+      .panel { padding:12px; }
+      .card { padding:12px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+      <h1>Quiz VVF - Allievo</h1>
+      <div id="user-chip" class="small" style="margin-left:auto;"></div>
+      <a href="video_student.html" class="btn-link" style="background:#10b981; color:#0b0b0b; padding:8px 12px; border-radius:10px; font-weight:700; text-decoration:none;">🎬 Video assegnati</a>
+      <button id="logout" style="background:#f87171;">Logout</button>
+      <a href="index.html" style="color:#0ea5e9; text-decoration:none; font-weight:700;">Home</a>
+    </header>
+
+    <div class="panel" id="login-panel">
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Username" />
+      <label for="password" style="margin-top:8px; display:block;">Password</label>
+      <input type="password" id="password" placeholder="Password" />
+      <button id="login" style="margin-top:10px;">Accedi</button>
+      <div class="small" id="login-status">Inserisci le credenziali approvate dall'istruttore.</div>
+    </div>
+
+    <div class="panel" id="user-dashboard" style="display:none;">
+      <strong>Riepilogo personale</strong>
+      <div class="small" id="user-meta"></div>
+      <div class="small" id="user-class"></div>
+      <div class="small" id="user-allowed"></div>
+      <div class="small" id="user-stats"></div>
+    </div>
+
+    <div class="panel" id="user-results-panel" style="display:none;">
+      <strong>Test effettuati</strong>
+      <ul id="user-results" style="list-style:none; padding:0; margin:6px 0 0;"></ul>
+    </div>
+
+    <div class="panel">
+      <label>Seleziona un test</label>
+      <div id="test-grid" class="test-grid"></div>
+      <div style="margin-top:8px; display:flex; gap:8px; flex-wrap:wrap;">
+        <button id="load" disabled>Effettua il test</button>
+        <button id="submit" disabled>Invia risposte</button>
+      </div>
+      <div class="small" id="status">Accedi per abilitare i test.</div>
+    </div>
+
+    <div id="quiz"></div>
+    <div class="panel" id="results" style="display:none;"></div>
+  </div>
+
+  <script>
+    const STORAGE_TESTS = "vvf_tests";
+    const STORAGE_RESULTS = "vvf_results";
+    const STORAGE_REQUESTS = "vvf_requests";
+    const STORAGE_USERS = "vvf_users";
+    const STORAGE_CLASSES = "vvf_classes";
+    const STORAGE_SESSION = "vvf_logged_user";
+    const STORAGE_SEEN = "vvf_seen_tests";
+    const API_URL = "save_data.php";
+    const API_TOKEN = "ALLERTO";
+    const decoder = document.createElement("textarea");
+
+    const testGrid = document.getElementById("test-grid");
+    const statusEl = document.getElementById("status");
+    const quizEl = document.getElementById("quiz");
+    const loadBtn = document.getElementById("load");
+    const submitBtn = document.getElementById("submit");
+    const resultsEl = document.getElementById("results");
+    const usernameEl = document.getElementById("username");
+    const passwordEl = document.getElementById("password");
+    const loginBtn = document.getElementById("login");
+    const loginPanel = document.getElementById("login-panel");
+    const logoutBtn = document.getElementById("logout");
+    const loginStatus = document.getElementById("login-status");
+    const userDashboard = document.getElementById("user-dashboard");
+    const userMeta = document.getElementById("user-meta");
+    const userClass = document.getElementById("user-class");
+    const userAllowed = document.getElementById("user-allowed");
+    const userStats = document.getElementById("user-stats");
+    const userChip = document.getElementById("user-chip");
+    const userResultsPanel = document.getElementById("user-results-panel");
+    const userResults = document.getElementById("user-results");
+
+    let tests = loadJSON(STORAGE_TESTS, []);
+    let results = loadJSON(STORAGE_RESULTS, []);
+    let requests = loadJSON(STORAGE_REQUESTS, []);
+    let users = loadJSON(STORAGE_USERS, []);
+    let classes = loadJSON(STORAGE_CLASSES, []);
+    let current = null;
+    let currentUser = null;
+    let selectedTestId = null;
+    let remoteErrorShown = false;
+    let testStartAt = null;
+    let seenTests = loadJSON(STORAGE_SEEN, {}); // { username: [testId,...] }
+    
+
+    initData();
+
+    function ensureArray(val){ return Array.isArray(val)?val:[]; }
+    function decodeHTML(text){
+      if(text===null || text===undefined) return "";
+      decoder.innerHTML = text;
+      return decoder.value;
+    }
+    function loadJSON(key, fallback){ try{const v=localStorage.getItem(key); return v?JSON.parse(v):fallback;}catch{return fallback;} }
+    function saveJSON(key,data){ localStorage.setItem(key, JSON.stringify(data)); }
+    async function loadRemote(type, fallback){
+      if(!API_TOKEN) return fallback;
+      try{
+        const res=await fetch(`${API_URL}?type=${encodeURIComponent(type)}&token=${encodeURIComponent(API_TOKEN)}`);
+        const json=await res.json().catch(()=>null);
+        if(!res.ok) throw new Error((json && json.error) ? json.error : `HTTP ${res.status}`);
+        if(json && json.data!==undefined) return (json.data===null?fallback:json.data);
+      }catch(err){
+        console.warn("Load remote",type,err);
+        if(!remoteErrorShown){ remoteErrorShown=true; setStatus(`Errore caricamento dal server (${type}): ${err.message}`); }
+      }
+      return fallback;
+    }
+    async function saveRemote(type,data){
+      if(!API_TOKEN) return;
+      try{
+        const res = await fetch(`${API_URL}?type=${encodeURIComponent(type)}&token=${encodeURIComponent(API_TOKEN)}`,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)});
+        const json = await res.json().catch(()=>null);
+        if(!res.ok) throw new Error((json && json.error) ? json.error : `HTTP ${res.status}`);
+      }catch(err){
+        console.warn("Save remote",type,err);
+        setStatus(`Errore salvataggio sul server (${type}): ${err.message}`);
+      }
+    }
+
+    async function initData(){
+      tests = ensureArray(await loadRemote("vvf_tests", tests));
+      results = ensureArray(await loadRemote("vvf_results", results));
+      requests = ensureArray(await loadRemote("vvf_requests", requests));
+      users = ensureArray(await loadRemote("vvf_users", users));
+      classes = ensureArray(await loadRemote("vvf_classes", classes));
+      tests.forEach(t=>{ if(t.title){ const dec=decodeHTML(t.title); if(dec!==t.title) t.title=dec; } });
+      users.forEach(u=>{ if(u.name){ const dec=decodeHTML(u.name); if(dec!==u.name) u.name=dec; } });
+      classes.forEach(c=>{ if(c.name){ const dec=decodeHTML(c.name); if(dec!==c.name) c.name=dec; } });
+      saveJSON(STORAGE_TESTS, tests); saveJSON(STORAGE_RESULTS, results); saveJSON(STORAGE_REQUESTS, requests); saveJSON(STORAGE_USERS, users); saveJSON(STORAGE_CLASSES, classes);
+      renderTestGrid([]);
+      const savedSession = loadJSON(STORAGE_SESSION, null);
+      if(savedSession && savedSession.username && savedSession.password){
+        usernameEl.value = savedSession.username;
+        passwordEl.value = savedSession.password;
+        attemptLogin(savedSession.username, savedSession.password, true);
+        return;
+      }
+      requireLogin();
+    }
+
+    function setStatus(msg){ statusEl.textContent = msg; }
+    function loginPanelVisible(show){ if(loginPanel) loginPanel.style.display = show ? "block" : "none"; }
+    function escapeHTML(str){ return str.replace(/[&<>"']/g, ch=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[ch])); }
+
+    function getSeenSet(){
+      if(!currentUser) return new Set();
+      const arr = Array.isArray(seenTests[currentUser.username]) ? seenTests[currentUser.username] : [];
+      return new Set(arr);
+    }
+    function markSeen(testId){
+      if(!currentUser) return;
+      if(!Array.isArray(seenTests[currentUser.username])) seenTests[currentUser.username] = [];
+      if(!seenTests[currentUser.username].includes(testId)){
+        seenTests[currentUser.username].push(testId);
+        saveJSON(STORAGE_SEEN, seenTests);
+      }
+    }
+
+    function renderTestGrid(allowedIds){
+      testGrid.innerHTML = "";
+      if(!tests.length){ testGrid.innerHTML = '<div class="small">Nessun test disponibile.</div>'; return; }
+      const allowSet = allowedIds && allowedIds.length ? new Set(allowedIds) : new Set();
+      const seenSet = getSeenSet();
+      tests
+      .filter(t=> allowSet.size ? allowSet.has(t.id) : true)
+      .forEach(t=>{
+        const allowed = allowSet.size ? allowSet.has(t.id) : true;
+        const card = document.createElement("div");
+        card.className = "test-card";
+        if(!allowed || !currentUser) card.classList.add("disabled");
+        if(selectedTestId === t.id) card.classList.add("selected");
+        const isNew = currentUser && !seenSet.has(t.id);
+        const assignedAt = getAssignedAt(t.id);
+        const assignedLabel = assignedAt ? formatDate(assignedAt) : "-";
+        card.innerHTML = `
+          ${isNew?'<span class="badge" style="position:absolute; top:8px; right:8px; background:#fee2e2; color:#b91c1c;">NUOVO</span>':''}
+          <div class="title">${escapeHTML(t.title)}</div>
+          <div class="small">Assegnato: ${assignedLabel}</div>
+          <div class="hint">Effettua il test</div>`;
+        card.onclick = ()=>{
+          if(!allowed || !currentUser) return;
+          selectedTestId = t.id;
+          markSeen(t.id);
+          renderTestGrid(allowedIds);
+          loadBtn.disabled = false;
+          setStatus(`Test "${t.title}" selezionato. Premi Carica.`);
+        };
+        testGrid.appendChild(card);
+      });
+    }
+
+    function requireLogin(){
+      loadBtn.disabled = true; submitBtn.disabled = true;
+      setStatus("Accedi per abilitare i test.");
+      userDashboard.style.display="none";
+      userResultsPanel.style.display="none";
+      selectedTestId = null;
+      quizEl.innerHTML = "";
+      resultsEl.style.display = "none";
+      renderTestGrid([]);
+      loginPanelVisible(true);
+      if(userChip) userChip.textContent = "";
+    }
+
+    loginBtn.addEventListener("click", ()=>{
+      const username = usernameEl.value.trim();
+      const pwd = passwordEl.value.trim();
+      attemptLogin(username, pwd, false);
+    });
+    logoutBtn.addEventListener("click", ()=>{
+      localStorage.removeItem(STORAGE_SESSION);
+      currentUser = null;
+      current = null;
+      usernameEl.value = "";
+      passwordEl.value = "";
+      quizEl.innerHTML = "";
+      resultsEl.style.display = "none";
+      if(userChip) userChip.textContent = "";
+      setStatus("Accedi per abilitare i test.");
+      loginStatus.textContent = "Logout effettuato. Effettua di nuovo l'accesso.";
+      requireLogin();
+      setTimeout(()=>{ window.location.href = "index.html"; }, 300);
+    });
+
+    function attemptLogin(username, pwd, silent){
+      if(!username || !pwd){ loginStatus.textContent = "Inserisci username e password."; return; }
+      const user = users.find(u=>u.username && u.username.toLowerCase()===username.toLowerCase() && u.password===pwd);
+      if(!user){ if(!silent) loginStatus.textContent = "Utente non trovato o credenziali errate."; return; }
+      currentUser = user;
+      saveJSON(STORAGE_SESSION, { username: user.username, password: user.password });
+      if(userChip) userChip.textContent = `Utente: ${user.name || user.username}`;
+      loginStatus.textContent = "Accesso OK. Seleziona un test.";
+      const allowed = getAllowedTests(currentUser);
+      selectedTestId = null;
+      renderTestGrid(allowed);
+      loadBtn.disabled = true;
+      if (!tests.length) setStatus("Nessun test disponibile.");
+      else setStatus("Seleziona un test e premi Carica.");
+      renderUserResults();
+      renderDashboard();
+      loginPanelVisible(false);
+    }
+
+    function getAllowedTests(user){
+      if(!user) return [];
+      const userClasses = Array.isArray(user.classIds) ? user.classIds : (user.classId ? [user.classId] : []);
+      const allowedUser = user.testsAllowed || [];
+      const allowedClass = userClasses.flatMap(cid => {
+        const c = classes.find(cl => cl.id === cid);
+        return c && c.testsAllowed ? c.testsAllowed : [];
+      });
+      const ids = [...new Set([...(allowedUser||[]), ...(allowedClass||[])])];
+      return ids.length ? ids : tests.map(t=>t.id); // se non specificato, tutti i test
+    }
+
+    function getUserClassNames(user){
+      const ids = Array.isArray(user.classIds) ? user.classIds : (user.classId ? [user.classId] : []);
+      const names = ids.map(id=> {
+        const c = classes.find(cl=>cl.id===id);
+        return c ? c.name : null;
+      }).filter(Boolean);
+      return names;
+    }
+
+    function getAssignedAt(testId){
+      if(!currentUser) return null;
+      const userClasses = Array.isArray(currentUser.classIds) ? currentUser.classIds : (currentUser.classId ? [currentUser.classId] : []);
+      for(const cid of userClasses){
+        const c = classes.find(cl=>cl.id===cid);
+        if(c && Array.isArray(c.testsAllowed) && c.testsAllowed.includes(testId)){
+          if(c.testsAssignedAt && c.testsAssignedAt[testId]) return c.testsAssignedAt[testId];
+        }
+      }
+      return null;
+    }
+
+    function formatDate(ts){
+      const d = new Date(ts);
+      if(!ts || isNaN(d.getTime())) return "-";
+      return d.toLocaleString();
+    }
+
+    loadBtn.addEventListener("click", ()=>{
+      if(!currentUser){ setStatus("Devi accedere."); return; }
+      const id=selectedTestId;
+      if(!id){ setStatus("Seleziona un test."); return; }
+      const allowed = getAllowedTests(currentUser);
+      if(allowed.length && !allowed.includes(id)) { setStatus("Non sei abilitato a questo test."); return; }
+      current = tests.find(t=>t.id===id);
+      if(!current){ setStatus("Test non trovato."); return; }
+      submitBtn.disabled=false;
+      testStartAt = Date.now();
+      renderQuiz(current.questions);
+      setStatus(`Test "${current.title}" caricato. Compila e invia.`);
+    });
+
+    submitBtn.addEventListener("click", async ()=>{
+      if(!current) return setStatus("Carica un test.");
+      if(!currentUser) return setStatus("Devi accedere.");
+      const answers = [];
+      let correct=0, wrong=0, empty=0;
+      current.questions.forEach((q,idx)=>{
+        const chosen = quizEl.querySelector(`input[name="q${idx}"]:checked`);
+        const val = chosen?Number(chosen.value):null;
+        answers.push(val);
+        if(val===null) empty++; else if(val===q.answerIndex) correct++; else wrong++;
+      });
+      const total=current.questions.length;
+      const pct= total? Math.round((correct/total)*100) : 0;
+      const durationSec = testStartAt ? Math.max(0, Math.round((Date.now() - testStartAt)/1000)) : null;
+      const result = { testId: current.id, student: currentUser.name, username: currentUser.username, correct, wrong, empty, total, pct, at: Date.now(), answers, durationSec };
+      results.push(result);
+      saveJSON(STORAGE_RESULTS, results);
+      await saveRemote("vvf_results", results);
+      resultsEl.style.display="block";
+      resultsEl.innerHTML = `<div class="summary">
+        <div><strong>Corrette:</strong> ${correct}</div>
+        <div><strong>Sbagliate:</strong> ${wrong}</div>
+        <div><strong>Non risposte:</strong> ${empty}</div>
+        <div><strong>Punteggio:</strong> ${pct}%</div>
+      </div>`;
+      setStatus("Risultato salvato.");
+      submitBtn.disabled=true;
+      renderUserResults();
+      renderDashboard();
+      // chiudi il test e richiedi una nuova selezione
+      quizEl.innerHTML = "";
+      current = null;
+      selectedTestId = null;
+      submitBtn.disabled = true;
+      loadBtn.disabled = true;
+      renderTestGrid(getAllowedTests(currentUser));
+      setStatus("Test inviato. Seleziona un altro test per continuare.");
+      alert("Test inviato con successo.");
+    });
+
+    function renderQuiz(list){
+      quizEl.innerHTML="";
+      list.forEach((q,idx)=>{
+        const card=document.createElement("div");
+        card.className="card";
+        card.innerHTML=`
+          <div class="q-head">
+            <span class="q-num">${idx+1}</span>
+            <div class="q-title">${escapeHTML(q.question)}</div>
+            <span class="badge">${q.source||""}</span>
+          </div>
+          <div class="options">
+            ${q.options.map((opt,optIdx)=>`
+              <label class="option">
+                <input type="radio" name="q${idx}" value="${optIdx}">
+                <span>${escapeHTML(opt)}</span>
+              </label>
+            `).join("")}
+          </div>`;
+        quizEl.appendChild(card);
+      });
+      const bottom = document.createElement("div");
+      bottom.style.marginTop = "10px";
+      bottom.innerHTML = `<button id="submit-bottom" ${submitBtn.disabled ? "disabled" : ""} style="width:100%;">Invia risposte</button>`;
+      quizEl.appendChild(bottom);
+      bottom.querySelector("#submit-bottom").addEventListener("click", ()=> submitBtn.click());
+    }
+
+        function renderUserResults(){
+      if(!currentUser){ userResults.innerHTML=""; return; }
+      const mine = results.filter(r => (r.username || r.student || "").toLowerCase() === currentUser.username.toLowerCase());
+      if(!mine.length){ userResults.innerHTML = '<li class="small">Nessun test effettuato.</li>'; return; }
+      userResults.innerHTML = "";
+      mine.slice().reverse().forEach(r=>{
+        const test = tests.find(t=>t.id===r.testId);
+        const reviewedTxt = r.reviewed ? "visionato dall'istruttore" : "in attesa di revisione";
+        const li = document.createElement("li");
+        li.className = "small";
+        li.innerHTML = `<strong>${escapeHTML(test ? test.title : "Test")}</strong> - ${r.correct}/${r.total} (${r.pct}%) il ${new Date(r.at).toLocaleString()} - ${reviewedTxt}`;
+        if(r.reviewed){
+          const btn = document.createElement("button");
+          btn.textContent = "Apri";
+          btn.style.marginLeft = "8px";
+          btn.onclick = ()=>showResultDetail(r);
+          li.appendChild(btn);
+        }
+        userResults.appendChild(li);
+      });
+      userResultsPanel.style.display="block";
+    }
+
+    function showResultDetail(result){
+      const test = tests.find(t=>t.id===result.testId);
+      if(!test){ alert("Dettaglio non disponibile."); return; }
+      const qHtml = test.questions.map((q,idx)=>{
+        const userChoice = result.answers ? result.answers[idx] : null;
+        const isCorrect = userChoice === q.answerIndex;
+        const userText = userChoice===null || userChoice===undefined ? "Non risposto" : q.options[userChoice];
+        const correctText = q.options[q.answerIndex];
+        return `
+          <div class="card" style="margin-bottom:8px; border-color:${isCorrect ? '#22c55e' : '#ef4444'};">
+            <div class="q-head">
+              <span class="q-num">${idx+1}</span>
+              <div class="q-title">${escapeHTML(q.question)}</div>
+            </div>
+            <div class="small">Tua risposta: <strong>${escapeHTML(userText || "Non risposto")}</strong> ${isCorrect ? "[OK]" : "[ERR]"}</div>
+            ${!isCorrect ? `<div class="small">Corretta: <strong>${escapeHTML(correctText || "")}</strong></div>` : ""}
+          </div>
+        `;
+      }).join("");
+      resultsEl.style.display = "block";
+      resultsEl.innerHTML = `
+        <div class="summary">
+          <div><strong>Test:</strong> ${escapeHTML(test.title||"")}</div>
+          <div><strong>Data:</strong> ${new Date(result.at).toLocaleString()}</div>
+          <div><strong>Punteggio:</strong> ${result.pct}%</div>
+        </div>
+        <div style="margin-top:10px;"><strong>Dettaglio domande</strong></div>
+        ${qHtml}
+      `;
+      window.scrollTo({ top: resultsEl.offsetTop - 20, behavior:"smooth" });
+
+    }
+
+    function renderDashboard(){
+      if(!currentUser){ userDashboard.style.display="none"; return; }
+      const classNames = getUserClassNames(currentUser);
+      const allowedIds = getAllowedTests(currentUser);
+      const allowedTests = tests.filter(t=>allowedIds.includes(t.id));
+      const mine = results.filter(r => (r.username || r.student || "").toLowerCase() === currentUser.username.toLowerCase());
+      const avgPct = mine.length ? Math.round(mine.reduce((s,r)=>s+r.pct,0)/mine.length) : 0;
+      const completion = allowedTests.length ? (mine.length/allowedTests.length) : 0;
+      const overall = Math.round(avgPct * completion);
+      userMeta.textContent = `Nome: ${currentUser.name} | Username: ${currentUser.username}`;
+      userClass.textContent = `Classi: ${classNames.length ? classNames.join(", ") : "-"}`;
+      userAllowed.textContent = `Test disponibili (${allowedTests.length}): ${allowedTests.length ? allowedTests.map(t=>t.title).join(", ") : "nessuno"}`;
+      userStats.textContent = `Test svolti: ${mine.length} | Media punteggi: ${avgPct}% | Punteggio generale: ${overall}% (media x completamento)`;
+      userStats.className = "stats-card";
+      userDashboard.style.display="block";
+   }
+
+  </script>
+</body>
+</html>
