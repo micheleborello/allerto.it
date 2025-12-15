@@ -79,6 +79,13 @@ $MAP_FILE  = $DATA_BASE . '/cod_sede_map.json';
 // Password/permesso iniziali per auto-provision
 const DEFAULT_INITIAL_PASSWORD = '0000';
 const DEFAULT_BASE_PERM = 'view:index';
+const DEFAULT_PERMS = [
+  'view:index',          // Vedi Dashboard
+  'edit:index',          // Inserisci Addestramento Dashboard
+  'view:addestramenti',  // Vedi Addestramenti
+  'view:attivita',       // Vedi Attività
+  'edit:attivita',       // Modifica Attività
+];
 
 // Pre-calcola UNA SOLA VOLTA l'hash della password iniziale (cost più basso per velocità)
 $DEFAULT_HASH = password_hash(DEFAULT_INITIAL_PASSWORD, PASSWORD_BCRYPT, ['cost'=>8]);
@@ -387,7 +394,53 @@ foreach ($bySede as $codSede => $rows) {
   _json_save_pretty($vigiliPath, $vigili);
   _json_save_pretty($personalePath, $personale);
 
-  // Nota: non tocchiamo più utenti/password/perms; il sync SIPEC aggiorna solo vigili/personale.
+  // === Provision UTENTI solo se mancano (non tocca password/perms/capo esistenti) ===
+  $usersByUsername = [];
+  $taken = [];
+  foreach ($users as $u) {
+    $un = strtolower(trim((string)($u['username'] ?? '')));
+    if ($un === '') continue;
+    if (!isset($usersByUsername[$un])) $usersByUsername[$un] = $u;
+    $taken[$un] = 1;
+  }
+
+  $newUsersAdded = false;
+  $changedVigili = false;
+
+  foreach ($vigili as &$vv) {
+    $curUser = trim((string)($vv['username'] ?? ''));
+    if ($curUser === '') {
+      // genera username stabile se manca
+      $base = _username_base_from_vigile($vv);
+      $candidate = _unique_username($base, $taken);
+      $vv['username'] = $candidate;
+      $curUser = $candidate;
+      $changedVigili = true;
+    }
+    $lc = strtolower($curUser);
+    if ($lc === '') continue;
+    if (!isset($usersByUsername[$lc])) {
+      // crea nuovo utente con permessi di default; capo resta 0
+      $users[] = [
+        'username'      => $curUser,
+        'password_hash' => $DEFAULT_HASH,
+        'is_capo'       => 0,
+        'perms'         => DEFAULT_PERMS,
+      ];
+      $usersByUsername[$lc] = end($users);
+      $taken[$lc] = 1;
+      $newUsersAdded = true;
+    }
+  }
+  unset($vv);
+
+  if ($changedVigili) {
+    _json_save_pretty($vigiliPath, $vigili);
+  }
+  if ($newUsersAdded) {
+    // Salva utenti aggiungendo solo i nuovi, senza toccare quelli esistenti
+    _json_save_pretty($usersPath, $users);
+  }
 
   // Aggiorna elenco caserme globale
   $casermeAttuali[$slug] = $name;

@@ -377,7 +377,7 @@ $html = '
   <thead>
     <tr style="background:#f2f2f2; font-weight:bold;">
       <th width="55%" align="left">Vigile</th>
-      <th width="20%" align="right">Ore (ultimi 12 mesi, NETTE)</th>
+      <th width="20%" align="right">Ore (ultimi 12 mesi)</th>
       <th width="25%" align="center">Stato</th>
     </tr>
   </thead>
