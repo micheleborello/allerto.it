@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz VVF - Admin Test</title>
+  <style>
+    :root { --bg:#f8fafc; --card:#ffffff; --accent:#ea580c; --text:#0f172a; --muted:#475569; --border:#e2e8f0; --light:#f1f5f9; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Segoe UI","Helvetica Neue",Arial,sans-serif; background: radial-gradient(circle at 20% 20%, #e2e8f0 0, #f8fafc 60%); color: var(--text); }
+    .app { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    header { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 12px; }
+    h1 { margin: 0; font-weight: 700; letter-spacing: 0.3px; }
+    .panel { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 14px; margin-bottom: 12px; box-shadow: 0 8px 18px rgba(0,0,0,0.12); }
+    button { border: none; border-radius: 10px; padding: 10px 14px; font-weight: 700; cursor: pointer; background: var(--accent); color: #fff; box-shadow: 0 6px 16px rgba(0,0,0,0.12); transition: transform 120ms ease, filter 120ms ease; }
+    button:disabled { opacity: 0.5; cursor: not-allowed; }
+    button:hover:not(:disabled) { transform: translateY(-1px); filter: brightness(1.02); }
+    input, select { width: 100%; padding: 9px; border-radius: 8px; border: 1px solid var(--border); background: #fff; color: var(--text); }
+    .small { color: var(--muted); font-size: 13px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 10px; }
+    .builder { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .question-card { border:1px solid var(--border); border-radius:12px; padding:12px; background:var(--card); box-shadow:0 6px 14px rgba(0,0,0,0.08); margin-bottom:10px; }
+    .test-list { list-style:none; padding:0; margin:0; display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:10px; }
+    .test-item { border:1px solid var(--border); border-radius:12px; padding:12px; background:var(--card); box-shadow:0 8px 16px rgba(0,0,0,0.08); position:relative; }
+    .test-item .actions { display:flex; gap:8px; flex-wrap:wrap; margin-top:8px; }
+    .badge { background: var(--light); border:1px solid var(--border); border-radius:999px; padding:4px 8px; font-size:12px; color:var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Gestione Test (Admin)</h1>
+      <button id="go-classes" style="background:#0ea5e9; color:#0f172a;">Gestione classi</button>
+      <button id="go-users" style="background:#22c55e; color:#0f172a;">Gestione utenti</button>
+      <button id="go-video-admin" style="background:#10b981; color:#0f172a;">Gestione video</button>
+      <button id="go-video-instructor" style="background:#14b8a6; color:#0f172a;">Video istruttore</button>
+      <button id="go-video-student" style="background:#8b5cf6; color:#fff;">Video allievo</button>
+    </header>
+
+    <div id="status" class="small"></div>
+
+    <div class="panel">
+      <strong>Crea/Modifica test</strong>
+      <div class="small">Scegli il numero di domande, genera dal pool o modifica quelle esistenti.</div>
+      <div class="grid" style="margin-top:8px;">
+        <div>
+          <label for="question-count">Numero di domande</label>
+          <input id="question-count" type="number" min="1" max="100" value="30" />
+        </div>
+        <div>
+          <label for="test-title">Titolo test</label>
+          <input id="test-title" placeholder="Titolo test" />
+        </div>
+        <div>
+          <label for="source-select">Sorgente domande</label>
+          <select id="source-select" multiple size="6"></select>
+        </div>
+        <div style="display:flex; gap:8px; align-items:flex-end; flex-wrap:wrap;">
+          <button id="generate">Genera domande</button>
+          <button id="regen" disabled style="background:#f59e0b; color:#0f172a;">Rigenera non bloccate</button>
+          <button id="save-test" disabled>Salva test</button>
+        </div>
+      </div>
+      <div id="quiz"></div>
+    </div>
+
+    <div class="panel">
+      <strong>Test salvati</strong>
+      <div class="small">Apri, modifica o elimina un test esistente.</div>
+      <ul id="tests-list" class="test-list"></ul>
+    </div>
+  </div>
+
+  <script>
+    const STORAGE_TESTS = "vvf_tests";
+    const STORAGE_RESULTS = "vvf_results";
+    const STORAGE_STUDENTS = "vvf_students";
+    const STORAGE_REQUESTS = "vvf_requests";
+    const API_URL = "save_data.php";
+    const API_TOKEN = "ALLERTO";
+    const statusEl = document.getElementById("status");
+    const questionCountEl = document.getElementById("question-count");
+    const titleEl = document.getElementById("test-title");
+    const sourceSelect = document.getElementById("source-select");
+    const generateBtn = document.getElementById("generate");
+    const regenBtn = document.getElementById("regen");
+    const saveBtn = document.getElementById("save-test");
+    const quizEl = document.getElementById("quiz");
+    const testsList = document.getElementById("tests-list");
+    const goClasses = document.getElementById("go-classes");
+    const goUsers = document.getElementById("go-users");
+    const goVidAdmin = document.getElementById("go-video-admin");
+    const goVidInstr = document.getElementById("go-video-instructor");
+    const goVidStud  = document.getElementById("go-video-student");
+
+    const sources = [
+      { key: "Aerop", path: "assets/Aerop.csv", label: "Aerop" },
+      { key: "AIB", path: "assets/AIB.csv", label: "AIB" },
+      { key: "ATP", path: "assets/ATP.csv", label: "ATP" },
+      { key: "Attrezzature", path: "assets/Attrezzature.csv", label: "Attrezzature" },
+      { key: "Cartografia", path: "assets/Cartografia.csv", label: "Cartografia" },
+      { key: "CD", path: "assets/CD.csv", label: "CD" },
+      { key: "Chimica", path: "assets/Chimica.csv", label: "Chimica" },
+      { key: "Classe5B", path: "assets/Classe5B.csv", label: "Classe5B" },
+      { key: "Dpi", path: "assets/Dpi.csv", label: "DPI" },
+      { key: "Elettrotecnica", path: "assets/Elettrotecnica.csv", label: "Elettrotecnica" },
+      { key: "Ginnica", path: "assets/Ginnica.csv", label: "Ginnica" },
+      { key: "Idraulica", path: "assets/Idraulica.csv", label: "Idraulica" },
+      { key: "NBCR", path: "assets/NBCR.csv", label: "NBCR" },
+      { key: "Organiz", path: "assets/Organiz.csv", label: "Organiz" },
+      { key: "PoliziaGiudiziaria", path: "assets/PoliziaGiudiziaria.csv", label: "Polizia Giudiziaria" },
+      { key: "Pos", path: "assets/Pos.csv", label: "POS" },
+      { key: "PrevIncendi", path: "assets/PrevIncendi.csv", label: "Prev. Incendi" },
+      { key: "Quizzone", path: "assets/Quizzone.csv", label: "Quizzone" },
+      { key: "SAF", path: "assets/SAF.csv", label: "SAF" },
+      { key: "SostEstinguenti", path: "assets/SostEstinguenti.csv", label: "Sost. Estinguenti" },
+      { key: "SostPericolose", path: "assets/SostPericolose.csv", label: "Sost. Pericolose" },
+      { key: "TPSS", path: "assets/TPSS.csv", label: "TPSS" },
+      { key: "Tutte", path: "assets/Tutte.csv", label: "Generale" },
+      { key: "Usar", path: "assets/Usar.csv", label: "USAR" },
+    ];
+
+    let savedTests = loadJSON(STORAGE_TESTS, []);
+    let savedResults = loadJSON(STORAGE_RESULTS, []);
+    let students = loadJSON(STORAGE_STUDENTS, []);
+    let requests = loadJSON(STORAGE_REQUESTS, []);
+    const state = { questions: [], pool: [], locked: new Set(), currentTestId: null };
+
+    init();
+
+    function setStatus(msg){ statusEl.textContent = msg; }
+    function escapeHTML(str){ return str.replace(/[&<>"']/g, ch => ({ "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;" }[ch])); }
+    function shuffle(arr) { for (let i = arr.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [arr[i], arr[j]] = [arr[j], arr[i]]; } return arr; }
+    function decodeBuffer(buf) { const utf8 = new TextDecoder("utf-8").decode(buf); const iso = new TextDecoder("iso-8859-1").decode(buf); const score = str => (str.match(/[????]/g) || []).length; return score(utf8) <= score(iso) ? utf8 : iso; }
+    async function fetchCsv(path) { const res = await fetch(path); if (!res.ok) throw new Error(`Impossibile leggere ${path} (${res.status})`); const buf = await res.arrayBuffer(); return decodeBuffer(buf); }
+    function parseCsv(text, sourceLabel) { return text.split(/\r?\n/).map(l=>l.trim()).filter(l=>l && l.includes(";")).map(line=>{ const cells=line.split(";").map(c=>c.trim()); const question=cells[2]||""; const options=cells.slice(3).filter(c=>c && !/^-+$/.test(c) && !/^[0-9]+$/.test(c)); const numeric=cells.slice(3).find(c=>/^[1-5]$/.test(c)); const answerIndex=numeric?Number(numeric)-1:0; return (question && options.length)?{question,options,answerIndex,source:sourceLabel}:null; }).filter(Boolean); }
+    function pickQuestions(pool, count) { return shuffle([...pool]).slice(0, Math.min(count, pool.length)); }
+    function keyOf(q) { return `${q.source}|${q.question}`; }
+    function isLocked(q) { return state.locked.has(keyOf(q)); }
+    function loadJSON(key, fallback) { try { const v = localStorage.getItem(key); return v ? JSON.parse(v) : fallback; } catch { return fallback; } }
+    function saveJSON(key, data) { localStorage.setItem(key, JSON.stringify(data)); }
+    async function loadRemote(type, fallback) {
+      if (!API_TOKEN) return fallback;
+      try {
+        const res = await fetch(`${API_URL}?type=${encodeURIComponent(type)}&token=${encodeURIComponent(API_TOKEN)}`);
+        if (!res.ok) throw new Error("Errore rete");
+        const json = await res.json();
+        if (json && json.data !== undefined) return json.data;
+      } catch (err) { console.warn("Load remote", type, err); }
+      return fallback;
+    }
+    async function saveRemote(type, data) {
+      if (!API_TOKEN) return;
+      try {
+        await fetch(`${API_URL}?type=${encodeURIComponent(type)}&token=${encodeURIComponent(API_TOKEN)}`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data)
+        });
+      } catch (err) { console.warn("Save remote", type, err); }
+    }
+    async function init() {
+      savedTests = await loadRemote("vvf_tests", savedTests);
+      savedResults = await loadRemote("vvf_results", savedResults);
+      students = await loadRemote("vvf_students", students);
+      requests = await loadRemote("vvf_requests", requests);
+      saveJSON(STORAGE_TESTS, savedTests);
+      saveJSON(STORAGE_RESULTS, savedResults);
+      saveJSON(STORAGE_STUDENTS, students);
+      saveJSON(STORAGE_REQUESTS, requests);
+      renderSaved();
+      renderSources();
+    }
+
+    function renderSources(){
+      sourceSelect.innerHTML = sources.map(s=>`<option value="${s.key}" selected>${escapeHTML(s.label)}</option>`).join("");
+    }
+
+    generateBtn.addEventListener("click", loadQuestions);
+    regenBtn.addEventListener("click", regenerateUnlocked);
+    saveBtn.addEventListener("click", saveCurrentTest);
+    goClasses.addEventListener("click", ()=> window.location.href = "classes.html");
+    goUsers.addEventListener("click", ()=> window.location.href = "admin-users.html");
+    if (goVidAdmin) goVidAdmin.addEventListener("click", ()=> window.location.href = "video_admin.html");
+    if (goVidInstr) goVidInstr.addEventListener("click", ()=> window.location.href = "video_instructor.html");
+    if (goVidStud)  goVidStud.addEventListener("click",  ()=> window.location.href = "video_student.html");
+
+    async function loadQuestions() {
+      const selectedSources = Array.from(sourceSelect.selectedOptions).map(o=>o.value);
+      if (!selectedSources.length) { setStatus("Seleziona almeno una sorgente."); return; }
+      setStatus("Carico domande...");
+      let pool = [];
+      for (const key of selectedSources) {
+        const src = sources.find(s => s.key === key);
+        if (!src) continue;
+        try {
+          const csv = await fetchCsv(src.path);
+          pool = pool.concat(parseCsv(csv, src.label));
+        } catch (err) {
+          console.warn("CSV", src.path, err);
+          setStatus(`Errore caricando ${src.label}`);
+        }
+      }
+      state.pool = pool;
+      state.questions = pickQuestions(pool, Number(questionCountEl.value) || 30);
+      state.locked.clear();
+      state.currentTestId = null;
+      renderQuestions(state.questions);
+      setStatus(`Caricate ${state.questions.length} domande.`);
+      saveBtn.disabled = false;
+      regenBtn.disabled = state.pool.length === 0;
+    }
+
+    function renderQuestions(list, selectionMap = null) {
+      quizEl.innerHTML = "";
+      list.forEach((q, idx) => {
+        const locked = isLocked(q);
+        const card = document.createElement("div");
+        card.className = "question-card" + (locked ? " locked" : "");
+        card.innerHTML = `
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div class="badge">${escapeHTML(q.source)}</div>
+            <button type="button" class="btn-lock btn-small" data-idx="${idx}" style="background:${locked?'#16a34a':'#0ea5e9'}; color:#fff;">${locked ? "Sblocco" : "Blocca"}</button>
+          </div>
+          <div style="margin-top:6px;"><strong>${idx + 1}. ${escapeHTML(q.question)}</strong></div>
+          <div class="small">${q.options.map((opt,i)=>`${i+1}) ${escapeHTML(opt)}`).join("<br>")}</div>
+          <div class="small" style="margin-top:4px;">Risposta corretta: ${q.answerIndex+1}</div>
+        `;
+        quizEl.appendChild(card);
+      });
+      quizEl.querySelectorAll(".btn-lock").forEach(btn=>{
+        btn.onclick = ()=>{
+          const i = Number(btn.dataset.idx);
+          const q = state.questions[i];
+          const k = keyOf(q);
+          if (state.locked.has(k)) state.locked.delete(k); else state.locked.add(k);
+          renderQuestions(state.questions);
+        };
+      });
+    }
+
+    function regenerateUnlocked(){
+      if(!state.questions.length) { setStatus("Genera prima le domande."); return; }
+      if(!state.pool.length) {
+        // se stiamo modificando un test salvato senza pool, usa le domande correnti come pool di rimpiazzo
+        state.pool = state.questions.slice();
+      }
+      const lockedKeys = new Set(state.questions.filter(isLocked).map(keyOf));
+      const unlockedIdx = state.questions.map((q, idx) => ({ q, idx })).filter(({ q }) => !isLocked(q)).map(({ idx }) => idx);
+      if (!unlockedIdx.length) { setStatus("Nessuna domanda sbloccata da rigenerare."); return; }
+      const candidates = shuffle(state.pool.filter(q => !lockedKeys.has(keyOf(q))));
+      let ci = 0;
+      unlockedIdx.forEach(i => { if (ci < candidates.length) state.questions[i] = candidates[ci++]; });
+      renderQuestions(state.questions);
+      setStatus("Domande non bloccate rigenerate.");
+    }
+
+    function saveCurrentTest() {
+      if (!state.questions.length) return;
+      const title = titleEl.value.trim() || "Test senza titolo";
+      const count = Number(questionCountEl.value) || state.questions.length;
+      const questions = state.questions.slice(0, count);
+      let test;
+      if(state.currentTestId){
+        const existing = savedTests.find(t=>t.id===state.currentTestId);
+        if(existing){
+          existing.title = title;
+          existing.questions = questions;
+          existing.createdAt = existing.createdAt || Date.now();
+          test = existing;
+        }
+      }
+      if(!test){
+        test = { id: crypto.randomUUID ? crypto.randomUUID() : String(Date.now()), title, createdAt: Date.now(), questions };
+        savedTests.push(test);
+        state.currentTestId = test.id;
+      }
+      persistAll();
+      renderSaved();
+      setStatus("Test salvato.");
+    }
+
+    function renderSaved() {
+      testsList.innerHTML = "";
+      if (!savedTests.length) { testsList.innerHTML = '<li class="small">Nessun test salvato.</li>'; return; }
+      savedTests.forEach(t => {
+        const li = document.createElement("li");
+        li.className = "test-item";
+        const date = new Date(t.createdAt).toLocaleString();
+        const count = (savedResults.filter(r => r.testId === t.id).length) || 0;
+        li.innerHTML = `<strong>${escapeHTML(t.title)}</strong> <span class="small">(${date})</span> <span class="badge">${count} risultati</span>`;
+        const actions = document.createElement("div");
+        actions.className = "actions";
+        const openBtn = document.createElement("button"); openBtn.className="btn-small"; openBtn.textContent="Apri/Modifica";
+        const delBtn = document.createElement("button"); delBtn.className="btn-small"; delBtn.style.background="#f87171"; delBtn.textContent="Elimina";
+        openBtn.onclick = ()=> openTest(t.id);
+        delBtn.onclick = ()=> { savedTests = savedTests.filter(x=>x.id!==t.id); persistAll(); renderSaved(); };
+        actions.appendChild(openBtn); actions.appendChild(delBtn);
+        li.appendChild(actions);
+        testsList.appendChild(li);
+      });
+    }
+
+    function openTest(id){
+      const t = savedTests.find(x=>x.id===id);
+      if(!t) return;
+      titleEl.value = t.title;
+      state.questions = t.questions.slice();
+      state.pool = t.questions.slice();
+      state.currentTestId = t.id;
+      state.locked.clear();
+      questionCountEl.value = t.questions.length;
+      renderQuestions(state.questions);
+      saveBtn.disabled = false;
+      regenBtn.disabled = false;
+      setStatus("Test caricato. Modifica e salva per aggiornare.");
+    }
+
+    function persistAll() {
+      saveJSON(STORAGE_TESTS, savedTests);
+      saveJSON(STORAGE_RESULTS, savedResults);
+      saveJSON(STORAGE_STUDENTS, students);
+      saveJSON(STORAGE_REQUESTS, requests);
+      saveRemote("vvf_tests", savedTests);
+      saveRemote("vvf_results", savedResults);
+      saveRemote("vvf_students", students);
+      saveRemote("vvf_requests", requests);
+    }
+  </script>
+</body>
+</html>
