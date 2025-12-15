@@ -69,6 +69,31 @@
       <div class="small">Apri, modifica o elimina un test esistente.</div>
       <ul id="tests-list" class="test-list"></ul>
     </div>
+
+    <div class="panel">
+      <strong>Gestione video (Admin)</strong>
+      <div class="small">Carica un video e pubblicalo. Istruzione/assegnazione avviene in classes.html.</div>
+      <div class="grid" style="margin-top:8px;">
+        <div>
+          <label class="small">Titolo video</label>
+          <input id="video-title" placeholder="Titolo video">
+        </div>
+        <div>
+          <label class="small">Descrizione</label>
+          <input id="video-descr" placeholder="Descrizione breve">
+        </div>
+        <div>
+          <label class="small">File video (mp4/mov/webm/mkv)</label>
+          <input id="video-file" type="file" accept=".mp4,.mov,.webm,.mkv">
+        </div>
+        <div style="display:flex; align-items:flex-end;">
+          <button id="upload-video" style="background:#22c55e; color:#0f172a;">Carica video</button>
+        </div>
+      </div>
+      <div id="video-msg" class="small" style="margin-top:6px;"></div>
+      <div class="small" style="margin-top:10px;"><strong>Video pubblicati</strong></div>
+      <div id="video-list" class="test-list"></div>
+    </div>
   </div>
 
   <script>
@@ -76,6 +101,7 @@
     const STORAGE_RESULTS = "vvf_results";
     const STORAGE_STUDENTS = "vvf_students";
     const STORAGE_REQUESTS = "vvf_requests";
+    const STORAGE_VIDEOS = "vvf_videos";
     const API_URL = "save_data.php";
     const API_TOKEN = "ALLERTO";
     const statusEl = document.getElementById("status");
@@ -89,6 +115,12 @@
     const testsList = document.getElementById("tests-list");
     const goClasses = document.getElementById("go-classes");
     const goUsers = document.getElementById("go-users");
+    const videoList = document.getElementById("video-list");
+    const videoTitle = document.getElementById("video-title");
+    const videoDescr = document.getElementById("video-descr");
+    const videoFile = document.getElementById("video-file");
+    const videoMsg = document.getElementById("video-msg");
+    const uploadBtn = document.getElementById("upload-video");
     const goVidAdmin = document.getElementById("go-video-admin");
     const goVidInstr = document.getElementById("go-video-instructor");
     const goVidStud  = document.getElementById("go-video-student");
@@ -124,7 +156,10 @@
     let savedResults = loadJSON(STORAGE_RESULTS, []);
     let students = loadJSON(STORAGE_STUDENTS, []);
     let requests = loadJSON(STORAGE_REQUESTS, []);
+    let videos = loadJSON(STORAGE_VIDEOS, []);
     const state = { questions: [], pool: [], locked: new Set(), currentTestId: null };
+
+    const uuid = ()=> crypto.randomUUID ? crypto.randomUUID() : 'v_'+Math.random().toString(36).slice(2);
 
     init();
 
@@ -164,16 +199,76 @@
       savedResults = await loadRemote("vvf_results", savedResults);
       students = await loadRemote("vvf_students", students);
       requests = await loadRemote("vvf_requests", requests);
+      videos = await loadRemote("vvf_videos", videos);
       saveJSON(STORAGE_TESTS, savedTests);
       saveJSON(STORAGE_RESULTS, savedResults);
       saveJSON(STORAGE_STUDENTS, students);
       saveJSON(STORAGE_REQUESTS, requests);
+      saveJSON(STORAGE_VIDEOS, videos);
       renderSaved();
       renderSources();
+      renderVideos();
     }
 
     function renderSources(){
       sourceSelect.innerHTML = sources.map(s=>`<option value="${s.key}" selected>${escapeHTML(s.label)}</option>`).join("");
+    }
+    function renderVideos(){
+      if (!videoList) return;
+      if (!Array.isArray(videos) || !videos.length) {
+        videoList.innerHTML = '<li class="test-item small">Nessun video caricato.</li>';
+        return;
+      }
+      videoList.innerHTML = videos.map(v=>`
+        <li class="test-item">
+          <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+            <div>
+              <strong>${escapeHTML(v.title||'')}</strong><br>
+              <span class="small">${escapeHTML(v.descr||'')}</span>
+            </div>
+            <span class="badge">${(v.assigned_classes||[]).length} classi</span>
+          </div>
+          <div class="small">File: ${escapeHTML(v.url||'')}</div>
+        </li>
+      `).join("");
+    }
+
+    async function uploadVideo(){
+      if (!uploadBtn) return;
+      const title = videoTitle.value.trim();
+      const descr = videoDescr.value.trim();
+      const file = videoFile.files[0];
+      if (!title || !file) { videoMsg.textContent = "Titolo e file video sono obbligatori."; return; }
+      uploadBtn.disabled = true;
+      videoMsg.textContent = "Caricamento in corso...";
+      const fd = new FormData();
+      fd.append("file", file);
+      fd.append("token", API_TOKEN);
+      try{
+        const up = await fetch("upload_video.php", { method:"POST", body: fd });
+        const uj = await up.json();
+        if (!uj.ok) throw new Error(uj.error || "Upload fallito");
+        const url = uj.url;
+        videos.push({
+          id: uuid(),
+          title, descr,
+          url,
+          created_by: "admin",
+          assigned_classes: [],
+          views: {}
+        });
+        await saveRemote("vvf_videos", videos);
+        saveJSON(STORAGE_VIDEOS, videos);
+        videoTitle.value = "";
+        videoDescr.value = "";
+        videoFile.value = "";
+        videoMsg.textContent = "Video caricato e salvato.";
+        renderVideos();
+      } catch(err){
+        videoMsg.textContent = "Errore: " + err.message;
+      } finally {
+        uploadBtn.disabled = false;
+      }
     }
 
     generateBtn.addEventListener("click", loadQuestions);
@@ -184,6 +279,7 @@
     if (goVidAdmin) goVidAdmin.addEventListener("click", ()=> window.location.href = "video_admin.html");
     if (goVidInstr) goVidInstr.addEventListener("click", ()=> window.location.href = "video_instructor.html");
     if (goVidStud)  goVidStud.addEventListener("click",  ()=> window.location.href = "video_student.html");
+    if (uploadBtn) uploadBtn.addEventListener("click", uploadVideo);
 
     async function loadQuestions() {
       const selectedSources = Array.from(sourceSelect.selectedOptions).map(o=>o.value);
