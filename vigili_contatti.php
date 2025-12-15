@@ -117,7 +117,7 @@ function e($s){ return htmlspecialchars((string)$s, ENT_QUOTES, 'UTF-8'); }
               <td><code><?= (int)($v['id'] ?? 0) ?></code></td>
               <td><?= e(trim(($v['cognome'] ?? '').' '.($v['nome'] ?? ''))) ?></td>
               <td><input class="form-control form-control-sm" name="r[<?= (int)($v['id'] ?? 0) ?>][username]" value="<?= e($v['username'] ?? '') ?>" placeholder="es. rossi.marco"></td>
-              <td><input class="form-control form-control-sm" name="r[<?= (int)($v['id'] ?? 0) ?>][email]"    value="<?= e($v['email'] ?? '') ?>"    placeholder="es. nome.cognome@email.it"></td>
+              <td><input class="form-control form-control-sm" name="r[<?= (int)($v['id'] ?? 0) ?>][email]"    value="<?= e($v['email'] ?? '') ?>"    placeholder=""></td>
             </tr>
           <?php endforeach; endif; ?>
         </tbody>
