@@ -95,7 +95,7 @@
       <div id="video-player" class="card" style="display:none; margin-top:10px;">
         <div id="video-title" style="font-weight:700;"></div>
         <div id="video-descr" class="small" style="margin-top:4px;"></div>
-        <video id="video-elem" controls style="width:100%; border-radius:12px; background:#0f172a; margin-top:8px;" preload="metadata"></video>
+        <video id="video-elem" controls playsinline style="width:100%; min-height:220px; border-radius:12px; background:#0f172a; margin-top:8px;" preload="metadata"></video>
         <div class="small" style="margin-top:6px;"><a id="video-link" href="#" target="_blank" rel="noopener" style="color:#0ea5e9; text-decoration:none; font-weight:700;">Apri in nuova scheda</a></div>
       </div>
       <div class="small" id="video-status">Accedi per vedere i video assegnati.</div>
@@ -539,19 +539,16 @@
       if(!videoPlayer || !videoElem || !videoTitle || !videoLink) return;
       videoTitle.textContent = video.title || "Video";
       videoDescr.textContent = video.descr || "";
+      // reset sorgente e usa src diretto per evitare problemi codec/sorgenti multiple
       while(videoElem.firstChild) videoElem.removeChild(videoElem.firstChild);
+      videoElem.removeAttribute("src");
       if(video.url){
-        const source=document.createElement("source");
-        source.src = video.url;
-        const ext = (video.url.split(".").pop()||"").toLowerCase();
-        const mime = ext==="webm"?"video/webm":ext==="ogg"?"video/ogg":"video/mp4";
-        source.type = mime;
-        videoElem.appendChild(source);
+        videoElem.src = video.url;
         videoElem.load();
+        videoElem.play().catch(()=>{});
         videoElem.onloadeddata = ()=>{ if(videoStatus) videoStatus.textContent = "Video pronto: premi Play."; };
         videoElem.onerror = ()=>{ if(videoStatus) videoStatus.textContent = "Errore nel caricamento video (controlla il file su server)."; };
       } else {
-        videoElem.removeAttribute("src");
         if(videoStatus) videoStatus.textContent = "Video senza URL. Contatta l'istruttore.";
       }
       videoPlayer.style.display = "block";
