@@ -504,7 +504,7 @@
         if(videoPanel) videoPanel.style.display = "block";
         return;
       }
-      videoStatus.textContent = "Seleziona un video per riprodurlo.";
+      videoStatus.textContent = "Seleziona un video per riprodurlo. Se resta nero, clicca \"Apri in nuova scheda\".";
       let currentVideo = selectedVideoId ? allowedVideos.find(v=>String(v.id)===String(selectedVideoId)) : null;
       allowedVideos.forEach(v=>{
         const card=document.createElement("div");
@@ -548,8 +548,11 @@
         source.type = mime;
         videoElem.appendChild(source);
         videoElem.load();
+        videoElem.onloadeddata = ()=>{ if(videoStatus) videoStatus.textContent = "Video pronto: premi Play."; };
+        videoElem.onerror = ()=>{ if(videoStatus) videoStatus.textContent = "Errore nel caricamento video (controlla il file su server)."; };
       } else {
         videoElem.removeAttribute("src");
+        if(videoStatus) videoStatus.textContent = "Video senza URL. Contatta l'istruttore.";
       }
       videoPlayer.style.display = "block";
       if(video.url){
