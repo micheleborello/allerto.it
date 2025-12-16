@@ -32,9 +32,6 @@
       <h1>Gestione Test (Admin)</h1>
       <button id="go-classes" style="background:#0ea5e9; color:#0f172a;">Gestione classi</button>
       <button id="go-users" style="background:#22c55e; color:#0f172a;">Gestione utenti</button>
-      <button id="go-video-admin" style="background:#10b981; color:#0f172a;">Gestione video</button>
-      <button id="go-video-instructor" style="background:#14b8a6; color:#0f172a;">Video istruttore</button>
-      <button id="go-video-student" style="background:#8b5cf6; color:#fff;">Video allievo</button>
     </header>
 
     <div id="status" class="small"></div>
@@ -121,9 +118,6 @@
     const videoFile = document.getElementById("video-file");
     const videoMsg = document.getElementById("video-msg");
     const uploadBtn = document.getElementById("upload-video");
-    const goVidAdmin = document.getElementById("go-video-admin");
-    const goVidInstr = document.getElementById("go-video-instructor");
-    const goVidStud  = document.getElementById("go-video-student");
 
     const sources = [
       { key: "Aerop", path: "assets/Aerop.csv", label: "Aerop" },
@@ -229,8 +223,31 @@
             <span class="badge">${(v.assigned_classes||[]).length} classi</span>
           </div>
           <div class="small">File: ${escapeHTML(v.url||'')}</div>
+          <div class="small" style="margin-top:4px;">Caricato da: ${escapeHTML(v.created_by||'')}</div>
+          <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:8px;">
+            <button class="btn-small" data-del="${v.id}" style="padding:6px 10px; border-radius:8px; font-size:12px; background:#f87171;">Elimina</button>
+          </div>
         </li>
       `).join("");
+      videoList.querySelectorAll("button[data-del]").forEach(btn=>{
+        btn.onclick = ()=> deleteVideo(btn.dataset.del);
+      });
+    }
+
+    async function persistVideos(){
+      await saveRemote("vvf_videos", videos);
+      saveJSON(STORAGE_VIDEOS, videos);
+    }
+
+    async function deleteVideo(id){
+      const idx = videos.findIndex(v => String(v.id) === String(id));
+      if (idx === -1) return;
+      const target = videos[idx];
+      if (!confirm(`Eliminare il video "${target.title || id}"?`)) return;
+      videos.splice(idx, 1);
+      await persistVideos();
+      renderVideos();
+      videoMsg.textContent = "Video eliminato.";
     }
 
     async function uploadVideo(){
@@ -257,8 +274,7 @@
           assigned_classes: [],
           views: {}
         });
-        await saveRemote("vvf_videos", videos);
-        saveJSON(STORAGE_VIDEOS, videos);
+        await persistVideos();
         videoTitle.value = "";
         videoDescr.value = "";
         videoFile.value = "";
@@ -276,9 +292,6 @@
     saveBtn.addEventListener("click", saveCurrentTest);
     goClasses.addEventListener("click", ()=> window.location.href = "classes.html");
     goUsers.addEventListener("click", ()=> window.location.href = "admin-users.html");
-    if (goVidAdmin) goVidAdmin.addEventListener("click", ()=> window.location.href = "video_admin.html");
-    if (goVidInstr) goVidInstr.addEventListener("click", ()=> window.location.href = "video_instructor.html");
-    if (goVidStud)  goVidStud.addEventListener("click",  ()=> window.location.href = "video_student.html");
     if (uploadBtn) uploadBtn.addEventListener("click", uploadVideo);
 
     async function loadQuestions() {
