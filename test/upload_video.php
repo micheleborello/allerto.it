@@ -5,11 +5,11 @@
 $TOKEN = 'ALLERTO';
 
 // Prova ad alzare i limiti runtime per accettare file grandi (richiede che PHP consenta ini_set)
-@ini_set('upload_max_filesize', '1024M');
-@ini_set('post_max_size', '1024M');
-@ini_set('max_execution_time', '300');
-@ini_set('max_input_time', '300');
-@ini_set('memory_limit', '1024M');
+@ini_set('upload_max_filesize', '0');   // 0 = senza limite se consentito dall'hosting
+@ini_set('post_max_size', '0');         // 0 = senza limite se consentito dall'hosting
+@ini_set('max_execution_time', '900');
+@ini_set('max_input_time', '900');
+@ini_set('memory_limit', '-1');         // senza limite se permesso
 
 header('Content-Type: application/json; charset=utf-8');
 header('Access-Control-Allow-Origin: *');
@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 
 // estrai token anche da query string o header per evitare problemi con form-data troncati
 $token = $_POST['token'] ?? $_GET['token'] ?? '';
-if (!$token && isset($_SERVER['HTTP_AUTHORIZATION']) && preg_match('/Bearer\\s+(.+)/i', $_SERVER['HTTP_AUTHORIZATION'], $m)) {
+if (!$token && isset($_SERVER['HTTP_AUTHORIZATION']) && preg_match('/Bearer\s+(.+)/i', $_SERVER['HTTP_AUTHORIZATION'], $m)) {
     $token = $m[1];
 }
 $token = is_string($token) ? trim($token) : '';
@@ -41,12 +41,12 @@ if ($TOKEN && $token !== $TOKEN) {
     exit;
 }
 
-// controlla se post_max_size bloccato (PHP svuota $_FILES)
+// controlla se post_max_size bloccato (PHP svuota $_FILES) solo se il limite è >0
 $contentLength = (int)($_SERVER['CONTENT_LENGTH'] ?? 0);
 $postMaxBytes = convertToBytes(ini_get('post_max_size'));
 if ($contentLength > 0 && $postMaxBytes > 0 && $contentLength > $postMaxBytes) {
     http_response_code(400);
-    echo json_encode(['ok'=>false,'error'=>'Dimensione richiesta oltre post_max_size ('.ini_get('post_max_size').'). Riduci il file o aumenta il limite.']);
+    echo json_encode(['ok'=>false,'error'=>'Dimensione richiesta oltre post_max_size ('.ini_get('post_max_size').'). Aumenta post_max_size/upload_max_filesize o abilita ini_set.']);
     exit;
 }
 
@@ -99,13 +99,13 @@ $finalPath = $destPath;
 $finalName = $destName;
 $converted = false;
 
-// Prova a normalizzare il formato in MP4 H.264/AAC per la compatibilità browser
+// Prova a normalizzare il formato in MP4 H.264/AAC per la compatibilita browser
 if (is_callable('exec')) {
     $ffmpeg = trim(shell_exec('which ffmpeg 2>/dev/null')) ?: 'ffmpeg';
     $outName = $safeBase.'_'.date('Ymd_His').'_web.mp4';
     $outPath = $destDir.'/'.$outName;
-    // Scala a max 1280px di larghezza mantenendo proporzioni e dimensioni pari (compatibilità browser)
-    $scale = "scale=1280:-2:force_original_aspect_ratio=decrease";
+    // Scala a max 1920px di larghezza mantenendo proporzioni e dimensioni pari (compatibilita browser)
+    $scale = "scale=1920:-2:force_original_aspect_ratio=decrease";
     $cmd = $ffmpeg
       .' -y -i '.escapeshellarg($destPath)
       .' -c:v libx264 -preset veryfast -crf 23 -pix_fmt yuv420p -vf '.escapeshellarg($scale)
