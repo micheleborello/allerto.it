@@ -93,7 +93,7 @@
       fd.append('file', file);
       fd.append('token', TOKEN);
       try{
-        const up = await fetch('upload_video.php', { method:'POST', body: fd });
+        const up = await fetch('upload_video.php?token='+encodeURIComponent(TOKEN), { method:'POST', body: fd });
         const uj = await up.json();
         if (!uj.ok) throw new Error(uj.error || 'Upload fallito');
         const url = uj.url;

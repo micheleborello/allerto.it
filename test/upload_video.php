@@ -6,14 +6,20 @@ $TOKEN = 'ALLERTO';
 
 header('Content-Type: application/json; charset=utf-8');
 header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type, Authorization');
 
-// Token
-$token = $_POST['token'] ?? '';
-if ($TOKEN && $token !== $TOKEN) {
-    http_response_code(403);
-    echo json_encode(['ok'=>false,'error'=>'Token non valido']);
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(204);
     exit;
 }
+
+// estrai token anche da query string o header per evitare problemi con form-data troncati
+$token = $_POST['token'] ?? $_GET['token'] ?? '';
+if (!$token && isset($_SERVER['HTTP_AUTHORIZATION']) && preg_match('/Bearer\\s+(.+)/i', $_SERVER['HTTP_AUTHORIZATION'], $m)) {
+    $token = $m[1];
+}
+$token = is_string($token) ? trim($token) : '';
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
@@ -21,9 +27,21 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
-if (!isset($_FILES['file']) || ($_FILES['file']['error'] ?? UPLOAD_ERR_NO_FILE) !== UPLOAD_ERR_OK) {
+$token = (string)$token;
+if ($TOKEN && $token !== $TOKEN) {
+    http_response_code(403);
+    echo json_encode(['ok'=>false,'error'=>'Token non valido']);
+    exit;
+}
+
+$uploadErr = $_FILES['file']['error'] ?? UPLOAD_ERR_NO_FILE;
+if (!isset($_FILES['file']) || $uploadErr !== UPLOAD_ERR_OK) {
+    $msg = 'Nessun file caricato';
+    if ($uploadErr === UPLOAD_ERR_INI_SIZE || $uploadErr === UPLOAD_ERR_FORM_SIZE) {
+        $msg = 'File troppo grande (supera upload_max_filesize/post_max_size)';
+    }
     http_response_code(400);
-    echo json_encode(['ok'=>false,'error'=>'Nessun file caricato']);
+    echo json_encode(['ok'=>false,'error'=>$msg]);
     exit;
 }
 
