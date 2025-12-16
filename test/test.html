@@ -201,6 +201,7 @@
     function isLocked(q) { return state.locked.has(keyOf(q)); }
     function loadJSON(key, fallback) { try { const v = localStorage.getItem(key); return v ? JSON.parse(v) : fallback; } catch { return fallback; } }
     function saveJSON(key, data) { localStorage.setItem(key, JSON.stringify(data)); }
+    function ensureArray(val){ return Array.isArray(val) ? val : []; }
     async function loadRemote(type, fallback) {
       if (!API_TOKEN) return fallback;
       try {
@@ -222,12 +223,12 @@
       } catch (err) { console.warn("Save remote", type, err); }
     }
     async function init() {
-      savedTests = await loadRemote("vvf_tests", savedTests);
-      savedResults = await loadRemote("vvf_results", savedResults);
-      students = await loadRemote("vvf_students", students);
-      requests = await loadRemote("vvf_requests", requests);
-      videos = await loadRemote("vvf_videos", videos);
-      materials = await loadRemote("vvf_materials", materials);
+      savedTests = ensureArray(await loadRemote("vvf_tests", savedTests));
+      savedResults = ensureArray(await loadRemote("vvf_results", savedResults));
+      students = ensureArray(await loadRemote("vvf_students", students));
+      requests = ensureArray(await loadRemote("vvf_requests", requests));
+      videos = ensureArray(await loadRemote("vvf_videos", videos));
+      materials = ensureArray(await loadRemote("vvf_materials", materials));
       saveJSON(STORAGE_TESTS, savedTests);
       saveJSON(STORAGE_RESULTS, savedResults);
       saveJSON(STORAGE_STUDENTS, students);
@@ -331,6 +332,7 @@
 
     async function uploadVideo(){
       if (!uploadBtn) return;
+      videos = ensureArray(videos);
       const title = videoTitle.value.trim();
       const descr = videoDescr.value.trim();
       const file = videoFile.files[0];
@@ -368,6 +370,7 @@
 
     async function uploadMaterial(){
       if (!uploadMatBtn) return;
+      materials = ensureArray(materials);
       const title = materialTitle.value.trim();
       const descr = materialDescr.value.trim();
       const file = materialFile.files[0];

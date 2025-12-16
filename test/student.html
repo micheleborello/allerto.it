@@ -353,7 +353,7 @@
       renderMaterialGrid(allowedMaterials);
       loadBtn.disabled = true;
       if (!tests.length) setStatus("Nessun test disponibile.");
-      else setStatus("Seleziona un test e premi Carica.");
+      else setStatus("Seleziona un test.");
       renderUserResults();
       renderDashboard();
       loginPanelVisible(false);
@@ -539,8 +539,18 @@
       if(!videoPlayer || !videoElem || !videoTitle || !videoLink) return;
       videoTitle.textContent = video.title || "Video";
       videoDescr.textContent = video.descr || "";
-      videoElem.src = video.url || "";
-      videoElem.load();
+      while(videoElem.firstChild) videoElem.removeChild(videoElem.firstChild);
+      if(video.url){
+        const source=document.createElement("source");
+        source.src = video.url;
+        const ext = (video.url.split(".").pop()||"").toLowerCase();
+        const mime = ext==="webm"?"video/webm":ext==="ogg"?"video/ogg":"video/mp4";
+        source.type = mime;
+        videoElem.appendChild(source);
+        videoElem.load();
+      } else {
+        videoElem.removeAttribute("src");
+      }
       videoPlayer.style.display = "block";
       if(video.url){
         videoLink.href = video.url;
