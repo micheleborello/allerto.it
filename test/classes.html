@@ -258,6 +258,11 @@
         classTests.forEach(t=>{
           const li=document.createElement("li");
           li.textContent = t.title;
+          const preview=document.createElement("button");
+          preview.className="btn-small";
+          preview.style.marginLeft="8px";
+          preview.textContent="Apri";
+          preview.onclick=()=> openTestPreview(t);
           const btn=document.createElement("button");
           btn.className="btn-small";
           btn.style.background="#f87171";
@@ -270,6 +275,7 @@
             renderDetail();
             renderClasses();
           };
+          li.appendChild(preview);
           li.appendChild(btn);
           assignedUl.appendChild(li);
         });
@@ -327,6 +333,16 @@
         classMaterials.forEach(m=>{
           const li=document.createElement("li");
           li.textContent = m.title || m.id;
+          if(m.url){
+            const open=document.createElement("a");
+            open.className="btn-small";
+            open.style.marginLeft="8px";
+            open.textContent="Apri";
+            open.href = m.url;
+            open.target = "_blank";
+            open.rel = "noopener";
+            li.appendChild(open);
+          }
           const btn=document.createElement("button");
           btn.className="btn-small";
           btn.style.background="#f87171";
@@ -515,6 +531,24 @@
       return `${m}m ${s}s`;
     }
     function escapeHTML(str){ return String(str||"").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[ch])); }
+
+    function openTestPreview(test){
+      if(!test) return;
+      const html = `
+        <div><strong>${escapeHTML(test.title||"Test")}</strong></div>
+        <div class="small">Domande: ${test.questions.length}</div>
+        ${test.questions.map((q,idx)=>`
+          <div style="margin-top:10px; padding:10px; border:1px solid #e2e8f0; border-radius:10px; background:#f8fafc;">
+            <div><strong>${idx+1}. ${escapeHTML(q.question)}</strong></div>
+            <div class="small">${q.options.map((opt,i)=>`${i+1}) ${escapeHTML(opt)}`).join("<br>")}</div>
+            <div class="small" style="margin-top:4px;">Risposta corretta: ${q.answerIndex+1}</div>
+          </div>
+        `).join("")}
+      `;
+      const win = window.open("", "_blank", "width=900,height=700,scrollbars=yes");
+      win.document.write(`<!doctype html><html><head><meta charset="utf-8"><title>Anteprima test</title><style>body{font-family:Segoe UI,Arial,sans-serif; padding:14px; color:#0f172a; background:#f8fafc;} .small{color:#475569; font-size:13px;}</style></head><body>${html}</body></html>`);
+      win.document.close();
+    }
 
     function setVideoSource(el, url){
       if(!el) return;
