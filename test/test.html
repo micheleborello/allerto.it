@@ -91,6 +91,31 @@
       <div class="small" style="margin-top:10px;"><strong>Video pubblicati</strong></div>
       <div id="video-list" class="test-list"></div>
     </div>
+
+    <div class="panel">
+      <strong>Materiale didattico (Admin)</strong>
+      <div class="small">Carica file (pdf/doc/immagini) e assegnali alle classi da classes.html.</div>
+      <div class="grid" style="margin-top:8px;">
+        <div>
+          <label class="small">Titolo materiale</label>
+          <input id="material-title" placeholder="Titolo materiale">
+        </div>
+        <div>
+          <label class="small">Descrizione</label>
+          <input id="material-descr" placeholder="Descrizione breve">
+        </div>
+        <div>
+          <label class="small">File (pdf/doc/xls/ppt/immagini)</label>
+          <input id="material-file" type="file" accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.odt,.odp,.png,.jpg,.jpeg,.webp,.txt,.rtf,.csv">
+        </div>
+        <div style="display:flex; align-items:flex-end;">
+          <button id="upload-material" style="background:#3b82f6; color:#0f172a;">Carica materiale</button>
+        </div>
+      </div>
+      <div id="material-msg" class="small" style="margin-top:6px;"></div>
+      <div class="small" style="margin-top:10px;"><strong>Materiali caricati</strong></div>
+      <div id="material-list" class="test-list"></div>
+    </div>
   </div>
 
   <script>
@@ -99,6 +124,7 @@
     const STORAGE_STUDENTS = "vvf_students";
     const STORAGE_REQUESTS = "vvf_requests";
     const STORAGE_VIDEOS = "vvf_videos";
+    const STORAGE_MATERIALS = "vvf_materials";
     const API_URL = "save_data.php";
     const API_TOKEN = "ALLERTO";
     const statusEl = document.getElementById("status");
@@ -118,6 +144,12 @@
     const videoFile = document.getElementById("video-file");
     const videoMsg = document.getElementById("video-msg");
     const uploadBtn = document.getElementById("upload-video");
+    const materialList = document.getElementById("material-list");
+    const materialTitle = document.getElementById("material-title");
+    const materialDescr = document.getElementById("material-descr");
+    const materialFile = document.getElementById("material-file");
+    const materialMsg = document.getElementById("material-msg");
+    const uploadMatBtn = document.getElementById("upload-material");
 
     const sources = [
       { key: "Aerop", path: "assets/Aerop.csv", label: "Aerop" },
@@ -151,6 +183,7 @@
     let students = loadJSON(STORAGE_STUDENTS, []);
     let requests = loadJSON(STORAGE_REQUESTS, []);
     let videos = loadJSON(STORAGE_VIDEOS, []);
+    let materials = loadJSON(STORAGE_MATERIALS, []);
     const state = { questions: [], pool: [], locked: new Set(), currentTestId: null };
 
     const uuid = ()=> crypto.randomUUID ? crypto.randomUUID() : 'v_'+Math.random().toString(36).slice(2);
@@ -194,14 +227,17 @@
       students = await loadRemote("vvf_students", students);
       requests = await loadRemote("vvf_requests", requests);
       videos = await loadRemote("vvf_videos", videos);
+      materials = await loadRemote("vvf_materials", materials);
       saveJSON(STORAGE_TESTS, savedTests);
       saveJSON(STORAGE_RESULTS, savedResults);
       saveJSON(STORAGE_STUDENTS, students);
       saveJSON(STORAGE_REQUESTS, requests);
       saveJSON(STORAGE_VIDEOS, videos);
+      saveJSON(STORAGE_MATERIALS, materials);
       renderSaved();
       renderSources();
       renderVideos();
+      renderMaterials();
     }
 
     function renderSources(){
@@ -250,6 +286,49 @@
       videoMsg.textContent = "Video eliminato.";
     }
 
+    function renderMaterials(){
+      if (!materialList) return;
+      if (!Array.isArray(materials) || !materials.length) {
+        materialList.innerHTML = '<li class="test-item small">Nessun materiale caricato.</li>';
+        return;
+      }
+      materialList.innerHTML = materials.map(m=>`
+        <li class="test-item">
+          <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+            <div>
+              <strong>${escapeHTML(m.title||'')}</strong><br>
+              <span class="small">${escapeHTML(m.descr||'')}</span>
+            </div>
+            <span class="badge">${(m.assigned_classes||[]).length} classi</span>
+          </div>
+          <div class="small">File: ${escapeHTML(m.url||'')}</div>
+          <div class="small" style="margin-top:4px;">Caricato da: ${escapeHTML(m.created_by||'')}</div>
+          <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:8px;">
+            <button class="btn-small" data-del="${m.id}" style="padding:6px 10px; border-radius:8px; font-size:12px; background:#f87171;">Elimina</button>
+          </div>
+        </li>
+      `).join("");
+      materialList.querySelectorAll("button[data-del]").forEach(btn=>{
+        btn.onclick = ()=> deleteMaterial(btn.dataset.del);
+      });
+    }
+
+    async function persistMaterials(){
+      await saveRemote("vvf_materials", materials);
+      saveJSON(STORAGE_MATERIALS, materials);
+    }
+
+    async function deleteMaterial(id){
+      const idx = materials.findIndex(m => String(m.id) === String(id));
+      if (idx === -1) return;
+      const target = materials[idx];
+      if (!confirm(`Eliminare il materiale "${target.title || id}"?`)) return;
+      materials.splice(idx, 1);
+      await persistMaterials();
+      renderMaterials();
+      if(materialMsg) materialMsg.textContent = "Materiale eliminato.";
+    }
+
     async function uploadVideo(){
       if (!uploadBtn) return;
       const title = videoTitle.value.trim();
@@ -287,12 +366,49 @@
       }
     }
 
+    async function uploadMaterial(){
+      if (!uploadMatBtn) return;
+      const title = materialTitle.value.trim();
+      const descr = materialDescr.value.trim();
+      const file = materialFile.files[0];
+      if (!title || !file) { materialMsg.textContent = "Titolo e file sono obbligatori."; return; }
+      uploadMatBtn.disabled = true;
+      materialMsg.textContent = "Caricamento in corso...";
+      const fd = new FormData();
+      fd.append("file", file, file.name);
+      fd.append("token", API_TOKEN);
+      try{
+        const up = await fetch("upload_material.php?token="+encodeURIComponent(API_TOKEN), { method:"POST", body: fd });
+        const uj = await up.json();
+        if (!uj.ok) throw new Error(uj.error || "Upload fallito");
+        const url = uj.url;
+        materials.push({
+          id: uuid(),
+          title, descr,
+          url,
+          created_by: "admin",
+          assigned_classes: []
+        });
+        await persistMaterials();
+        materialTitle.value = "";
+        materialDescr.value = "";
+        materialFile.value = "";
+        materialMsg.textContent = "Materiale caricato e salvato.";
+        renderMaterials();
+      } catch(err){
+        materialMsg.textContent = "Errore: " + err.message + " (verifica i limiti di upload_max_filesize/post_max_size)";
+      } finally {
+        uploadMatBtn.disabled = false;
+      }
+    }
+
     generateBtn.addEventListener("click", loadQuestions);
     regenBtn.addEventListener("click", regenerateUnlocked);
     saveBtn.addEventListener("click", saveCurrentTest);
     goClasses.addEventListener("click", ()=> window.location.href = "classes.html");
     goUsers.addEventListener("click", ()=> window.location.href = "admin-users.html");
     if (uploadBtn) uploadBtn.addEventListener("click", uploadVideo);
+    if (uploadMatBtn) uploadMatBtn.addEventListener("click", uploadMaterial);
 
     async function loadQuestions() {
       const selectedSources = Array.from(sourceSelect.selectedOptions).map(o=>o.value);

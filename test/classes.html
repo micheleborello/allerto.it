@@ -65,6 +65,7 @@
     const STORAGE_RESULTS = "vvf_results";
     const STORAGE_TESTS = "vvf_tests";
     const STORAGE_VIDEOS = "vvf_videos";
+    const STORAGE_MATERIALS = "vvf_materials";
     const STORAGE_SESSION = "vvf_logged_user";
     const API_URL = "save_data.php";
     const API_TOKEN = "ALLERTO";
@@ -79,6 +80,7 @@
     let results = loadJSON(STORAGE_RESULTS, []);
     let tests = loadJSON(STORAGE_TESTS, []);
     let videos = [];
+    let materials = [];
     let currentClass = null;
     let me = null;
     const decoder = document.createElement("textarea");
@@ -117,10 +119,12 @@
       results = ensureArray(await loadRemote("vvf_results", results));
       tests = ensureArray(await loadRemote("vvf_tests", tests));
       videos = ensureArray(await loadRemote("vvf_videos", videos));
+      materials = ensureArray(await loadRemote("vvf_materials", materials));
       users.forEach(u=>{ if(u.name){ const dec=decodeHTML(u.name); if(dec!==u.name) u.name=dec; } });
       classes.forEach(c=>{ if(c.name){ const dec=decodeHTML(c.name); if(dec!==c.name) c.name=dec; } });
       tests.forEach(t=>{ if(t.title){ const dec=decodeHTML(t.title); if(dec!==t.title) t.title=dec; } });
-      saveJSON(STORAGE_USERS, users); saveJSON(STORAGE_CLASSES, classes); saveJSON(STORAGE_RESULTS, results); saveJSON(STORAGE_TESTS, tests);
+      materials.forEach(m=>{ if(m.title){ const dec=decodeHTML(m.title); if(dec!==m.title) m.title=dec; } if(m.descr){ const dec=decodeHTML(m.descr); if(dec!==m.descr) m.descr=dec; } });
+      saveJSON(STORAGE_USERS, users); saveJSON(STORAGE_CLASSES, classes); saveJSON(STORAGE_RESULTS, results); saveJSON(STORAGE_TESTS, tests); saveJSON(STORAGE_MATERIALS, materials);
 
       const session = loadJSON(STORAGE_SESSION, null);
       if(!session){ statusEl.textContent = "Devi accedere come istruttore."; return; }
@@ -157,6 +161,7 @@
       const classResults = results.filter(r=> students.find(s=> (s.username||"").toLowerCase()===(r.username||"").toLowerCase()));
       const classTests = tests.filter(t=> (currentClass.testsAllowed||[]).includes(t.id));
       const classVideos = videos.filter(v => (v.assigned_classes||[]).map(String).includes(String(currentClass.id)));
+      const classMaterials = materials.filter(m => (m.assigned_classes||[]).map(String).includes(String(currentClass.id)));
 
       classDetailEl.innerHTML = `
         <div><strong>${escapeHTML(currentClass.name)}</strong></div>
@@ -194,6 +199,22 @@
           </div>
         </div>
         <div class="section">
+          <strong>Materiale didattico</strong>
+          <div class="small">Aggiungi o rimuovi materiale della classe.</div>
+          <div style="display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:8px; margin-top:6px;">
+            <div>
+              <label class="small" for="material-picker">Seleziona materiale</label>
+              <select id="material-picker" aria-label="Materiali disponibili" title="Materiali disponibili"></select>
+              <button id="add-material" class="btn-small" style="margin-top:6px;">Aggiungi materiale</button>
+              <button id="clear-materials" class="btn-small" style="margin-top:6px; background:#f87171;">Rimuovi tutto</button>
+            </div>
+            <div>
+              <div class="small"><strong>Materiali assegnati</strong></div>
+              <ul id="assigned-materials"></ul>
+            </div>
+          </div>
+        </div>
+        <div class="section">
           <strong>Studenti (${students.length})</strong>
           ${students.length?'<ul id="student-list"></ul>':'<div class="small">Nessun studente assegnato.</div>'}
         </div>
@@ -207,6 +228,10 @@
       const addVideoBtn = document.getElementById("add-video");
       const clearVideosBtn = document.getElementById("clear-videos");
       const assignedVideosUl = document.getElementById("assigned-videos");
+      const materialPicker = document.getElementById("material-picker");
+      const addMaterialBtn = document.getElementById("add-material");
+      const clearMaterialsBtn = document.getElementById("clear-materials");
+      const assignedMaterialsUl = document.getElementById("assigned-materials");
       
      
 
@@ -219,6 +244,11 @@
         const selectedIds = new Set((currentClass.videosAllowed||[]).map(String));
         videoPicker.innerHTML = '<option value="">-- Seleziona video --</option>' + videos
           .map(v=>`<option value="${v.id}" ${selectedIds.has(String(v.id))?"disabled":""}>${escapeHTML(v.title||v.id)}</option>`).join("");
+      }
+      function refreshMaterialOptions(){
+        const selectedIds = new Set((currentClass.materialsAllowed||[]).map(String));
+        materialPicker.innerHTML = '<option value="">-- Seleziona materiale --</option>' + materials
+          .map(m=>`<option value="${m.id}" ${selectedIds.has(String(m.id))?"disabled":""}>${escapeHTML(m.title||m.id)}</option>`).join("");
       }
       function renderAssignedList(){
         assignedUl.innerHTML = "";
@@ -267,10 +297,37 @@
           assignedVideosUl.appendChild(li);
         });
       }
+      function renderAssignedMaterials(){
+        assignedMaterialsUl.innerHTML = "";
+        if(!classMaterials.length){ assignedMaterialsUl.innerHTML = '<li class="small">Nessun materiale assegnato.</li>'; return; }
+        classMaterials.forEach(m=>{
+          const li=document.createElement("li");
+          li.textContent = m.title || m.id;
+          const btn=document.createElement("button");
+          btn.className="btn-small";
+          btn.style.background="#f87171";
+          btn.style.marginLeft="8px";
+          btn.textContent="Rimuovi";
+          btn.onclick=()=>{
+            m.assigned_classes = Array.isArray(m.assigned_classes)?m.assigned_classes:[];
+            m.assigned_classes = m.assigned_classes.filter(x=>String(x)!==String(currentClass.id));
+            currentClass.materialsAllowed = (currentClass.materialsAllowed||[]).filter(x=>String(x)!==String(m.id));
+            saveJSON(STORAGE_CLASSES, classes);
+            saveRemote("vvf_classes", classes);
+            saveRemote("vvf_materials", materials);
+            renderDetail();
+            renderClasses();
+          };
+          li.appendChild(btn);
+          assignedMaterialsUl.appendChild(li);
+        });
+      }
       refreshAssignOptions();
       renderAssignedList();
       refreshVideoOptions();
       renderAssignedVideos();
+      refreshMaterialOptions();
+      renderAssignedMaterials();
 
       addTestBtn.onclick = ()=>{
         const id = testPicker.value;
@@ -310,6 +367,32 @@
         saveJSON(STORAGE_CLASSES, classes);
         saveRemote("vvf_classes", classes);
         saveRemote("vvf_videos", videos);
+        renderDetail();
+        renderClasses();
+      };
+      addMaterialBtn.onclick = ()=>{
+        const id = materialPicker.value;
+        if(!id) return;
+        const mat = materials.find(m=>String(m.id)===String(id));
+        if(!mat) return;
+        mat.assigned_classes = Array.isArray(mat.assigned_classes)?mat.assigned_classes:[];
+        mat.assigned_classes = Array.from(new Set([...mat.assigned_classes, String(currentClass.id)]));
+        currentClass.materialsAllowed = Array.from(new Set([...(currentClass.materialsAllowed||[]), String(id)]));
+        saveJSON(STORAGE_CLASSES, classes);
+        saveRemote("vvf_classes", classes);
+        saveRemote("vvf_materials", materials);
+        renderDetail();
+        renderClasses();
+      };
+      clearMaterialsBtn.onclick = ()=>{
+        materials.forEach(m=>{
+          m.assigned_classes = Array.isArray(m.assigned_classes)?m.assigned_classes:[];
+          m.assigned_classes = m.assigned_classes.filter(x=>String(x)!==String(currentClass.id));
+        });
+        currentClass.materialsAllowed = [];
+        saveJSON(STORAGE_CLASSES, classes);
+        saveRemote("vvf_classes", classes);
+        saveRemote("vvf_materials", materials);
         renderDetail();
         renderClasses();
       };
