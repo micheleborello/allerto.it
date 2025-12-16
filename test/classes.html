@@ -27,6 +27,8 @@
     .result-card { border:1px solid var(--border); border-radius:10px; padding:8px; margin-bottom:8px; background:#f8fafc; }
     .btn-small { padding:6px 10px; border-radius:8px; font-size:12px; }
     .link { color:#ea580c; text-decoration:none; font-weight:700; }
+    .section-card { border:1px solid var(--border); border-radius:12px; padding:10px; background:#f8fafc; box-shadow:0 4px 10px rgba(0,0,0,0.05); }
+    .section-card h3 { margin:0 0 4px; }
     @media (max-width:640px){
       .app { padding:12px; }
       header { flex-direction:column; align-items:flex-start; gap:6px; }
@@ -166,8 +168,8 @@
       classDetailEl.innerHTML = `
         <div><strong>${escapeHTML(currentClass.name)}</strong></div>
         <div class="small">Test assegnati: ${classTests.length}</div>
-        <div class="section">
-          <strong>Gestione test della classe</strong>
+        <div class="section-card">
+          <h3>Gestione test della classe</h3>
           <div class="small">Scegli un test e premi "Aggiungi". Usa il pulsante Rimuovi accanto a ciascun test per toglierlo.</div>
           <div style="display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:8px; margin-top:6px;">
             <div>
@@ -182,8 +184,8 @@
             </div>
           </div>
         </div>
-        <div class="section">
-          <strong>Gestione video della classe</strong>
+        <div class="section-card">
+          <h3>Gestione video della classe</h3>
           <div class="small">Scegli un video e premi "Aggiungi". Usa Rimuovi per toglierlo dalla classe.</div>
           <div style="display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:8px; margin-top:6px;">
             <div>
@@ -198,8 +200,8 @@
             </div>
           </div>
         </div>
-        <div class="section">
-          <strong>Materiale didattico</strong>
+        <div class="section-card">
+          <h3>Materiale didattico</h3>
           <div class="small">Aggiungi o rimuovi materiale della classe.</div>
           <div style="display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:8px; margin-top:6px;">
             <div>
