@@ -74,11 +74,13 @@
             <span class="muted">${viewed?'✅ visto':'⬜ non visto'}</span>
           </div>
           <video class="video-frame" controls playsinline preload="metadata" data-src="${escapeHtml(v.url||'')}"></video>
+          <div class="muted video-error" style="margin-top:6px;"></div>
+          <a class="muted" style="display:inline-block; margin-top:4px; color:#0ea5e9; font-weight:700; text-decoration:none;" href="${escapeHtml(v.url||'#')}" target="_blank" rel="noopener">Apri in nuova scheda</a>
           <button data-vid="${v.id}" style="margin-top:8px;">Segna come visto</button>
         </div>`;
       }).join('');
       container.querySelectorAll('video[data-src]').forEach(el=>{
-        setVideoSource(el, el.dataset.src);
+        setVideoSource(el, el.dataset.src, el.parentElement.querySelector('.video-error'));
       });
       container.querySelectorAll('button[data-vid]').forEach(btn=>{
         btn.addEventListener('click', ()=> markSeen(btn.dataset.vid, student));
@@ -101,7 +103,7 @@
     }
     init();
 
-    function setVideoSource(el, url){
+    function setVideoSource(el, url, errorEl=null){
       if(!el) return;
       while(el.firstChild) el.removeChild(el.firstChild);
       el.removeAttribute('src');
@@ -112,7 +114,7 @@
       if(mime) source.type = mime;
       el.appendChild(source);
       el.load();
-      el.onerror = ()=>{ el.title = 'Formato video non supportato o file mancante'; };
+      el.onerror = ()=>{ el.title = 'Formato video non supportato o file mancante'; if(errorEl) errorEl.textContent = 'Video non riproducibile nel browser, aprilo in nuova scheda.'; };
     }
 
     function getMimeFromUrl(url){
