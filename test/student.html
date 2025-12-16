@@ -24,6 +24,10 @@
     .test-card:hover .hint { opacity:1; }
     .test-card.disabled { opacity:0.4; cursor:not-allowed; }
     .test-card.selected { border-color:#ea580c; box-shadow:0 10px 22px rgba(234,88,12,0.18); }
+    .video-card { position:relative; border:1px solid #e2e8f0; border-radius:12px; padding:12px; background:#fff; box-shadow:0 6px 14px rgba(0,0,0,0.08); cursor:pointer; transition:transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease; min-height:80px; }
+    .video-card:hover { transform: translateY(-2px); box-shadow:0 10px 20px rgba(0,0,0,0.12); }
+    .video-card.selected { border-color:#10b981; box-shadow:0 10px 22px rgba(16,185,129,0.18); }
+    .video-card .title { font-weight:700; }
     .stats-card { background: linear-gradient(135deg, #fef3c7, #fde68a); border:1px solid #fcd34d; color:#92400e; border-radius:12px; padding:10px; box-shadow:0 8px 18px rgba(0,0,0,0.08); margin-top:8px; }
     .q-head { display:flex; gap:8px; align-items:baseline; flex-wrap:wrap; }
     .q-num { background: var(--accent); color:#0b0b0b; border-radius:999px; padding:3px 9px; font-weight:700; }
@@ -49,7 +53,6 @@
     <header style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
       <h1>Quiz VVF - Allievo</h1>
       <div id="user-chip" class="small" style="margin-left:auto;"></div>
-      <a href="video_student.html" class="btn-link" style="background:#10b981; color:#0b0b0b; padding:8px 12px; border-radius:10px; font-weight:700; text-decoration:none;">🎬 Video assegnati</a>
       <button id="logout" style="background:#f87171;">Logout</button>
       <a href="index.html" style="color:#0ea5e9; text-decoration:none; font-weight:700;">Home</a>
     </header>
@@ -86,6 +89,18 @@
       <div class="small" id="status">Accedi per abilitare i test.</div>
     </div>
 
+    <div class="panel" id="video-panel" style="display:none;">
+      <label>Seleziona un video</label>
+      <div id="video-grid" class="test-grid"></div>
+      <div id="video-player" class="card" style="display:none; margin-top:10px;">
+        <div id="video-title" style="font-weight:700;"></div>
+        <div id="video-descr" class="small" style="margin-top:4px;"></div>
+        <video id="video-elem" controls style="width:100%; border-radius:12px; background:#0f172a; margin-top:8px;" preload="metadata"></video>
+        <div class="small" style="margin-top:6px;"><a id="video-link" href="#" target="_blank" rel="noopener" style="color:#0ea5e9; text-decoration:none; font-weight:700;">Apri in nuova scheda</a></div>
+      </div>
+      <div class="small" id="video-status">Accedi per vedere i video assegnati.</div>
+    </div>
+
     <div id="quiz"></div>
     <div class="panel" id="results" style="display:none;"></div>
   </div>
@@ -96,6 +111,7 @@
     const STORAGE_REQUESTS = "vvf_requests";
     const STORAGE_USERS = "vvf_users";
     const STORAGE_CLASSES = "vvf_classes";
+    const STORAGE_VIDEOS = "vvf_videos";
     const STORAGE_SESSION = "vvf_logged_user";
     const STORAGE_SEEN = "vvf_seen_tests";
     const API_URL = "save_data.php";
@@ -122,15 +138,25 @@
     const userChip = document.getElementById("user-chip");
     const userResultsPanel = document.getElementById("user-results-panel");
     const userResults = document.getElementById("user-results");
+    const videoPanel = document.getElementById("video-panel");
+    const videoGrid = document.getElementById("video-grid");
+    const videoStatus = document.getElementById("video-status");
+    const videoPlayer = document.getElementById("video-player");
+    const videoElem = document.getElementById("video-elem");
+    const videoTitle = document.getElementById("video-title");
+    const videoDescr = document.getElementById("video-descr");
+    const videoLink = document.getElementById("video-link");
 
     let tests = loadJSON(STORAGE_TESTS, []);
     let results = loadJSON(STORAGE_RESULTS, []);
     let requests = loadJSON(STORAGE_REQUESTS, []);
     let users = loadJSON(STORAGE_USERS, []);
     let classes = loadJSON(STORAGE_CLASSES, []);
+    let videos = loadJSON(STORAGE_VIDEOS, []);
     let current = null;
     let currentUser = null;
     let selectedTestId = null;
+    let selectedVideoId = null;
     let remoteErrorShown = false;
     let testStartAt = null;
     let seenTests = loadJSON(STORAGE_SEEN, {}); // { username: [testId,...] }
@@ -177,10 +203,12 @@
       requests = ensureArray(await loadRemote("vvf_requests", requests));
       users = ensureArray(await loadRemote("vvf_users", users));
       classes = ensureArray(await loadRemote("vvf_classes", classes));
+      videos = ensureArray(await loadRemote("vvf_videos", videos));
       tests.forEach(t=>{ if(t.title){ const dec=decodeHTML(t.title); if(dec!==t.title) t.title=dec; } });
       users.forEach(u=>{ if(u.name){ const dec=decodeHTML(u.name); if(dec!==u.name) u.name=dec; } });
       classes.forEach(c=>{ if(c.name){ const dec=decodeHTML(c.name); if(dec!==c.name) c.name=dec; } });
-      saveJSON(STORAGE_TESTS, tests); saveJSON(STORAGE_RESULTS, results); saveJSON(STORAGE_REQUESTS, requests); saveJSON(STORAGE_USERS, users); saveJSON(STORAGE_CLASSES, classes);
+      videos.forEach(v=>{ if(v.title){ const dec=decodeHTML(v.title); if(dec!==v.title) v.title=dec; } if(v.descr){ const dec=decodeHTML(v.descr); if(dec!==v.descr) v.descr=dec; } });
+      saveJSON(STORAGE_TESTS, tests); saveJSON(STORAGE_RESULTS, results); saveJSON(STORAGE_REQUESTS, requests); saveJSON(STORAGE_USERS, users); saveJSON(STORAGE_CLASSES, classes); saveJSON(STORAGE_VIDEOS, videos);
       renderTestGrid([]);
       const savedSession = loadJSON(STORAGE_SESSION, null);
       if(savedSession && savedSession.username && savedSession.password){
@@ -307,6 +335,26 @@
       return ids.length ? ids : tests.map(t=>t.id); // se non specificato, tutti i test
     }
 
+    function getUserClassIds(user){
+      if(!user) return [];
+      return Array.isArray(user.classIds) ? user.classIds : (user.classId ? [user.classId] : []);
+    }
+
+    function getAllowedVideos(user){
+      if(!user) return [];
+      const classIds = getUserClassIds(user).map(String);
+      const allowedFromClasses = classIds.flatMap(cid => {
+        const c = classes.find(cl => String(cl.id) === cid);
+        return c && Array.isArray(c.videosAllowed) ? c.videosAllowed.map(String) : [];
+      });
+      const allowedByVideo = videos.filter(v => {
+        const assigned = Array.isArray(v.assigned_classes) ? v.assigned_classes.map(String) : [];
+        return assigned.some(a => classIds.includes(a));
+      }).map(v => String(v.id));
+      const allowIds = [...new Set([...allowedFromClasses, ...allowedByVideo])];
+      return allowIds.length ? videos.filter(v => allowIds.includes(String(v.id))) : [];
+    }
+
     function getUserClassNames(user){
       const ids = Array.isArray(user.classIds) ? user.classIds : (user.classId ? [user.classId] : []);
       const names = ids.map(id=> {
@@ -387,6 +435,70 @@
       setStatus("Test inviato. Seleziona un altro test per continuare.");
       alert("Test inviato con successo.");
     });
+
+    function renderVideoGrid(allowedVideos){
+      if(!videoGrid || !videoStatus) return;
+      videoGrid.innerHTML = "";
+      if(!allowedVideos.length || !currentUser){
+        selectedVideoId = null;
+        hideVideoPlayer();
+      }
+      if(!currentUser){
+        videoStatus.textContent = "Accedi per vedere i video assegnati.";
+        return;
+      }
+      if(!allowedVideos.length){
+        videoStatus.textContent = "Nessun video assegnato alla tua classe.";
+        videoGrid.innerHTML = '<div class="small">Nessun video disponibile.</div>';
+        if(videoPanel) videoPanel.style.display = "block";
+        return;
+      }
+      videoStatus.textContent = "Seleziona un video per riprodurlo.";
+      let currentVideo = selectedVideoId ? allowedVideos.find(v=>String(v.id)===String(selectedVideoId)) : null;
+      allowedVideos.forEach(v=>{
+        const card=document.createElement("div");
+        card.className="video-card";
+        card.innerHTML=`
+          <div class="title">${escapeHTML(v.title||"Video")}</div>
+          <div class="small">${escapeHTML(v.descr||"")}</div>
+        `;
+        card.onclick=()=>{
+          selectedVideoId = v.id;
+          showVideo(v);
+          renderVideoGrid(allowedVideos);
+        };
+        if(selectedVideoId === v.id) card.classList.add("selected");
+        videoGrid.appendChild(card);
+      });
+      if(!currentVideo){
+        selectedVideoId = allowedVideos[0].id;
+        currentVideo = allowedVideos[0];
+        showVideo(currentVideo);
+      }
+      if(videoPanel) videoPanel.style.display = "block";
+    }
+
+    function hideVideoPlayer(){
+      if(!videoPlayer) return;
+      videoPlayer.style.display = "none";
+      if(videoElem) videoElem.pause();
+    }
+
+    function showVideo(video){
+      if(!videoPlayer || !videoElem || !videoTitle || !videoLink) return;
+      videoTitle.textContent = video.title || "Video";
+      videoDescr.textContent = video.descr || "";
+      videoElem.src = video.url || "";
+      videoElem.load();
+      videoPlayer.style.display = "block";
+      if(video.url){
+        videoLink.href = video.url;
+        videoLink.style.pointerEvents = "auto";
+      } else {
+        videoLink.removeAttribute("href");
+        videoLink.style.pointerEvents = "none";
+      }
+    }
 
     function renderQuiz(list){
       quizEl.innerHTML="";
