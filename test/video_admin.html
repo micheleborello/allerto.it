@@ -32,7 +32,9 @@
       <label>Descrizione</label>
       <textarea id="descr" placeholder="Breve descrizione"></textarea>
       <label>File video (mp4/mov/webm/mkv)</label>
-      <input type="file" id="file" accept=".mp4,.mov,.webm,.mkv">
+      <input type="file" id="file" accept=".mp4,.mov,.webm,.mkv" title="Seleziona file video">
+      <label>Oppure link video (URL)</label>
+      <input type="url" id="link" placeholder="https://..." title="Incolla un link video">
       <button id="btnUpload" style="margin-top:12px;">Carica e pubblica</button>
       <div id="msg" class="muted" style="margin-top:8px;"></div>
     </div>
@@ -87,35 +89,41 @@
       const title = document.getElementById('title').value.trim();
       const descr = document.getElementById('descr').value.trim();
       const file = document.getElementById('file').files[0];
-      if (!title || !file) { msg.textContent = 'Titolo e file video sono obbligatori.'; return; }
-      btn.disabled = true; msg.textContent = 'Caricamento in corso...';
-      const fd = new FormData();
-      fd.append('file', file);
-      fd.append('token', TOKEN);
-      try{
-        const up = await fetch('upload_video.php?token='+encodeURIComponent(TOKEN), { method:'POST', body: fd });
-        const uj = await up.json();
-        if (!uj.ok) throw new Error(uj.error || 'Upload fallito');
-        const url = uj.url;
-        videos.push({
-          id: uuid(),
-          title, descr,
-          url,
-          created_by: 'admin',
-          assigned_classes: [],
-          views: {}
-        });
-        await saveVideos();
-        document.getElementById('title').value='';
-        document.getElementById('descr').value='';
-        document.getElementById('file').value='';
-        msg.textContent = 'Video caricato e salvato.';
-        loadVideos();
-      }catch(err){
-        msg.textContent = 'Errore: '+err.message;
-      }finally{
-        btn.disabled = false;
+      const link = document.getElementById('link').value.trim();
+      if (!title || (!file && !link)) { msg.textContent = 'Titolo e file o link sono obbligatori.'; return; }
+      btn.disabled = true; msg.textContent = file ? 'Caricamento in corso...' : 'Salvataggio link...';
+      let finalUrl = link;
+      if (file) {
+        const fd = new FormData();
+        fd.append('file', file);
+        fd.append('token', TOKEN);
+        try{
+          const up = await fetch('upload_video.php?token='+encodeURIComponent(TOKEN), { method:'POST', body: fd });
+          const uj = await up.json();
+          if (!uj.ok) throw new Error(uj.error || 'Upload fallito');
+          finalUrl = uj.url;
+        }catch(err){
+          msg.textContent = 'Errore: '+err.message;
+          btn.disabled = false;
+          return;
+        }
       }
+      videos.push({
+        id: uuid(),
+        title, descr,
+        url: finalUrl,
+        created_by: 'admin',
+        assigned_classes: [],
+        views: {}
+      });
+      await saveVideos();
+      document.getElementById('title').value='';
+      document.getElementById('descr').value='';
+      document.getElementById('file').value='';
+      document.getElementById('link').value='';
+      msg.textContent = file ? 'Video caricato e salvato.' : 'Link video salvato.';
+      loadVideos();
+      btn.disabled = false;
     });
 
     loadVideos();

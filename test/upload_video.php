@@ -101,7 +101,7 @@ $finalPath = $destPath;
 $finalName = $destName;
 $converted = false;
 
-// Prova a normalizzare il formato in MP4 H.264/AAC per la compatibilita browser
+// P rova a normalizzare il formato in MP4 H.264/AAC per la compatibilita browser
 if (is_callable('exec')) {
     $ffmpeg = trim(shell_exec('which ffmpeg 2>/dev/null')) ?: 'ffmpeg';
     $outName = $safeBase.'_'.date('Ymd_His').'_web.mp4';
