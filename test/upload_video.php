@@ -34,11 +34,28 @@ if ($TOKEN && $token !== $TOKEN) {
     exit;
 }
 
+// controlla se post_max_size bloccato (PHP svuota $_FILES)
+$contentLength = (int)($_SERVER['CONTENT_LENGTH'] ?? 0);
+$postMaxBytes = convertToBytes(ini_get('post_max_size'));
+if ($contentLength > 0 && $postMaxBytes > 0 && $contentLength > $postMaxBytes) {
+    http_response_code(400);
+    echo json_encode(['ok'=>false,'error'=>'Dimensione richiesta oltre post_max_size ('.ini_get('post_max_size').'). Riduci il file o aumenta il limite.']);
+    exit;
+}
+
 $uploadErr = $_FILES['file']['error'] ?? UPLOAD_ERR_NO_FILE;
 if (!isset($_FILES['file']) || $uploadErr !== UPLOAD_ERR_OK) {
     $msg = 'Nessun file caricato';
     if ($uploadErr === UPLOAD_ERR_INI_SIZE || $uploadErr === UPLOAD_ERR_FORM_SIZE) {
         $msg = 'File troppo grande (supera upload_max_filesize/post_max_size)';
+    } elseif ($uploadErr === UPLOAD_ERR_PARTIAL) {
+        $msg = 'Upload interrotto (UPLOAD_ERR_PARTIAL)';
+    } elseif ($uploadErr === UPLOAD_ERR_NO_TMP_DIR) {
+        $msg = 'Cartella temporanea mancante (upload_tmp_dir)';
+    } elseif ($uploadErr === UPLOAD_ERR_CANT_WRITE) {
+        $msg = 'Impossibile scrivere il file su disco';
+    } elseif ($uploadErr === UPLOAD_ERR_EXTENSION) {
+        $msg = 'Upload bloccato da un\'estensione PHP';
     }
     http_response_code(400);
     echo json_encode(['ok'=>false,'error'=>$msg]);
@@ -73,3 +90,16 @@ if (!move_uploaded_file($tmp, $destPath)) {
 
 $url = 'assets/videos/'.$destName;
 echo json_encode(['ok'=>true, 'url'=>$url, 'file'=>$destName]);
+
+function convertToBytes($val){
+    $val = trim((string)$val);
+    if ($val === '') return 0;
+    $last = strtolower($val[strlen($val)-1]);
+    $num = (float)$val;
+    switch($last){
+        case 'g': return $num * 1024 * 1024 * 1024;
+        case 'm': return $num * 1024 * 1024;
+        case 'k': return $num * 1024;
+        default: return (int)$num;
+    }
+}

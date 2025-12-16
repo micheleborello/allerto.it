@@ -259,7 +259,7 @@
       uploadBtn.disabled = true;
       videoMsg.textContent = "Caricamento in corso...";
       const fd = new FormData();
-      fd.append("file", file);
+      fd.append("file", file, file.name);
       fd.append("token", API_TOKEN);
       try{
         const up = await fetch("upload_video.php?token="+encodeURIComponent(API_TOKEN), { method:"POST", body: fd });
@@ -281,7 +281,7 @@
         videoMsg.textContent = "Video caricato e salvato.";
         renderVideos();
       } catch(err){
-        videoMsg.textContent = "Errore: " + err.message;
+        videoMsg.textContent = "Errore: " + err.message + " (verifica i limiti di upload_max_filesize/post_max_size)";
       } finally {
         uploadBtn.disabled = false;
       }
