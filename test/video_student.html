@@ -71,10 +71,13 @@
             <div><strong>${escapeHtml(v.title||'')}</strong><div class="muted">${escapeHtml(v.descr||'')}</div></div>
             <span class="muted">${viewed?'✅ visto':'⬜ non visto'}</span>
           </div>
-          <video controls style="width:100%;max-height:360px;margin-top:8px;" src="${escapeHtml(v.url||'')}"></video>
+          <video controls playsinline preload="metadata" data-src="${escapeHtml(v.url||'')}" style="width:100%;max-height:360px;margin-top:8px;"></video>
           <button data-vid="${v.id}" style="margin-top:8px;">Segna come visto</button>
         </div>`;
       }).join('');
+      container.querySelectorAll('video[data-src]').forEach(el=>{
+        setVideoSource(el, el.dataset.src);
+      });
       container.querySelectorAll('button[data-vid]').forEach(btn=>{
         btn.addEventListener('click', ()=> markSeen(btn.dataset.vid, student));
       });
@@ -95,6 +98,33 @@
       populateClasses();
     }
     init();
+
+    function setVideoSource(el, url){
+      if(!el) return;
+      while(el.firstChild) el.removeChild(el.firstChild);
+      el.removeAttribute('src');
+      if(!url) return;
+      const mime = getMimeFromUrl(url);
+      const source = document.createElement('source');
+      source.src = url;
+      if(mime) source.type = mime;
+      el.appendChild(source);
+      el.load();
+      el.onerror = ()=>{ el.title = 'Formato video non supportato o file mancante'; };
+    }
+
+    function getMimeFromUrl(url){
+      if(!url) return '';
+      const clean = url.split('?')[0].split('#')[0];
+      const ext = (clean.split('.').pop() || '').toLowerCase();
+      switch(ext){
+        case 'mp4': return 'video/mp4';
+        case 'mov': return 'video/quicktime';
+        case 'webm': return 'video/webm';
+        case 'mkv': return 'video/x-matroska';
+        default: return '';
+      }
+    }
   </script>
 </body>
 </html>

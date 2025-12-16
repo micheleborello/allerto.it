@@ -294,10 +294,7 @@
           preview.style.marginTop="6px";
           preview.controls = true;
           preview.playsInline = true;
-          if(v.url){
-            preview.src = v.url;
-            preview.load();
-          }
+          setVideoSource(preview, v.url);
           const btn=document.createElement("button");
           btn.className="btn-small";
           btn.style.background="#f87171";
@@ -518,6 +515,33 @@
       return `${m}m ${s}s`;
     }
     function escapeHTML(str){ return String(str||"").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[ch])); }
+
+    function setVideoSource(el, url){
+      if(!el) return;
+      while(el.firstChild) el.removeChild(el.firstChild);
+      el.removeAttribute("src");
+      if(!url) return;
+      const mime = getMimeFromUrl(url);
+      const source = document.createElement("source");
+      source.src = url;
+      if(mime) source.type = mime;
+      el.appendChild(source);
+      el.load();
+      el.onerror = ()=>{ el.title = "Formato video non supportato o file mancante"; };
+    }
+
+    function getMimeFromUrl(url){
+      if(!url) return "";
+      const clean = url.split("?")[0].split("#")[0];
+      const ext = (clean.split(".").pop() || "").toLowerCase();
+      switch(ext){
+        case "mp4": return "video/mp4";
+        case "mov": return "video/quicktime";
+        case "webm": return "video/webm";
+        case "mkv": return "video/x-matroska";
+        default: return "";
+      }
+    }
   </script>
 </body>
 </html>
