@@ -4,6 +4,13 @@
 
 $TOKEN = 'ALLERTO';
 
+// Prova ad alzare i limiti runtime per accettare file grandi (richiede che PHP consenta ini_set)
+@ini_set('upload_max_filesize', '1024M');
+@ini_set('post_max_size', '1024M');
+@ini_set('max_execution_time', '300');
+@ini_set('max_input_time', '300');
+@ini_set('memory_limit', '1024M');
+
 header('Content-Type: application/json; charset=utf-8');
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
@@ -97,9 +104,11 @@ if (is_callable('exec')) {
     $ffmpeg = trim(shell_exec('which ffmpeg 2>/dev/null')) ?: 'ffmpeg';
     $outName = $safeBase.'_'.date('Ymd_His').'_web.mp4';
     $outPath = $destDir.'/'.$outName;
+    // Scala a max 1280px di larghezza mantenendo proporzioni e dimensioni pari (compatibilità browser)
+    $scale = "scale=1280:-2:force_original_aspect_ratio=decrease";
     $cmd = $ffmpeg
       .' -y -i '.escapeshellarg($destPath)
-      .' -c:v libx264 -preset veryfast -crf 23 -pix_fmt yuv420p'
+      .' -c:v libx264 -preset veryfast -crf 23 -pix_fmt yuv420p -vf '.escapeshellarg($scale)
       .' -c:a aac -b:a 128k -movflags +faststart '
       .escapeshellarg($outPath).' 2>&1';
     @exec($cmd, $outLines, $outCode);
