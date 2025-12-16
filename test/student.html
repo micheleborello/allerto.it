@@ -37,6 +37,7 @@
     .badge { background:#f1f5f9; border:1px solid #e2e8f0; border-radius:999px; padding:4px 8px; color: var(--muted); font-size:12px; }
     .summary { display:grid; grid-template-columns: repeat(auto-fit,minmax(120px,1fr)); gap:8px; margin-top:8px; }
     .small { color: var(--muted); font-size:13px; }
+    .video-frame { width:100%; max-width:720px; aspect-ratio:16/9; display:block; margin-top:8px; border-radius:12px; background:#000; }
     @media (max-width:700px){ .options{gap:6px;} .option{grid-template-columns:18px 1fr;} }
     @media (max-width:640px){
       .app { padding: 12px; }
@@ -95,7 +96,7 @@
       <div id="video-player" class="card" style="display:none; margin-top:10px;">
         <div id="video-title" style="font-weight:700;"></div>
         <div id="video-descr" class="small" style="margin-top:4px;"></div>
-        <video id="video-elem" controls playsinline style="width:100%; min-height:220px; border-radius:12px; background:#0f172a; margin-top:8px;" preload="metadata"></video>
+        <video id="video-elem" controls playsinline class="video-frame" style="width:100%; max-width:720px; aspect-ratio:16/9; border-radius:12px; background:#000; margin-top:8px;" preload="metadata"></video>
         <div class="small" style="margin-top:6px;"><a id="video-link" href="#" target="_blank" rel="noopener" style="color:#0ea5e9; text-decoration:none; font-weight:700;">Apri in nuova scheda</a></div>
       </div>
       <div class="small" id="video-status">Accedi per vedere i video assegnati.</div>

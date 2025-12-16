@@ -295,9 +295,13 @@
           open.rel = "noopener";
           const preview=document.createElement("video");
           preview.style.width="100%";
-          preview.style.maxWidth="260px";
+          preview.style.width="100%";
+          preview.style.maxWidth="720px";
+          preview.style.aspectRatio="16 / 9";
           preview.style.display="block";
           preview.style.marginTop="6px";
+          preview.style.background="#000";
+          preview.style.borderRadius="12px";
           preview.controls = true;
           preview.playsInline = true;
           setVideoSource(preview, v.url);
