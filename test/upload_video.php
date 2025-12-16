@@ -5,8 +5,9 @@
 $TOKEN = 'ALLERTO';
 
 // Prova ad alzare i limiti runtime per accettare file grandi (richiede che PHP consenta ini_set)
-@ini_set('upload_max_filesize', '0');   // 0 = senza limite se consentito dall'hosting
-@ini_set('post_max_size', '0');         // 0 = senza limite se consentito dall'hosting
+// Valori alti ma finiti: se l'hosting non accetta "0" (illimitato) usiamo 2048M (~2GB)
+@ini_set('upload_max_filesize', '2048M');
+@ini_set('post_max_size', '2048M');
 @ini_set('max_execution_time', '900');
 @ini_set('max_input_time', '900');
 @ini_set('memory_limit', '-1');         // senza limite se permesso
@@ -45,8 +46,9 @@ if ($TOKEN && $token !== $TOKEN) {
 $contentLength = (int)($_SERVER['CONTENT_LENGTH'] ?? 0);
 $postMaxBytes = convertToBytes(ini_get('post_max_size'));
 if ($contentLength > 0 && $postMaxBytes > 0 && $contentLength > $postMaxBytes) {
-    http_response_code(400);
-    echo json_encode(['ok'=>false,'error'=>'Dimensione richiesta oltre post_max_size ('.ini_get('post_max_size').'). Aumenta post_max_size/upload_max_filesize o abilita ini_set.']);
+    // segnala ma non bloccare: PHP potrebbe comunque avere scartato il body
+    http_response_code(413);
+    echo json_encode(['ok'=>false,'error'=>'Dimensione richiesta oltre post_max_size lato server ('.ini_get('post_max_size').'). Imposta upload_max_filesize/post_max_size ad un valore maggiore (es. 2048M) in php.ini/.htaccess/.user.ini.']);
     exit;
 }
 
