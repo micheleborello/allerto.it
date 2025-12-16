@@ -88,8 +88,34 @@ if (!move_uploaded_file($tmp, $destPath)) {
 }
 @chmod($destPath, 0644);
 
-$url = 'assets/videos/'.$destName;
-echo json_encode(['ok'=>true, 'url'=>$url, 'file'=>$destName]);
+$finalPath = $destPath;
+$finalName = $destName;
+$converted = false;
+
+// Prova a normalizzare il formato in MP4 H.264/AAC per la compatibilità browser
+if (is_callable('exec')) {
+    $ffmpeg = trim(shell_exec('which ffmpeg 2>/dev/null')) ?: 'ffmpeg';
+    $outName = $safeBase.'_'.date('Ymd_His').'_web.mp4';
+    $outPath = $destDir.'/'.$outName;
+    $cmd = $ffmpeg
+      .' -y -i '.escapeshellarg($destPath)
+      .' -c:v libx264 -preset veryfast -crf 23 -pix_fmt yuv420p'
+      .' -c:a aac -b:a 128k -movflags +faststart '
+      .escapeshellarg($outPath).' 2>&1';
+    @exec($cmd, $outLines, $outCode);
+    if (file_exists($outPath) && filesize($outPath) > 0 && $outCode === 0) {
+        $finalPath = $outPath;
+        $finalName = $outName;
+        $converted = true;
+        @unlink($destPath); // rimuovi l'originale per risparmiare spazio
+    } else {
+        // conversione fallita, tieni il file originale
+        @unlink($outPath);
+    }
+}
+
+$url = 'assets/videos/'.$finalName;
+echo json_encode(['ok'=>true, 'url'=>$url, 'file'=>$finalName, 'converted'=>$converted]);
 
 function convertToBytes($val){
     $val = trim((string)$val);
