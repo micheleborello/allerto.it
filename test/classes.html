@@ -278,6 +278,11 @@
         classVideos.forEach(v=>{
           const li=document.createElement("li");
           li.textContent = v.title || v.id;
+          const open=document.createElement("button");
+          open.className="btn-small";
+          open.style.marginLeft="8px";
+          open.textContent="Apri";
+          open.onclick=()=>{ if(v.url) window.open(v.url, "_blank"); };
           const btn=document.createElement("button");
           btn.className="btn-small";
           btn.style.background="#f87171";
@@ -293,6 +298,7 @@
             renderDetail();
             renderClasses();
           };
+          li.appendChild(open);
           li.appendChild(btn);
           assignedVideosUl.appendChild(li);
         });
