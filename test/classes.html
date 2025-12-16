@@ -280,11 +280,24 @@
         classVideos.forEach(v=>{
           const li=document.createElement("li");
           li.textContent = v.title || v.id;
-          const open=document.createElement("button");
+          const open=document.createElement("a");
           open.className="btn-small";
           open.style.marginLeft="8px";
           open.textContent="Apri";
-          open.onclick=()=>{ if(v.url) window.open(v.url, "_blank"); };
+          open.href = v.url || "#";
+          open.target = "_blank";
+          open.rel = "noopener";
+          const preview=document.createElement("video");
+          preview.style.width="100%";
+          preview.style.maxWidth="260px";
+          preview.style.display="block";
+          preview.style.marginTop="6px";
+          preview.controls = true;
+          preview.playsInline = true;
+          if(v.url){
+            preview.src = v.url;
+            preview.load();
+          }
           const btn=document.createElement("button");
           btn.className="btn-small";
           btn.style.background="#f87171";
@@ -300,8 +313,14 @@
             renderDetail();
             renderClasses();
           };
-          li.appendChild(open);
-          li.appendChild(btn);
+          const actions=document.createElement("div");
+          actions.style.display="flex";
+          actions.style.gap="8px";
+          actions.style.flexWrap="wrap";
+          actions.appendChild(open);
+          actions.appendChild(btn);
+          li.appendChild(actions);
+          li.appendChild(preview);
           assignedVideosUl.appendChild(li);
         });
       }
