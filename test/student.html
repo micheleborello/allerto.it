@@ -504,7 +504,7 @@
         if(videoPanel) videoPanel.style.display = "block";
         return;
       }
-      videoStatus.textContent = "Seleziona un video per riprodurlo. Se resta nero, clicca \"Apri in nuova scheda\".";
+      videoStatus.textContent = "Seleziona un video per riprodurlo (il player appare dopo il click).";
       let currentVideo = selectedVideoId ? allowedVideos.find(v=>String(v.id)===String(selectedVideoId)) : null;
       allowedVideos.forEach(v=>{
         const card=document.createElement("div");
@@ -522,8 +522,8 @@
         videoGrid.appendChild(card);
       });
       if(!currentVideo){
-        selectedVideoId = allowedVideos[0].id;
-        currentVideo = allowedVideos[0];
+        hideVideoPlayer();
+      } else {
         showVideo(currentVideo);
       }
       if(videoPanel) videoPanel.style.display = "block";
@@ -575,10 +575,6 @@
         return;
       }
       let currentMat = selectedMaterialId ? allowedMaterials.find(m=>String(m.id)===String(selectedMaterialId)) : null;
-      if(!currentMat && allowedMaterials.length){
-        currentMat = allowedMaterials[0];
-        selectedMaterialId = currentMat.id;
-      }
       materialStatus.textContent = "Seleziona un materiale per aprirlo.";
       allowedMaterials.forEach(m=>{
         const card=document.createElement("div");
@@ -595,7 +591,11 @@
         if(selectedMaterialId === m.id) card.classList.add("selected");
         materialGrid.appendChild(card);
       });
-      if(currentMat) showMaterial(currentMat);
+      if(currentMat){
+        showMaterial(currentMat);
+      } else {
+        hideMaterialViewer();
+      }
       if(materialPanel) materialPanel.style.display = "block";
     }
 
