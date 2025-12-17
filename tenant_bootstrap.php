@@ -38,9 +38,47 @@ if (!defined('TENANT_BOOTSTRAP_LOADED')) {
   }
 
   // ======= Utilities caserme =======
+  if (!function_exists('tenant_local_config')) {
+    function tenant_local_config(): array {
+      static $cfg = null;
+      if (is_array($cfg)) return $cfg;
+      $cfg = [];
+
+      $p = APP_ROOT . '/config.local.php';
+      if (is_file($p) && is_readable($p)) {
+        try {
+          $v = @include $p;
+          if (is_array($v)) $cfg = $v;
+        } catch (Throwable $e) {
+          $cfg = [];
+        }
+      }
+      return $cfg;
+    }
+  }
+
+  if (!function_exists('tenant_data_base')) {
+    function tenant_data_base(): string {
+      $cfg = tenant_local_config();
+      $base = $cfg['DATA_CASERME_BASE'] ?? '';
+      $base = is_string($base) ? trim($base) : '';
+      if ($base === '') $base = APP_ROOT . '/data';
+      return rtrim(str_replace('\\', '/', $base), '/');
+    }
+  }
+
+  if (!function_exists('tenant_default_slug')) {
+    function tenant_default_slug(): string {
+      $cfg = tenant_local_config();
+      $slug = $cfg['DEFAULT_CASERMA'] ?? 'default';
+      $slug = preg_replace('~[^a-z0-9_-]+~i', '', (string)$slug);
+      return $slug !== '' ? strtolower($slug) : 'default';
+    }
+  }
+
   if (!function_exists('tenant_load_caserme')) {
     function tenant_load_caserme(): array {
-      $base = APP_ROOT . '/data';
+      $base = tenant_data_base();
       $cfg  = $base . '/caserme.json';
       $out  = [];
 
@@ -77,7 +115,7 @@ if (!defined('TENANT_BOOTSTRAP_LOADED')) {
 
   if (!function_exists('tenant_save_caserme')) {
     function tenant_save_caserme(array $rows): void {
-      $base = APP_ROOT . '/data';
+      $base = tenant_data_base();
       @mkdir($base, 0775, true);
       $p = $base . '/caserme.json';
       $out = [];
@@ -103,12 +141,12 @@ if (!defined('TENANT_BOOTSTRAP_LOADED')) {
 
   if (!function_exists('tenant_active_slug')) {
     function tenant_active_slug(): string {
-      $slug = $_SESSION['tenant_slug'] ?? $_SESSION['CASERMA_SLUG'] ?? 'default';
+      $slug = $_SESSION['tenant_slug'] ?? $_SESSION['CASERMA_SLUG'] ?? tenant_default_slug();
       $slug = preg_replace('~[^a-z0-9_-]+~i', '', (string)$slug);
-      if ($slug === '') $slug = 'default';
+      if ($slug === '') $slug = tenant_default_slug();
       $slugs = array_column(tenant_load_caserme(), 'slug');
       if (!in_array($slug, $slugs, true)) {
-        $slug = $slugs[0] ?? 'default';
+        $slug = $slugs[0] ?? tenant_default_slug();
       }
       return $slug;
     }
@@ -146,7 +184,7 @@ if (!defined('TENANT_BOOTSTRAP_LOADED')) {
       tenant_bootstrap_from_get(); // prova da ?slug
 
       $slug = tenant_active_slug();
-      $dir  = APP_ROOT . '/data/' . $slug;
+      $dir  = tenant_data_base() . '/' . $slug;
 
       if (!is_dir($dir)) { @mkdir($dir, 0775, true); }
 

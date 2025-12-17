@@ -11,6 +11,11 @@ ob_start(function($html){
   if (stripos($html, '<html') === false) return $html;
   if (stripos($html, 'app-mobile.css') !== false) return $html;
 
+  // Base URL: supporta installazioni sia su dominio root (/) sia in sottocartella (es. /lavorazione)
+  $scriptName = (string)($_SERVER['SCRIPT_NAME'] ?? '/');
+  $baseUrl = str_replace('\\', '/', dirname($scriptName));
+  if ($baseUrl === '/' || $baseUrl === '.') $baseUrl = '';
+
   $head = stripos($html, '</head>');
   $inject = [];
   // Meta viewport se manca
@@ -18,8 +23,8 @@ ob_start(function($html){
     $inject[] = '<meta name="viewport" content="width=device-width, initial-scale=1">';
   }
   // CSS + JS (cambia i path se preferisci)
-  $inject[] = '<link rel="stylesheet" href="/assets/app-mobile.css">';
-  $inject[] = '<script src="/assets/app-mobile.js" defer></script>';
+  $inject[] = '<link rel="stylesheet" href="'.$baseUrl.'/assets/app-mobile.css">';
+  $inject[] = '<script src="'.$baseUrl.'/assets/app-mobile.js" defer></script>';
 
   $block = implode("\n", $inject)."\n";
 
