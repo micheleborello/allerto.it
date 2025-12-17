@@ -46,9 +46,14 @@ if ($TOKEN && $token !== $TOKEN) {
 $contentLength = (int)($_SERVER['CONTENT_LENGTH'] ?? 0);
 $postMaxBytes = convertToBytes(ini_get('post_max_size'));
 if ($contentLength > 0 && $postMaxBytes > 0 && $contentLength > $postMaxBytes) {
-    // segnala ma non bloccare: PHP potrebbe comunque avere scartato il body
     http_response_code(413);
-    echo json_encode(['ok'=>false,'error'=>'Dimensione richiesta oltre post_max_size lato server ('.ini_get('post_max_size').'). Imposta upload_max_filesize/post_max_size ad un valore maggiore (es. 2048M) in php.ini/.htaccess/.user.ini.']);
+    echo json_encode([
+        'ok' => false,
+        'error' => 'Dimensione richiesta oltre post_max_size lato server ('.ini_get('post_max_size').'). Imposta upload_max_filesize/post_max_size ad un valore maggiore (es. 2048M) in php.ini/.htaccess/.user.ini.',
+        'content_length' => $contentLength,
+        'post_max_size' => ini_get('post_max_size'),
+        'upload_max_filesize' => ini_get('upload_max_filesize'),
+    ]);
     exit;
 }
 
@@ -66,8 +71,17 @@ if (!isset($_FILES['file']) || $uploadErr !== UPLOAD_ERR_OK) {
     } elseif ($uploadErr === UPLOAD_ERR_EXTENSION) {
         $msg = 'Upload bloccato da un\'estensione PHP';
     }
-    http_response_code(400);
-    echo json_encode(['ok'=>false,'error'=>$msg]);
+    $http = 400;
+    if ($uploadErr === UPLOAD_ERR_INI_SIZE || $uploadErr === UPLOAD_ERR_FORM_SIZE) $http = 413;
+    http_response_code($http);
+    echo json_encode([
+        'ok' => false,
+        'error' => $msg,
+        'upload_error' => $uploadErr,
+        'content_length' => $contentLength,
+        'post_max_size' => ini_get('post_max_size'),
+        'upload_max_filesize' => ini_get('upload_max_filesize'),
+    ]);
     exit;
 }
 

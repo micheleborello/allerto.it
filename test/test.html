@@ -347,13 +347,23 @@
       let finalUrl = link;
       if (file) {
         videoMsg.textContent = "Caricamento in corso...";
+        const fileSizeMB = Math.round((file.size / 1024 / 1024) * 10) / 10;
+        if (fileSizeMB > 0) {
+          videoMsg.textContent = `Caricamento in corso... (${fileSizeMB} MB)`;
+        }
         const fd = new FormData();
         fd.append("file", file, file.name);
         fd.append("token", API_TOKEN);
         try{
           const up = await fetch("upload_video.php?token="+encodeURIComponent(API_TOKEN), { method:"POST", body: fd });
-          const uj = await up.json();
-          if (!uj.ok) throw new Error(uj.error || "Upload fallito");
+          const text = await up.text();
+          let uj = null;
+          try { uj = text ? JSON.parse(text) : null; } catch { uj = null; }
+          if (!up.ok) {
+            const serverMsg = uj && uj.error ? uj.error : (text ? text.slice(0, 200) : "");
+            throw new Error(`HTTP ${up.status}${serverMsg ? ` - ${serverMsg}` : ""}`);
+          }
+          if (!uj || !uj.ok) throw new Error((uj && uj.error) ? uj.error : "Upload fallito");
           finalUrl = uj.url;
         } catch(err){
           videoMsg.textContent = "Errore: " + err.message + " (verifica i limiti di upload_max_filesize/post_max_size)";
@@ -393,8 +403,14 @@
       fd.append("token", API_TOKEN);
       try{
         const up = await fetch("upload_material.php?token="+encodeURIComponent(API_TOKEN), { method:"POST", body: fd });
-        const uj = await up.json();
-        if (!uj.ok) throw new Error(uj.error || "Upload fallito");
+        const text = await up.text();
+        let uj = null;
+        try { uj = text ? JSON.parse(text) : null; } catch { uj = null; }
+        if (!up.ok) {
+          const serverMsg = uj && uj.error ? uj.error : (text ? text.slice(0, 200) : "");
+          throw new Error(`HTTP ${up.status}${serverMsg ? ` - ${serverMsg}` : ""}`);
+        }
+        if (!uj || !uj.ok) throw new Error((uj && uj.error) ? uj.error : "Upload fallito");
         const url = uj.url;
         materials.push({
           id: uuid(),
