@@ -320,7 +320,7 @@ $pdf->AddPage();
 
 /* -------------------- TABELLA -------------------- */
 $rows = '';
-// Decodifica eventuali entitÃ  HTML nei nomi e ri-escapa in uscita
+// Decodifica eventuali entità HTML nei nomi e ri-escapa in uscita
 $san = fn($s) => htmlspecialchars(html_entity_decode((string)$s, ENT_QUOTES | ENT_HTML5, 'UTF-8'), ENT_QUOTES, 'UTF-8');
 
 foreach ($vigili as $v) {

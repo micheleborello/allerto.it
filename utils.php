@@ -31,7 +31,21 @@ function ore_decimali(int $minuti, int $precisione = 2): float {
  * Usa comunque htmlspecialchars in output.
  */
 function sanitize_text($s): string {
-  return html_entity_decode((string)$s, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+  $s = html_entity_decode((string)$s, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+  $s = str_replace(
+    [
+      'Ã ','Ã¡','Ã¨','Ã©','Ã¬','Ã­','Ã²','Ã³','Ã¹','Ãº',
+      'Ã€','Ãˆ','Ã‰','ÃŒ','Ã’','Ã™','Ã§',
+      'â€™','â€˜','â€œ','â€','â€“','â€”','â€¦','Â°','Â ',
+    ],
+    [
+      'à','á','è','é','ì','í','ò','ó','ù','ú',
+      'À','È','É','Ì','Ò','Ù','ç',
+      '’','‘','“','”','–','—','…','°',' ',
+    ],
+    $s
+  );
+  return preg_replace('/([123])� grado/u', '$1° grado', $s) ?? $s;
 }
 
 /**
