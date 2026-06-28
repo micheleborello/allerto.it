@@ -182,7 +182,7 @@ if (is_array($infortuniRaw)) {
   .form-check-input:disabled + .form-check-label { opacity: .65; }
   .presenza-row { display:flex; align-items:flex-start; gap:.5rem; }
   .presenza-row .presenza-label { flex:1 1 auto; min-width:0; }
-  .recupero-persona { white-space:nowrap; font-size:.875rem; }
+  .recupero-persona { white-space:nowrap; font-size:.75rem; }
 </style>
 </head>
 <body class="bg-light">
@@ -310,7 +310,7 @@ if (is_array($infortuniRaw)) {
                         </label>
                         <label class="form-check recupero-persona mb-0" title="Solo questo vigile viene conteggiato come recupero">
                           <input class="form-check-input chk-recupero-vigile" type="checkbox" value="1" id="rv<?= $id ?>" name="recupero_vigili[<?= $id ?>]" data-vid="<?= $id ?>" disabled>
-                          <span class="form-check-label">Rec.</span>
+                          <span class="form-check-label">recupero</span>
                         </label>
                       </div>
                     <?php endforeach; ?>
