@@ -33,6 +33,7 @@ $slug = function_exists('tenant_active_slug')
 $dataDir = __DIR__ . '/data/' . $slug;
 $vigiliPath = $dataDir . '/vigili.json';
 $addestrPath = $dataDir . '/addestramenti.json';
+$personalePath = $dataDir . '/personale.json';
 
 /* --- helper JSON fallback (solo se servono) --- */
 if (!function_exists('_read_json_safe')) {
@@ -87,12 +88,14 @@ if (function_exists('get_addestramenti')) {
 } else {
   $add = _read_json_safe($addestrPath);
 }
+$personaleRaw = _read_json_safe($personalePath);
 
 /* -------------------- VALIDAZIONE VIGILE -------------------- */
 $byId = [];
 foreach ($vigili as $v) { $byId[(int)($v['id'] ?? 0)] = $v; }
 if (empty($byId[$vigileId])) { http_response_code(404); die('Vigile non trovato'); }
 $vigile = $byId[$vigileId];
+$personaleVigile = isset($personaleRaw[(string)$vigileId]) && is_array($personaleRaw[(string)$vigileId]) ? $personaleRaw[(string)$vigileId] : [];
 
 /* -------------------- FILTRI -------------------- */
 // filtra per vigile e anno (su 'data' YYYY-MM-DD)
@@ -139,7 +142,7 @@ foreach ($sessioni as $s) {
 /* -------------------- QUOTA (5h/mese cumulabili) -------------------- */
 const QUOTA_MENSILE_MIN = 5 * 60; // 5 ore
 
-$ing = $vigile['data_ingresso'] ?? $vigile['ingresso'] ?? $primaAttivitaAnn;
+$ing = $vigile['data_ingresso'] ?? $vigile['ingresso'] ?? $personaleVigile['data_ingresso'] ?? $personaleVigile['ingresso'] ?? $primaAttivitaAnn;
 $ingMonth = $ing ? substr($ing, 0, 7) : sprintf('%04d-01', $anno);
 
 // mesi dell'anno

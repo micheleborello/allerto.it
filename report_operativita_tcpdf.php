@@ -122,6 +122,13 @@ foreach (load_caserme() as $c) {
 /* -------------------- DATI -------------------- */
 $vigili = array_values(array_filter(load_json_relaxed_local('vigili.json', $TENANT) ?: [], fn($v)=> (int)($v['attivo'] ?? 1)===1));
 usort($vigili, fn($a,$b)=>strcmp(($a['cognome']??'').' '.($a['nome']??''), ($b['cognome']??'').' '.($b['nome']??'')));
+$personaleRaw = load_json_relaxed_local('personale.json', $TENANT) ?: [];
+$ingressoVigile = function(array $v, ?string $fallback = null) use ($personaleRaw): ?string {
+  $vid = (int)($v['id'] ?? 0);
+  $p = ($vid && isset($personaleRaw[(string)$vid]) && is_array($personaleRaw[(string)$vid])) ? $personaleRaw[(string)$vid] : [];
+  $ing = $v['data_ingresso'] ?? $v['ingresso'] ?? $p['data_ingresso'] ?? $p['ingresso'] ?? $fallback;
+  return is_string($ing) && preg_match('/^\d{4}-\d{2}-\d{2}$/', $ing) ? $ing : $fallback;
+};
 
 // 🔴 Filtra i nominativi spuntati in riepilogo.php
 if (!empty($excludeIds)) {
@@ -343,7 +350,7 @@ foreach ($vigili as $v) {
   $etichetta = trim(($grado ? $grado.' ' : '').$cognome.' '.$nome).$badgeInf;
 
   // Quota richiesta su 12 mesi pro-rata (ingresso e infortuni)
-  $ing = $v['data_ingresso'] ?? $v['ingresso'] ?? ($primaAttivita[$vid] ?? null);
+  $ing = $ingressoVigile($v, $primaAttivita[$vid] ?? null);
   $ingMonth = $ing ? substr($ing, 0, 7) : substr($winStartStr, 0, 7);
   $mesiRilevanti = array_filter($mesiFinestra, fn($ym) => $ym >= $ingMonth);
   $setInf = $mesiInfByVid[$vid] ?? [];

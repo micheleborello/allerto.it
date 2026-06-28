@@ -43,6 +43,10 @@ function load_vigili_local(): array {
   $path = defined('VIGILI_JSON') ? VIGILI_JSON : _path('vigili.json');
   return _read_json($path);
 }
+function load_personale_local(): array {
+  $path = defined('PERSONALE_JSON') ? PERSONALE_JSON : _path('personale.json');
+  return _read_json($path);
+}
 function load_addestramenti_local(): array {
   $path = defined('ADDESTRAMENTI_JSON') ? ADDESTRAMENTI_JSON : _path('addestramenti.json');
   return _read_json($path);
@@ -114,6 +118,7 @@ function html_err($code, $msg) {
 
 // ===== Caricamento dati base =====
 $vigili = load_vigili_local();
+$personaleRaw = load_personale_local();
 $vigById = [];
 foreach ($vigili as $v) {
   if ((int)($v['attivo'] ?? 1) !== 1) continue;
@@ -314,7 +319,8 @@ foreach($INFORTUNI as $vid=>$ranges){
 const QUOTA_MENSILE_MIN = 5*60;
 $BANCA=[];
 foreach($vigById as $vid=>$vv){
-  $ing = $vv['data_ingresso'] ?? $vv['ingresso'] ?? null;
+  $p = isset($personaleRaw[(string)$vid]) && is_array($personaleRaw[(string)$vid]) ? $personaleRaw[(string)$vid] : [];
+  $ing = $vv['data_ingresso'] ?? $vv['ingresso'] ?? $p['data_ingresso'] ?? $p['ingresso'] ?? null;
   $ingMonth = $ing ? substr($ing,0,7) : ($mesiFinestra[0] ?? substr($winStartStr,0,7));
   $mesiRilevanti = array_filter($mesiFinestra, fn($ym)=> $ym >= $ingMonth);
   $setInf = $mesiInfByVid[$vid] ?? [];
@@ -584,7 +590,7 @@ $usaAltro = ($attivita0 !== '' && !in_array($attivita0, $catalogoAtt, true));
                 </label>
                 <label class="form-check mb-0 small text-nowrap" title="Solo questo vigile viene conteggiato come recupero">
                   <input class="form-check-input recupero-vigile-checkbox" type="checkbox" name="recupero_vigili[<?= $id ?>]" value="1" data-vid="<?= $id ?>" <?= $recChk ?> <?= $chk ? '' : 'disabled' ?>>
-                  <span class="form-check-label">Rec.</span>
+                  <span class="form-check-label">recupero</span>
                 </label>
               </div>
             <?php endforeach; ?>

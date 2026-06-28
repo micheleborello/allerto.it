@@ -115,6 +115,13 @@ foreach (load_caserme() as $c) {
 /* -------------------- Dati JSON (tenant-aware) -------------------- */
 $vigili = array_values(array_filter(load_json_relaxed_local('vigili.json', $TENANT) ?: [], fn($v)=> (int)($v['attivo'] ?? 1)===1));
 usort($vigili, fn($a,$b)=>strcasecmp(($a['cognome']??'').' '.($a['nome']??''), ($b['cognome']??'').' '.($b['nome']??'')));
+$personaleRaw = load_json_relaxed_local('personale.json', $TENANT) ?: [];
+$ingressoVigile = function(array $v, ?string $fallback = null) use ($personaleRaw): ?string {
+  $vid = (int)($v['id'] ?? 0);
+  $p = ($vid && isset($personaleRaw[(string)$vid]) && is_array($personaleRaw[(string)$vid])) ? $personaleRaw[(string)$vid] : [];
+  $ing = $v['data_ingresso'] ?? $v['ingresso'] ?? $p['data_ingresso'] ?? $p['ingresso'] ?? $fallback;
+  return is_string($ing) && preg_match('/^\d{4}-\d{2}-\d{2}$/', $ing) ? $ing : $fallback;
+};
 
 $add = load_json_relaxed_local('addestramenti.json', $TENANT) ?: [];
 
@@ -323,7 +330,7 @@ foreach ($vigili as $v) {
   foreach ($lista as $r) { $totMin += $minutiRecord($r); }
 
   // Mesi richiesti: da ingresso (o prima attività nota) in poi, nell'anno; esclusi mesi con infortunio
-  $ing = $v['data_ingresso'] ?? $v['ingresso'] ?? ($primaAttivitaGlob[$vid] ?? null);
+  $ing = $ingressoVigile($v, $primaAttivitaGlob[$vid] ?? null);
   $ingMonth = $ing ? substr($ing, 0, 7) : sprintf('%04d-01', $anno);
 
   $mesiAnnoLoc = [];

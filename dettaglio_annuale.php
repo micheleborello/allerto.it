@@ -46,13 +46,16 @@ if ($vigileId <= 0 || $anno < 2000 || $anno > 2100) {
 // ---- sorgenti dati: usa costanti se ci sono, altrimenti data/<slug>/...
 $VIGILI_JSON  = defined('VIGILI_JSON')  ? VIGILI_JSON  : _path('vigili.json');
 $ADDESTR_JSON = defined('ADDESTR_JSON') ? ADDESTR_JSON : _path('addestramenti.json');
+$PERSONALE_JSON = defined('PERSONALE_JSON') ? PERSONALE_JSON : _path('personale.json');
 
 // ---- carica dati base
 $vigili = sanitize_vigili_list(load_json($VIGILI_JSON));
+$personaleRaw = load_json($PERSONALE_JSON);
 $map = [];
 foreach ($vigili as $v) { $map[(int)($v['id'] ?? 0)] = $v; }
 if (!isset($map[$vigileId])) { http_response_code(404); die('Vigile non trovato'); }
 $vigile = $map[$vigileId];
+$personaleVigile = isset($personaleRaw[(string)$vigileId]) && is_array($personaleRaw[(string)$vigileId]) ? $personaleRaw[(string)$vigileId] : [];
 
 $add = load_json($ADDESTR_JSON);
 
@@ -109,7 +112,7 @@ foreach ($sessioni as $s) {
 $QUOTA_MENSILE_MIN = 5 * 60; // minuti
 
 // mese ingresso: anagrafico -> altrimenti prima attività nell'anno -> altrimenti gennaio
-$ing = $vigile['data_ingresso'] ?? $vigile['ingresso'] ?? $primaAttivitaAnn;
+$ing = $vigile['data_ingresso'] ?? $vigile['ingresso'] ?? $personaleVigile['data_ingresso'] ?? $personaleVigile['ingresso'] ?? $primaAttivitaAnn;
 $ingMonth = $ing ? substr($ing, 0, 7) : sprintf('%04d-01', $anno);
 
 // elenco mesi anno

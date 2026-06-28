@@ -165,6 +165,13 @@ if ($rifYmDT) {
 // In riepilogo mostriamo anche i vigili non attivi (come in addestramenti/index)
 $vigili = array_values(sanitize_vigili_list(load_json(VIGILI_JSON)));
 $add    = load_json(ADDESTR_JSON);
+$personaleRaw = defined('PERSONALE_JSON') ? load_json(PERSONALE_JSON) : load_json(rtrim(DATA_DIR,'/').'/personale.json');
+$ingressoVigile = function(array $v, ?string $fallback = null) use ($personaleRaw): ?string {
+  $vid = (int)($v['id'] ?? 0);
+  $p = ($vid && isset($personaleRaw[(string)$vid]) && is_array($personaleRaw[(string)$vid])) ? $personaleRaw[(string)$vid] : [];
+  $ing = $v['data_ingresso'] ?? $v['ingresso'] ?? $p['data_ingresso'] ?? $p['ingresso'] ?? $fallback;
+  return is_string($ing) && preg_match('/^\d{4}-\d{2}-\d{2}$/', $ing) ? $ing : $fallback;
+};
 
 // Infortuni → mappa [vid] => [[dal, al], ...]
 $infRaw = load_json(INFORTUNI_JSON);
@@ -575,7 +582,7 @@ $defaultBody    = "Buongiorno\n\ncon la presente sono ad inviare in allegato il 
           $nRecY = (int)($recCount12[$vid] ?? 0);
 
           if ($tipo==='annuale') {
-            $ing = $v['data_ingresso'] ?? $v['ingresso'] ?? ($primaAttInFinestra[$vid] ?? null);
+            $ing = $ingressoVigile($v, $primaAttInFinestra[$vid] ?? null);
             $ingMonth = $ing ? substr($ing, 0, 7) : ($mesiFinestra[0] ?? substr($periodStart,0,7));
             $mesiRilevanti = array_filter($mesiFinestra, fn($ym) => $ym >= $ingMonth);
 
@@ -724,7 +731,7 @@ if (isset($_GET['export']) && $_GET['export']==='csv') {
     $nRecY = (int)($recCount12[$vid] ?? 0);
 
     if ($tipo==='annuale') {
-      $ing = $v['data_ingresso'] ?? $v['ingresso'] ?? ($primaAttInFinestra[$vid] ?? null);
+      $ing = $ingressoVigile($v, $primaAttInFinestra[$vid] ?? null);
       $ingMonth = $ing ? substr($ing, 0, 7) : ($mesiFinestra[0] ?? substr($periodStart,0,7));
       $mesiRilevanti = array_filter($mesiFinestra, fn($ym) => $ym >= $ingMonth);
 
