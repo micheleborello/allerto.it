@@ -150,6 +150,8 @@ try {
   $selez = $_POST['vigili_presenti'] ?? [];
   if (!is_array($selez)) $selez = [];
   $selez = array_values(array_unique(array_map('intval', $selez)));
+  $recuperoVigili = $_POST['recupero_vigili'] ?? [];
+  if (!is_array($recuperoVigili)) $recuperoVigili = [];
 
   // Solo il CAPO può inserire manualmente i presenti.
   // Se l'UI era quella "da capo", arriva is_capo_ui=1 e ci fidiamo.
@@ -170,6 +172,7 @@ try {
 
   if (!$capo) {
     $selez = []; // i non-capo non possono impostare presenze manuali
+    $recuperoVigili = [];
   }
 
   // Validazioni base su datetime
@@ -244,6 +247,7 @@ try {
 
   // ------ Appendi le righe per tutti i presenti (solo se CAPO) -------
   foreach ($selez as $vid) {
+    $rowRecupero = $isRecupero || isset($recuperoVigili[(string)$vid]) || isset($recuperoVigili[$vid]);
     $id = next_id($items);
     $items[] = [
       'id'           => $id,
@@ -258,7 +262,7 @@ try {
       'attivita'     => ($attivita !== '' ? $attivita : null),
       'note'         => ($note !== '' ? $note : null),
       'created_at'   => date('Y-m-d H:i:s'),
-      'recupero'     => $isRecupero ? 1 : 0,
+      'recupero'     => $rowRecupero ? 1 : 0,
     ];
   }
 
@@ -277,7 +281,10 @@ try {
     $id2nome = [];
     foreach ($vigili as $v) { $id2nome[(int)($v['id'] ?? 0)] = trim(($v['nome'] ?? '').' '.($v['cognome'] ?? '')); }
     $presenti = [];
-    foreach ($selez as $vid) { $presenti[] = ['vigile_id'=>(int)$vid, 'nome'=>$id2nome[(int)$vid] ?? '']; }
+    foreach ($selez as $vid) {
+      $rowRecupero = $isRecupero || isset($recuperoVigili[(string)$vid]) || isset($recuperoVigili[$vid]);
+      $presenti[] = ['vigile_id'=>(int)$vid, 'nome'=>$id2nome[(int)$vid] ?? '', 'recupero'=>(bool)$rowRecupero];
+    }
 
     event_log_append('addestramento.create', [
       'sessione_uid' => $sessionUID,

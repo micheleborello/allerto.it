@@ -326,10 +326,16 @@ foreach($vigById as $vid=>$vv){
   $bank=$ecc-$rc; if($bank<0)$bank=0;
   $BANCA[$vid]=$bank;
 }
-$recupero0=0;
-foreach($sessionRows as $r){ if((int)($r['recupero']??0)===1){ $recupero0=1; break; } }
 $presenti=[];
-foreach($sessionRows as $r){ if(isset($r['vigile_id'])) $presenti[(int)$r['vigile_id']]=true; }
+$recuperoPresenti=[];
+foreach($sessionRows as $r){
+  if(isset($r['vigile_id'])) {
+    $vidRow = (int)$r['vigile_id'];
+    $presenti[$vidRow]=true;
+    if((int)($r['recupero']??0)===1) $recuperoPresenti[$vidRow]=true;
+  }
+}
+$recupero0 = (!empty($presenti) && count($recuperoPresenti) === count($presenti)) ? 1 : 0;
 
 // ===== POST: Salva =====
 if ($_SERVER['REQUEST_METHOD']==='POST' && (($_POST['action'] ?? '')==='save')) {
@@ -347,8 +353,10 @@ if ($_SERVER['REQUEST_METHOD']==='POST' && (($_POST['action'] ?? '')==='save')) 
     $note       = trim(preg_replace('/\s+/', ' ', $_POST['note'] ?? ''));
     $selez      = $_POST['vigili_presenti'] ?? [];
     $isRecupero = isset($_POST['recupero']) ? 1 : 0;
+    $recuperoVigili = $_POST['recupero_vigili'] ?? [];
 
     if(!is_array($selez)) $selez=[];
+    if(!is_array($recuperoVigili)) $recuperoVigili=[];
     $selez = array_values(array_unique(array_map('intval',$selez)));
     if (empty($selez)) throw new InvalidArgumentException('Seleziona almeno un presente');
 
@@ -400,8 +408,7 @@ if ($_SERVER['REQUEST_METHOD']==='POST' && (($_POST['action'] ?? '')==='save')) 
     $toHH = fn($dt)=> substr($fix($dt),11,5);
 
     foreach ($selez as $vid){
-      $bank = (int)($BANCA[$vid] ?? 0);
-      $minEff = $isRecupero ? min($min, max(0,$bank)) : $min;
+      $rowRecupero = $isRecupero || isset($recuperoVigili[(string)$vid]) || isset($recuperoVigili[$vid]);
 
       if (isset($esistenti[$vid])) {
         $i = $esistenti[$vid];
@@ -410,10 +417,10 @@ if ($_SERVER['REQUEST_METHOD']==='POST' && (($_POST['action'] ?? '')==='save')) 
         $items[$i]['fine']=$toHH($fineDT);
         $items[$i]['inizio_dt']=$fix($inizioDT);
         $items[$i]['fine_dt']=$fix($fineDT);
-        $items[$i]['minuti']=(int)$minEff;
+        $items[$i]['minuti']=(int)$min;
         $items[$i]['attivita']=($attivita!==''?$attivita:null);
         $items[$i]['note']=($note!==''?$note:null);
-        $items[$i]['recupero']=$isRecupero?1:0;
+        $items[$i]['recupero']=$rowRecupero?1:0;
         if ($uid!=='' && empty($items[$i]['sessione_uid'])) $items[$i]['sessione_uid']=$uid;
       } else {
         $id = function_exists('next_id') ? next_id($items) : (max(array_column($items,'id'))+1);
@@ -426,11 +433,11 @@ if ($_SERVER['REQUEST_METHOD']==='POST' && (($_POST['action'] ?? '')==='save')) 
           'fine'         => $toHH($fineDT),
           'inizio_dt'    => $fix($inizioDT),
           'fine_dt'      => $fix($fineDT),
-          'minuti'       => (int)$minEff,
+          'minuti'       => (int)$min,
           'attivita'     => ($attivita!==''?$attivita:null),
           'note'         => ($note!==''?$note:null),
           'created_at'   => date('Y-m-d H:i:s'),
-          'recupero'     => $isRecupero?1:0,
+          'recupero'     => $rowRecupero?1:0,
         ];
         if ($row['sessione_uid']===null) unset($row['sessione_uid']);
         $items[]=$row;
@@ -512,11 +519,9 @@ $usaAltro = ($attivita0 !== '' && !in_array($attivita0, $catalogoAtt, true));
 
             <div class="col-12 form-check mt-1">
               <input class="form-check-input" type="checkbox" id="chkRec" name="recupero" value="1" <?= $recupero0 ? 'checked' : '' ?>>
-              <label class="form-check-label fw-semibold" for="chkRec">Addestramento di recupero</label>
+              <label class="form-check-label fw-semibold" for="chkRec">Segna recupero per tutti i presenti</label>
               <div class="form-text">
-                Se attivo, per ciascun vigile verranno conteggiati al massimo i minuti disponibili nella
-                <strong>Banca ore (ultimi 12 mesi)</strong>
-                <span class="text-muted">(soglia: <em>5h × mesi rilevanti</em>, esclusi mesi di infortunio e pre-ingresso)</span>.
+                Puoi anche indicare il recupero solo per singoli vigili nella lista dei partecipanti.
               </div>
             </div>
 
@@ -565,23 +570,28 @@ $usaAltro = ($attivita0 !== '' && !in_array($attivita0, $catalogoAtt, true));
               $id = (int)$v['id'];
               $label = h(($v['cognome']??'').' '.($v['nome']??''));
               $chk = isset($presenti[$id]) ? 'checked' : '';
+              $recChk = isset($recuperoPresenti[$id]) ? 'checked' : '';
               $bancaMin = (int)($BANCA[$id] ?? 0);
             ?>
-              <div class="form-check">
+              <div class="form-check d-flex align-items-start gap-2">
                 <input class="form-check-input vigile-checkbox" type="checkbox" name="vigili_presenti[]" id="v<?= $id ?>" value="<?= $id ?>" <?= $chk ?>>
-                <label class="form-check-label" for="v<?= $id ?>">
+                <label class="form-check-label flex-grow-1" for="v<?= $id ?>">
                   <?= $label ?>
                   <span class="ms-1 badge rounded-pill bg-light text-muted small vigile-info" data-vid="<?= $id ?>">
                     Banca: <?= h(sprintf('%d:%02d', intdiv($bancaMin,60), $bancaMin%60)) ?>
                   </span>
                   <small class="badge rounded-pill text-bg-danger-subtle d-none badge-infortunio" data-vid="<?= $id ?>">Infortunio</small>
                 </label>
+                <label class="form-check mb-0 small text-nowrap" title="Solo questo vigile viene conteggiato come recupero">
+                  <input class="form-check-input recupero-vigile-checkbox" type="checkbox" name="recupero_vigili[<?= $id ?>]" value="1" data-vid="<?= $id ?>" <?= $recChk ?> <?= $chk ? '' : 'disabled' ?>>
+                  <span class="form-check-label">Rec.</span>
+                </label>
               </div>
             <?php endforeach; ?>
           </div>
           <div class="mt-2 d-flex gap-2">
-            <button type="button" class="btn btn-sm btn-outline-secondary" onclick="document.querySelectorAll('input[name=\'vigili_presenti[]\']').forEach(c=>{ if(!c.disabled) c.checked=true; })">Seleziona tutti</button>
-            <button type="button" class="btn btn-sm btn-outline-secondary" onclick="document.querySelectorAll('input[name=\'vigili_presenti[]\']').forEach(c=>c.checked=false)">Deseleziona tutti</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary" onclick="document.querySelectorAll('input[name=\'vigili_presenti[]\']').forEach(c=>{ if(!c.disabled) c.checked=true; c.dispatchEvent(new Event('change')); })">Seleziona tutti</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary" onclick="document.querySelectorAll('input[name=\'vigili_presenti[]\']').forEach(c=>{ c.checked=false; c.dispatchEvent(new Event('change')); })">Deseleziona tutti</button>
           </div>
           <div class="mt-2 text-muted small">
             <span class="me-3">Legenda:</span>
@@ -618,6 +628,7 @@ $usaAltro = ($attivita0 !== '' && !in_array($attivita0, $catalogoAtt, true));
   const inpFine   = document.getElementById('fine_dt');
   const chkRec    = document.getElementById('chkRec');
   const chks      = Array.from(document.querySelectorAll('input.vigile-checkbox'));
+  const recChks   = Array.from(document.querySelectorAll('input.recupero-vigile-checkbox'));
 
   function parseDatetimeLocal(v){
     if (!v || !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}/.test(v)) return null;
@@ -634,10 +645,25 @@ $usaAltro = ($attivita0 !== '' && !in_array($attivita0, $catalogoAtt, true));
   }
   function hmm(min){ min = Math.max(0, parseInt(min||0,10)); const h=Math.floor(min/60), m=min%60; return h+':'+String(m).padStart(2,'0'); }
   function datePart(v){ return v ? v.split('T')[0] : null; }
+  function recChkFor(vid){ return recChks.find(r => String(r.dataset.vid) === String(vid)); }
+  function isRecuperoFor(cb){
+    const rec = recChkFor(cb.value);
+    return !!chkRec?.checked || !!rec?.checked;
+  }
+  function aggiornaRecuperi(){
+    const allRec = !!chkRec?.checked;
+    recChks.forEach(rec => {
+      const cb = document.getElementById('v' + rec.dataset.vid);
+      const selected = !!cb?.checked && !cb.disabled;
+      rec.disabled = allRec || !selected;
+      if (allRec && selected) rec.checked = true;
+      if (!selected) rec.checked = false;
+    });
+  }
 
   function aggiornaStato() {
+    aggiornaRecuperi();
     const dur = durataSessioneMin();
-    const isRec = !!chkRec?.checked;
 
     chks.forEach(cb => {
       cb.classList.remove('is-invalid', 'is-valid', 'is-partial');
@@ -654,17 +680,18 @@ $usaAltro = ($attivita0 !== '' && !in_array($attivita0, $catalogoAtt, true));
       const bank  = parseInt(BANCA[vid] || 0, 10);
       const lab   = document.querySelector(`label[for="${cb.id}"]`);
       const badge = lab ? lab.querySelector('.vigile-info[data-vid="'+vid+'"]') : null;
+      const rowRec = isRecuperoFor(cb);
 
-      if (isRec && badge) {
+      if (rowRec && badge) {
         const eff = Math.min(bank, dur);
-        badge.textContent = `Banca: ${hmm(bank)} • Richiesti: ${hmm(dur)} • Conteggio: ${hmm(eff)}`;
+        badge.textContent = `Banca: ${hmm(bank)} - Richiesti: ${hmm(dur)} - Conteggio: ${hmm(eff)}`;
         badge.classList.remove('text-danger','text-success','text-warning');
         if (bank >= dur)      badge.classList.add('text-success');
         else if (bank > 0)    badge.classList.add('text-warning');
         else                  badge.classList.add('text-danger');
       }
 
-      if (cb.checked && isRec) {
+      if (cb.checked && rowRec) {
         if (bank >= dur)      { lab?.classList.add('text-success'); cb.classList.add('is-valid'); }
         else if (bank > 0)    { lab?.classList.add('text-warning'); cb.classList.add('is-partial'); }
         else                  { lab?.classList.add('text-danger');  cb.classList.add('is-invalid'); }
@@ -674,8 +701,12 @@ $usaAltro = ($attivita0 !== '' && !in_array($attivita0, $catalogoAtt, true));
 
   inpInizio?.addEventListener('input', aggiornaStato);
   inpFine?.addEventListener('input', aggiornaStato);
-  chkRec?.addEventListener('change', aggiornaStato);
+  chkRec?.addEventListener('change', () => {
+    if (!chkRec.checked) recChks.forEach(cb => { cb.checked = false; });
+    aggiornaStato();
+  });
   chks.forEach(cb => cb.addEventListener('change', aggiornaStato));
+  recChks.forEach(cb => cb.addEventListener('change', aggiornaStato));
   aggiornaStato();
 })();
 </script>

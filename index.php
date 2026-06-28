@@ -180,6 +180,9 @@ if (is_array($infortuniRaw)) {
   .form-check-label.text-success { font-weight: 600; }
   .form-check-input.is-valid { outline: 2px solid rgba(25,135,84,.6); }
   .form-check-input:disabled + .form-check-label { opacity: .65; }
+  .presenza-row { display:flex; align-items:flex-start; gap:.5rem; }
+  .presenza-row .presenza-label { flex:1 1 auto; min-width:0; }
+  .recupero-persona { white-space:nowrap; font-size:.875rem; }
 </style>
 </head>
 <body class="bg-light">
@@ -233,8 +236,8 @@ if (is_array($infortuniRaw)) {
 
               <div class="col-12 form-check mt-1">
                 <input class="form-check-input" type="checkbox" id="chkRec" name="recupero" value="1">
-                <label class="form-check-label fw-semibold" for="chkRec">Addestramento di recupero</label>
-                <div class="form-text">Se attivo, le ore saranno scalate dalle eccedenze (ultimi 12 mesi prima del mese selezionato).</div>
+                <label class="form-check-label fw-semibold" for="chkRec">Segna recupero per tutti i presenti</label>
+                <div class="form-text">Puoi anche indicare il recupero solo per singoli vigili nella lista dei presenti.</div>
               </div>
 
               <!-- Attività -->
@@ -298,12 +301,16 @@ if (is_array($infortuniRaw)) {
                       $grado = $v['grado'] ?? '';
                       $label = h(trim(($grado ? "[$grado] " : '').($v['cognome']??'').' '.($v['nome']??'')));
                     ?>
-                      <div class="form-check">
+                      <div class="form-check presenza-row">
                         <input class="form-check-input chk-presente" type="checkbox" value="<?= $id ?>" id="v<?= $id ?>" name="vigili_presenti[]">
-                        <label class="form-check-label" for="v<?= $id ?>">
+                        <label class="form-check-label presenza-label" for="v<?= $id ?>">
                           <?= $label ?>
                           <small class="badge rounded-pill text-bg-info-subtle d-none badge-eccesso" data-vid="<?= $id ?>"></small>
                           <small class="badge rounded-pill text-bg-danger-subtle d-none badge-infortunio" data-vid="<?= $id ?>">Infortunio</small>
+                        </label>
+                        <label class="form-check recupero-persona mb-0" title="Solo questo vigile viene conteggiato come recupero">
+                          <input class="form-check-input chk-recupero-vigile" type="checkbox" value="1" id="rv<?= $id ?>" name="recupero_vigili[<?= $id ?>]" data-vid="<?= $id ?>" disabled>
+                          <span class="form-check-label">Rec.</span>
                         </label>
                       </div>
                     <?php endforeach; ?>
@@ -402,6 +409,8 @@ if (is_array($infortuniRaw)) {
 // Presenze + colori in base a ECCESSO/INFORTUNI
 (function(){
   const chk = Array.from(document.querySelectorAll('.chk-presente'));
+  const recChk = Array.from(document.querySelectorAll('.chk-recupero-vigile'));
+  const recAll = document.getElementById('chkRec');
   const lp  = document.getElementById('listaPresenti');
   const la  = document.getElementById('listaAssenti');
   const inizio = document.getElementById('inizio_dt');
@@ -420,6 +429,22 @@ if (is_array($infortuniRaw)) {
     if (!lp||!la) return; lp.innerHTML=''; la.innerHTML='';
     chk.forEach(c=>{ const label = c.nextElementSibling?.innerText || ('ID '+c.value); const li=document.createElement('li'); li.textContent=label; (c.checked?lp:la).appendChild(li); });
   }
+  function refreshRecuperoInputs(){
+    const allRec = !!recAll?.checked;
+    chk.forEach(c=>{
+      const r = document.querySelector('.chk-recupero-vigile[data-vid="'+c.value+'"]');
+      if (!r) return;
+      r.disabled = !c.checked || allRec || c.disabled;
+      if (!c.checked) r.checked = false;
+      if (allRec && c.checked && !c.disabled) r.checked = true;
+      if (!allRec && r.disabled) r.checked = false;
+    });
+  }
+  function isRecuperoFor(c){
+    if (recAll?.checked) return true;
+    const r = document.querySelector('.chk-recupero-vigile[data-vid="'+c.value+'"]');
+    return !!r?.checked;
+  }
   function pulisciRiga(c){
     c.classList.remove('is-invalid','is-valid');
     const lab=document.querySelector(`label[for="${c.id}"]`);
@@ -433,6 +458,7 @@ if (is_array($infortuniRaw)) {
   function refreshColori(){
     const need = sessionMinutes();
     const ymdStart = datePart(inizio?.value);
+    refreshRecuperoInputs();
     chk.forEach(pulisciRiga);
     if (need===null || !ymdStart) return;
 
@@ -443,23 +469,38 @@ if (is_array($infortuniRaw)) {
       const bi = lab? lab.querySelector('.badge-infortunio[data-vid="'+vid+'"]') : null;
 
       if (infortunioCheck(vid, ymdStart)) {
-        c.checked=false; c.disabled=true; if(bi) bi.classList.remove('d-none'); return;
+        c.checked=false; c.disabled=true;
+        const r = document.querySelector('.chk-recupero-vigile[data-vid="'+c.value+'"]');
+        if (r) { r.checked=false; r.disabled=true; }
+        if(bi) bi.classList.remove('d-none'); return;
       }
+      refreshRecuperoInputs();
       const bank=parseInt(ECCESSO[vid]||0,10);
-      if (b){ b.classList.remove('d-none'); b.textContent=`ecc.: ${fmt(bank)} / ${fmt(need)}`; if(bank<need) b.classList.add('text-danger'); }
-      if (c.checked){
+      const rec = isRecuperoFor(c);
+      if (b){
+        b.classList.remove('d-none');
+        b.textContent = rec ? `rec.: ${fmt(bank)} / ${fmt(need)}` : `ecc.: ${fmt(bank)}`;
+        if(rec && bank<need) b.classList.add('text-danger');
+      }
+      if (c.checked && rec){
         if (bank<need){ c.classList.add('is-invalid'); lab?.classList.add('text-danger'); }
         else          { c.classList.add('is-valid');   lab?.classList.add('text-success'); }
       }
     });
   }
 
-  chk.forEach(c => c.addEventListener('change', ()=>{ refreshLists(); refreshColori(); }));
+  chk.forEach(c => c.addEventListener('change', ()=>{ refreshLists(); refreshRecuperoInputs(); refreshColori(); }));
+  recChk.forEach(c => c.addEventListener('change', refreshColori));
+  recAll?.addEventListener('change', ()=>{
+    if (!recAll.checked) recChk.forEach(c => { c.checked = false; });
+    refreshRecuperoInputs();
+    refreshColori();
+  });
   [inizio, fine].forEach(el => el && el.addEventListener('input', refreshColori));
-  document.getElementById('btnSelezionaTutti')?.addEventListener('click', ()=>{ chk.forEach(c=>{ if(!c.disabled) c.checked=true; }); refreshLists(); refreshColori(); });
-  document.getElementById('btnDeselezionaTutti')?.addEventListener('click', ()=>{ chk.forEach(c=> c.checked=false); refreshLists(); refreshColori(); });
+  document.getElementById('btnSelezionaTutti')?.addEventListener('click', ()=>{ chk.forEach(c=>{ if(!c.disabled) c.checked=true; }); refreshLists(); refreshRecuperoInputs(); refreshColori(); });
+  document.getElementById('btnDeselezionaTutti')?.addEventListener('click', ()=>{ chk.forEach(c=> c.checked=false); refreshLists(); refreshRecuperoInputs(); refreshColori(); });
 
-  refreshLists(); refreshColori();
+  refreshLists(); refreshRecuperoInputs(); refreshColori();
 
   // Sync mese toolbar quando scegli l'inizio
   const meseTb = document.getElementById('meseToolbar');

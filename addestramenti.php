@@ -205,10 +205,14 @@ uksort($groups, function($ka,$kb) use ($groups){
             $presentiNomi = array_values(array_filter($presentiNomi, fn($x)=>trim($x) !== ''));
 
             // flag recupero
-            $isRecupero = false;
+            $recuperoCount = 0;
             foreach ($rows as $rr) {
-              if ((int)($rr['recupero'] ?? 0) === 1) { $isRecupero = true; break; }
+              if (isset($rr['vigile_id']) && (int)($rr['recupero'] ?? 0) === 1) $recuperoCount++;
             }
+            $isRecupero = $recuperoCount > 0;
+            $recuperoLabel = $recuperoCount === $partecipanti
+              ? 'Recupero'
+              : ('Recupero '.$recuperoCount.'/'.$partecipanti);
 
             // UID presente nel gruppo?
             $uid = $g['uid'] ?? '';
@@ -240,7 +244,7 @@ uksort($groups, function($ka,$kb) use ($groups){
             <td class="attivita-cell">
               <?= h($att) ?>
               <?php if ($isRecupero): ?>
-                <span class="badge rounded-pill text-bg-warning ms-1">Recupero</span>
+                <span class="badge rounded-pill text-bg-warning ms-1"><?= h($recuperoLabel) ?></span>
               <?php endif; ?>
               <?php if (!$isCapo && !empty($presentiNomi)): ?>
                 <div class="mt-2">
