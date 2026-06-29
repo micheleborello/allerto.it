@@ -31,6 +31,48 @@ if (!function_exists('next_id')) {
   }
 }
 
+if (!function_exists('banca_ore_recupero_index')) {
+  function banca_ore_recupero_index(array $items, int $vigileId, string $meseSelezionato): int {
+    if (!preg_match('/^\d{4}-\d{2}$/', $meseSelezionato)) $meseSelezionato = date('Y-m');
+    $rifY = (int)substr($meseSelezionato, 0, 4);
+    $rifM = (int)substr($meseSelezionato, 5, 2);
+    $startRef = DateTime::createFromFormat('Y-m-d', sprintf('%04d-%02d-01', $rifY, $rifM));
+    if (!$startRef) return 0;
+    $winStart = (clone $startRef)->modify('-1 year');
+    $winEnd   = (clone $startRef)->modify('-1 day');
+    $winStartStr = $winStart->format('Y-m-d');
+    $winEndStr   = $winEnd->format('Y-m-d');
+
+    $nonrec = 0;
+    $rec = 0;
+    foreach ($items as $r) {
+      if ((int)($r['vigile_id'] ?? 0) !== $vigileId) continue;
+      $d = (string)($r['data'] ?? '');
+      if ($d === '' && !empty($r['inizio_dt']) && preg_match('/^\d{4}-\d{2}-\d{2}T/', (string)$r['inizio_dt'])) {
+        $d = substr((string)$r['inizio_dt'], 0, 10);
+      }
+      if ($d === '' || $d < $winStartStr || $d > $winEndStr) continue;
+
+      $minr = isset($r['minuti']) ? (int)$r['minuti'] : 0;
+      if (!$minr) {
+        try {
+          $inizioDT = $r['inizio_dt'] ?? ($d.'T'.substr((string)($r['inizio'] ?? '00:00'), 0, 5).':00');
+          $fineDT   = $r['fine_dt']   ?? ($d.'T'.substr((string)($r['fine']   ?? '00:00'), 0, 5).':00');
+          $minr = minuti_da_intervallo_datetime($inizioDT, $fineDT);
+        } catch (Throwable $e) {
+          $minr = 0;
+        }
+      }
+
+      if ((int)($r['recupero'] ?? 0) === 1) $rec += $minr;
+      else $nonrec += $minr;
+    }
+
+    $bank = max(0, $nonrec - (60 * 60)) - $rec;
+    return max(0, $bank);
+  }
+}
+
 /* -----------------------------------------------------------------
    Tenant attivo (slug) — usalo sia in lettura che in scrittura
 ------------------------------------------------------------------ */
@@ -248,6 +290,8 @@ try {
   // ------ Appendi le righe per tutti i presenti (solo se CAPO) -------
   foreach ($selez as $vid) {
     $rowRecupero = $isRecupero || isset($recuperoVigili[(string)$vid]) || isset($recuperoVigili[$vid]);
+    $rowBank = $rowRecupero ? banca_ore_recupero_index($items, (int)$vid, substr($inizioDT, 0, 7)) : 0;
+    $rowMinuti = $rowRecupero ? min($minuti, $rowBank) : $minuti;
     $id = next_id($items);
     $items[] = [
       'id'           => $id,
@@ -258,7 +302,7 @@ try {
       'fine'         => $toHH($fineDT),
       'inizio_dt'    => $fix($inizioDT),
       'fine_dt'      => $fix($fineDT),
-      'minuti'       => $minuti,
+      'minuti'       => $rowMinuti,
       'attivita'     => ($attivita !== '' ? $attivita : null),
       'note'         => ($note !== '' ? $note : null),
       'created_at'   => date('Y-m-d H:i:s'),

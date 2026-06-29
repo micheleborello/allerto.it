@@ -479,7 +479,13 @@ if (is_array($infortuniRaw)) {
       const rec = isRecuperoFor(c);
       if (b){
         b.classList.remove('d-none');
-        b.textContent = rec ? `rec.: ${fmt(bank)} / ${fmt(need)}` : `ecc.: ${fmt(bank)}`;
+        if (rec) {
+          const eff = Math.min(bank, need);
+          const residuo = Math.max(0, bank - eff);
+          b.textContent = `rec.: ${fmt(bank)} -> ${fmt(eff)} / residuo ${fmt(residuo)}`;
+        } else {
+          b.textContent = `ecc.: ${fmt(bank)}`;
+        }
         if(rec && bank<need) b.classList.add('text-danger');
       }
       if (c.checked && rec){

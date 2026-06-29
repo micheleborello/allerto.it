@@ -692,7 +692,8 @@ $usaAltro = ($attivita0 !== '' && !in_array($attivita0, $catalogoAtt, true));
 
       if (rowRec && badge) {
         const eff = Math.min(bank, dur);
-        badge.textContent = `Banca: ${hmm(bank)} - Richiesti: ${hmm(dur)} - Conteggio: ${hmm(eff)}`;
+        const residuo = Math.max(0, bank - eff);
+        badge.textContent = `Banca: ${hmm(bank)} - Richiesti: ${hmm(dur)} - Conteggio: ${hmm(eff)} - Residuo: ${hmm(residuo)}`;
         badge.classList.remove('text-danger','text-success','text-warning');
         if (bank >= dur)      badge.classList.add('text-success');
         else if (bank > 0)    badge.classList.add('text-warning');
