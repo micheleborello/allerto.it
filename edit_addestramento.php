@@ -415,6 +415,8 @@ if ($_SERVER['REQUEST_METHOD']==='POST' && (($_POST['action'] ?? '')==='save')) 
 
     foreach ($selez as $vid){
       $rowRecupero = $isRecupero || isset($recuperoVigili[(string)$vid]) || isset($recuperoVigili[$vid]);
+      $bank = (int)($BANCA[$vid] ?? 0);
+      $rowMinuti = $rowRecupero ? min($min, max(0, $bank)) : $min;
 
       if (isset($esistenti[$vid])) {
         $i = $esistenti[$vid];
@@ -423,7 +425,7 @@ if ($_SERVER['REQUEST_METHOD']==='POST' && (($_POST['action'] ?? '')==='save')) 
         $items[$i]['fine']=$toHH($fineDT);
         $items[$i]['inizio_dt']=$fix($inizioDT);
         $items[$i]['fine_dt']=$fix($fineDT);
-        $items[$i]['minuti']=(int)$min;
+        $items[$i]['minuti']=(int)$rowMinuti;
         $items[$i]['attivita']=($attivita!==''?$attivita:null);
         $items[$i]['note']=($note!==''?$note:null);
         $items[$i]['recupero']=$rowRecupero?1:0;
@@ -439,7 +441,7 @@ if ($_SERVER['REQUEST_METHOD']==='POST' && (($_POST['action'] ?? '')==='save')) 
           'fine'         => $toHH($fineDT),
           'inizio_dt'    => $fix($inizioDT),
           'fine_dt'      => $fix($fineDT),
-          'minuti'       => (int)$min,
+          'minuti'       => (int)$rowMinuti,
           'attivita'     => ($attivita!==''?$attivita:null),
           'note'         => ($note!==''?$note:null),
           'created_at'   => date('Y-m-d H:i:s'),
