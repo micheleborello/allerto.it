@@ -172,6 +172,33 @@ function data_inizio_infortunio_mese(int $vid, string $meseYYYYMM, array $mappaR
   return $found;
 }
 
+function soglia_mensile_prorata_min(int $baseMin, array $ranges, string $periodStart, string $periodEnd): int {
+  $start = DateTimeImmutable::createFromFormat('Y-m-d', $periodStart);
+  $end = DateTimeImmutable::createFromFormat('Y-m-d', $periodEnd);
+  if (!$start || !$end || $end < $start) return $baseMin;
+  $totDays = $start->diff($end)->days + 1;
+  if ($totDays <= 0) return 0;
+
+  $days = [];
+  foreach ($ranges as $rng) {
+    $dal = (string)($rng[0] ?? '');
+    $al = (string)($rng[1] ?? '');
+    if (!preg_match('/^\d{4}-\d{2}-\d{2}$/', $dal) || !preg_match('/^\d{4}-\d{2}-\d{2}$/', $al)) continue;
+    if ($al < $periodStart || $dal > $periodEnd) continue;
+    $from = max($dal, $periodStart);
+    $to = min($al, $periodEnd);
+    $cur = DateTimeImmutable::createFromFormat('Y-m-d', $from);
+    $last = DateTimeImmutable::createFromFormat('Y-m-d', $to);
+    while ($cur && $last && $cur <= $last) {
+      $days[$cur->format('Y-m-d')] = true;
+      $cur = $cur->modify('+1 day');
+    }
+  }
+
+  $activeDays = max(0, $totDays - count($days));
+  return (int)round($baseMin * ($activeDays / $totDays));
+}
+
 // ---- Raggruppa per vigile nel mese (data robusta) ----
 $prefix = substr($meseStr,0,7);
 $estraiData = function(array $r): string {
@@ -292,6 +319,7 @@ $pdf->SetFont('helvetica','',10);
 $pdf->AddPage();
 
 $printed = false;
+$sottoSoglia = [];
 
 $ore_hhmm = fn(int $min) => sprintf('%d.%02d', intdiv($min,60), $min%60);
 $giornoNum = fn(?string $ymd) => (preg_match('/^\d{4}-\d{2}-\d{2}$/',(string)$ymd)) ? (string)(int)substr($ymd,8,2) : '';
@@ -353,6 +381,19 @@ foreach ($vigili as $v) {
   }
 
   $notaInf = $infDal ? '<span style="color:#a00; font-weight:bold;">(INFORTUNIO dal '.$fmtIT($infDal).')</span>' : '';
+  $periodStart = $prefix.'-01';
+  $periodEndDt = DateTimeImmutable::createFromFormat('Y-m-d', $periodStart);
+  $periodEnd = $periodEndDt ? $periodEndDt->format('Y-m-t') : date('Y-m-t');
+  $sogliaMin = soglia_mensile_prorata_min(5 * 60, $INFORTUNI[$vid] ?? [], $periodStart, $periodEnd);
+  if ($totMin < $sogliaMin) {
+    $sottoSoglia[] = [
+      'nome' => trim(html_entity_decode((string)($v['cognome'] ?? '').' '.(string)($v['nome'] ?? ''), ENT_QUOTES | ENT_HTML5, 'UTF-8')),
+      'grado' => trim(html_entity_decode((string)($v['grado'] ?? ''), ENT_QUOTES | ENT_HTML5, 'UTF-8')),
+      'minuti' => $totMin,
+      'soglia' => $sogliaMin,
+      'infortunio' => $haInf,
+    ];
+  }
 
   $htmlTable = '
   <table cellpadding="4" cellspacing="0" border="1" width="100%">
@@ -399,6 +440,44 @@ foreach ($vigili as $v) {
   $y = $pdf->GetY();
   $pdf->Line($m['left'], $y, $pdf->getPageWidth() - $m['right'], $y);
   $pdf->Ln(2);
+}
+
+if (!empty($sottoSoglia)) {
+  if ($pdf->GetY() > ($pdf->getPageHeight() - $pdf->getBreakMargin() - 55)) {
+    $pdf->AddPage();
+  } else {
+    $pdf->Ln(6);
+  }
+
+  $rowsSotto = '';
+  foreach ($sottoSoglia as $r) {
+    $nome = htmlspecialchars($r['nome'], ENT_QUOTES, 'UTF-8');
+    $grado = htmlspecialchars($r['grado'], ENT_QUOTES, 'UTF-8');
+    $note = $r['infortunio'] ? 'Infortunio/sospensione nel mese' : '';
+    $rowsSotto .= '<tr>
+      <td width="12%">'.$grado.'</td>
+      <td width="46%">'.$nome.'</td>
+      <td width="14%" align="right">'.$ore_hhmm((int)$r['minuti']).'</td>
+      <td width="14%" align="right">'.$ore_hhmm((int)$r['soglia']).'</td>
+      <td width="14%">'.$note.'</td>
+    </tr>';
+  }
+
+  $htmlSotto = '
+  <h3 style="font-size:11pt;">Personale sotto soglia 5 ore nel mese</h3>
+  <table cellpadding="4" cellspacing="0" border="1" width="100%">
+    <thead>
+      <tr>
+        <th width="12%" style="background:#f2f2f2; font-weight:bold;">GRADO</th>
+        <th width="46%" style="background:#f2f2f2; font-weight:bold;">NOMINATIVO</th>
+        <th width="14%" style="background:#f2f2f2; font-weight:bold;" align="right">ORE</th>
+        <th width="14%" style="background:#f2f2f2; font-weight:bold;" align="right">SOGLIA</th>
+        <th width="14%" style="background:#f2f2f2; font-weight:bold;">NOTE</th>
+      </tr>
+    </thead>
+    <tbody>'.$rowsSotto.'</tbody>
+  </table>';
+  $pdf->writeHTML($htmlSotto, true, false, true, false, '');
 }
 
 if (!$printed) {
