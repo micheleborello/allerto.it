@@ -282,11 +282,20 @@ $winEndStr   = $winEnd->format('Y-m-d');
 $mesiFinestra=[]; $cur=(clone $winStart)->modify('first day of this month'); $end=(clone $winEnd)->modify('first day of next month');
 while($cur<$end){ $mesiFinestra[]=$cur->format('Y-m'); $cur->modify('+1 month'); }
 
-$nonrec=[]; $rec=[];
+$nonrec=[]; $rec=[]; $recMese=[];
 foreach($items as $r){
   if(!is_array($r)) continue;
   $vid=(int)($r['vigile_id']??0); $d=(string)($r['data']??'');
   if(!$vid||!$d) continue;
+  $sameSessionRow = ((($r['sessione_uid'] ?? '') === $uid) && ($uid !== ''));
+  if (substr($d,0,7) === substr($inizioDT,0,7) && (int)($r['recupero'] ?? 0) === 1 && !$sameSessionRow) {
+    $minMonth = isset($r['minuti']) ? (int)$r['minuti']
+      : minuti_da_intervallo_datetime(
+          $r['inizio_dt'] ?? ($d.'T'.substr((string)($r['inizio']??'00:00'),0,5).':00'),
+          $r['fine_dt']   ?? ($d.'T'.substr((string)($r['fine']  ??'00:00'),0,5).':00')
+        );
+    $recMese[$vid]=($recMese[$vid]??0)+$minMonth;
+  }
   if($d<$winStartStr || $d>$winEndStr) continue;
   $minr = isset($r['minuti']) ? (int)$r['minuti']
          : minuti_da_intervallo_datetime(
@@ -328,8 +337,9 @@ foreach($vigById as $vid=>$vv){
   $n = count($mesiQuota);
   $soglia = $n*QUOTA_MENSILE_MIN;
   $nr=(int)($nonrec[$vid]??0); $rc=(int)($rec[$vid]??0);
+  $rcM=(int)($recMese[$vid]??0);
   $ecc=max(0,$nr-$soglia);
-  $bank=$ecc-$rc; if($bank<0)$bank=0;
+  $bank=$ecc-$rc-$rcM; if($bank<0)$bank=0;
   $BANCA[$vid]=$bank;
 }
 $presenti=[];

@@ -45,14 +45,13 @@ if (!function_exists('banca_ore_recupero_index')) {
 
     $nonrec = 0;
     $rec = 0;
+    $recMese = 0;
     foreach ($items as $r) {
       if ((int)($r['vigile_id'] ?? 0) !== $vigileId) continue;
       $d = (string)($r['data'] ?? '');
       if ($d === '' && !empty($r['inizio_dt']) && preg_match('/^\d{4}-\d{2}-\d{2}T/', (string)$r['inizio_dt'])) {
         $d = substr((string)$r['inizio_dt'], 0, 10);
       }
-      if ($d === '' || $d < $winStartStr || $d > $winEndStr) continue;
-
       $minr = isset($r['minuti']) ? (int)$r['minuti'] : 0;
       if (!$minr) {
         try {
@@ -64,11 +63,15 @@ if (!function_exists('banca_ore_recupero_index')) {
         }
       }
 
+      if (substr($d, 0, 7) === $meseSelezionato && (int)($r['recupero'] ?? 0) === 1) {
+        $recMese += $minr;
+      }
+      if ($d === '' || $d < $winStartStr || $d > $winEndStr) continue;
       if ((int)($r['recupero'] ?? 0) === 1) $rec += $minr;
       else $nonrec += $minr;
     }
 
-    $bank = max(0, $nonrec - (60 * 60)) - $rec;
+    $bank = max(0, $nonrec - (60 * 60)) - $rec - $recMese;
     return max(0, $bank);
   }
 }

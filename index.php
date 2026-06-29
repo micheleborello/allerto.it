@@ -125,7 +125,7 @@ $winEndStr   = $winEnd->format('Y-m-d');
 
 // ====== Banca/eccedenza sulla finestra mobile
 $add = load_addestramenti_local(); if (!is_array($add)) $add=[];
-$nonrec = []; $rec = [];
+$nonrec = []; $rec = []; $recMese = [];
 $minutiRecord = function(array $r): int {
   if (isset($r['minuti'])) return (int)$r['minuti'];
   $inizioDT = $r['inizio_dt'] ?? (($r['data'] ?? '').'T'.substr((string)($r['inizio'] ?? '00:00'),0,5).':00');
@@ -135,8 +135,11 @@ $minutiRecord = function(array $r): int {
 foreach ($add as $r) {
   if (!is_array($r)) continue;
   $vid=(int)($r['vigile_id']??0); $d=(string)($r['data']??''); if(!$vid||!$d) continue;
-  if ($d < $winStartStr || $d > $winEndStr) continue;
   $min = $minutiRecord($r);
+  if (substr($d,0,7) === $meseSelezionato && (int)($r['recupero'] ?? 0) === 1) {
+    $recMese[$vid] = ($recMese[$vid] ?? 0) + $min;
+  }
+  if ($d < $winStartStr || $d > $winEndStr) continue;
   if ((int)($r['recupero'] ?? 0) === 1) $rec[$vid] = ($rec[$vid] ?? 0) + $min;
   else                                  $nonrec[$vid] = ($nonrec[$vid] ?? 0) + $min;
 }
@@ -145,7 +148,8 @@ foreach ($vigili as $v) {
   if ((int)($v['attivo'] ?? 1) !== 1) continue;
   $vid = (int)($v['id'] ?? 0); if(!$vid) continue;
   $nr=(int)($nonrec[$vid] ?? 0); $rc=(int)($rec[$vid] ?? 0);
-  $bank = max(0, $nr - 60*60) - $rc; // 60 ore = 3600 min
+  $rcM=(int)($recMese[$vid] ?? 0);
+  $bank = max(0, $nr - 60*60) - $rc - $rcM; // 60 ore = 3600 min
   if ($bank < 0) $bank = 0;
   $ECCESSO[$vid] = $bank;
 }
